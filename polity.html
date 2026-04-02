@@ -1,0 +1,2079 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Physics 100 MCQ - BPSC AEDO</title>
+    <style>
+        :root {
+            --primary: #2c3e50;
+            --accent: #2980b9;
+            --success: #27ae60;
+            --danger: #e74c3c;
+            --bg: #f4f7f6;
+        }
+        body { font-family: 'Segoe UI', sans-serif; background: var(--bg); padding: 20px; }
+        .container { max-width: 900px; margin: 0 auto; background: white; padding: 40px; border-radius: 15px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); }
+        h1 { text-align: center; color: var(--primary); margin-bottom: 30px; border-bottom: 3px solid var(--accent); display: inline-block; width: 100%; padding-bottom: 10px;}
+        
+        .question { margin-bottom: 30px; padding: 20px; border: 1px solid #eee; border-radius: 10px; transition: 0.3s; }
+        .question p { font-weight: 600; font-size: 1.1rem; margin-bottom: 15px; }
+        
+        .options { list-style: none; padding: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+        @media (max-width: 600px) { .options { grid-template-columns: 1fr; } }
+        
+        .options li { background: #fff; border: 2px solid #ddd; padding: 12px; border-radius: 8px; cursor: pointer; transition: 0.2s; }
+        .options li:hover { border-color: var(--accent); background: #f0f7ff; }
+        
+        .correct { background: var(--success) !important; color: white; border-color: var(--success) !important; }
+        .incorrect { background: var(--danger) !important; color: white; border-color: var(--danger) !important; }
+        
+        .controls { position: sticky; bottom: 20px; background: var(--primary); color: white; padding: 15px; border-radius: 50px; text-align: center; box-shadow: 0 5px 15px rgba(0,0,0,0.3); }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Biology Fundamentals: 100 MCQ Series</h1>
+
+    <div id="quiz-wrapper">
+       
+       <div class="question" data-answer="B">
+        <p>1. Who was the President of the Constituent Assembly of India?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. B.R. Ambedkar</li>
+            <li onclick="check(this, 'B')">B. Rajendra Prasad</li>
+            <li onclick="check(this, 'C')">C. Sachchidananda Sinha</li>
+            <li onclick="check(this, 'D')">D. Jawaharlal Nehru</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>2. Who was the 'Interim' President of the Constituent Assembly during its first meeting?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Rajendra Prasad</li>
+            <li onclick="check(this, 'B')">B. B.N. Rau</li>
+            <li onclick="check(this, 'C')">C. Sachchidananda Sinha</li>
+            <li onclick="check(this, 'D')">D. Sardar Patel</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>3. The idea of 'Preamble' in the Indian Constitution was borrowed from the Constitution of:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. USA</li>
+            <li onclick="check(this, 'B')">B. UK</li>
+            <li onclick="check(this, 'C')">C. Canada</li>
+            <li onclick="check(this, 'D')">D. Ireland</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>4. Which amendment is known as the 'Mini-Constitution' of India?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 7th Amendment</li>
+            <li onclick="check(this, 'B')">B. 24th Amendment</li>
+            <li onclick="check(this, 'C')">C. 44th Amendment</li>
+            <li onclick="check(this, 'D')">D. 42nd Amendment</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>5. Under which Article can the Parliament of India admit a new state into the Union?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Article 1</li>
+            <li onclick="check(this, 'B')">B. Article 2</li>
+            <li onclick="check(this, 'C')">C. Article 3</li>
+            <li onclick="check(this, 'D')">D. Article 4</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>6. Which Article of the Constitution abolishes 'Untouchability'?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Article 14</li>
+            <li onclick="check(this, 'B')">B. Article 15</li>
+            <li onclick="check(this, 'C')">C. Article 17</li>
+            <li onclick="check(this, 'D')">D. Article 18</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>7. The 'Right to Property' was removed from the list of Fundamental Rights by which Amendment?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 44th Amendment</li>
+            <li onclick="check(this, 'B')">B. 42nd Amendment</li>
+            <li onclick="check(this, 'C')">C. 25th Amendment</li>
+            <li onclick="check(this, 'D')">D. 73rd Amendment</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>8. How many Fundamental Duties are currently listed in the Indian Constitution?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 9</li>
+            <li onclick="check(this, 'B')">B. 10</li>
+            <li onclick="check(this, 'C')">C. 12</li>
+            <li onclick="check(this, 'D')">D. 11</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>9. The 'Directive Principles of State Policy' (DPSP) are borrowed from which Constitution?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Australian Constitution</li>
+            <li onclick="check(this, 'B')">B. Irish Constitution</li>
+            <li onclick="check(this, 'C')">C. US Constitution</li>
+            <li onclick="check(this, 'D')">D. Weimar Constitution</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>10. Article 32 of the Indian Constitution deals with:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Right to Constitutional Remedies</li>
+            <li onclick="check(this, 'B')">B. Right to Education</li>
+            <li onclick="check(this, 'C')">C. Right against Exploitation</li>
+            <li onclick="check(this, 'D')">D. Freedom of Religion</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>11. The concept of 'Single Citizenship' in India is taken from:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. USA</li>
+            <li onclick="check(this, 'B')">B. Canada</li>
+            <li onclick="check(this, 'C')">C. Britain (UK)</li>
+            <li onclick="check(this, 'D')">D. France</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>12. Which Article ensures 'Equality before Law'?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Article 13</li>
+            <li onclick="check(this, 'B')">B. Article 14</li>
+            <li onclick="check(this, 'C')">C. Article 19</li>
+            <li onclick="check(this, 'D')">D. Article 21</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>13. The 73rd Amendment Act is related to:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Municipalities</li>
+            <li onclick="check(this, 'B')">B. Fundamental Duties</li>
+            <li onclick="check(this, 'C')">C. Defection</li>
+            <li onclick="check(this, 'D')">D. Panchayati Raj</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>14. Who is the ex-officio Chairman of the Rajya Sabha?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Vice-President of India</li>
+            <li onclick="check(this, 'B')">B. President of India</li>
+            <li onclick="check(this, 'C')">C. Prime Minister</li>
+            <li onclick="check(this, 'D')">D. Speaker of Lok Sabha</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>15. In India, the 'Power of Judicial Review' is enjoyed by:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Only Supreme Court</li>
+            <li onclick="check(this, 'B')">B. Only High Courts</li>
+            <li onclick="check(this, 'C')">C. Both Supreme Court and High Courts</li>
+            <li onclick="check(this, 'D')">D. Parliament</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>16. Which Article empowers the President to impose 'President's Rule' in a state?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Article 352</li>
+            <li onclick="check(this, 'B')">B. Article 356</li>
+            <li onclick="check(this, 'C')">C. Article 360</li>
+            <li onclick="check(this, 'D')">D. Article 370</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>17. Minimum age required to become the President of India is:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 35 years</li>
+            <li onclick="check(this, 'B')">B. 30 years</li>
+            <li onclick="check(this, 'C')">C. 25 years</li>
+            <li onclick="check(this, 'D')">D. 21 years</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>18. Which Schedule of the Constitution contains the 'Anti-Defection Law'?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 8th Schedule</li>
+            <li onclick="check(this, 'B')">B. 9th Schedule</li>
+            <li onclick="check(this, 'C')">C. 10th Schedule</li>
+            <li onclick="check(this, 'D')">D. 11th Schedule</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>19. The Governor of a state is appointed by:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Prime Minister</li>
+            <li onclick="check(this, 'B')">B. President</li>
+            <li onclick="check(this, 'C')">C. Chief Justice of India</li>
+            <li onclick="check(this, 'D')">D. Chief Minister</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>20. Who was the first Chief Minister of Bihar?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Anugrah Narayan Sinha</li>
+            <li onclick="check(this, 'B')">B. Karpoori Thakur</li>
+            <li onclick="check(this, 'C')">C. Nitish Kumar</li>
+            <li onclick="check(this, 'D')">D. Shri Krishna Singh</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>21. A Money Bill can be introduced ONLY in:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Lok Sabha</li>
+            <li onclick="check(this, 'B')">B. Rajya Sabha</li>
+            <li onclick="check(this, 'C')">C. Joint Session</li>
+            <li onclick="check(this, 'D')">D. State Legislative Council</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>22. The 'Election Commission' of India is a:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Statutory Body</li>
+            <li onclick="check(this, 'B')">B. Executive Body</li>
+            <li onclick="check(this, 'C')">C. Constitutional Body</li>
+            <li onclick="check(this, 'D')">D. Non-Governmental Body</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>23. The 86th Amendment Act (2002) made _____ a Fundamental Right.</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Right to Work</li>
+            <li onclick="check(this, 'B')">B. Right to Education</li>
+            <li onclick="check(this, 'C')">C. Right to Information</li>
+            <li onclick="check(this, 'D')">D. Right to Health</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>24. The 'Quorum' required to hold a meeting of either House of Parliament is:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 1/10th of total members</li>
+            <li onclick="check(this, 'B')">B. 1/5th of total members</li>
+            <li onclick="check(this, 'C')">C. 1/3rd of total members</li>
+            <li onclick="check(this, 'D')">D. 1/2 of total members</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>25. Who appoints the 'Chief Justice of the High Court'?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Governor of the State</li>
+            <li onclick="check(this, 'B')">B. Chief Justice of India</li>
+            <li onclick="check(this, 'C')">C. President of India</li>
+            <li onclick="check(this, 'D')">D. Parliament</li>
+        </ul>
+    </div>
+    
+    <div class="question" data-answer="B">
+        <p>26. What is the maximum gap allowed between two sessions of Parliament?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 3 months</li>
+            <li onclick="check(this, 'B')">B. 6 months</li>
+            <li onclick="check(this, 'C')">C. 9 months</li>
+            <li onclick="check(this, 'D')">D. 1 year</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>27. Who decides whether a Bill is a 'Money Bill' or not?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Speaker of the Lok Sabha</li>
+            <li onclick="check(this, 'B')">B. President of India</li>
+            <li onclick="check(this, 'C')">C. Chairman of Rajya Sabha</li>
+            <li onclick="check(this, 'D')">D. Finance Minister</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>28. The 'Joint Sitting' of both Houses of Parliament is presided over by:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. President of India</li>
+            <li onclick="check(this, 'B')">B. Vice-President of India</li>
+            <li onclick="check(this, 'C')">C. Speaker of the Lok Sabha</li>
+            <li onclick="check(this, 'D')">D. Prime Minister</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>29. How many members are nominated by the President to the Rajya Sabha?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 2</li>
+            <li onclick="check(this, 'B')">B. 10</li>
+            <li onclick="check(this, 'C')">C. 15</li>
+            <li onclick="check(this, 'D')">D. 12</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>30. The 'Council of Ministers' is collectively responsible to the:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. President</li>
+            <li onclick="check(this, 'B')">B. Lok Sabha</li>
+            <li onclick="check(this, 'C')">C. Rajya Sabha</li>
+            <li onclick="check(this, 'D')">D. Prime Minister</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>31. Which Article of the Constitution deals with the 'Amendment' procedure?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Article 352</li>
+            <li onclick="check(this, 'B')">B. Article 360</li>
+            <li onclick="check(this, 'C')">C. Article 368</li>
+            <li onclick="check(this, 'D')">D. Article 370</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>32. What is the total number of seats in the Bihar Legislative Assembly (Vidhan Sabha)?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 243</li>
+            <li onclick="check(this, 'B')">B. 242</li>
+            <li onclick="check(this, 'C')">C. 75</li>
+            <li onclick="check(this, 'D')">D. 101</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>33. How many members are there in the Bihar Legislative Council (Vidhan Parishad)?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 40</li>
+            <li onclick="check(this, 'B')">B. 75</li>
+            <li onclick="check(this, 'C')">C. 100</li>
+            <li onclick="check(this, 'D')">D. 243</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>34. The 'Comptroller and Auditor General' (CAG) of India is appointed for a term of:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 5 years</li>
+            <li onclick="check(this, 'B')">B. 4 years</li>
+            <li onclick="check(this, 'C')">C. Until the pleasure of the President</li>
+            <li onclick="check(this, 'D')">D. 6 years or up to age of 65</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>35. Who is the highest Law Officer of a State in India?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Advocate General</li>
+            <li onclick="check(this, 'B')">B. Attorney General</li>
+            <li onclick="check(this, 'C')">C. Solicitor General</li>
+            <li onclick="check(this, 'D')">D. Law Secretary</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>36. 'Panchayati Raj' was first inaugurated in India in which state?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Bihar</li>
+            <li onclick="check(this, 'B')">B. Gujarat</li>
+            <li onclick="check(this, 'C')">C. Rajasthan</li>
+            <li onclick="check(this, 'D')">D. Andhra Pradesh</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>37. Which Article of the Constitution provides for a 'High Court' for each state?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Article 124</li>
+            <li onclick="check(this, 'B')">B. Article 214</li>
+            <li onclick="check(this, 'C')">C. Article 226</li>
+            <li onclick="check(this, 'D')">D. Article 153</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>38. The retirement age of a Supreme Court Judge is:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 60 years</li>
+            <li onclick="check(this, 'B')">B. 62 years</li>
+            <li onclick="check(this, 'C')">C. 70 years</li>
+            <li onclick="check(this, 'D')">D. 65 years</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>39. Which Fundamental Right was described by Dr. B.R. Ambedkar as the 'Heart and Soul' of the Constitution?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Right to Constitutional Remedies</li>
+            <li onclick="check(this, 'B')">B. Right to Equality</li>
+            <li onclick="check(this, 'C')">C. Right against Exploitation</li>
+            <li onclick="check(this, 'D')">D. Right to Freedom</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>40. The 'Seventh Schedule' of the Indian Constitution contains:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Languages</li>
+            <li onclick="check(this, 'B')">B. Oaths and Affirmations</li>
+            <li onclick="check(this, 'C')">C. Union, State, and Concurrent Lists</li>
+            <li onclick="check(this, 'D')">D. Allocation of seats in Rajya Sabha</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>41. In which year was the 'Patna High Court' established?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 1912</li>
+            <li onclick="check(this, 'B')">B. 1916</li>
+            <li onclick="check(this, 'C')">C. 1947</li>
+            <li onclick="check(this, 'D')">D. 1950</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>42. Who has the power to pardon a 'Death Sentence' in India?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Only the President</li>
+            <li onclick="check(this, 'B')">B. Only the Governor</li>
+            <li onclick="check(this, 'C')">C. Both President and Governor</li>
+            <li onclick="check(this, 'D')">D. Chief Justice of India</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>43. Which Constitutional Amendment lowered the voting age from 21 to 18 years?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 42nd Amendment</li>
+            <li onclick="check(this, 'B')">B. 44th Amendment</li>
+            <li onclick="check(this, 'C')">C. 73rd Amendment</li>
+            <li onclick="check(this, 'D')">D. 61st Amendment</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>44. The 'Public Accounts Committee' (PAC) of Parliament submits its report to:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. President</li>
+            <li onclick="check(this, 'B')">B. Speaker of the Lok Sabha</li>
+            <li onclick="check(this, 'C')">C. Prime Minister</li>
+            <li onclick="check(this, 'D')">D. Finance Minister</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>45. Education, which was initially a State subject, was moved to the 'Concurrent List' by the:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 24th Amendment</li>
+            <li onclick="check(this, 'B')">B. 44th Amendment</li>
+            <li onclick="check(this, 'C')">C. 42nd Amendment</li>
+            <li onclick="check(this, 'D')">D. 86th Amendment</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>46. Who was the first 'Woman Governor' of an Indian State?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Sarojini Naidu</li>
+            <li onclick="check(this, 'B')">B. Sucheta Kripalani</li>
+            <li onclick="check(this, 'C')">C. Indira Gandhi</li>
+            <li onclick="check(this, 'D')">D. Vijayalakshmi Pandit</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>47. The 'Contingency Fund' of India is placed at the disposal of the:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Parliament</li>
+            <li onclick="check(this, 'B')">B. President</li>
+            <li onclick="check(this, 'C')">C. Prime Minister</li>
+            <li onclick="check(this, 'D')">D. CAG</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>48. Which Article describes India as a 'Union of States'?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Article 3</li>
+            <li onclick="check(this, 'B')">B. Article 14</li>
+            <li onclick="check(this, 'C')">C. Article 21</li>
+            <li onclick="check(this, 'D')">D. Article 1</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>49. The 'Lokayukta' of Bihar was established in which year?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 1970</li>
+            <li onclick="check(this, 'B')">B. 1982</li>
+            <li onclick="check(this, 'C')">C. 1973</li>
+            <li onclick="check(this, 'D')">D. 2011</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>50. Who among the following is the 'Final Interpreter' of the Indian Constitution?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. President</li>
+            <li onclick="check(this, 'B')">B. Supreme Court</li>
+            <li onclick="check(this, 'C')">C. Parliament</li>
+            <li onclick="check(this, 'D')">D. Attorney General</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>51. Which Article of the Constitution provides for the 'Finance Commission' of India?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Article 280</li>
+            <li onclick="check(this, 'B')">B. Article 324</li>
+            <li onclick="check(this, 'C')">C. Article 110</li>
+            <li onclick="check(this, 'D')">D. Article 315</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>52. The 'National Emergency' under Article 352 has been proclaimed in India how many times so far?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 1</li>
+            <li onclick="check(this, 'B')">B. 2</li>
+            <li onclick="check(this, 'C')">C. 4</li>
+            <li onclick="check(this, 'D')">D. 3 (1962, 1971, 1975)</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>53. Which Constitutional Amendment is related to the 'Anti-Defection Law'?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 42nd Amendment</li>
+            <li onclick="check(this, 'B')">B. 52nd Amendment</li>
+            <li onclick="check(this, 'C')">C. 61st Amendment</li>
+            <li onclick="check(this, 'D')">D. 91st Amendment</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>54. The 'Planning Commission' was replaced by 'NITI Aayog' on:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 15th August 2014</li>
+            <li onclick="check(this, 'B')">B. 26th January 2015</li>
+            <li onclick="check(this, 'C')">C. 1st January 2015</li>
+            <li onclick="check(this, 'D')">D. 1st April 2015</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>55. Who is the Chairman of the 'State Planning Board' in Bihar?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Governor</li>
+            <li onclick="check(this, 'B')">B. Chief Minister</li>
+            <li onclick="check(this, 'C')">C. Finance Minister</li>
+            <li onclick="check(this, 'D')">D. Chief Secretary</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>56. 'Financial Emergency' (Article 360) has been declared in India:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Only once (1991)</li>
+            <li onclick="check(this, 'B')">B. Twice</li>
+            <li onclick="check(this, 'C')">C. Thrice</li>
+            <li onclick="check(this, 'D')">D. Never so far</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>57. Which Article describes the 'Attorney General' of India?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Article 76</li>
+            <li onclick="check(this, 'B')">B. Article 148</li>
+            <li onclick="check(this, 'C')">C. Article 165</li>
+            <li onclick="check(this, 'D')">D. Article 72</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>58. The 'Sarkaria Commission' was set up to review the relations between:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Legislative and Executive</li>
+            <li onclick="check(this, 'B')">B. Prime Minister and President</li>
+            <li onclick="check(this, 'C')">C. Centre and States</li>
+            <li onclick="check(this, 'D')">D. North and South India</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>59. How many 'Zonal Councils' are there in India at present?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 4</li>
+            <li onclick="check(this, 'B')">B. 5</li>
+            <li onclick="check(this, 'C')">C. 6</li>
+            <li onclick="check(this, 'D')">D. 8</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>60. Bihar belongs to which of the following 'Zonal Councils'?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Eastern Zonal Council</li>
+            <li onclick="check(this, 'B')">B. Northern Zonal Council</li>
+            <li onclick="check(this, 'C')">C. Central Zonal Council</li>
+            <li onclick="check(this, 'D')">D. North-Eastern Zonal Council</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>61. Under the Indian Constitution, the 'Residual Powers' (those not in any list) are vested in:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. State Governments</li>
+            <li onclick="check(this, 'B')">B. Both Centre and States</li>
+            <li onclick="check(this, 'C')">C. Union Parliament</li>
+            <li onclick="check(this, 'D')">D. Supreme Court</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>62. The 'Official Languages' of India are listed in which Schedule?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 7th Schedule</li>
+            <li onclick="check(this, 'B')">B. 8th Schedule</li>
+            <li onclick="check(this, 'C')">C. 9th Schedule</li>
+            <li onclick="check(this, 'D')">D. 12th Schedule</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>63. Which of the following languages is NOT mentioned in the 8th Schedule of the Constitution?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Maithili</li>
+            <li onclick="check(this, 'B')">B. Sanskrit</li>
+            <li onclick="check(this, 'C')">C. Nepali</li>
+            <li onclick="check(this, 'D')">D. English</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>64. In the case of a 'Tie' in the Bihar Vidhan Sabha, who has the 'Casting Vote'?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Chief Minister</li>
+            <li onclick="check(this, 'B')">B. Speaker</li>
+            <li onclick="check(this, 'C')">C. Governor</li>
+            <li onclick="check(this, 'D')">D. Leader of Opposition</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>65. Article 21A, which makes education a fundamental right for children aged 6-14, was added by:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 86th Amendment</li>
+            <li onclick="check(this, 'B')">B. 42nd Amendment</li>
+            <li onclick="check(this, 'C')">C. 92nd Amendment</li>
+            <li onclick="check(this, 'D')">D. 73rd Amendment</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>66. The 'Union Public Service Commission' (UPSC) members are appointed by:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Prime Minister</li>
+            <li onclick="check(this, 'B')">B. Parliament</li>
+            <li onclick="check(this, 'C')">C. President</li>
+            <li onclick="check(this, 'D')">D. Chief Justice</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>67. Who was the first woman 'Chief Minister' of Bihar?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Sarojini Naidu</li>
+            <li onclick="check(this, 'B')">B. Rabri Devi</li>
+            <li onclick="check(this, 'C')">C. Sucheta Kripalani</li>
+            <li onclick="check(this, 'D')">D. Meira Kumar</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>68. The 'Fundamental Duties' were incorporated into the Constitution on the recommendation of:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Swaran Singh Committee</li>
+            <li onclick="check(this, 'B')">B. Ashok Mehta Committee</li>
+            <li onclick="check(this, 'C')">C. Balwant Rai Mehta Committee</li>
+            <li onclick="check(this, 'D')">D. Verma Committee</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>69. Which Constitutional Amendment gave a 'Constitutional Status' to Municipalities (Urban Local Bodies)?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 71st Amendment</li>
+            <li onclick="check(this, 'B')">B. 72nd Amendment</li>
+            <li onclick="check(this, 'C')">C. 74th Amendment</li>
+            <li onclick="check(this, 'D')">D. 75th Amendment</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>70. Who acts as the 'Channel of Communication' between the Governor and the State Council of Ministers?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Speaker</li>
+            <li onclick="check(this, 'B')">B. Chief Minister</li>
+            <li onclick="check(this, 'C')">C. Chief Secretary</li>
+            <li onclick="check(this, 'D')">D. Home Minister</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>71. The 'Public Service Commission' for the State of Bihar (BPSC) was established in which year?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 1949</li>
+            <li onclick="check(this, 'B')">B. 1950</li>
+            <li onclick="check(this, 'C')">C. 1947</li>
+            <li onclick="check(this, 'D')">D. 1956</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>72. The 'National Human Rights Commission' (NHRC) is a:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Constitutional Body</li>
+            <li onclick="check(this, 'B')">B. Judicial Body</li>
+            <li onclick="check(this, 'C')">C. Executive Body</li>
+            <li onclick="check(this, 'D')">D. Statutory Body</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>73. Which part of the Constitution deals with 'Citizenship'?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Part I</li>
+            <li onclick="check(this, 'B')">B. Part III</li>
+            <li onclick="check(this, 'C')">C. Part II</li>
+            <li onclick="check(this, 'D')">D. Part IV</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>74. The 'Supreme Court' of India was inaugurated on:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 15th August 1947</li>
+            <li onclick="check(this, 'B')">B. 28th January 1950</li>
+            <li onclick="check(this, 'C')">C. 26th January 1950</li>
+            <li onclick="check(this, 'D')">D. 30th January 1948</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>75. Who was the first 'Speaker' of the Bihar Legislative Assembly in independent India?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Vindheshwari Prasad Verma</li>
+            <li onclick="check(this, 'B')">B. Ram Dayalu Singh</li>
+            <li onclick="check(this, 'C')">C. Lakshmi Narayan Singh</li>
+            <li onclick="check(this, 'D')">D. Dhanik Lal Mandal</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>76. Which Article of the Constitution empowers the Supreme Court to issue 'Writs' for the enforcement of Fundamental Rights?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Article 226</li>
+            <li onclick="check(this, 'B')">B. Article 32</li>
+            <li onclick="check(this, 'C')">C. Article 131</li>
+            <li onclick="check(this, 'D')">D. Article 143</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>77. Which writ literally means 'We Command'?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Mandamus</li>
+            <li onclick="check(this, 'B')">B. Habeas Corpus</li>
+            <li onclick="check(this, 'C')">C. Quo-Warranto</li>
+            <li onclick="check(this, 'D')">D. Certiorari</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>78. The 'Comptroller and Auditor General' (CAG) is often called the:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Friend of the President</li>
+            <li onclick="check(this, 'B')">B. Legal Advisor of the Cabinet</li>
+            <li onclick="check(this, 'C')">C. Guardian of the Public Purse</li>
+            <li onclick="check(this, 'D')">D. Watchdog of the Judiciary</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>79. How many 'Administrative Divisions' (Mandal) are there in the state of Bihar?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 7</li>
+            <li onclick="check(this, 'B')">B. 38</li>
+            <li onclick="check(this, 'C')">C. 12</li>
+            <li onclick="check(this, 'D')">D. 9</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>80. Which of the following is the 38th (latest) district of Bihar?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Arwal</li>
+            <li onclick="check(this, 'B')">B. Sheohar</li>
+            <li onclick="check(this, 'C')">C. Banka</li>
+            <li onclick="check(this, 'D')">D. Lakhisarai</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>81. The 'Advocate General' of Bihar is appointed by the:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. President of India</li>
+            <li onclick="check(this, 'B')">B. Governor of Bihar</li>
+            <li onclick="check(this, 'C')">C. Chief Justice of Patna High Court</li>
+            <li onclick="check(this, 'D')">D. Chief Minister</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>82. Which Article allows the Parliament to change the name or boundaries of an existing state?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Article 1</li>
+            <li onclick="check(this, 'B')">B. Article 2</li>
+            <li onclick="check(this, 'C')">C. Article 3</li>
+            <li onclick="check(this, 'D')">D. Article 4</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>83. The 'Public Service Commission' for two or more states can be established by:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. The Parliament by Law</li>
+            <li onclick="check(this, 'B')">B. The President</li>
+            <li onclick="check(this, 'C')">C. The Governors of the concerned states</li>
+            <li onclick="check(this, 'D')">D. UPSC</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>84. Which of the following is NOT a 'Constitutional Body'?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Finance Commission</li>
+            <li onclick="check(this, 'B')">B. Central Information Commission</li>
+            <li onclick="check(this, 'C')">C. Election Commission</li>
+            <li onclick="check(this, 'D')">D. UPSC</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>85. The 'Zero Hour' in the Indian Parliamentary system starts at:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 10:00 AM</li>
+            <li onclick="check(this, 'B')">B. 11:00 AM</li>
+            <li onclick="check(this, 'C')">C. Any time the Speaker decides</li>
+            <li onclick="check(this, 'D')">D. 12:00 Noon</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>86. The concept of 'Judicial Activism' gained popularity in India during the:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 1960s</li>
+            <li onclick="check(this, 'B')">B. 1980s</li>
+            <li onclick="check(this, 'C')">C. 1950s</li>
+            <li onclick="check(this, 'D')">D. 2000s</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>87. Who among the following is known as the 'Guardian of the Constitution'?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Supreme Court of India</li>
+            <li onclick="check(this, 'B')">B. Parliament</li>
+            <li onclick="check(this, 'C')">C. President</li>
+            <li onclick="check(this, 'D')">D. Prime Minister</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>88. Under the 73rd Amendment, what is the minimum age to contest 'Panchayat Elections'?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 18 years</li>
+            <li onclick="check(this, 'B')">B. 25 years</li>
+            <li onclick="check(this, 'C')">C. 21 years</li>
+            <li onclick="check(this, 'D')">D. 30 years</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>89. Which Part of the Indian Constitution is called the 'Magna Carta' of India?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Part II</li>
+            <li onclick="check(this, 'B')">B. Part III (Fundamental Rights)</li>
+            <li onclick="check(this, 'C')">C. Part IV (DPSP)</li>
+            <li onclick="check(this, 'D')">D. Part IX</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>90. In Bihar, the 'Panchayati Raj Act' was passed in 2006. It provides ___ reservation for women in all tiers.</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 50%</li>
+            <li onclick="check(this, 'B')">B. 33%</li>
+            <li onclick="check(this, 'C')">C. 25%</li>
+            <li onclick="check(this, 'D')">D. 10%</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>91. Which Constitutional Amendment gave 'Sikkim' the status of a full-fledged state of India?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 35th Amendment</li>
+            <li onclick="check(this, 'B')">B. 42nd Amendment</li>
+            <li onclick="check(this, 'C')">C. 36th Amendment</li>
+            <li onclick="check(this, 'D')">D. 44th Amendment</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>92. The 'National Song' (Vande Mataram) was adopted by the Constituent Assembly on:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 15th August 1947</li>
+            <li onclick="check(this, 'B')">B. 24th January 1950</li>
+            <li onclick="check(this, 'C')">C. 26th January 1950</li>
+            <li onclick="check(this, 'D')">D. 22nd July 1947</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>93. Which Article provides for the 'Adjudication of Inter-State Water Disputes'?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Article 262</li>
+            <li onclick="check(this, 'B')">B. Article 263</li>
+            <li onclick="check(this, 'C')">C. Article 280</li>
+            <li onclick="check(this, 'D')">D. Article 312</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>94. Who is the 'Head' of the State Government in Bihar (De Jure)?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Chief Minister</li>
+            <li onclick="check(this, 'B')">B. Chief Justice of Patna HC</li>
+            <li onclick="check(this, 'C')">C. Chief Secretary</li>
+            <li onclick="check(this, 'D')">D. Governor</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>95. The 'Inter-State Council' is established by the:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Parliament</li>
+            <li onclick="check(this, 'B')">B. Prime Minister</li>
+            <li onclick="check(this, 'C')">C. President</li>
+            <li onclick="check(this, 'D')">D. Zonal Council</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>96. In which case did the Supreme Court propound the 'Basic Structure' doctrine?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Golaknath Case</li>
+            <li onclick="check(this, 'B')">B. Kesavananda Bharati Case</li>
+            <li onclick="check(this, 'C')">C. Minerva Mills Case</li>
+            <li onclick="check(this, 'D')">D. Shankari Prasad Case</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>97. How many seats are reserved for 'Scheduled Castes' in the Bihar Vidhan Sabha?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 38</li>
+            <li onclick="check(this, 'B')">B. 2</li>
+            <li onclick="check(this, 'C')">C. 40</li>
+            <li onclick="check(this, 'D')">D. 45</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>98. How many seats are reserved for 'Scheduled Tribes' in the Bihar Vidhan Sabha?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 5</li>
+            <li onclick="check(this, 'B')">B. 2</li>
+            <li onclick="check(this, 'C')">C. 0</li>
+            <li onclick="check(this, 'D')">D. 10</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>99. 'Right to Privacy' is a Fundamental Right under which Article?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Article 14</li>
+            <li onclick="check(this, 'B')">B. Article 19</li>
+            <li onclick="check(this, 'C')">C. Article 21</li>
+            <li onclick="check(this, 'D')">D. Article 25</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>100. The 'State Information Commission' of Bihar was constituted in:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 2006</li>
+            <li onclick="check(this, 'B')">B. 2005</li>
+            <li onclick="check(this, 'C')">C. 2000</li>
+            <li onclick="check(this, 'D')">D. 2010</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>101. Which Article of the Constitution provides for the appointment of a 'Governor' for each state?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Article 143</li>
+            <li onclick="check(this, 'B')">B. Article 153</li>
+            <li onclick="check(this, 'C')">C. Article 163</li>
+            <li onclick="check(this, 'D')">D. Article 173</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>102. Who was the first 'Governor' of Bihar in independent India?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Jairamdas Daulatram</li>
+            <li onclick="check(this, 'B')">B. Madhav Shrihari Aney</li>
+            <li onclick="check(this, 'C')">C. R. R. Diwakar</li>
+            <li onclick="check(this, 'D')">D. Zakir Hussain</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>103. The 'Bihar Legislative Council' (Vidhan Parishad) was first constituted in which year?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 1935</li>
+            <li onclick="check(this, 'B')">B. 1921</li>
+            <li onclick="check(this, 'C')">C. 1912</li>
+            <li onclick="check(this, 'D')">D. 1950</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>104. How many 'Lok Sabha' seats are there in Bihar?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 543</li>
+            <li onclick="check(this, 'B')">B. 40</li>
+            <li onclick="check(this, 'C')">C. 16</li>
+            <li onclick="check(this, 'D')">D. 243</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>105. How many 'Rajya Sabha' seats are allocated to Bihar?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 22</li>
+            <li onclick="check(this, 'B')">B. 40</li>
+            <li onclick="check(this, 'C')">C. 16</li>
+            <li onclick="check(this, 'D')">D. 12</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>106. Which of the following is the 'State Bird' of Bihar?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Peacock</li>
+            <li onclick="check(this, 'B')">B. Parrot</li>
+            <li onclick="check(this, 'C')">C. Koel</li>
+            <li onclick="check(this, 'D')">D. House Sparrow (Gauraiya)</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>107. The 'Bicentenary' of the Bihar Vidhan Sabha was celebrated in which year?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 2021</li>
+            <li onclick="check(this, 'B')">B. 2012</li>
+            <li onclick="check(this, 'C')">C. 2022</li>
+            <li onclick="check(this, 'D')">D. 2019</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>108. Who among the following became the first 'Dalit Chief Minister' of Bihar?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Jitan Ram Manjhi</li>
+            <li onclick="check(this, 'B')">B. Bhola Paswan Shastri</li>
+            <li onclick="check(this, 'C')">C. Ram Vilas Paswan</li>
+            <li onclick="check(this, 'D')">D. Karpoori Thakur</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>109. What is the minimum population required for a town in Bihar to have a 'Municipal Corporation' (Nagar Nigam)?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 1 Lakh</li>
+            <li onclick="check(this, 'B')">B. 3 Lakhs</li>
+            <li onclick="check(this, 'C')">C. 2 Lakhs</li>
+            <li onclick="check(this, 'D')">D. 5 Lakhs</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>110. Which district of Bihar has the highest number of 'Blocks'?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Patna</li>
+            <li onclick="check(this, 'B')">B. Gaya</li>
+            <li onclick="check(this, 'C')">C. East Champaran</li>
+            <li onclick="check(this, 'D')">D. Muzaffarpur</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>111. Who has the power to summon and prorogue the sessions of the 'Bihar Vidhan Sabha'?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Speaker</li>
+            <li onclick="check(this, 'B')">B. Governor</li>
+            <li onclick="check(this, 'C')">C. Chief Minister</li>
+            <li onclick="check(this, 'D')">D. President</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>112. The 'Patna High Court' has jurisdiction over which of the following?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Bihar and Jharkhand</li>
+            <li onclick="check(this, 'B')">B. Bihar and Uttar Pradesh</li>
+            <li onclick="check(this, 'C')">C. Only Bihar</li>
+            <li onclick="check(this, 'D')">D. Eastern India</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>113. Under the 'Bihar Panchayat Raj Act, 2006', a 'Gram Katchahry' is headed by:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Sarpanch</li>
+            <li onclick="check(this, 'B')">B. Mukhiya</li>
+            <li onclick="check(this, 'C')">C. Nyay Mitra</li>
+            <li onclick="check(this, 'D')">D. Ward Member</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>114. The 'Executive Officer' of a Municipal Corporation in Bihar is the:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Mayor</li>
+            <li onclick="check(this, 'B')">B. Municipal Commissioner</li>
+            <li onclick="check(this, 'C')">C. District Magistrate</li>
+            <li onclick="check(this, 'D')">D. Deputy Mayor</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>115. Bihar was separated from 'Bengal' in which year?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 1905</li>
+            <li onclick="check(this, 'B')">B. 1936</li>
+            <li onclick="check(this, 'C')">C. 1912</li>
+            <li onclick="check(this, 'D')">D. 1947</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>116. Bihar was separated from 'Odisha' in which year?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 1912</li>
+            <li onclick="check(this, 'B')">B. 1956</li>
+            <li onclick="check(this, 'C')">C. 2000</li>
+            <li onclick="check(this, 'D')">D. 1936</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>117. How many times has 'President's Rule' been imposed in Bihar so far?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 5 times</li>
+            <li onclick="check(this, 'B')">B. 8 times</li>
+            <li onclick="check(this, 'C')">C. 10 times</li>
+            <li onclick="check(this, 'D')">D. 3 times</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>118. The 'State Election Commission' of Bihar conducts elections for:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Panchayati Raj and Municipalities</li>
+            <li onclick="check(this, 'B')">B. Legislative Assembly</li>
+            <li onclick="check(this, 'C')">C. Legislative Council</li>
+            <li onclick="check(this, 'D')">D. All of the above</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>119. Who is the current 'Governor' of Bihar? (As of 2026 Context)</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Phagu Chauhan</li>
+            <li onclick="check(this, 'B')">B. Satya Pal Malik</li>
+            <li onclick="check(this, 'C')">C. Rajendra Arlekar</li>
+            <li onclick="check(this, 'D')">D. Lalji Tandon</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>120. Which district in Bihar is the only one with two 'Municipal Corporations'?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Patna</li>
+            <li onclick="check(this, 'B')">B. Rohtas (Sasaram & Dehri)</li>
+            <li onclick="check(this, 'C')">C. Gaya</li>
+            <li onclick="check(this, 'D')">D. Bhagalpur</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>121. The 'Public Grievance Redressal Act' of Bihar was implemented in:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 2016</li>
+            <li onclick="check(this, 'B')">B. 2011</li>
+            <li onclick="check(this, 'C')">C. 2005</li>
+            <li onclick="check(this, 'D')">D. 2020</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>122. Under Article 171, how many members of the 'Bihar Vidhan Parishad' are nominated by the Governor?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 1/3rd</li>
+            <li onclick="check(this, 'B')">B. 1/12th</li>
+            <li onclick="check(this, 'C')">C. 1/6th</li>
+            <li onclick="check(this, 'D')">D. 1/4th</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>123. Which of the following is NOT a 'Divisional Headquarters' in Bihar?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Munger</li>
+            <li onclick="check(this, 'B')">B. Darbhanga</li>
+            <li onclick="check(this, 'C')">C. Purnia</li>
+            <li onclick="check(this, 'D')">D. Begusarai</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>124. The 'State Emblem' of Bihar depicts which of the following?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Ashoka Stambha</li>
+            <li onclick="check(this, 'B')">B. Bodhi Tree with two Swastikas</li>
+            <li onclick="check(this, 'C')">C. Lotus and Fish</li>
+            <li onclick="check(this, 'D')">D. Rising Sun</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>125. Which committee recommended the 'Three-tier' Panchayati Raj system implemented in Bihar?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Balwant Rai Mehta Committee</li>
+            <li onclick="check(this, 'B')">B. Ashok Mehta Committee</li>
+            <li onclick="check(this, 'C')">C. G.V.K. Rao Committee</li>
+            <li onclick="check(this, 'D')">D. L.M. Singhvi Committee</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>126. Which Article of the Constitution provides for the 'Legislative Council' (Vidhan Parishad) in a State?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Article 170</li>
+            <li onclick="check(this, 'B')">B. Article 169</li>
+            <li onclick="check(this, 'C')">C. Article 171</li>
+            <li onclick="check(this, 'D')">D. Article 172</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>127. In the Bihar Vidhan Parishad, how many members are elected by the 'Local Bodies' (Municipalities/Panchayats)?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 1/3rd</li>
+            <li onclick="check(this, 'B')">B. 1/6th</li>
+            <li onclick="check(this, 'C')">C. 1/12th</li>
+            <li onclick="check(this, 'D')">D. 1/2</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>128. How many members are elected by 'Graduates' in the Bihar Legislative Council?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 1/3rd</li>
+            <li onclick="check(this, 'B')">B. 1/6th</li>
+            <li onclick="check(this, 'C')">C. 1/12th</li>
+            <li onclick="check(this, 'D')">D. 6 members</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>129. Who is the first 'Leader of the Opposition' in the Bihar Legislative Assembly?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Karpoori Thakur</li>
+            <li onclick="check(this, 'B')">B. Jagannath Mishra</li>
+            <li onclick="check(this, 'C')">C. Sushil Kumar Modi</li>
+            <li onclick="check(this, 'D')">D. S.K. Bage</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>130. The 'Advocate General' of Bihar holds office during the pleasure of the:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. President</li>
+            <li onclick="check(this, 'B')">B. Governor</li>
+            <li onclick="check(this, 'C')">C. Chief Minister</li>
+            <li onclick="check(this, 'D')">D. Chief Justice</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>131. Which Constitutional Amendment Act added the word 'Secular' to the Preamble?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 42nd Amendment</li>
+            <li onclick="check(this, 'B')">B. 44th Amendment</li>
+            <li onclick="check(this, 'C')">C. 76th Amendment</li>
+            <li onclick="check(this, 'D')">D. 1st Amendment</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>132. The 'Gram Sabha' in Bihar consists of:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. All residents of the village</li>
+            <li onclick="check(this, 'B')">B. Only the elected Ward Members</li>
+            <li onclick="check(this, 'C')">C. All persons registered in the electoral rolls of the village</li>
+            <li onclick="check(this, 'D')">D. All adults above 21 years</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>133. What is the tenure of a 'Mukhiya' in the Bihar Panchayati Raj system?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 6 years</li>
+            <li onclick="check(this, 'B')">B. 5 years</li>
+            <li onclick="check(this, 'C')">C. 4 years</li>
+            <li onclick="check(this, 'D')">D. Depends on the pleasure of the DM</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>134. Which Article of the Constitution gives 'Special Status' to the State of Bihar for some educational and backwardness reasons (often debated)?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. There is no such Article currently (Bihar is under General Category)</li>
+            <li onclick="check(this, 'B')">B. Article 371</li>
+            <li onclick="check(this, 'C')">C. Article 370</li>
+            <li onclick="check(this, 'D')">D. Article 371-J</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>135. The 'Panchayat Samiti' at the Block level in Bihar is an:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Advisory Body</li>
+            <li onclick="check(this, 'B')">B. Judicial Body</li>
+            <li onclick="check(this, 'C')">C. Executive Body</li>
+            <li onclick="check(this, 'D')">D. Supervisory Body</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>136. Who was the first Chief Justice of the 'Patna High Court'?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Sir Courtney Terrell</li>
+            <li onclick="check(this, 'B')">B. Sir Edward Maynard Des Champs Chamier</li>
+            <li onclick="check(this, 'C')">C. Pandit Lakshmi Kant Jha</li>
+            <li onclick="check(this, 'D')">D. Syed Fazl Ali</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>137. Which of the following 'Languages' was added to the 8th Schedule from Bihar in 2003?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Bhojpuri</li>
+            <li onclick="check(this, 'B')">B. Magahi</li>
+            <li onclick="check(this, 'C')">C. Angika</li>
+            <li onclick="check(this, 'D')">D. Maithili</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>138. The 'National Commission for Backward Classes' was given constitutional status by which Amendment?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 102nd Amendment</li>
+            <li onclick="check(this, 'B')">B. 101st Amendment</li>
+            <li onclick="check(this, 'C')">C. 103rd Amendment</li>
+            <li onclick="check(this, 'D')">D. 100th Amendment</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>139. In Bihar, the 'District Planning Committee' is chaired by:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. District Magistrate (DM)</li>
+            <li onclick="check(this, 'B')">B. A Minister nominated by the State Government</li>
+            <li onclick="check(this, 'C')">C. Chairman of the Zila Parishad</li>
+            <li onclick="check(this, 'D')">D. Divisional Commissioner</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>140. How many 'Sub-divisions' (Anumandal) are there in Bihar?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 534</li>
+            <li onclick="check(this, 'B')">B. 38</li>
+            <li onclick="check(this, 'C')">C. 101</li>
+            <li onclick="check(this, 'D')">D. 9</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>141. Who is the administrative head of a 'Division' (Mandal) in Bihar?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Divisional Commissioner</li>
+            <li onclick="check(this, 'B')">B. District Magistrate</li>
+            <li onclick="check(this, 'C')">C. Inspector General (IG)</li>
+            <li onclick="check(this, 'D')">D. Chief Secretary</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>142. The 'State Information Commission' of Bihar consists of a Chief Information Commissioner and not more than ____ State Information Commissioners.</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 5</li>
+            <li onclick="check(this, 'B')">B. 10</li>
+            <li onclick="check(this, 'C')">C. 7</li>
+            <li onclick="check(this, 'D')">D. 15</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>143. Which Article of the DPSP (Directive Principles) directs the state to organize 'Village Panchayats'?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Article 38</li>
+            <li onclick="check(this, 'B')">B. Article 39</li>
+            <li onclick="check(this, 'C')">C. Article 40</li>
+            <li onclick="check(this, 'D')">D. Article 44</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>144. The 'High Court' of Patna was the ___ High Court to be established in India.</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 1st</li>
+            <li onclick="check(this, 'B')">B. 5th</li>
+            <li onclick="check(this, 'C')">C. 10th</li>
+            <li onclick="check(this, 'D')">D. 6th</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>145. Under the Bihar Panchayat Raj Act, 2006, the 'Vigilance Committee' is appointed by:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Mukhiya</li>
+            <li onclick="check(this, 'B')">B. Gram Sabha</li>
+            <li onclick="check(this, 'C')">C. BDO</li>
+            <li onclick="check(this, 'D')">D. Sarpanch</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>146. 'Right to Service' Act (RTPS) was launched in Bihar on:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 15th August 2011</li>
+            <li onclick="check(this, 'B')">B. 26th January 2012</li>
+            <li onclick="check(this, 'C')">C. 2nd October 2011</li>
+            <li onclick="check(this, 'D')">D. 1st May 2011</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>147. Who has the power to remove the 'State Election Commissioner' of Bihar?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Governor</li>
+            <li onclick="check(this, 'B')">B. Chief Minister</li>
+            <li onclick="check(this, 'C')">C. President (in the same manner as a HC Judge)</li>
+            <li onclick="check(this, 'D')">D. Chief Justice of Patna HC</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>148. Which schedule of the Constitution deals with the allocation of powers between 'State' and 'Local Bodies'?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 10th Schedule</li>
+            <li onclick="check(this, 'B')">B. 11th Schedule</li>
+            <li onclick="check(this, 'C')">C. 12th Schedule</li>
+            <li onclick="check(this, 'D')">D. 9th Schedule</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>149. The 'Chief Secretary' of Bihar is appointed by the:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Chief Minister</li>
+            <li onclick="check(this, 'B')">B. Governor</li>
+            <li onclick="check(this, 'C')">C. UPSC</li>
+            <li onclick="check(this, 'D')">D. President</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>150. How many members are in the 'Zila Parishad' of a district? (General rule in Bihar)</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. One for every 10,000 population</li>
+            <li onclick="check(this, 'B')">B. One for every 25,000 population</li>
+            <li onclick="check(this, 'C')">C. One for every 50,000 population</li>
+            <li onclick="check(this, 'D')">D. Fixed at 40 members</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>151. Which Article of the Constitution deals with the 'Appointment' and 'Removal' of members of the State Public Service Commission (BPSC)?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Article 312</li>
+            <li onclick="check(this, 'B')">B. Article 316 & 317</li>
+            <li onclick="check(this, 'C')">C. Article 324</li>
+            <li onclick="check(this, 'D')">D. Article 165</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>152. A member of the BPSC can be removed from office ONLY by the:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Governor of Bihar</li>
+            <li onclick="check(this, 'B')">B. Chief Minister of Bihar</li>
+            <li onclick="check(this, 'C')">C. President of India</li>
+            <li onclick="check(this, 'D')">D. Chief Justice of Patna HC</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>153. What is the retirement age for a member of the Bihar Public Service Commission (BPSC)?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 62 years</li>
+            <li onclick="check(this, 'B')">B. 65 years</li>
+            <li onclick="check(this, 'C')">C. 60 years</li>
+            <li onclick="check(this, 'D')">D. 58 years</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>154. The 'State Human Rights Commission' (SHRC) of Bihar was established in which year?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 1993</li>
+            <li onclick="check(this, 'B')">B. 1995</li>
+            <li onclick="check(this, 'C')">C. 2005</li>
+            <li onclick="check(this, 'D')">D. 2000 (Functional since 2008)</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>155. Which Constitutional Amendment is known as the 'Panchayati Raj Amendment'?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 42nd Amendment</li>
+            <li onclick="check(this, 'B')">B. 73rd Amendment</li>
+            <li onclick="check(this, 'C')">C. 74th Amendment</li>
+            <li onclick="check(this, 'D')">D. 91st Amendment</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>156. Who is the 'Constitutional Head' of the State of Bihar?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Governor</li>
+            <li onclick="check(this, 'B')">B. Chief Minister</li>
+            <li onclick="check(this, 'C')">C. Speaker</li>
+            <li onclick="check(this, 'D')">D. President</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>157. The 'Contingency Fund of the State' of Bihar is operated by the:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Chief Minister</li>
+            <li onclick="check(this, 'B')">B. Finance Minister</li>
+            <li onclick="check(this, 'C')">C. Governor</li>
+            <li onclick="check(this, 'D')">D. Accountant General</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>158. Which Article of the Constitution empowers the Governor to issue 'Ordinances'?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Article 123</li>
+            <li onclick="check(this, 'B')">B. Article 213</li>
+            <li onclick="check(this, 'C')">C. Article 163</li>
+            <li onclick="check(this, 'D')">D. Article 226</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>159. The 'State Finance Commission' in Bihar is appointed every 5 years by the:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. President</li>
+            <li onclick="check(this, 'B')">B. Finance Minister</li>
+            <li onclick="check(this, 'C')">C. Chief Minister</li>
+            <li onclick="check(this, 'D')">D. Governor</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>160. How many 'Reserved Seats' for women are there in the Bihar Legislative Assembly?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. None (Reservation is for SC/ST, not gender)</li>
+            <li onclick="check(this, 'B')">B. 33%</li>
+            <li onclick="check(this, 'C')">C. 50%</li>
+            <li onclick="check(this, 'D')">D. 10%</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>161. 'Public Order' and 'Police' in Bihar fall under which list of the 7th Schedule?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Union List</li>
+            <li onclick="check(this, 'B')">B. State List</li>
+            <li onclick="check(this, 'C')">C. Concurrent List</li>
+            <li onclick="check(this, 'D')">D. Residuary Powers</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>162. Which Constitutional Amendment added the 'Dogri, Maithili, Bodo, and Santhali' languages to the 8th Schedule?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 21st Amendment</li>
+            <li onclick="check(this, 'B')">B. 71st Amendment</li>
+            <li onclick="check(this, 'C')">C. 92nd Amendment</li>
+            <li onclick="check(this, 'D')">D. 100th Amendment</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>163. The 'Lokayukta' of Bihar consists of a Chairperson and a maximum of ____ members.</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 2</li>
+            <li onclick="check(this, 'B')">B. 5</li>
+            <li onclick="check(this, 'C')">C. 8</li>
+            <li onclick="check(this, 'D')">D. 3</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>164. What is the minimum age to be appointed as the 'Governor' of Bihar?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 35 years</li>
+            <li onclick="check(this, 'B')">B. 30 years</li>
+            <li onclick="check(this, 'C')">C. 25 years</li>
+            <li onclick="check(this, 'D')">D. 40 years</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>165. The 'Bihar Legislative Council' is a permanent body and is NOT subject to dissolution. However, ____ of its members retire every second year.</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 1/2</li>
+            <li onclick="check(this, 'B')">B. 1/4th</li>
+            <li onclick="check(this, 'C')">C. 1/3rd</li>
+            <li onclick="check(this, 'D')">D. 1/6th</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>166. Who was the first 'Lokayukta' of Bihar?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Justice S.N. Jha</li>
+            <li onclick="check(this, 'B')">B. Justice Shridhar Vasudev Sohoni</li>
+            <li onclick="check(this, 'C')">C. Justice Shyam Kishore Sharma</li>
+            <li onclick="check(this, 'D')">D. Justice K.P. Singh</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>167. Which Article of the Constitution provides for 'Proportional Representation' in the election of the Legislative Council?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Article 171</li>
+            <li onclick="check(this, 'B')">B. Article 170</li>
+            <li onclick="check(this, 'C')">C. Article 324</li>
+            <li onclick="check(this, 'D')">D. Article 80</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>168. The 'Patna Metropolitan Area' falls under which type of Urban Local Body?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Nagar Panchayat</li>
+            <li onclick="check(this, 'B')">B. Nagar Parishad</li>
+            <li onclick="check(this, 'C')">C. Cantonment Board</li>
+            <li onclick="check(this, 'D')">D. Nagar Nigam (Municipal Corporation)</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>169. 'District Planning Committee' (DPC) is mentioned under which Article of the Constitution?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Article 243-G</li>
+            <li onclick="check(this, 'B')">B. Article 243-ZD</li>
+            <li onclick="check(this, 'C')">C. Article 243-ZE</li>
+            <li onclick="check(this, 'D')">D. Article 280</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>170. How many seats are there in the 'Patna Municipal Corporation'?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 50</li>
+            <li onclick="check(this, 'B')">B. 100</li>
+            <li onclick="check(this, 'C')">C. 75</li>
+            <li onclick="check(this, 'D')">D. 60</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>171. The 'Bihar Administrative Service' (BAS) officers are recruited through which exam?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. BPSC Combined Competitive Exam</li>
+            <li onclick="check(this, 'B')">B. UPSC</li>
+            <li onclick="check(this, 'C')">C. SSC</li>
+            <li onclick="check(this, 'D')">D. Bihar Staff Selection Commission</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>172. Who is the current 'Chief Secretary' of Bihar? (Reflecting 2026 contexts)</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Amir Subhani</li>
+            <li onclick="check(this, 'B')">B. Brajesh Mehrotra</li>
+            <li onclick="check(this, 'C')">C. Deepak Kumar</li>
+            <li onclick="check(this, 'D')">D. Arun Kumar Singh</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>173. The 'Tenth Schedule' (Anti-Defection) was added to the Constitution in which year?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 1951</li>
+            <li onclick="check(this, 'B')">B. 1976</li>
+            <li onclick="check(this, 'C')">C. 2003</li>
+            <li onclick="check(this, 'D')">D. 1985</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>174. Which of the following is the 'Official Language' of the Patna High Court?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Hindi</li>
+            <li onclick="check(this, 'B')">B. Hindi and English</li>
+            <li onclick="check(this, 'C')">C. English</li>
+            <li onclick="check(this, 'D')">D. Maithili</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>175. Under the 'Panchayati Raj Act 2006', a person can be disqualified from contesting elections if they have more than ____ children (Note: This rule varies, but was famously proposed/debated in various states including Bihar).</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. No such child-limit rule currently exists in Bihar's Act</li>
+            <li onclick="check(this, 'B')">B. 2 Children</li>
+            <li onclick="check(this, 'C')">C. 3 Children</li>
+            <li onclick="check(this, 'D')">D. 1 Child</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>176. Which Article of the Constitution provides for the 'Special Officer for Linguistic Minorities'?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Article 350</li>
+            <li onclick="check(this, 'B')">B. Article 350B</li>
+            <li onclick="check(this, 'C')">C. Article 351</li>
+            <li onclick="check(this, 'D')">D. Article 348</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>177. The 'National Commission for Scheduled Castes' is established under which Article?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Article 338</li>
+            <li onclick="check(this, 'B')">B. Article 338A</li>
+            <li onclick="check(this, 'C')">C. Article 338B</li>
+            <li onclick="check(this, 'D')">D. Article 340</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>178. Who is the first 'Citizen of India'?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Prime Minister</li>
+            <li onclick="check(this, 'B')">B. Chief Justice of India</li>
+            <li onclick="check(this, 'C')">C. President of India</li>
+            <li onclick="check(this, 'D')">D. Speaker of Lok Sabha</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>179. The 'Doctrine of Pleasure' in India applies to which of the following?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Judges of the Supreme Court</li>
+            <li onclick="check(this, 'B')">B. Chief Election Commissioner</li>
+            <li onclick="check(this, 'C')">C. Comptroller and Auditor General</li>
+            <li onclick="check(this, 'D')">D. Civil Servants (Article 310)</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>180. How many 'Zonal Councils' were originally established by the States Reorganisation Act, 1956?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 4</li>
+            <li onclick="check(this, 'B')">B. 5</li>
+            <li onclick="check(this, 'C')">C. 6</li>
+            <li onclick="check(this, 'D')">D. 3</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>181. Which Article gives the Parliament the power to regulate the 'Right of Citizenship' by law?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Article 11</li>
+            <li onclick="check(this, 'B')">B. Article 10</li>
+            <li onclick="check(this, 'C')">C. Article 9</li>
+            <li onclick="check(this, 'D')">D. Article 5</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>182. 'Preventive Detention' is a subject mentioned in which list?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. State List only</li>
+            <li onclick="check(this, 'B')">B. Union List only</li>
+            <li onclick="check(this, 'C')">C. Both Union and State Lists (Concurrent)</li>
+            <li onclick="check(this, 'D')">D. Residuary Powers</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>183. The 'Vice-President' of India can be removed from office by a resolution passed by:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Lok Sabha</li>
+            <li onclick="check(this, 'B')">B. Rajya Sabha (with agreement of Lok Sabha)</li>
+            <li onclick="check(this, 'C')">C. Both Houses in a Joint Session</li>
+            <li onclick="check(this, 'D')">D. Impeachment similar to President</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>184. Which Case established that 'Preamble is an integral part of the Constitution'?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Kesavananda Bharati Case</li>
+            <li onclick="check(this, 'B')">B. Berubari Union Case</li>
+            <li onclick="check(this, 'C')">C. Golaknath Case</li>
+            <li onclick="check(this, 'D')">D. Vishaka Case</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>185. The 'Ad-hoc Judges' of the Supreme Court are appointed by the:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. President</li>
+            <li onclick="check(this, 'B')">B. Parliament</li>
+            <li onclick="check(this, 'C')">C. Law Minister</li>
+            <li onclick="check(this, 'D')">D. Chief Justice of India (with consent of President)</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>186. Which Constitutional Amendment Act is related to the 'GST' (Goods and Services Tax)?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 100th</li>
+            <li onclick="check(this, 'B')">B. 101st</li>
+            <li onclick="check(this, 'C')">C. 102nd</li>
+            <li onclick="check(this, 'D')">D. 103rd</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>187. The 'EWS' (Economically Weaker Sections) 10% reservation was provided by which Amendment?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 103rd Amendment</li>
+            <li onclick="check(this, 'B')">B. 104th Amendment</li>
+            <li onclick="check(this, 'C')">C. 101st Amendment</li>
+            <li onclick="check(this, 'D')">D. 99th Amendment</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>188. Which Article of the Constitution provides for 'Universal Adult Suffrage' (Right to vote)?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Article 324</li>
+            <li onclick="check(this, 'B')">B. Article 325</li>
+            <li onclick="check(this, 'C')">C. Article 326</li>
+            <li onclick="check(this, 'D')">D. Article 327</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>189. The 'First Amendment' to the Indian Constitution was passed in which year?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 1950</li>
+            <li onclick="check(this, 'B')">B. 1951</li>
+            <li onclick="check(this, 'C')">C. 1952</li>
+            <li onclick="check(this, 'D')">D. 1955</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>190. In the 'Order of Precedence', who ranks immediately after the Prime Minister?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Chief Justice of India</li>
+            <li onclick="check(this, 'B')">B. Former Presidents</li>
+            <li onclick="check(this, 'C')">C. Vice-President</li>
+            <li onclick="check(this, 'D')">D. Governors of States (within their states)</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>191. Who appoints the 'Pro-tem Speaker' of the Lok Sabha?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. President</li>
+            <li onclick="check(this, 'B')">B. Outgoing Speaker</li>
+            <li onclick="check(this, 'C')">C. Prime Minister</li>
+            <li onclick="check(this, 'D')">D. Election Commission</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>192. Which Article allows for 'Joint Public Service Commission' for two or more states?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Article 312</li>
+            <li onclick="check(this, 'B')">B. Article 315</li>
+            <li onclick="check(this, 'C')">C. Article 316</li>
+            <li onclick="check(this, 'D')">D. Article 320</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>193. The 'Salary' of the Governor is charged on the:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Consolidated Fund of India</li>
+            <li onclick="check(this, 'B')">B. Contingency Fund of the State</li>
+            <li onclick="check(this, 'C')">C. Consolidated Fund of the State</li>
+            <li onclick="check(this, 'D')">D. Public Account of India</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>194. The 'Pensions' of the High Court Judges are charged on the:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Consolidated Fund of the State</li>
+            <li onclick="check(this, 'B')">B. Consolidated Fund of India</li>
+            <li onclick="check(this, 'C')">C. Contingency Fund of India</li>
+            <li onclick="check(this, 'D')">D. Consolidated Fund of the concerned High Court</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>195. Which Fundamental Right is available to BOTH citizens and foreigners (except enemy aliens)?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Article 14 (Equality before law)</li>
+            <li onclick="check(this, 'B')">B. Article 15 (Non-discrimination)</li>
+            <li onclick="check(this, 'C')">C. Article 19 (Six freedoms)</li>
+            <li onclick="check(this, 'D')">D. Article 29 (Cultural rights)</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>196. Which Constitutional Amendment abolished the 'Privy Purses' of princely state rulers?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 24th Amendment</li>
+            <li onclick="check(this, 'B')">B. 25th Amendment</li>
+            <li onclick="check(this, 'C')">C. 26th Amendment</li>
+            <li onclick="check(this, 'D')">D. 42nd Amendment</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>197. The 'State of Bihar' has how many Municipal Corporations (Nagar Nigams) currently?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 11</li>
+            <li onclick="check(this, 'B')">B. 12</li>
+            <li onclick="check(this, 'C')">C. 15</li>
+            <li onclick="check(this, 'D')">D. 19</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>198. Under which Article can the Governor reserve a Bill for the consideration of the President?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Article 201</li>
+            <li onclick="check(this, 'B')">B. Article 200</li>
+            <li onclick="check(this, 'C')">C. Article 111</li>
+            <li onclick="check(this, 'D')">D. Article 123</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>199. Who was the first 'Lokayukta' of India? (State-wise)</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Maharashtra</li>
+            <li onclick="check(this, 'B')">B. Bihar</li>
+            <li onclick="check(this, 'C')">C. Rajasthan</li>
+            <li onclick="check(this, 'D')">D. Uttar Pradesh</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>200. The 'Gauraiya' (House Sparrow) was declared as the State Bird of Bihar in which year?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 2010</li>
+            <li onclick="check(this, 'B')">B. 2012</li>
+            <li onclick="check(this, 'C')">C. 2013</li>
+            <li onclick="check(this, 'D')">D. 2015</li>
+        </ul>
+    </div>
+
+    </div>
+
+    <div class="controls">
+        Score: <span id="current-score">0</span> | Questions Attempted: <span id="attempted">0</span> / 100
+    </div>
+</div>
+
+<script>
+    let score = 0;
+    let attempted = 0;
+
+    function check(element, choice) {
+        const parent = element.closest('.question');
+        const correct = parent.getAttribute('data-answer');
+        const options = parent.querySelectorAll('li');
+
+        // Prevent clicking again
+        if (parent.classList.contains('done')) return;
+        parent.classList.add('done');
+
+        attempted++;
+        document.getElementById('attempted').innerText = attempted;
+
+        if (choice === correct) {
+            element.classList.add('correct');
+            score++;
+            document.getElementById('current-score').innerText = score;
+        } else {
+            element.classList.add('incorrect');
+            // Show correct answer
+            options.forEach(opt => {
+                if (opt.innerText.startsWith(correct)) opt.classList.add('correct');
+            });
+        }
+    }
+</script>
+
+</body>
+</html>

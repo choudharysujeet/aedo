@@ -1,0 +1,1051 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chemistry 100 MCQs - BPSC Prep</title>
+    <style>
+        :root { --chem-blue: #2980b9; --bg-light: #f8f9fa; }
+        body { font-family: 'Segoe UI', sans-serif; background: var(--bg-light); padding: 20px; }
+        .quiz-card { max-width: 850px; margin: auto; background: white; padding: 30px; border-radius: 15px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); border-top: 10px solid var(--chem-blue); }
+        h1 { color: var(--chem-blue); text-align: center; }
+        .question { margin-bottom: 25px; padding-bottom: 15px; border-bottom: 1px dashed #ddd; }
+        .question p { font-weight: 600; font-size: 1.1rem; color: #333; }
+        .options { list-style: none; padding: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+        .options li { background: #fff; border: 1px solid #ccc; padding: 10px; border-radius: 5px; cursor: pointer; transition: 0.3s; }
+        .options li:hover { background: #e3f2fd; border-color: var(--chem-blue); }
+        .correct { background: #27ae60 !important; color: white; border-color: #27ae60 !important; }
+        .incorrect { background: #e74c3c !important; color: white; border-color: #e74c3c !important; }
+        .score-box { position: fixed; top: 20px; right: 20px; background: var(--chem-blue); color: white; padding: 15px; border-radius: 10px; font-weight: bold; }
+    </style>
+</head>
+<body>
+
+<div class="score-box">Score: <span id="score">0</span> / 100</div>
+
+<div class="quiz-card">
+    <h1>General Chemistry: MCQ 1 - 100</h1>
+
+    <div class="question" data-answer="B">
+        <p>1. Which of the following is the most abundant element in the Earth's crust?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Silicon</li>
+            <li onclick="check(this, 'B')">B. Oxygen</li>
+            <li onclick="check(this, 'C')">C. Aluminum</li>
+            <li onclick="check(this, 'D')">D. Iron</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>2. What is the chemical name of 'Quick Lime'?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Calcium Oxide</li>
+            <li onclick="check(this, 'B')">B. Calcium Carbonate</li>
+            <li onclick="check(this, 'C')">C. Calcium Hydroxide</li>
+            <li onclick="check(this, 'D')">D. Calcium Chloride</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>3. Which gas is known as the 'Noble Gas' but is found in the highest percentage in the atmosphere among noble gases?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Helium</li>
+            <li onclick="check(this, 'B')">B. Neon</li>
+            <li onclick="check(this, 'C')">C. Argon</li>
+            <li onclick="check(this, 'D')">D. Radon</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>4. Which acid is used in Lead Storage Batteries?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Nitric Acid</li>
+            <li onclick="check(this, 'B')">B. Hydrochloric Acid</li>
+            <li onclick="check(this, 'C')">C. Acetic Acid</li>
+            <li onclick="check(this, 'D')">D. Sulfuric Acid</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>5. The nucleus of an atom consists of:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Electrons and Neutrons</li>
+            <li onclick="check(this, 'B')">B. Protons and Neutrons</li>
+            <li onclick="check(this, 'C')">C. Electrons and Protons</li>
+            <li onclick="check(this, 'D')">D. All of the above</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>6. Which of the following is used as a 'Dry Lubricant'?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Graphite</li>
+            <li onclick="check(this, 'B')">B. Silica</li>
+            <li onclick="check(this, 'C')">C. Diamond</li>
+            <li onclick="check(this, 'D')">D. Iron Scrap</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>7. The 'Bhopal Gas Tragedy' of 1984 was caused by the leakage of which gas?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Nitrogen Dioxide</li>
+            <li onclick="check(this, 'B')">B. Carbon Monoxide</li>
+            <li onclick="check(this, 'C')">C. Methyl Isocyanate</li>
+            <li onclick="check(this, 'D')">D. Phosgene</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>8. What is the main component of 'Gobar Gas' (Biogas)?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Ethane</li>
+            <li onclick="check(this, 'B')">B. Methane</li>
+            <li onclick="check(this, 'C')">C. Propane</li>
+            <li onclick="check(this, 'D')">D. Acetylene</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>9. Galvanized iron is coated with which metal to prevent rusting?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Tin</li>
+            <li onclick="check(this, 'B')">B. Copper</li>
+            <li onclick="check(this, 'C')">C. Nickel</li>
+            <li onclick="check(this, 'D')">D. Zinc</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>10. Which is the purest form of Iron?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Wrought Iron</li>
+            <li onclick="check(this, 'B')">B. Cast Iron</li>
+            <li onclick="check(this, 'C')">C. Steel</li>
+            <li onclick="check(this, 'D')">D. Pig Iron</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>11. Which acid is present in Tamarind?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Citric Acid</li>
+            <li onclick="check(this, 'B')">B. Malic Acid</li>
+            <li onclick="check(this, 'C')">C. Tartaric Acid</li>
+            <li onclick="check(this, 'D')">D. Oxalic Acid</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>12. The most malleable metal is:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Platinum</li>
+            <li onclick="check(this, 'B')">B. Gold</li>
+            <li onclick="check(this, 'C')">C. Silver</li>
+            <li onclick="check(this, 'D')">D. Iron</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>13. Which of the following is a 'Liquid Non-metal' at room temperature?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Mercury</li>
+            <li onclick="check(this, 'B')">B. Phosphorus</li>
+            <li onclick="check(this, 'C')">C. Iodine</li>
+            <li onclick="check(this, 'D')">D. Bromine</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>14. What is the chemical name of Bleaching Powder?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Calcium Hypochlorite</li>
+            <li onclick="check(this, 'B')">B. Calcium Carbonate</li>
+            <li onclick="check(this, 'C')">C. Sodium Bicarbonate</li>
+            <li onclick="check(this, 'D')">D. Calcium Hydroxide</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>15. Which gas is evolved when washing soda is treated with hydrochloric acid?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Hydrogen</li>
+            <li onclick="check(this, 'B')">B. Carbon Dioxide</li>
+            <li onclick="check(this, 'C')">C. Chlorine</li>
+            <li onclick="check(this, 'D')">D. Oxygen</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>16. 'Plaster of Paris' is made by heating:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Limestone</li>
+            <li onclick="check(this, 'B')">B. Slaked Lime</li>
+            <li onclick="check(this, 'C')">C. Gypsum</li>
+            <li onclick="check(this, 'D')">D. Bauxite</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>17. Which of the following is the 'Universal Solvent'?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Water</li>
+            <li onclick="check(this, 'B')">B. Alcohol</li>
+            <li onclick="check(this, 'C')">C. Ether</li>
+            <li onclick="check(this, 'D')">D. Benzene</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>18. Hardness of water is caused by the presence of salts of:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Sodium and Potassium</li>
+            <li onclick="check(this, 'B')">B. Iron and Copper</li>
+            <li onclick="check(this, 'C')">C. Silver and Gold</li>
+            <li onclick="check(this, 'D')">D. Calcium and Magnesium</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>19. Which fuel has the highest calorific value?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Petrol</li>
+            <li onclick="check(this, 'B')">B. Hydrogen</li>
+            <li onclick="check(this, 'C')">C. LPG</li>
+            <li onclick="check(this, 'D')">D. Methane</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>20. 'Ozone layer' depletion is mainly caused by:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Chlorofluorocarbons (CFCs)</li>
+            <li onclick="check(this, 'B')">B. Carbon Dioxide</li>
+            <li onclick="check(this, 'C')">C. Methane</li>
+            <li onclick="check(this, 'D')">D. Nitrogen Oxide</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>21. Which isotope of Hydrogen is radioactive in nature?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Protium</li>
+            <li onclick="check(this, 'B')">B. Deuterium</li>
+            <li onclick="check(this, 'C')">C. Tritium</li>
+            <li onclick="check(this, 'D')">D. Ortho-hydrogen</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>22. The chemical used in 'Unerasable Ink' (election ink) is:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Silver Nitrate</li>
+            <li onclick="check(this, 'B')">B. Silver Bromide</li>
+            <li onclick="check(this, 'C')">C. Potassium Permanganate</li>
+            <li onclick="check(this, 'D')">D. Silver Iodide</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>23. Which metal is known as 'Strategic Metal' because it is lighter than steel but equally strong?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Titanium</li>
+            <li onclick="check(this, 'B')">B. Zirconium</li>
+            <li onclick="check(this, 'C')">C. Uranium</li>
+            <li onclick="check(this, 'D')">D. Manganese</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>24. 'Lustre' of a metal is due to:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. High density</li>
+            <li onclick="check(this, 'B')">B. High polishing</li>
+            <li onclick="check(this, 'C')">C. Reflection of light by closed packed electrons</li>
+            <li onclick="check(this, 'D')">D. Presence of free electrons</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>25. The gas used for artificial ripening of green fruits is:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Ethane</li>
+            <li onclick="check(this, 'B')">B. Ethylene</li>
+            <li onclick="check(this, 'C')">C. Carbon Dioxide</li>
+            <li onclick="check(this, 'D')">D. Acetylene</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>26. Which of the following is used in the manufacturing of 'Safety Matches'?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. White Phosphorus</li>
+            <li onclick="check(this, 'B')">B. Black Phosphorus</li>
+            <li onclick="check(this, 'C')">C. Red Phosphorus</li>
+            <li onclick="check(this, 'D')">D. Scarlet Phosphorus</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>27. 'Nail Polish Remover' generally contains:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Acetone</li>
+            <li onclick="check(this, 'B')">B. Benzene</li>
+            <li onclick="check(this, 'C')">C. Methyl Alcohol</li>
+            <li onclick="check(this, 'D')">D. Acetic Acid</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>28. The 'Milk of Magnesia' is chemically:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Magnesium Carbonate</li>
+            <li onclick="check(this, 'B')">B. Magnesium Hydroxide</li>
+            <li onclick="check(this, 'C')">C. Magnesium Chloride</li>
+            <li onclick="check(this, 'D')">D. Magnesium Sulfate</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>29. Which explosive is also known as 'Nobel's Oil'?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. T.N.T</li>
+            <li onclick="check(this, 'B')">B. T.N.P</li>
+            <li onclick="check(this, 'C')">C. R.D.X</li>
+            <li onclick="check(this, 'D')">D. T.N.G (Trinitroglycerin)</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>30. The most abundant gas in the Earth's atmosphere is:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Oxygen</li>
+            <li onclick="check(this, 'B')">B. Hydrogen</li>
+            <li onclick="check(this, 'C')">C. Nitrogen</li>
+            <li onclick="check(this, 'D')">D. Carbon Dioxide</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>31. Which element is present in all organic compounds?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Carbon</li>
+            <li onclick="check(this, 'B')">B. Hydrogen</li>
+            <li onclick="check(this, 'C')">C. Oxygen</li>
+            <li onclick="check(this, 'D')">D. Nitrogen</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>32. 'Dry Ice' is the solid form of:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Water</li>
+            <li onclick="check(this, 'B')">B. Carbon Dioxide</li>
+            <li onclick="check(this, 'C')">C. Nitrogen</li>
+            <li onclick="check(this, 'D')">D. Hydrogen</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>33. Permanent hardness of water cannot be removed by:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Distillation</li>
+            <li onclick="check(this, 'B')">B. Washing Soda method</li>
+            <li onclick="check(this, 'C')">C. Permutit method</li>
+            <li onclick="check(this, 'D')">D. Boiling</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>34. Which of the following is used in making 'Bullet Proof Glass'?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Polyethylene</li>
+            <li onclick="check(this, 'B')">B. Terylene</li>
+            <li onclick="check(this, 'C')">C. Polycarbonate</li>
+            <li onclick="check(this, 'D')">D. Polystyrene</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>35. The main constituent of Vinegar is:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Acetic Acid</li>
+            <li onclick="check(this, 'B')">B. Ascorbic Acid</li>
+            <li onclick="check(this, 'C')">C. Citric Acid</li>
+            <li onclick="check(this, 'D')">D. Tartaric Acid</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>36. 'Rayon' is chemically:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Glucose</li>
+            <li onclick="check(this, 'B')">B. Cellulose</li>
+            <li onclick="check(this, 'C')">C. Pectin</li>
+            <li onclick="check(this, 'D')">D. Amylase</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>37. Which metal is found in the highest amount in the human body?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Iron</li>
+            <li onclick="check(this, 'B')">B. Sodium</li>
+            <li onclick="check(this, 'C')">C. Magnesium</li>
+            <li onclick="check(this, 'D')">D. Calcium</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>38. 'Aspirin' is an:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Antibiotic</li>
+            <li onclick="check(this, 'B')">B. Sedative</li>
+            <li onclick="check(this, 'C')">C. Antipyretic</li>
+            <li onclick="check(this, 'D')">D. Antiseptic</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>39. Which substance is used as a 'Retarder' in cement to slow down the setting time?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Gypsum</li>
+            <li onclick="check(this, 'B')">B. Alumina</li>
+            <li onclick="check(this, 'C')">C. Silica</li>
+            <li onclick="check(this, 'D')">D. Magnesium Oxide</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>40. Bronze is an alloy of:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Copper and Zinc</li>
+            <li onclick="check(this, 'B')">B. Copper and Tin</li>
+            <li onclick="check(this, 'C')">C. Copper and Nickel</li>
+            <li onclick="check(this, 'D')">D. Iron and Carbon</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>41. Which of the following is a 'Synthetic Fiber'?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Cotton</li>
+            <li onclick="check(this, 'B')">B. Silk</li>
+            <li onclick="check(this, 'C')">C. Nylon</li>
+            <li onclick="check(this, 'D')">D. Wool</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>42. The element used in Solar Cells is:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Silicon</li>
+            <li onclick="check(this, 'B')">B. Carbon</li>
+            <li onclick="check(this, 'C')">C. Sodium</li>
+            <li onclick="check(this, 'D')">D. Magnesium</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>43. Which gas is responsible for the swelling of bread?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Oxygen</li>
+            <li onclick="check(this, 'B')">B. Nitrogen</li>
+            <li onclick="check(this, 'C')">C. Carbon Monoxide</li>
+            <li onclick="check(this, 'D')">D. Carbon Dioxide</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>44. What is the pH value of Milk?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 2.4</li>
+            <li onclick="check(this, 'B')">B. 6.6</li>
+            <li onclick="check(this, 'C')">C. 7.4</li>
+            <li onclick="check(this, 'D')">D. 8.5</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>45. 'Solder' is an alloy of:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Lead and Tin</li>
+            <li onclick="check(this, 'B')">B. Zinc and Copper</li>
+            <li onclick="check(this, 'C')">C. Tin and Zinc</li>
+            <li onclick="check(this, 'D')">D. Copper and Aluminum</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>46. The acid found in 'Ant Stings' is:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Acetic Acid</li>
+            <li onclick="check(this, 'B')">B. Oxalic Acid</li>
+            <li onclick="check(this, 'C')">C. Formic Acid</li>
+            <li onclick="check(this, 'D')">D. Nitric Acid</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>47. Which of the following is the 'Softest' metal?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Iron</li>
+            <li onclick="check(this, 'B')">B. Aluminum</li>
+            <li onclick="check(this, 'C')">C. Copper</li>
+            <li onclick="check(this, 'D')">D. Sodium</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>48. Glass is a:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Crystalline solid</li>
+            <li onclick="check(this, 'B')">B. Supercooled liquid</li>
+            <li onclick="check(this, 'C')">C. Liquid crystal</li>
+            <li onclick="check(this, 'D')">D. Colloidal solution</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>49. 'PVC' stands for:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Phospho Vinyl Chloride</li>
+            <li onclick="check(this, 'B')">B. Poly Vinyl Carbonate</li>
+            <li onclick="check(this, 'C')">C. Poly Vinyl Chloride</li>
+            <li onclick="check(this, 'D')">D. Poly Vanadium Chloride</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>50. Which gas is used in 'Fire Extinguishers'?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Carbon Dioxide</li>
+            <li onclick="check(this, 'B')">B. Oxygen</li>
+            <li onclick="check(this, 'C')">C. Nitrogen</li>
+            <li onclick="check(this, 'D')">D. Argon</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>51. Which gas has the characteristic smell of 'Rotten Eggs'?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Carbon Monoxide</li>
+            <li onclick="check(this, 'B')">B. Hydrogen Sulfide (H2S)</li>
+            <li onclick="check(this, 'C')">C. Sulfur Dioxide</li>
+            <li onclick="check(this, 'D')">D. Ammonia</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>52. 'Paraffin Wax' is a byproduct obtained from the refining of:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Coal Tar</li>
+            <li onclick="check(this, 'B')">B. Beeswax</li>
+            <li onclick="check(this, 'C')">C. Agricultural waste</li>
+            <li onclick="check(this, 'D')">D. Petroleum</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>53. Which metal is a central constituent of the 'Chlorophyll' molecule?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Iron</li>
+            <li onclick="check(this, 'B')">B. Calcium</li>
+            <li onclick="check(this, 'C')">C. Magnesium</li>
+            <li onclick="check(this, 'D')">D. Potassium</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>54. Which acid is historically known as 'Oil of Vitriol'?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Sulfuric Acid</li>
+            <li onclick="check(this, 'B')">B. Nitric Acid</li>
+            <li onclick="check(this, 'C')">C. Hydrochloric Acid</li>
+            <li onclick="check(this, 'D')">D. Phosphoric Acid</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>55. What is the chemical formula of 'Washing Soda'?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. NaHCO3</li>
+            <li onclick="check(this, 'B')">B. Na2CO3·10H2O</li>
+            <li onclick="check(this, 'C')">C. NaOH</li>
+            <li onclick="check(this, 'D')">D. Ca(OH)2</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>56. The chemical name of 'Quartz' is:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Sodium Silicate</li>
+            <li onclick="check(this, 'B')">B. Calcium Silicate</li>
+            <li onclick="check(this, 'C')">C. Sodium Phosphate</li>
+            <li onclick="check(this, 'D')">D. Silicon Dioxide</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>57. Which of the following is used as a 'Coolant' in nuclear reactors?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Heavy Water</li>
+            <li onclick="check(this, 'B')">B. Cadmium</li>
+            <li onclick="check(this, 'C')">C. Liquid Sodium</li>
+            <li onclick="check(this, 'D')">D. Graphite</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>58. 'Marsh Gas' is primarily composed of:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Ethane</li>
+            <li onclick="check(this, 'B')">B. Methane</li>
+            <li onclick="check(this, 'C')">C. Propane</li>
+            <li onclick="check(this, 'D')">D. Butane</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>59. Which gas is used to fill the tires of aircraft to prevent fire?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Hydrogen</li>
+            <li onclick="check(this, 'B')">B. Helium</li>
+            <li onclick="check(this, 'C')">C. Oxygen</li>
+            <li onclick="check(this, 'D')">D. Nitrogen</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>60. The process of 'Fermentation' of sugar leads to the formation of:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Ethyl Alcohol</li>
+            <li onclick="check(this, 'B')">B. Methyl Alcohol</li>
+            <li onclick="check(this, 'C')">C. Acetic Acid</li>
+            <li onclick="check(this, 'D')">D. Chlorophyll</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>61. Which variety of Coal is considered the highest quality (highest carbon content)?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Peat</li>
+            <li onclick="check(this, 'B')">B. Lignite</li>
+            <li onclick="check(this, 'C')">C. Anthracite</li>
+            <li onclick="check(this, 'D')">D. Bituminous</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>62. 'Stainless Steel' is an alloy containing Iron, Carbon, and which other major metal?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Aluminum</li>
+            <li onclick="check(this, 'B')">B. Chromium</li>
+            <li onclick="check(this, 'C')">C. Copper</li>
+            <li onclick="check(this, 'D')">D. Zinc</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>63. Which isotope is used for determining the age of fossils (Carbon Dating)?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. C-14</li>
+            <li onclick="check(this, 'B')">B. C-12</li>
+            <li onclick="check(this, 'C')">C. U-238</li>
+            <li onclick="check(this, 'D')">D. Po-210</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>64. 'Tear Gas' used by police contains which chemical?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Ethane</li>
+            <li onclick="check(this, 'B')">B. Methane</li>
+            <li onclick="check(this, 'C')">C. Chlorine</li>
+            <li onclick="check(this, 'D')">D. Chloroacetophenone</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>65. Which chemical is used in 'Photography' as a fixing agent?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Silver Nitrate</li>
+            <li onclick="check(this, 'B')">B. Sodium Thiosulfate</li>
+            <li onclick="check(this, 'C')">C. Sodium Sulfate</li>
+            <li onclick="check(this, 'D')">D. Silver Chloride</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>66. 'Epsom Salt' is chemically known as:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Calcium Sulfate</li>
+            <li onclick="check(this, 'B')">B. Sodium Carbonate</li>
+            <li onclick="check(this, 'C')">C. Magnesium Sulfate</li>
+            <li onclick="check(this, 'D')">D. Ferrous Sulfate</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>67. Which gas is used as an 'Anesthetic' when mixed with oxygen?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Nitrous Oxide</li>
+            <li onclick="check(this, 'B')">B. Nitrogen</li>
+            <li onclick="check(this, 'C')">C. Methane</li>
+            <li onclick="check(this, 'D')">D. Carbon Dioxide</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>68. What is the main component of 'Natural Rubber'?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Neoprene</li>
+            <li onclick="check(this, 'B')">B. Styrene</li>
+            <li onclick="check(this, 'C')">C. Butadiene</li>
+            <li onclick="check(this, 'D')">D. Isoprene</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>69. Which acid is present in 'Sour Milk' or Curd?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Citric Acid</li>
+            <li onclick="check(this, 'B')">B. Lactic Acid</li>
+            <li onclick="check(this, 'C')">C. Tartaric Acid</li>
+            <li onclick="check(this, 'D')">D. Oxalic Acid</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>70. Which of the following is a 'Noble Metal'?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Aluminum</li>
+            <li onclick="check(this, 'B')">B. Iron</li>
+            <li onclick="check(this, 'C')">C. Gold</li>
+            <li onclick="check(this, 'D')">D. Copper</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>71. 'Blue Vitriol' is the common name for:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Copper Sulfate</li>
+            <li onclick="check(this, 'B')">B. Sodium Sulfate</li>
+            <li onclick="check(this, 'C')">C. Magnesium Sulfate</li>
+            <li onclick="check(this, 'D')">D. Ferrous Sulfate</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>72. Which substance is used in 'Food Preservation' to inhibit the growth of microorganisms?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Sodium Chloride</li>
+            <li onclick="check(this, 'B')">B. Vinegar</li>
+            <li onclick="check(this, 'C')">C. Sodium Benzoate</li>
+            <li onclick="check(this, 'D')">D. All of the above</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>73. Which element is the most 'Electronegative' in the Periodic Table?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Oxygen</li>
+            <li onclick="check(this, 'B')">B. Fluorine</li>
+            <li onclick="check(this, 'C')">C. Chlorine</li>
+            <li onclick="check(this, 'D')">D. Iodine</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>74. The 'pH' of a neutral solution at 25°C is:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 0</li>
+            <li onclick="check(this, 'B')">B. 1</li>
+            <li onclick="check(this, 'C')">C. 7</li>
+            <li onclick="check(this, 'D')">D. 14</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>75. Which gas is added to LPG to give it a strong warning odor for leak detection?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Ethyl Mercaptan</li>
+            <li onclick="check(this, 'B')">B. Methane</li>
+            <li onclick="check(this, 'C')">C. Sulfur Dioxide</li>
+            <li onclick="check(this, 'D')">D. Helium</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>76. 'Teflon' is a polymer of which monomer?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Vinyl Chloride</li>
+            <li onclick="check(this, 'B')">B. Tetrafluoroethylene</li>
+            <li onclick="check(this, 'C')">C. Styrene</li>
+            <li onclick="check(this, 'D')">D. Butadiene</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>77. Which gas is found in maximum quantity in the 'Sun'?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Helium</li>
+            <li onclick="check(this, 'B')">B. Nitrogen</li>
+            <li onclick="check(this, 'C')">C. Oxygen</li>
+            <li onclick="check(this, 'D')">D. Hydrogen</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>78. 'Heavy Water' (D2O) is used in nuclear reactors as a:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Fuel</li>
+            <li onclick="check(this, 'B')">B. Coolant</li>
+            <li onclick="check(this, 'C')">C. Moderator</li>
+            <li onclick="check(this, 'D')">D. Absorber</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>79. Which isotope of Cobalt is used in the treatment of 'Cancer'?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Co-60</li>
+            <li onclick="check(this, 'B')">B. Co-58</li>
+            <li onclick="check(this, 'C')">C. Co-59</li>
+            <li onclick="check(this, 'D')">D. Co-57</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>80. The process by which 'Vegetable Ghee' is manufactured is:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Oxidation</li>
+            <li onclick="check(this, 'B')">B. Hydrogenation</li>
+            <li onclick="check(this, 'C')">C. Distillation</li>
+            <li onclick="check(this, 'D')">D. Polymerization</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>81. Which of the following is the most abundant 'Inert Gas' in the atmosphere?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Helium</li>
+            <li onclick="check(this, 'B')">B. Neon</li>
+            <li onclick="check(this, 'C')">C. Radon</li>
+            <li onclick="check(this, 'D')">D. Argon</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>82. The 'Hardness of Diamond' is due to its:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. High density</li>
+            <li onclick="check(this, 'B')">B. Tetrahedral structure</li>
+            <li onclick="check(this, 'C')">C. Giant molecular weight</li>
+            <li onclick="check(this, 'D')">D. Purity of Carbon</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>83. Which of the following is used as a 'Primary Fuel' in Nuclear Reactors?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. U-235</li>
+            <li onclick="check(this, 'B')">B. U-238</li>
+            <li onclick="check(this, 'C')">C. Th-232</li>
+            <li onclick="check(this, 'D')">D. Pu-239</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>84. 'Bakelite' is a polymer of Phenol and:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Ethylene</li>
+            <li onclick="check(this, 'B')">B. Vinyl Chloride</li>
+            <li onclick="check(this, 'C')">C. Formaldehyde</li>
+            <li onclick="check(this, 'D')">D. Styrene</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>85. Which metal is extracted from 'Calamine' ore?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Copper</li>
+            <li onclick="check(this, 'B')">B. Zinc</li>
+            <li onclick="check(this, 'C')">C. Aluminum</li>
+            <li onclick="check(this, 'D')">D. Iron</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>86. The main gas responsible for the 'Greenhouse Effect' is:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Carbon Dioxide</li>
+            <li onclick="check(this, 'B')">B. Nitrogen</li>
+            <li onclick="check(this, 'C')">C. Oxygen</li>
+            <li onclick="check(this, 'D')">D. Argon</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>87. Which chemical is used to make 'Artificial Rain'?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Silver Nitrate</li>
+            <li onclick="check(this, 'B')">B. Potassium Bromide</li>
+            <li onclick="check(this, 'C')">C. Silver Chloride</li>
+            <li onclick="check(this, 'D')">D. Silver Iodide</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>88. 'Aqua Regia' is a mixture of concentrated HCl and concentrated HNO3 in the ratio of:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 1:3</li>
+            <li onclick="check(this, 'B')">B. 3:1</li>
+            <li onclick="check(this, 'C')">C. 2:1</li>
+            <li onclick="check(this, 'D')">D. 1:1</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>89. Which isotope of Iodine is used to treat 'Goitre'?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. I-125</li>
+            <li onclick="check(this, 'B')">B. I-127</li>
+            <li onclick="check(this, 'C')">C. I-131</li>
+            <li onclick="check(this, 'D')">D. I-123</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>90. What is the chemical name of 'Bleaching Powder'?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Calcium Hypochlorite</li>
+            <li onclick="check(this, 'B')">B. Calcium Carbonate</li>
+            <li onclick="check(this, 'C')">C. Calcium Chloride</li>
+            <li onclick="check(this, 'D')">D. Sodium Hypochlorite</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>91. Which of the following is the 'Lightest Gas'?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Helium</li>
+            <li onclick="check(this, 'B')">B. Hydrogen</li>
+            <li onclick="check(this, 'C')">C. Nitrogen</li>
+            <li onclick="check(this, 'D')">D. Oxygen</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>92. In 'Galvanization', iron is protected from rusting by a thin layer of:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Copper</li>
+            <li onclick="check(this, 'B')">B. Tin</li>
+            <li onclick="check(this, 'C')">C. Nickel</li>
+            <li onclick="check(this, 'D')">D. Zinc</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>93. 'Flash bulbs' used in photography have a wire of which metal?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Copper</li>
+            <li onclick="check(this, 'B')">B. Aluminum</li>
+            <li onclick="check(this, 'C')">C. Magnesium</li>
+            <li onclick="check(this, 'D')">D. Barium</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>94. Which gas is known as 'Stranger Gas'?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Argon</li>
+            <li onclick="check(this, 'B')">B. Xenon</li>
+            <li onclick="check(this, 'C')">C. Neon</li>
+            <li onclick="check(this, 'D')">D. Nitrous Oxide</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>95. 'Common Salt' (NaCl) is a product of a reaction between:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Strong Acid and Strong Base</li>
+            <li onclick="check(this, 'B')">B. Weak Acid and Weak Base</li>
+            <li onclick="check(this, 'C')">C. Strong Acid and Weak Base</li>
+            <li onclick="check(this, 'D')">D. Weak Acid and Strong Base</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>96. Which element is used as a 'Catalyst' in the hydrogenation of vegetable oils?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Iron</li>
+            <li onclick="check(this, 'B')">B. Platinum</li>
+            <li onclick="check(this, 'C')">C. Nickel</li>
+            <li onclick="check(this, 'D')">D. Copper</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>97. The 'Bauxite' ore belongs to which metal?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Iron</li>
+            <li onclick="check(this, 'B')">B. Aluminum</li>
+            <li onclick="check(this, 'C')">C. Copper</li>
+            <li onclick="check(this, 'D')">D. Gold</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>98. Which of the following acids is present in 'Stomach' (gastric juice)?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Hydrochloric Acid</li>
+            <li onclick="check(this, 'B')">B. Sulfuric Acid</li>
+            <li onclick="check(this, 'C')">C. Nitric Acid</li>
+            <li onclick="check(this, 'D')">D. Citric Acid</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>99. 'White Phosphorus' is always kept under:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Alcohol</li>
+            <li onclick="check(this, 'B')">B. Kerosene Oil</li>
+            <li onclick="check(this, 'C')">C. Liquid Nitrogen</li>
+            <li onclick="check(this, 'D')">D. Water</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>100. Who is considered the 'Father of Modern Chemistry'?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. John Dalton</li>
+            <li onclick="check(this, 'B')">B. Antoine Lavoisier</li>
+            <li onclick="check(this, 'C')">C. Mendeleev</li>
+            <li onclick="check(this, 'D')">D. Robert Boyle</li>
+        </ul>
+    </div>
+
+</div>
+
+<script>
+    let score = 0;
+    function check(el, choice) {
+        const parent = el.closest('.question');
+        if (parent.classList.contains('done')) return;
+        parent.classList.add('done');
+        const correctAns = parent.getAttribute('data-answer');
+        if (choice === correctAns) {
+            el.classList.add('correct');
+            score++;
+            document.getElementById('score').innerText = score;
+        } else {
+            el.classList.add('incorrect');
+            const options = parent.querySelectorAll('li');
+            options.forEach(opt => {
+                if (opt.innerText.startsWith(correctAns)) opt.classList.add('correct');
+            });
+        }
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,2078 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Physics 100 MCQ - BPSC AEDO</title>
+    <style>
+        :root {
+            --primary: #2c3e50;
+            --accent: #2980b9;
+            --success: #27ae60;
+            --danger: #e74c3c;
+            --bg: #f4f7f6;
+        }
+        body { font-family: 'Segoe UI', sans-serif; background: var(--bg); padding: 20px; }
+        .container { max-width: 900px; margin: 0 auto; background: white; padding: 40px; border-radius: 15px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); }
+        h1 { text-align: center; color: var(--primary); margin-bottom: 30px; border-bottom: 3px solid var(--accent); display: inline-block; width: 100%; padding-bottom: 10px;}
+        
+        .question { margin-bottom: 30px; padding: 20px; border: 1px solid #eee; border-radius: 10px; transition: 0.3s; }
+        .question p { font-weight: 600; font-size: 1.1rem; margin-bottom: 15px; }
+        
+        .options { list-style: none; padding: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+        @media (max-width: 600px) { .options { grid-template-columns: 1fr; } }
+        
+        .options li { background: #fff; border: 2px solid #ddd; padding: 12px; border-radius: 8px; cursor: pointer; transition: 0.2s; }
+        .options li:hover { border-color: var(--accent); background: #f0f7ff; }
+        
+        .correct { background: var(--success) !important; color: white; border-color: var(--success) !important; }
+        .incorrect { background: var(--danger) !important; color: white; border-color: var(--danger) !important; }
+        
+        .controls { position: sticky; bottom: 20px; background: var(--primary); color: white; padding: 15px; border-radius: 50px; text-align: center; box-shadow: 0 5px 15px rgba(0,0,0,0.3); }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Biology Fundamentals: 100 MCQ Series</h1>
+
+    <div id="quiz-wrapper">
+       <div class="question" data-answer="B">
+        <p>1. Who is known as the 'Father of Economics'?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. J.M. Keynes</li>
+            <li onclick="check(this, 'B')">B. Adam Smith</li>
+            <li onclick="check(this, 'C')">C. Karl Marx</li>
+            <li onclick="check(this, 'D')">D. Alfred Marshall</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>2. The 'Mixed Economy' model adopted by India implies:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Mixing of Agriculture and Industry</li>
+            <li onclick="check(this, 'B')">B. Presence of both Rich and Poor</li>
+            <li onclick="check(this, 'C')">C. Co-existence of Public and Private sectors</li>
+            <li onclick="check(this, 'D')">D. Mixing of Heavy and Small scale industries</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>3. In which year was the 'Reserve Bank of India' (RBI) nationalized?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 1949</li>
+            <li onclick="check(this, 'B')">B. 1935</li>
+            <li onclick="check(this, 'C')">C. 1951</li>
+            <li onclick="check(this, 'D')">D. 1969</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>4. Which sector contributes the most to the Gross State Domestic Product (GSDP) of Bihar?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Primary Sector (Agriculture)</li>
+            <li onclick="check(this, 'B')">B. Secondary Sector (Manufacturing)</li>
+            <li onclick="check(this, 'C')">C. Industrial Sector</li>
+            <li onclick="check(this, 'D')">D. Tertiary Sector (Services)</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>5. The 'NITI Aayog' is a/an:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Statutory Body</li>
+            <li onclick="check(this, 'B')">B. Executive Body (Think Tank)</li>
+            <li onclick="check(this, 'C')">C. Constitutional Body</li>
+            <li onclick="check(this, 'D')">D. Judicial Body</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>6. 'Gresham’s Law' in economics relates to:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Supply and Demand</li>
+            <li onclick="check(this, 'B')">B. Distribution of Goods</li>
+            <li onclick="check(this, 'C')">C. Circulation of Currency (Bad money drives out good)</li>
+            <li onclick="check(this, 'D')">D. Taxation</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>7. Which organization calculates the 'National Income' in India?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. National Statistical Office (NSO)</li>
+            <li onclick="check(this, 'B')">B. NITI Aayog</li>
+            <li onclick="check(this, 'C')">C. Finance Commission</li>
+            <li onclick="check(this, 'D')">D. RBI</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>8. What is 'Stagflation'?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. High inflation with high growth</li>
+            <li onclick="check(this, 'B')">B. High inflation with low growth and high unemployment</li>
+            <li onclick="check(this, 'C')">C. Low inflation with high growth</li>
+            <li onclick="check(this, 'D')">D. Deflation with high growth</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>9. The 'First Five Year Plan' (1951-56) of India was based on which model?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Mahalanobis Model</li>
+            <li onclick="check(this, 'B')">B. Gadgil Yojana</li>
+            <li onclick="check(this, 'C')">C. Bombay Plan</li>
+            <li onclick="check(this, 'D')">D. Harrod-Domar Model</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>10. Who heads the 'GST Council' in India?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Union Finance Minister</li>
+            <li onclick="check(this, 'B')">B. Prime Minister</li>
+            <li onclick="check(this, 'C')">C. RBI Governor</li>
+            <li onclick="check(this, 'D')">D. President</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>11. The 'Operation Flood' is related to the production of:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Rice</li>
+            <li onclick="check(this, 'B')">B. Fish</li>
+            <li onclick="check(this, 'C')">C. Milk</li>
+            <li onclick="check(this, 'D')">D. Wheat</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>12. Which district in Bihar has the highest 'Per Capita Income'?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Begusarai</li>
+            <li onclick="check(this, 'B')">B. Patna</li>
+            <li onclick="check(this, 'C')">C. Munger</li>
+            <li onclick="check(this, 'D')">D. Gaya</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>13. 'Monetary Policy' in India is formulated by:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Finance Ministry</li>
+            <li onclick="check(this, 'B')">B. NITI Aayog</li>
+            <li onclick="check(this, 'C')">C. SEBI</li>
+            <li onclick="check(this, 'D')">D. Reserve Bank of India (MPC)</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>14. The 'Base Year' for calculating the current Consumer Price Index (CPI) in India is:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 2012</li>
+            <li onclick="check(this, 'B')">B. 2011-12</li>
+            <li onclick="check(this, 'C')">C. 2004-05</li>
+            <li onclick="check(this, 'D')">D. 2015</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>15. Which committee recommended the establishment of 'Regional Rural Banks' (RRBs)?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Shivraman Committee</li>
+            <li onclick="check(this, 'B')">B. Gadgil Committee</li>
+            <li onclick="check(this, 'C')">C. Narasimham Committee</li>
+            <li onclick="check(this, 'D')">D. Dantwala Committee</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>16. 'Disinvestment' in Public Sector Enterprises (PSEs) means:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Closing down the business</li>
+            <li onclick="check(this, 'B')">B. Selling off equity to the private sector</li>
+            <li onclick="check(this, 'C')">C. Merging two PSEs</li>
+            <li onclick="check(this, 'D')">D. Increasing government investment</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>17. The 'Gini Coefficient' is a measure used to calculate:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Income Inequality</li>
+            <li onclick="check(this, 'B')">B. Unemployment Rate</li>
+            <li onclick="check(this, 'C')">C. Poverty Line</li>
+            <li onclick="check(this, 'D')">D. Inflation</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>18. Which bank is known as the 'Banker's Bank' in India?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. State Bank of India</li>
+            <li onclick="check(this, 'B')">B. Punjab National Bank</li>
+            <li onclick="check(this, 'C')">C. NABARD</li>
+            <li onclick="check(this, 'D')">D. Reserve Bank of India</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>19. In Bihar, the 'Jeevika' scheme is supported by which international organization?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. IMF</li>
+            <li onclick="check(this, 'B')">B. UNESCO</li>
+            <li onclick="check(this, 'C')">C. World Bank</li>
+            <li onclick="check(this, 'D')">D. Asian Development Bank</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>20. 'LAF' in banking terminology stands for:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Liquidity Adjustment Facility</li>
+            <li onclick="check(this, 'B')">B. Loan Against Funds</li>
+            <li onclick="check(this, 'C')">C. Legal Assets Finance</li>
+            <li onclick="check(this, 'D')">D. Liquid Asset Flow</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>21. The 'Phillips Curve' represents the relationship between:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Growth and Investment</li>
+            <li onclick="check(this, 'B')">B. Taxation and Revenue</li>
+            <li onclick="check(this, 'C')">C. Inflation and Unemployment</li>
+            <li onclick="check(this, 'D')">D. Poverty and Population</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>22. Which of the following is an 'Indirect Tax' in India?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Income Tax</li>
+            <li onclick="check(this, 'B')">B. Corporate Tax</li>
+            <li onclick="check(this, 'C')">C. Wealth Tax</li>
+            <li onclick="check(this, 'D')">D. Goods and Services Tax (GST)</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>23. The 'Devaluation' of a currency results in:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Cheaper Imports</li>
+            <li onclick="check(this, 'B')">B. Cheaper Exports</li>
+            <li onclick="check(this, 'C')">C. Lower domestic inflation</li>
+            <li onclick="check(this, 'D')">D. Increased purchasing power of the currency abroad</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>24. The 'Kisan Credit Card' (KCC) scheme was introduced in:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 1998-99</li>
+            <li onclick="check(this, 'B')">B. 1991-92</li>
+            <li onclick="check(this, 'C')">C. 2005-06</li>
+            <li onclick="check(this, 'D')">D. 2014-15</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>25. Which district in Bihar is the largest producer of 'Jute'?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Katihar</li>
+            <li onclick="check(this, 'B')">B. Araria</li>
+            <li onclick="check(this, 'C')">C. Purnia</li>
+            <li onclick="check(this, 'D')">D. Kishanganj</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>26. The 'Mahalanobis Model' was the basis for which Five-Year Plan?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. First</li>
+            <li onclick="check(this, 'B')">B. Second</li>
+            <li onclick="check(this, 'C')">C. Third</li>
+            <li onclick="check(this, 'D')">D. Fourth</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>27. Which district in Bihar has the lowest 'Per Capita Income'?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Sheohar</li>
+            <li onclick="check(this, 'B')">B. Araria</li>
+            <li onclick="check(this, 'C')">C. Sitamarhi</li>
+            <li onclick="check(this, 'D')">D. Kishanganj</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>28. The 'Green Revolution' in India was most successful in the production of:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Rice and Jute</li>
+            <li onclick="check(this, 'B')">B. Pulses and Oilseeds</li>
+            <li onclick="check(this, 'C')">C. Wheat and Rice</li>
+            <li onclick="check(this, 'D')">D. Tea and Coffee</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>29. Who is the current Governor of the 'Reserve Bank of India'? (As of 2026 Context)</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Urjit Patel</li>
+            <li onclick="check(this, 'B')">B. Raghuram Rajan</li>
+            <li onclick="check(this, 'C')">C. Nirmala Sitharaman</li>
+            <li onclick="check(this, 'D')">D. Shaktikanta Das</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>30. The 'Blue Revolution' is related to the development of:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Space Research</li>
+            <li onclick="check(this, 'B')">B. Fisheries</li>
+            <li onclick="check(this, 'C')">C. Indigo cultivation</li>
+            <li onclick="check(this, 'D')">D. Clean Water supply</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>31. 'NABARD' was established in which year?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 1982</li>
+            <li onclick="check(this, 'B')">B. 1988</li>
+            <li onclick="check(this, 'C')">C. 1992</li>
+            <li onclick="check(this, 'D')">D. 1975</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>32. Which sector is known as the 'Backbone' of the Bihar Economy?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Manufacturing</li>
+            <li onclick="check(this, 'B')">B. Mining</li>
+            <li onclick="check(this, 'C')">C. Agriculture</li>
+            <li onclick="check(this, 'D')">D. Tourism</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>33. The 'Global Hunger Index' is released by:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. World Bank</li>
+            <li onclick="check(this, 'B')">B. Concern Worldwide and Welthungerhilfe</li>
+            <li onclick="check(this, 'C')">C. FAO</li>
+            <li onclick="check(this, 'D')">D. WHO</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>34. 'Capital Market' in India is regulated by:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. SEBI</li>
+            <li onclick="check(this, 'B')">B. RBI</li>
+            <li onclick="check(this, 'C')">C. IRDAI</li>
+            <li onclick="check(this, 'D')">D. Finance Ministry</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>35. The 'Lorenz Curve' shows the relationship between:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Price and Demand</li>
+            <li onclick="check(this, 'B')">B. Inflation and Unemployment</li>
+            <li onclick="check(this, 'C')">C. Population groups and their share of income</li>
+            <li onclick="check(this, 'D')">D. Tax rate and Tax revenue</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>36. What is the 'Fiscal Deficit' target for Bihar for the financial year 2024-25 (as per budget)?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 5.0% of GSDP</li>
+            <li onclick="check(this, 'B')">B. 4.5% of GSDP</li>
+            <li onclick="check(this, 'C')">C. 2.0% of GSDP</li>
+            <li onclick="check(this, 'D')">D. 2.98% of GSDP</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>37. The 'Bokaro Steel Plant' was set up with the assistance of:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Germany</li>
+            <li onclick="check(this, 'B')">B. Soviet Union (USSR)</li>
+            <li onclick="check(this, 'C')">C. United Kingdom</li>
+            <li onclick="check(this, 'D')">D. USA</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>38. In which city is the 'Patna Stock Exchange' located?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Patna (Maurya Lok Complex)</li>
+            <li onclick="check(this, 'B')">B. Gaya</li>
+            <li onclick="check(this, 'C')">C. Bhagalpur</li>
+            <li onclick="check(this, 'D')">D. Muzaffarpur</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>39. 'World Development Report' is published by:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. IMF</li>
+            <li onclick="check(this, 'B')">B. UNDP</li>
+            <li onclick="check(this, 'C')">C. World Bank (IBRD)</li>
+            <li onclick="check(this, 'D')">D. WTO</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>40. The 'Minimum Support Price' (MSP) is recommended by:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. NITI Aayog</li>
+            <li onclick="check(this, 'B')">B. Commission for Agricultural Costs and Prices (CACP)</li>
+            <li onclick="check(this, 'C')">C. Ministry of Agriculture</li>
+            <li onclick="check(this, 'D')">D. NABARD</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>41. Which district of Bihar is famous for 'Makhana' (Fox Nut) production?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Madhubani and Darbhanga</li>
+            <li onclick="check(this, 'B')">B. Rohtas</li>
+            <li onclick="check(this, 'C')">C. Kaimur</li>
+            <li onclick="check(this, 'D')">D. Saran</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>42. 'FDI' stands for:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Fixed Deposit Investment</li>
+            <li onclick="check(this, 'B')">B. Foreign Derivative Index</li>
+            <li onclick="check(this, 'C')">C. Future Direct Investment</li>
+            <li onclick="check(this, 'D')">D. Foreign Direct Investment</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>43. The 'LPG' reforms (Liberalisation, Privatisation, Globalisation) were introduced in India in:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 1985</li>
+            <li onclick="check(this, 'B')">B. 1990</li>
+            <li onclick="check(this, 'C')">C. 1991</li>
+            <li onclick="check(this, 'D')">D. 1995</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>44. Which Five-Year Plan was terminated one year before its scheduled period?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Third Plan</li>
+            <li onclick="check(this, 'B')">B. Fifth Plan</li>
+            <li onclick="check(this, 'C')">C. Sixth Plan</li>
+            <li onclick="check(this, 'D')">D. Seventh Plan</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>45. Bihar’s 'Agriculture Road Map-4' covers the period of:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 2023-2028</li>
+            <li onclick="check(this, 'B')">B. 2020-2025</li>
+            <li onclick="check(this, 'C')">C. 2022-2027</li>
+            <li onclick="check(this, 'D')">D. 2024-2029</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>46. The 'Headquarters' of the World Trade Organization (WTO) is in:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Washington D.C.</li>
+            <li onclick="check(this, 'B')">B. New York</li>
+            <li onclick="check(this, 'C')">C. Paris</li>
+            <li onclick="check(this, 'D')">D. Geneva</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>47. 'Broad Money' in India is represented by:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. M1</li>
+            <li onclick="check(this, 'B')">B. M2</li>
+            <li onclick="check(this, 'C')">C. M3</li>
+            <li onclick="check(this, 'D')">D. M4</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>48. The 'National Food Security Act' (NFSA) was passed in:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 2011</li>
+            <li onclick="check(this, 'B')">B. 2013</li>
+            <li onclick="check(this, 'C')">C. 2015</li>
+            <li onclick="check(this, 'D')">D. 2010</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>49. Which organization is responsible for 'Poverty Estimation' in India?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. NITI Aayog (Task Force)</li>
+            <li onclick="check(this, 'B')">B. Finance Commission</li>
+            <li onclick="check(this, 'C')">C. Ministry of Social Justice</li>
+            <li onclick="check(this, 'D')">D. RBI</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>50. Bihar ranks ___ in terms of population density as per 2011 Census?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Second</li>
+            <li onclick="check(this, 'B')">B. Third</li>
+            <li onclick="check(this, 'C')">C. First</li>
+            <li onclick="check(this, 'D')">D. Fourth</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>51. The 'Finance Commission' is constituted by the President under which Article?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Article 270</li>
+            <li onclick="check(this, 'B')">B. Article 280</li>
+            <li onclick="check(this, 'C')">C. Article 226</li>
+            <li onclick="check(this, 'D')">D. Article 360</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>52. Which district of Bihar has the highest 'Road Density'?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Patna</li>
+            <li onclick="check(this, 'B')">B. Sheohar</li>
+            <li onclick="check(this, 'C')">C. Darbhanga</li>
+            <li onclick="check(this, 'D')">D. Gaya</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>53. The 'Laffer Curve' explains the relationship between:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Inflation and Unemployment</li>
+            <li onclick="check(this, 'B')">B. Income and Savings</li>
+            <li onclick="check(this, 'C')">C. Tax Rates and Tax Revenue</li>
+            <li onclick="check(this, 'D')">D. Supply and Demand</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>54. 'MGNREGA' was first launched in which year (as NREGA)?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 2004</li>
+            <li onclick="check(this, 'B')">B. 2008</li>
+            <li onclick="check(this, 'C')">C. 2005</li>
+            <li onclick="check(this, 'D')">D. 2006 (Implemented from Feb 2006)</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>55. What is the main source of 'Revenue' for the Government of Bihar?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. State's Own Tax Revenue</li>
+            <li onclick="check(this, 'B')">B. Share in Central Taxes</li>
+            <li onclick="check(this, 'C')">C. Grants-in-aid from Center</li>
+            <li onclick="check(this, 'D')">D. Non-Tax Revenue</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>56. The 'Planning Commission' was replaced by NITI Aayog on:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 1st January 2015</li>
+            <li onclick="check(this, 'B')">B. 15th August 2014</li>
+            <li onclick="check(this, 'C')">C. 1st April 2015</li>
+            <li onclick="check(this, 'D')">D. 26th January 2015</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>57. Which city is known as the 'Silk City' of Bihar?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Patna</li>
+            <li onclick="check(this, 'B')">B. Gaya</li>
+            <li onclick="check(this, 'C')">C. Bhagalpur</li>
+            <li onclick="check(this, 'D')">D. Katihar</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>58. 'Repo Rate' is the rate at which:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. RBI borrows money from Commercial Banks</li>
+            <li onclick="check(this, 'B')">B. RBI lends money to Commercial Banks</li>
+            <li onclick="check(this, 'C')">C. Banks lend to the Public</li>
+            <li onclick="check(this, 'D')">D. Government borrows from the World Bank</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>59. The 'Bihar Industrial Investment Promotion Policy' was first introduced in:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 2016</li>
+            <li onclick="check(this, 'B')">B. 2011</li>
+            <li onclick="check(this, 'C')">C. 2020</li>
+            <li onclick="check(this, 'D')">D. 2006</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>60. Which of the following is NOT a 'Navratna' company? (Historical context)</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. BHEL</li>
+            <li onclick="check(this, 'B')">B. GAIL</li>
+            <li onclick="check(this, 'C')">C. HAL</li>
+            <li onclick="check(this, 'D')">D. Reliance Industries</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>61. The 'Seven Resolves' (Saat Nischay) Part-2 was launched in Bihar for the period:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 2015-2020</li>
+            <li onclick="check(this, 'B')">B. 2020-2025</li>
+            <li onclick="check(this, 'C')">C. 2021-2026</li>
+            <li onclick="check(this, 'D')">D. 2024-2029</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>62. 'Open Market Operations' (OMO) is a tool of:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Fiscal Policy</li>
+            <li onclick="check(this, 'B')">B. Trade Policy</li>
+            <li onclick="check(this, 'C')">C. Monetary Policy</li>
+            <li onclick="check(this, 'D')">D. Industrial Policy</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>63. Which district is the largest producer of 'Rice' in Bihar?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Rohtas</li>
+            <li onclick="check(this, 'B')">B. Aurangabad</li>
+            <li onclick="check(this, 'C')">C. Kaimur</li>
+            <li onclick="check(this, 'D')">D. West Champaran</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>64. 'Primary Deficit' is calculated as:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Fiscal Deficit + Interest Payments</li>
+            <li onclick="check(this, 'B')">B. Fiscal Deficit - Interest Payments</li>
+            <li onclick="check(this, 'C')">C. Budget Deficit - Interest</li>
+            <li onclick="check(this, 'D')">D. Revenue Deficit - Grants</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>65. The 'Headquarters' of the International Monetary Fund (IMF) is in:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. London</li>
+            <li onclick="check(this, 'B')">B. Geneva</li>
+            <li onclick="check(this, 'C')">C. Tokyo</li>
+            <li onclick="check(this, 'D')">D. Washington D.C.</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>66. What is the approximate 'Length' of National Highways in Bihar (as per 2023-24 data)?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 3,500 km</li>
+            <li onclick="check(this, 'B')">B. 4,800 km</li>
+            <li onclick="check(this, 'C')">C. 6,300 km</li>
+            <li onclick="check(this, 'D')">D. 10,000 km</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>67. 'Sensex' is the index of which stock exchange?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Bombay Stock Exchange (BSE)</li>
+            <li onclick="check(this, 'B')">B. National Stock Exchange (NSE)</li>
+            <li onclick="check(this, 'C')">C. New York Stock Exchange</li>
+            <li onclick="check(this, 'D')">D. London Stock Exchange</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>68. Which district in Bihar has the highest 'Literacy Rate'?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Patna</li>
+            <li onclick="check(this, 'B')">B. Rohtas</li>
+            <li onclick="check(this, 'C')">C. Munger</li>
+            <li onclick="check(this, 'D')">D. Gaya</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>69. 'Engel's Law' states that as income rises, the proportion of income spent on food:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Increases</li>
+            <li onclick="check(this, 'B')">B. Remains constant</li>
+            <li onclick="check(this, 'C')">C. Decreases</li>
+            <li onclick="check(this, 'D')">D. Becomes zero</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>70. The 'Thirteenth Five-Year Plan' (scheduled 2017-2022) was not implemented because:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. There was no money</li>
+            <li onclick="check(this, 'B')">B. War with neighbors</li>
+            <li onclick="check(this, 'C')">C. Political instability</li>
+            <li onclick="check(this, 'D')">D. The Five-Year Planning system was discontinued</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>71. Bihar's first 'Export Promotion Industrial Park' (EPIP) is located at:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Hajipur</li>
+            <li onclick="check(this, 'B')">B. Bihta</li>
+            <li onclick="check(this, 'C')">C. Begusarai</li>
+            <li onclick="check(this, 'D')">D. Fatwah</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>72. 'Disguised Unemployment' is generally found in which sector?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Industry</li>
+            <li onclick="check(this, 'B')">B. Agriculture</li>
+            <li onclick="check(this, 'C')">C. Services</li>
+            <li onclick="check(this, 'D')">D. Banking</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>73. Which organization releases the 'Human Development Report' (HDR)?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. World Bank</li>
+            <li onclick="check(this, 'B')">B. WTO</li>
+            <li onclick="check(this, 'C')">C. UNDP</li>
+            <li onclick="check(this, 'D')">D. UNICEF</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>74. The 'National Income' of India is estimated in terms of:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. GDP at Market Price</li>
+            <li onclick="check(this, 'B')">B. GNP at Market Price</li>
+            <li onclick="check(this, 'C')">C. NDP at Factor Cost</li>
+            <li onclick="check(this, 'D')">D. NNP at Factor Cost</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>75. Bihar was the first state in India to implement which of the following 'Policies' in 2021?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Solar Energy Policy</li>
+            <li onclick="check(this, 'B')">B. Ethanol Production Promotion Policy</li>
+            <li onclick="check(this, 'C')">C. IT Policy</li>
+            <li onclick="check(this, 'D')">D. Health Policy</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>76. Which organization releases the 'Ease of Doing Business' index (though currently discontinued)?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. World Bank</li>
+            <li onclick="check(this, 'B')">B. IMF</li>
+            <li onclick="check(this, 'C')">C. WTO</li>
+            <li onclick="check(this, 'D')">D. WEF</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>77. In the Bihar Budget 2024-25, which sector received the highest allocation?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Agriculture</li>
+            <li onclick="check(this, 'B')">B. Education</li>
+            <li onclick="check(this, 'C')">C. Health</li>
+            <li onclick="check(this, 'D')">D. Rural Development</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>78. The 'Statutory Liquidity Ratio' (SLR) is maintained by commercial banks in the form of:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Cash only</li>
+            <li onclick="check(this, 'B')">B. Government Securities only</li>
+            <li onclick="check(this, 'C')">C. Gold, Cash, and Approved Securities</li>
+            <li onclick="check(this, 'D')">D. Foreign Currency</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>79. Which district of Bihar is the largest producer of 'Wheat'?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Patna</li>
+            <li onclick="check(this, 'B')">B. Rohtas</li>
+            <li onclick="check(this, 'C')">C. Purnia</li>
+            <li onclick="check(this, 'D')">D. Saran</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>80. The 'Balance of Payments' (BoP) includes:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Current Account only</li>
+            <li onclick="check(this, 'B')">B. Capital Account only</li>
+            <li onclick="check(this, 'C')">C. Both Current and Capital Accounts</li>
+            <li onclick="check(this, 'D')">D. Visible Trade only</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>81. Which committee recommended the introduction of 'Service Tax' in India?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Raja Chelliah Committee</li>
+            <li onclick="check(this, 'B')">B. Kelkar Committee</li>
+            <li onclick="check(this, 'C')">C. Rangarajan Committee</li>
+            <li onclick="check(this, 'D')">D. Verma Committee</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>82. In Bihar, the 'Mukhyamantri Kanya Utthan Yojana' provides financial assistance for:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Girls' Marriage only</li>
+            <li onclick="check(this, 'B')">B. Girls' Education and Health from birth to graduation</li>
+            <li onclick="check(this, 'C')">C. Higher Education loans</li>
+            <li onclick="check(this, 'D')">D. Providing bicycles</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>83. What is the meaning of 'Laissez-faire'?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Heavy government regulation</li>
+            <li onclick="check(this, 'B')">B. Non-interference of government in economic affairs</li>
+            <li onclick="check(this, 'C')">C. Planned economy</li>
+            <li onclick="check(this, 'D')">D. Socialist economy</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>84. Which city in Bihar has been selected under the 'Smart Cities Mission'?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Begusarai</li>
+            <li onclick="check(this, 'B')">B. Muzaffarpur</li>
+            <li onclick="check(this, 'C')">C. Gaya</li>
+            <li onclick="check(this, 'D')">D. Darbhanga</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>85. The 'Yellow Revolution' is associated with the production of:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Pulses</li>
+            <li onclick="check(this, 'B')">B. Oilseeds</li>
+            <li onclick="check(this, 'C')">C. Eggs</li>
+            <li onclick="check(this, 'D')">D. Honey</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>86. 'MUDRA' Bank aims to provide loans to:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Large Industries</li>
+            <li onclick="check(this, 'B')">B. Farmers for tractors</li>
+            <li onclick="check(this, 'C')">C. Small and Micro enterprises</li>
+            <li onclick="check(this, 'D')">D. Export houses</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>87. The 'Currency Note' of one rupee denomination in India is signed by:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Finance Secretary</li>
+            <li onclick="check(this, 'B')">B. RBI Governor</li>
+            <li onclick="check(this, 'C')">C. Prime Minister</li>
+            <li onclick="check(this, 'D')">D. Finance Minister</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>88. Which district of Bihar has the highest 'Livestock' population?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Patna</li>
+            <li onclick="check(this, 'B')">B. Katihar</li>
+            <li onclick="check(this, 'C')">C. Gaya</li>
+            <li onclick="check(this, 'D')">D. Araria</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>89. 'Fiscal Policy' in India is implemented by:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. RBI</li>
+            <li onclick="check(this, 'B')">B. NITI Aayog</li>
+            <li onclick="check(this, 'C')">C. Ministry of Finance</li>
+            <li onclick="check(this, 'D')">D. SEBI</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>90. The 'Global Competitiveness Report' is released by:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. World Bank</li>
+            <li onclick="check(this, 'B')">B. World Economic Forum (WEF)</li>
+            <li onclick="check(this, 'C')">C. IMF</li>
+            <li onclick="check(this, 'D')">D. WTO</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>91. What is the rank of Bihar in 'Maize' production in India?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Second (Often fluctuates with Karnataka)</li>
+            <li onclick="check(this, 'B')">B. Fifth</li>
+            <li onclick="check(this, 'C')">C. Tenth</li>
+            <li onclick="check(this, 'D')">D. First</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>92. 'Giffen Goods' are those for which demand increases when:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Price decreases</li>
+            <li onclick="check(this, 'B')">B. Income increases</li>
+            <li onclick="check(this, 'C')">C. Price increases</li>
+            <li onclick="check(this, 'D')">D. Supply increases</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>93. Which bank was the first to introduce 'ATM' in India?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. SBI</li>
+            <li onclick="check(this, 'B')">B. HSBC</li>
+            <li onclick="check(this, 'C')">C. ICICI</li>
+            <li onclick="check(this, 'D')">D. PNB</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>94. The 'Antyodaya Anna Yojana' (AAY) was launched to provide food security to:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Industrial workers</li>
+            <li onclick="check(this, 'B')">B. Small farmers</li>
+            <li onclick="check(this, 'C')">C. All BPL families</li>
+            <li onclick="check(this, 'D')">D. The poorest of the poor</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>95. Which thermal power plant in Bihar is run by the 'NTPC'?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Kahalgaon (Bhagalpur)</li>
+            <li onclick="check(this, 'B')">B. Kanti (Muzaffarpur)</li>
+            <li onclick="check(this, 'C')">C. Nabinagar (Aurangabad)</li>
+            <li onclick="check(this, 'D')">D. All of the above</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>96. 'Deficit Financing' means the government borrows money from:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. World Bank</li>
+            <li onclick="check(this, 'B')">B. RBI</li>
+            <li onclick="check(this, 'C')">C. Public</li>
+            <li onclick="check(this, 'D')">D. IMF</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>97. 'Special Economic Zones' (SEZ) Act was passed in India in:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 2000</li>
+            <li onclick="check(this, 'B')">B. 2003</li>
+            <li onclick="check(this, 'C')">C. 2005</li>
+            <li onclick="check(this, 'D')">D. 2010</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>98. The 'Khadi Mall' of Bihar, the first of its kind in India, is located in:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Muzaffarpur</li>
+            <li onclick="check(this, 'B')">B. Patna</li>
+            <li onclick="check(this, 'C')">C. Bhagalpur</li>
+            <li onclick="check(this, 'D')">D. Darbhanga</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>99. 'Venture Capital' refers to:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Short-term/Long-term capital provided to new startups</li>
+            <li onclick="check(this, 'B')">B. Capital used for buying machinery</li>
+            <li onclick="check(this, 'C')">C. Loans provided to loss-making PSUs</li>
+            <li onclick="check(this, 'D')">D. Funds collected through taxes</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>100. As per the 2011 Census, what is the 'Work Participation Rate' in Bihar?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 50.1%</li>
+            <li onclick="check(this, 'B')">B. 42.5%</li>
+            <li onclick="check(this, 'C')">C. 33.4%</li>
+            <li onclick="check(this, 'D')">D. 28.9%</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>101. As per the Bihar Economic Survey 2023-24, the state's economy grew by what percentage (at constant prices)?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 8.5%</li>
+            <li onclick="check(this, 'B')">B. 10.64%</li>
+            <li onclick="check(this, 'C')">C. 15.2%</li>
+            <li onclick="check(this, 'D')">D. 5.9%</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>102. Which district in Bihar has the highest 'Consumption of Electricity' per capita?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Patna</li>
+            <li onclick="check(this, 'B')">B. Gaya</li>
+            <li onclick="check(this, 'C')">C. Muzaffarpur</li>
+            <li onclick="check(this, 'D')">D. Bhagalpur</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>103. The 'Agriculture Road Map-4' of Bihar places special emphasis on which of the following?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Only Paddy cultivation</li>
+            <li onclick="check(this, 'B')">B. Sugar Mills expansion</li>
+            <li onclick="check(this, 'C')">C. Climate Resilient Agriculture and Digital Farming</li>
+            <li onclick="check(this, 'D')">D. Export of Wheat only</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>104. Which of the following is the 'Nodal Agency' for industrial development in Bihar?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. BPSC</li>
+            <li onclick="check(this, 'B')">B. JEEVIKA</li>
+            <li onclick="check(this, 'C')">C. NABARD</li>
+            <li onclick="check(this, 'D')">D. BIADA (Bihar Industrial Area Development Authority)</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>105. Under the 'Saat Nischay-2', the 'Sulabh Samparkta' initiative focuses on:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Clean Water</li>
+            <li onclick="check(this, 'B')">B. Road Connectivity (Bypass and Flyovers)</li>
+            <li onclick="check(this, 'C')">C. Solar Lights</li>
+            <li onclick="check(this, 'D')">D. Higher Education</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>106. Bihar produces approximately what percentage of India's total 'Litchi'?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 40-45%</li>
+            <li onclick="check(this, 'B')">B. 10%</li>
+            <li onclick="check(this, 'C')">C. 80%</li>
+            <li onclick="check(this, 'D')">D. 25%</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>107. The 'Munger-Jamalpur' region is historically famous for which industry?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Cement</li>
+            <li onclick="check(this, 'B')">B. Jute</li>
+            <li onclick="check(this, 'C')">C. Gun/Arms and Railway Workshops</li>
+            <li onclick="check(this, 'D')">D. Information Technology</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>108. 'PM-KUSUM' scheme in Bihar is primarily aimed at:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Free Seeds distribution</li>
+            <li onclick="check(this, 'B')">B. Solarization of Irrigation Pumps</li>
+            <li onclick="check(this, 'C')">C. Building Warehouses</li>
+            <li onclick="check(this, 'D')">D. Organic Farming</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>109. Which district in Bihar has the highest 'Urbanization' rate?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Munger</li>
+            <li onclick="check(this, 'B')">B. Nalanda</li>
+            <li onclick="check(this, 'C')">C. Bhagalpur</li>
+            <li onclick="check(this, 'D')">D. Patna</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>110. 'Har Khet Ko Pani' is a target under which Bihar government initiative?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Saat Nischay Part-2</li>
+            <li onclick="check(this, 'B')">B. Jal-Jeevan-Hariyali</li>
+            <li onclick="check(this, 'C')">C. Krishi Karman Award</li>
+            <li onclick="check(this, 'D')">D. Bihar Startup Policy</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>111. The 'Barauni Refinery' was established in collaboration with which country?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. USA</li>
+            <li onclick="check(this, 'B')">B. UK</li>
+            <li onclick="check(this, 'C')">C. USSR (Russia)</li>
+            <li onclick="check(this, 'D')">D. Romania</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>112. In which year was the 'Bihar State Milk Co-operative Federation' (COMFED) established?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 1970</li>
+            <li onclick="check(this, 'B')">B. 1983</li>
+            <li onclick="check(this, 'C')">C. 1995</li>
+            <li onclick="check(this, 'D')">D. 2001</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>113. 'Sudha Dairy' is the brand name of which organization?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Mother Dairy</li>
+            <li onclick="check(this, 'B')">B. Amul</li>
+            <li onclick="check(this, 'C')">C. NABARD</li>
+            <li onclick="check(this, 'D')">D. COMFED</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>114. As per the recent Multidimensional Poverty Index (MPI) by NITI Aayog, Bihar's poverty reduction trend is:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Declining rapidly (fastest improvement in India)</li>
+            <li onclick="check(this, 'B')">B. Increasing</li>
+            <li onclick="check(this, 'C')">C. Stagnant</li>
+            <li onclick="check(this, 'D')">D. Only improving in urban areas</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>115. The 'Darbhanga Airport' is significant for Bihar's economy under which scheme?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. SAGAR</li>
+            <li onclick="check(this, 'B')">B. BHARATMALA</li>
+            <li onclick="check(this, 'C')">C. UDAN (Ude Desh ka Aam Naagrik)</li>
+            <li onclick="check(this, 'D')">D. AMRUT</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>116. Which district in Bihar is the leader in 'Potato' production?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Gaya</li>
+            <li onclick="check(this, 'B')">B. Nalanda</li>
+            <li onclick="check(this, 'C')">C. Saran</li>
+            <li onclick="check(this, 'D')">D. Patna</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>117. 'Vikas Mitra' in Bihar are associated with the welfare of which group?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Farmers</li>
+            <li onclick="check(this, 'B')">B. Women Entrepreneurs</li>
+            <li onclick="check(this, 'C')">C. Minority groups</li>
+            <li onclick="check(this, 'D')">D. Mahadalit communities</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>118. The 'Bihar Startup Policy 2022' provides an interest-free seed fund of up to:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. ₹10 Lakhs</li>
+            <li onclick="check(this, 'B')">B. ₹2 Lakhs</li>
+            <li onclick="check(this, 'C')">C. ₹50 Lakhs</li>
+            <li onclick="check(this, 'D')">D. ₹1 Crore</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>119. What is the status of 'Primary Sector' (Agriculture) share in Bihar's GSDP over the last 5 years?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Sharply increasing</li>
+            <li onclick="check(this, 'B')">B. Remains at 50%</li>
+            <li onclick="check(this, 'C')">C. Gradually declining as Tertiary sector grows</li>
+            <li onclick="check(this, 'D')">D. Negligible</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>120. Which district in Bihar produces the most 'Sugarcane'?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. East Champaran</li>
+            <li onclick="check(this, 'B')">B. West Champaran</li>
+            <li onclick="check(this, 'C')">C. Gopalganj</li>
+            <li onclick="check(this, 'D')">D. Siwan</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>121. The 'Medha Dairy' plant (modernized) is located in which Bihar district?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Patna</li>
+            <li onclick="check(this, 'B')">B. Samastipur</li>
+            <li onclick="check(this, 'C')">C. Rohtas</li>
+            <li onclick="check(this, 'D')">D. Buxar</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>122. Which among these is a major 'Handicraft' export of Bihar?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Blue Pottery</li>
+            <li onclick="check(this, 'B')">B. Pashmina Shawls</li>
+            <li onclick="check(this, 'C')">C. Terracotta of Rajasthan</li>
+            <li onclick="check(this, 'D')">D. Madhubani Paintings and Sikki Grass products</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>123. The 'Bihar State Financial Corporation' (BSFC) was established in which year?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 1947</li>
+            <li onclick="check(this, 'B')">B. 1950</li>
+            <li onclick="check(this, 'C')">C. 1954</li>
+            <li onclick="check(this, 'D')">D. 1965</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>124. Bihar's 'Tobacco' production is primarily concentrated in which region?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. South Bihar</li>
+            <li onclick="check(this, 'B')">B. North Bihar (specifically Muzaffarpur and Samastipur)</li>
+            <li onclick="check(this, 'C')">C. Western Bihar</li>
+            <li onclick="check(this, 'D')">D. Kosi Region</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>125. The 'Jal-Jeevan-Hariyali' mission of Bihar has how many components?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 11</li>
+            <li onclick="check(this, 'B')">B. 7</li>
+            <li onclick="check(this, 'C')">C. 5</li>
+            <li onclick="check(this, 'D')">D. 15</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>126. The '15th Finance Commission' recommended what percentage of vertical devolution of taxes to states?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 42%</li>
+            <li onclick="check(this, 'B')">B. 41%</li>
+            <li onclick="check(this, 'C')">C. 32%</li>
+            <li onclick="check(this, 'D')">D. 50%</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>127. Which district of Bihar has the highest 'Credit-Deposit (CD) Ratio'?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Purnia</li>
+            <li onclick="check(this, 'B')">B. Patna</li>
+            <li onclick="check(this, 'C')">C. Munger</li>
+            <li onclick="check(this, 'D')">D. Kishanganj</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>128. 'Operation Green' is related to the supply stabilization of which commodities?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Rice, Wheat, Pulses</li>
+            <li onclick="check(this, 'B')">B. Milk and Milk Products</li>
+            <li onclick="check(this, 'C')">C. Tomato, Onion, and Potato (TOP)</li>
+            <li onclick="check(this, 'D')">D. Green Leafy Vegetables</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>129. The 'Bihar State Road Development Corporation' (BSRDC) was established in:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 2005</li>
+            <li onclick="check(this, 'B')">B. 2009</li>
+            <li onclick="check(this, 'C')">C. 2012</li>
+            <li onclick="check(this, 'D')">D. 2015</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>130. Which among the following is a 'Direct Tax'?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Custom Duty</li>
+            <li onclick="check(this, 'B')">B. Excise Duty</li>
+            <li onclick="check(this, 'C')">C. Service Tax</li>
+            <li onclick="check(this, 'D')">D. Wealth Tax</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>131. In the context of Bihar, 'JEEVIKA' is a project for:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Rural Livelihoods Promotion</li>
+            <li onclick="check(this, 'B')">B. Urban Housing</li>
+            <li onclick="check(this, 'C')">C. Highway Development</li>
+            <li onclick="check(this, 'D')">D. IT Training for Youth</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>132. The 'Consumer Price Index' (CPI) for Rural Labourers is compiled by:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Central Statistical Office (CSO)</li>
+            <li onclick="check(this, 'B')">B. NITI Aayog</li>
+            <li onclick="check(this, 'C')">C. Labour Bureau</li>
+            <li onclick="check(this, 'D')">D. RBI</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>133. Which city in Bihar has the 'Bela Industrial Area'?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Patna</li>
+            <li onclick="check(this, 'B')">B. Muzaffarpur</li>
+            <li onclick="check(this, 'C')">C. Bhagalpur</li>
+            <li onclick="check(this, 'D')">D. Gaya</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>134. 'Blue Bonds' are financial instruments used to raise capital for:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Sky-scrapers construction</li>
+            <li onclick="check(this, 'B')">B. Air pollution control</li>
+            <li onclick="check(this, 'C')">C. Indigo farming</li>
+            <li onclick="check(this, 'D')">D. Marine and Ocean-based projects</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>135. What is the approximate 'Length of State Highways' (SH) in Bihar?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 3,638 km</li>
+            <li onclick="check(this, 'B')">B. 5,000 km</li>
+            <li onclick="check(this, 'C')">C. 1,500 km</li>
+            <li onclick="check(this, 'D')">D. 10,000 km</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>136. The 'Kusheshwar Asthan' bird sanctuary in Darbhanga is famous for which economic activity?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Salt mining</li>
+            <li onclick="check(this, 'B')">B. Silk weaving</li>
+            <li onclick="check(this, 'C')">C. Inland Fisheries and Tourism</li>
+            <li onclick="check(this, 'D')">D. Timber production</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>137. 'Priority Sector Lending' (PSL) targets for domestic commercial banks is:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 20%</li>
+            <li onclick="check(this, 'B')">B. 40%</li>
+            <li onclick="check(this, 'C')">C. 18%</li>
+            <li onclick="check(this, 'D')">D. 10%</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>138. Which organization in Bihar is responsible for the 'Udyami Yojana' (Entrepreneur Scheme)?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Finance Department</li>
+            <li onclick="check(this, 'B')">B. Agriculture Department</li>
+            <li onclick="check(this, 'C')">C. Education Department</li>
+            <li onclick="check(this, 'D')">D. Department of Industries</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>139. 'Engel’s Ratio' measures the percentage of income spent on:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Food</li>
+            <li onclick="check(this, 'B')">B. Education</li>
+            <li onclick="check(this, 'C')">C. Housing</li>
+            <li onclick="check(this, 'D')">D. Luxury goods</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>140. In Bihar, the 'Tal' area (lowland) is highly productive for which crop?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Rice</li>
+            <li onclick="check(this, 'B')">B. Pulses (especially Masoor and Gram)</li>
+            <li onclick="check(this, 'C')">C. Sugarcane</li>
+            <li onclick="check(this, 'D')">D. Jute</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>141. 'Sovereign Gold Bonds' (SGB) are issued by:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. State Bank of India</li>
+            <li onclick="check(this, 'B')">B. SEBI</li>
+            <li onclick="check(this, 'C')">C. RBI (on behalf of Government of India)</li>
+            <li onclick="check(this, 'D')">D. MMTC</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>142. Which district of Bihar has the highest 'Fertilizer Consumption'?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Rohtas</li>
+            <li onclick="check(this, 'B')">B. Patna</li>
+            <li onclick="check(this, 'C')">C. Begusarai</li>
+            <li onclick="check(this, 'D')">D. Purnia</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>143. 'Capital Adequacy Ratio' (CAR) is related to which sector?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Banking</li>
+            <li onclick="check(this, 'B')">B. Infrastructure</li>
+            <li onclick="check(this, 'C')">C. Agriculture</li>
+            <li onclick="check(this, 'D')">D. Information Technology</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>144. The 'Hajipur' region is the headquarters of which Railway Zone?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. North Eastern Railway</li>
+            <li onclick="check(this, 'B')">B. East Central Railway</li>
+            <li onclick="check(this, 'C')">C. South Eastern Railway</li>
+            <li onclick="check(this, 'D')">D. Eastern Railway</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>145. 'Merchant Banking' in India is regulated by:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. RBI</li>
+            <li onclick="check(this, 'B')">B. IRDAI</li>
+            <li onclick="check(this, 'C')">C. SEBI</li>
+            <li onclick="check(this, 'D')">D. Ministry of Corporate Affairs</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>146. Bihar's 'Per Capita Consumption of Power' in 2022-23 was approximately:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 329 kWh</li>
+            <li onclick="check(this, 'B')">B. 500 kWh</li>
+            <li onclick="check(this, 'C')">C. 150 kWh</li>
+            <li onclick="check(this, 'D')">D. 1200 kWh</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>147. 'Core Industries' in India include how many sectors?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 5</li>
+            <li onclick="check(this, 'B')">B. 8</li>
+            <li onclick="check(this, 'C')">C. 12</li>
+            <li onclick="check(this, 'D')">D. 15</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>148. Which among the following is NOT a 'Navratna' company?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. BEL</li>
+            <li onclick="check(this, 'B')">B. OIL</li>
+            <li onclick="check(this, 'C')">C. NMDC</li>
+            <li onclick="check(this, 'D')">D. LIC</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>149. Bihar's 'LPG coverage' has significantly increased due to which central scheme?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. PM Ujjwala Yojana</li>
+            <li onclick="check(this, 'B')">B. PM Awas Yojana</li>
+            <li onclick="check(this, 'C')">C. PM Jan Dhan Yojana</li>
+            <li onclick="check(this, 'D')">D. Saubhagya Yojana</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>150. What was the 'Fiscal Deficit' as a percentage of GSDP for Bihar in 2022-23 (actuals)?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 5.1%</li>
+            <li onclick="check(this, 'B')">B. 2.5%</li>
+            <li onclick="check(this, 'C')">C. 3.4%</li>
+            <li onclick="check(this, 'D')">D. 4.8%</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>151. According to the Bihar Budget 2025-26, what is the total estimated budget expenditure?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. ₹2.50 Lakh Crore</li>
+            <li onclick="check(this, 'B')">B. ₹2.90 Lakh Crore (Approx)</li>
+            <li onclick="check(this, 'C')">C. ₹1.80 Lakh Crore</li>
+            <li onclick="check(this, 'D')">D. ₹3.50 Lakh Crore</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>152. Which district in Bihar is being developed as a 'Logistics Hub' due to its proximity to the Golden Quadrilateral?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Kaimur (Mohania)</li>
+            <li onclick="check(this, 'B')">B. Kishanganj</li>
+            <li onclick="check(this, 'C')">C. Banka</li>
+            <li onclick="check(this, 'D')">D. Madhepura</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>153. The 'PM-DevINE' scheme, though primarily for the North-East, has inspired Bihar's 'Border Area Development' in which districts?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Southern Border (Jharkhand)</li>
+            <li onclick="check(this, 'B')">B. Western Border (UP)</li>
+            <li onclick="check(this, 'C')">C. Northern Districts bordering Nepal</li>
+            <li onclick="check(this, 'D')">D. Eastern Border (West Bengal)</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>154. What is the current 'Status of Bihar' in the 'Export Preparedness Index' (EPI) among Landlocked States?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 1st Rank</li>
+            <li onclick="check(this, 'B')">B. Last Rank</li>
+            <li onclick="check(this, 'C')">C. Top 5</li>
+            <li onclick="check(this, 'D')">D. Improving (Middle performer among landlocked states)</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>155. Which sector in Bihar saw the highest 'Growth Rate' in the year 2023-24?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Primary Sector</li>
+            <li onclick="check(this, 'B')">B. Tertiary Sector (Services)</li>
+            <li onclick="check(this, 'C')">C. Secondary Sector (Manufacturing)</li>
+            <li onclick="check(this, 'D')">D. Mining</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>156. The 'Amrit Bharat Station Scheme' has selected how many railway stations in Bihar for redevelopment?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 86</li>
+            <li onclick="check(this, 'B')">B. 20</li>
+            <li onclick="check(this, 'C')">C. 150</li>
+            <li onclick="check(this, 'D')">D. 50</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>157. Bihar's first 'Floating Solar Power Plant' is located in which district?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Patna</li>
+            <li onclick="check(this, 'B')">B. Supaul</li>
+            <li onclick="check(this, 'C')">C. Darbhanga</li>
+            <li onclick="check(this, 'D')">D. Kaimur</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>158. The 'Gati Shakti Terminal' in Bihar (the first one) was commissioned at:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Bihta</li>
+            <li onclick="check(this, 'B')">B. Barauni</li>
+            <li onclick="check(this, 'C')">C. Fatuha</li>
+            <li onclick="check(this, 'D')">D. Jamalpur</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>159. 'One District One Product' (ODOP) for 'Buxar' district is:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Makhana</li>
+            <li onclick="check(this, 'B')">B. Rice</li>
+            <li onclick="check(this, 'C')">C. Litchi</li>
+            <li onclick="check(this, 'D')">D. Leather Products / Wood carvings</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>160. Which district of Bihar is the largest producer of 'Fish'?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Madhubani</li>
+            <li onclick="check(this, 'B')">B. West Champaran</li>
+            <li onclick="check(this, 'C')">C. Katihar</li>
+            <li onclick="check(this, 'D')">D. Patna</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>161. 'Vande Bharat Express' from Patna to Ranchi was the ___ Vande Bharat in Bihar?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Third</li>
+            <li onclick="check(this, 'B')">B. Second</li>
+            <li onclick="check(this, 'C')">C. First</li>
+            <li onclick="check(this, 'D')">D. Fifth</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>162. The 'Mithila Makhana' received the 'GI Tag' in which year?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 2020</li>
+            <li onclick="check(this, 'B')">B. 2022</li>
+            <li onclick="check(this, 'C')">C. 2024</li>
+            <li onclick="check(this, 'D')">D. 2018</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>163. As per the Bihar Economic Survey, which city has the highest 'Petrol' consumption?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Patna</li>
+            <li onclick="check(this, 'B')">B. Muzaffarpur</li>
+            <li onclick="check(this, 'C')">C. Gaya</li>
+            <li onclick="check(this, 'D')">D. Bhagalpur</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>164. 'PM-PRANAM' scheme in Bihar is aimed at reducing the use of:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Plastic</li>
+            <li onclick="check(this, 'B')">B. Diesel in agriculture</li>
+            <li onclick="check(this, 'C')">C. Traditional Seeds</li>
+            <li onclick="check(this, 'D')">D. Chemical Fertilizers</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>165. The 'Mahatma Gandhi Setu' connects Patna with which city?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Sonepur</li>
+            <li onclick="check(this, 'B')">B. Chhapra</li>
+            <li onclick="check(this, 'C')">C. Hajipur</li>
+            <li onclick="check(this, 'D')">D. Ara</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>166. 'Mahila Samman Savings Certificate' (MSSC) is a scheme launched to encourage:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Women's Education</li>
+            <li onclick="check(this, 'B')">B. Small savings among women</li>
+            <li onclick="check(this, 'C')">C. Women's Entrepreneurship</li>
+            <li onclick="check(this, 'D')">D. Health Insurance</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>167. Which Bihar district has the lowest 'Tele-density'?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Purnia</li>
+            <li onclick="check(this, 'B')">B. Sheohar</li>
+            <li onclick="check(this, 'C')">C. Patna</li>
+            <li onclick="check(this, 'D')">D. Rohtas</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>168. The 'Vikassheel Insaan Party' (VIP) leader, often associated with the 'Nishad' (fishermen) economy, is:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Jitan Ram Manjhi</li>
+            <li onclick="check(this, 'B')">B. Upendra Kushwaha</li>
+            <li onclick="check(this, 'C')">C. Mukesh Sahani</li>
+            <li onclick="check(this, 'D')">D. Chirag Paswan</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>169. What is the 'Unemployment Rate' in Bihar as per the PLFS (Periodic Labour Force Survey) 2023-24?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 15%</li>
+            <li onclick="check(this, 'B')">B. Around 7-8% (Showing a declining trend)</li>
+            <li onclick="check(this, 'C')">C. 2%</li>
+            <li onclick="check(this, 'D')">D. 25%</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>170. Which Bihar district is the biggest producer of 'Mangoes'?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Bhagalpur</li>
+            <li onclick="check(this, 'B')">B. Muzaffarpur</li>
+            <li onclick="check(this, 'C')">C. Vaishali</li>
+            <li onclick="check(this, 'D')">D. Darbhanga</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>171. The 'Bihar Biofuel Production Promotion Policy' was introduced in:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 2023</li>
+            <li onclick="check(this, 'B')">B. 2015</li>
+            <li onclick="check(this, 'C')">C. 2020</li>
+            <li onclick="check(this, 'D')">D. 2011</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>172. 'Digital Banking Units' (DBUs) were recently launched in which Bihar city (among the first 75 in India)?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Bhagalpur</li>
+            <li onclick="check(this, 'B')">B. Gaya</li>
+            <li onclick="check(this, 'C')">C. Patna</li>
+            <li onclick="check(this, 'D')">D. Muzaffarpur</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>173. The 'Fatuha' industrial area is primarily known for:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Silk</li>
+            <li onclick="check(this, 'B')">B. Tractors and Engineering goods</li>
+            <li onclick="check(this, 'C')">C. Sugar</li>
+            <li onclick="check(this, 'D')">D. IT Services</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>174. Which bridge in Bihar is known as the 'Life-line of North Bihar'?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Mahatma Gandhi Setu</li>
+            <li onclick="check(this, 'B')">B. Vikramshila Setu</li>
+            <li onclick="check(this, 'C')">C. Rajendra Setu</li>
+            <li onclick="check(this, 'D')">D. Digha-Sonepur Bridge</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>175. What is Bihar's share in the total 'Central Pool' of food grains?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 20%</li>
+            <li onclick="check(this, 'B')">B. 1%</li>
+            <li onclick="check(this, 'C')">C. Significant and growing (around 4-6%)</li>
+            <li onclick="check(this, 'D')">D. Zero</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>176. The 'Gini Coefficient' is a measure used to determine:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Rate of Inflation</li>
+            <li onclick="check(this, 'B')">B. Income Inequality</li>
+            <li onclick="check(this, 'C')">C. Unemployment Rate</li>
+            <li onclick="check(this, 'D')">D. Industrial Growth</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>177. Which district in Bihar has the highest 'Per Capita Small Savings'?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Patna</li>
+            <li onclick="check(this, 'B')">B. Saran</li>
+            <li onclick="check(this, 'C')">C. Buxar</li>
+            <li onclick="check(this, 'D')">D. Siwan</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>178. 'Stagflation' is a situation characterized by:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. High Inflation and High Growth</li>
+            <li onclick="check(this, 'B')">B. Low Inflation and Low Growth</li>
+            <li onclick="check(this, 'C')">C. High Inflation and High Unemployment (Stagnant Growth)</li>
+            <li onclick="check(this, 'D')">D. Deflation and High Employment</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>179. The 'Bihar State Planning Board' was established in which year?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 1951</li>
+            <li onclick="check(this, 'B')">B. 1972</li>
+            <li onclick="check(this, 'C')">C. 1990</li>
+            <li onclick="check(this, 'D')">D. 2005</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>180. 'Fiscal Drag' refers to the situation where:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Government spending slows down the economy</li>
+            <li onclick="check(this, 'B')">B. The deficit becomes uncontrollable</li>
+            <li onclick="check(this, 'C')">C. Foreign debt exceeds GDP</li>
+            <li onclick="check(this, 'D')">D. Inflation pushes taxpayers into higher tax brackets</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>181. Under the 'Mission Amrit Sarovar', Bihar aims to develop/rejuvenate how many ponds per district?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 75</li>
+            <li onclick="check(this, 'B')">B. 100</li>
+            <li onclick="check(this, 'C')">C. 50</li>
+            <li onclick="check(this, 'D')">D. 10</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>182. 'Head-Count Ratio' (HCR) is a method used to measure:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Literacy</li>
+            <li onclick="check(this, 'B')">B. Population Density</li>
+            <li onclick="check(this, 'C')">C. Poverty</li>
+            <li onclick="check(this, 'D')">D. Voter Turnout</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>183. Which Bihar city is known for its 'Jute Industry' (though in a revival phase)?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Begusarai</li>
+            <li onclick="check(this, 'B')">B. Purnia (Maranga)</li>
+            <li onclick="check(this, 'C')">C. Bhagalpur</li>
+            <li onclick="check(this, 'D')">D. Samastipur</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>184. 'Invisible Export' refers to the export of:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Services</li>
+            <li onclick="check(this, 'B')">B. Prohibited Goods</li>
+            <li onclick="check(this, 'C')">C. Unrecorded Handicrafts</li>
+            <li onclick="check(this, 'D')">D. Second-hand machinery</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>185. What is the main objective of Bihar's 'Jal-Jeevan-Hariyali' mission?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Industrial growth</li>
+            <li onclick="check(this, 'B')">B. Increasing IT literacy</li>
+            <li onclick="check(this, 'C')">C. Higher education reforms</li>
+            <li onclick="check(this, 'D')">D. Climate change mitigation and water conservation</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>186. The 'Phillips Curve' shows the relationship between:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Tax and Revenue</li>
+            <li onclick="check(this, 'B')">B. Inflation and Unemployment</li>
+            <li onclick="check(this, 'C')">C. Demand and Supply</li>
+            <li onclick="check(this, 'D')">D. Poverty and Population</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>187. Bihar's 'E-Shakti' project is related to the digitization of:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Self Help Groups (SHGs)</li>
+            <li onclick="check(this, 'B')">B. Land Records</li>
+            <li onclick="check(this, 'C')">C. Police Stations</li>
+            <li onclick="check(this, 'D')">D. Hospitals</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>188. 'Masala Bonds' are bonds issued by Indian entities in:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. US Dollars</li>
+            <li onclick="check(this, 'B')">B. Euros</li>
+            <li onclick="check(this, 'C')">C. Indian Rupees (in overseas markets)</li>
+            <li onclick="check(this, 'D')">D. Gold units</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>189. In Bihar, the 'Fertility Rate' (TFR) as per NFHS-5 is:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 4.0</li>
+            <li onclick="check(this, 'B')">B. 3.0 (Highest in India but declining)</li>
+            <li onclick="check(this, 'C')">C. 2.1 (Replacement level)</li>
+            <li onclick="check(this, 'D')">D. 1.8</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>190. 'Open Market Operations' (OMO) involve the sale/purchase of:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Government Securities by RBI</li>
+            <li onclick="check(this, 'B')">B. Foreign Currency by SEBI</li>
+            <li onclick="check(this, 'C')">C. Shares of PSUs</li>
+            <li onclick="check(this, 'D')">D. Gold in the retail market</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>191. Which Bihar district has the highest 'Road Length' under Rural Roads (PMGSY)?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Patna</li>
+            <li onclick="check(this, 'B')">B. Gaya</li>
+            <li onclick="check(this, 'C')">C. Muzaffarpur</li>
+            <li onclick="check(this, 'D')">D. West Champaran</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>192. 'Call Money' is a loan taken for a period of:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 15 days</li>
+            <li onclick="check(this, 'B')">B. 1 day</li>
+            <li onclick="check(this, 'C')">C. 1 month</li>
+            <li onclick="check(this, 'D')">D. 1 year</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>193. The 'Bihar State Tourism Development Corporation' (BSTDC) motto is:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Blissful Bihar</li>
+            <li onclick="check(this, 'B')">B. Incredible Bihar</li>
+            <li onclick="check(this, 'C')">C. Vibrant Bihar</li>
+            <li onclick="check(this, 'D')">D. Peaceful Bihar</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>194. 'Hot Money' refers to:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Money earned through illegal means</li>
+            <li onclick="check(this, 'B')">B. High denomination currency</li>
+            <li onclick="check(this, 'C')">C. Foreign capital that moves quickly to seek high interest rates</li>
+            <li onclick="check(this, 'D')">D. Money used for purchasing luxury items</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>195. Which of the following 'Agri-Export Zones' (AEZ) exists in Bihar?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Apple AEZ</li>
+            <li onclick="check(this, 'B')">B. Litchi, Honey, and Makhana</li>
+            <li onclick="check(this, 'C')">C. Coffee AEZ</li>
+            <li onclick="check(this, 'D')">D. Spice AEZ</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>196. 'Deflation' is defined as:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Persistent decrease in the general price level</li>
+            <li onclick="check(this, 'B')">B. Persistent increase in the general price level</li>
+            <li onclick="check(this, 'C')">C. Increase in value of currency due to gold reserves</li>
+            <li onclick="check(this, 'D')">D. Slowdown in the rate of inflation</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>197. Which district in Bihar has the highest 'Rural Population' percentage?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Madhepura</li>
+            <li onclick="check(this, 'B')">B. Banka</li>
+            <li onclick="check(this, 'C')">C. Araria</li>
+            <li onclick="check(this, 'D')">D. Samastipur (over 96%)</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>198. 'Global Depository Receipts' (GDRs) are a way for companies to:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Pay taxes to foreign governments</li>
+            <li onclick="check(this, 'B')">B. Raise capital from foreign markets</li>
+            <li onclick="check(this, 'C')">C. Store gold in international vaults</li>
+            <li onclick="check(this, 'D')">D. Hire foreign employees</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>199. Bihar's 'Industrial Growth' is currently being pushed by which flagship infrastructure project?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Sagarmala</li>
+            <li onclick="check(this, 'B')">B. Diamond Quadrilateral</li>
+            <li onclick="check(this, 'C')">C. Amritsar-Kolkata Industrial Corridor (AKIC)</li>
+            <li onclick="check(this, 'D')">D. Chardham Yatra route</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>200. What is the 'Self-Sufficiency' status of Bihar in 'Fish' production as of 2024?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Nearly Self-Sufficient (State surplus in some seasons)</li>
+            <li onclick="check(this, 'B')">B. Highly dependent on Andhra Pradesh</li>
+            <li onclick="check(this, 'C')">C. Zero production</li>
+            <li onclick="check(this, 'D')">D. Only exports, no domestic consumption</li>
+        </ul>
+    </div>
+
+    </div>
+
+    <div class="controls">
+        Score: <span id="current-score">0</span> | Questions Attempted: <span id="attempted">0</span> / 100
+    </div>
+</div>
+
+<script>
+    let score = 0;
+    let attempted = 0;
+
+    function check(element, choice) {
+        const parent = element.closest('.question');
+        const correct = parent.getAttribute('data-answer');
+        const options = parent.querySelectorAll('li');
+
+        // Prevent clicking again
+        if (parent.classList.contains('done')) return;
+        parent.classList.add('done');
+
+        attempted++;
+        document.getElementById('attempted').innerText = attempted;
+
+        if (choice === correct) {
+            element.classList.add('correct');
+            score++;
+            document.getElementById('current-score').innerText = score;
+        } else {
+            element.classList.add('incorrect');
+            // Show correct answer
+            options.forEach(opt => {
+                if (opt.innerText.startsWith(correct)) opt.classList.add('correct');
+            });
+        }
+    }
+</script>
+
+</body>
+</html>

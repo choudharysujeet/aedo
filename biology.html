@@ -1,0 +1,1078 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Physics 100 MCQ - BPSC AEDO</title>
+    <style>
+        :root {
+            --primary: #2c3e50;
+            --accent: #2980b9;
+            --success: #27ae60;
+            --danger: #e74c3c;
+            --bg: #f4f7f6;
+        }
+        body { font-family: 'Segoe UI', sans-serif; background: var(--bg); padding: 20px; }
+        .container { max-width: 900px; margin: 0 auto; background: white; padding: 40px; border-radius: 15px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); }
+        h1 { text-align: center; color: var(--primary); margin-bottom: 30px; border-bottom: 3px solid var(--accent); display: inline-block; width: 100%; padding-bottom: 10px;}
+        
+        .question { margin-bottom: 30px; padding: 20px; border: 1px solid #eee; border-radius: 10px; transition: 0.3s; }
+        .question p { font-weight: 600; font-size: 1.1rem; margin-bottom: 15px; }
+        
+        .options { list-style: none; padding: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+        @media (max-width: 600px) { .options { grid-template-columns: 1fr; } }
+        
+        .options li { background: #fff; border: 2px solid #ddd; padding: 12px; border-radius: 8px; cursor: pointer; transition: 0.2s; }
+        .options li:hover { border-color: var(--accent); background: #f0f7ff; }
+        
+        .correct { background: var(--success) !important; color: white; border-color: var(--success) !important; }
+        .incorrect { background: var(--danger) !important; color: white; border-color: var(--danger) !important; }
+        
+        .controls { position: sticky; bottom: 20px; background: var(--primary); color: white; padding: 15px; border-radius: 50px; text-align: center; box-shadow: 0 5px 15px rgba(0,0,0,0.3); }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Biology Fundamentals: 100 MCQ Series</h1>
+
+    <div id="quiz-wrapper">
+       <div class="question" data-answer="B">
+        <p>1. Which organelle is known as the 'Suicide Bag' of the cell?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Ribosome</li>
+            <li onclick="check(this, 'B')">B. Lysosome</li>
+            <li onclick="check(this, 'C')">C. Nucleus</li>
+            <li onclick="check(this, 'D')">D. Mitochondria</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>2. What is the basic structural and functional unit of the Kidney?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Nephron</li>
+            <li onclick="check(this, 'B')">B. Neuron</li>
+            <li onclick="check(this, 'C')">C. Alveoli</li>
+            <li onclick="check(this, 'D')">D. Lymphocyte</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>3. Which blood group is known as the 'Universal Recipient'?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. O-negative</li>
+            <li onclick="check(this, 'B')">B. A-positive</li>
+            <li onclick="check(this, 'C')">C. AB-positive</li>
+            <li onclick="check(this, 'D')">D. B-negative</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>4. Which of the following is the longest bone in the human body?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Stapes</li>
+            <li onclick="check(this, 'B')">B. Tibia</li>
+            <li onclick="check(this, 'C')">C. Humerus</li>
+            <li onclick="check(this, 'D')">D. Femur</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>5. Bile juice is produced by which organ?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Pancreas</li>
+            <li onclick="check(this, 'B')">B. Liver</li>
+            <li onclick="check(this, 'C')">C. Gallbladder</li>
+            <li onclick="check(this, 'D')">D. Stomach</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>6. Who is known as the 'Father of Genetics'?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Gregor Mendel</li>
+            <li onclick="check(this, 'B')">B. Charles Darwin</li>
+            <li onclick="check(this, 'C')">C. Lamarck</li>
+            <li onclick="check(this, 'D')">D. Robert Hooke</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>7. 'Xylem' in plants is mainly responsible for the transport of:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Food</li>
+            <li onclick="check(this, 'B')">B. Amino Acids</li>
+            <li onclick="check(this, 'C')">C. Water and Minerals</li>
+            <li onclick="check(this, 'D')">D. Oxygen</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>8. Which hormone is known as the 'Emergency Hormone' or 'Fight or Flight' hormone?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Insulin</li>
+            <li onclick="check(this, 'B')">B. Thyroxine</li>
+            <li onclick="check(this, 'C')">C. Estrogen</li>
+            <li onclick="check(this, 'D')">D. Adrenaline</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>9. The average lifespan of a Red Blood Cell (RBC) is approximately:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 60 days</li>
+            <li onclick="check(this, 'B')">B. 120 days</li>
+            <li onclick="check(this, 'C')">C. 150 days</li>
+            <li onclick="check(this, 'D')">D. 200 days</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>10. 'Night Blindness' is caused by the deficiency of which Vitamin?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Vitamin A</li>
+            <li onclick="check(this, 'B')">B. Vitamin B</li>
+            <li onclick="check(this, 'C')">C. Vitamin C</li>
+            <li onclick="check(this, 'D')">D. Vitamin K</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>11. Which part of the human brain controls body balance and posture?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Cerebrum</li>
+            <li onclick="check(this, 'B')">B. Medulla Oblongata</li>
+            <li onclick="check(this, 'C')">C. Cerebellum</li>
+            <li onclick="check(this, 'D')">D. Hypothalamus</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>12. How many pairs of ribs are there in the human body?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 10 pairs</li>
+            <li onclick="check(this, 'B')">B. 14 pairs</li>
+            <li onclick="check(this, 'C')">C. 8 pairs</li>
+            <li onclick="check(this, 'D')">D. 12 pairs</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>13. 'Photosynthesis' in plants takes place primarily in which part of the cell?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Mitochondria</li>
+            <li onclick="check(this, 'B')">B. Chloroplast</li>
+            <li onclick="check(this, 'C')">C. Vacuole</li>
+            <li onclick="check(this, 'D')">D. Ribosome</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>14. Which pigment gives human skin its color?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Melanin</li>
+            <li onclick="check(this, 'B')">B. Hemoglobin</li>
+            <li onclick="check(this, 'C')">C. Chlorophyll</li>
+            <li onclick="check(this, 'D')">D. Anthocyanin</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>15. The 'Double Helix' structure of DNA was first described by:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Robert Hooke</li>
+            <li onclick="check(this, 'B')">B. Gregor Mendel</li>
+            <li onclick="check(this, 'C')">C. Watson and Crick</li>
+            <li onclick="check(this, 'D')">D. Louis Pasteur</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>16. Which of the following is an example of an 'Egg-laying' mammal?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Kangaroo</li>
+            <li onclick="check(this, 'B')">B. Platypus</li>
+            <li onclick="check(this, 'C')">C. Bat</li>
+            <li onclick="check(this, 'D')">D. Whale</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>17. 'Pellagra' is caused by the deficiency of which Vitamin?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Vitamin B1</li>
+            <li onclick="check(this, 'B')">B. Vitamin B2</li>
+            <li onclick="check(this, 'C')">C. Vitamin B6</li>
+            <li onclick="check(this, 'D')">D. Vitamin B3 (Niacin)</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>18. Which gland is both 'Exocrine' and 'Endocrine' in nature?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Pancreas</li>
+            <li onclick="check(this, 'B')">B. Pituitary</li>
+            <li onclick="check(this, 'C')">C. Thyroid</li>
+            <li onclick="check(this, 'D')">D. Adrenal</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>19. The process of 'Transpiration' in plants occurs mainly through:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Roots</li>
+            <li onclick="check(this, 'B')">B. Stem</li>
+            <li onclick="check(this, 'C')">C. Stomata</li>
+            <li onclick="check(this, 'D')">D. Flower</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>20. What is the normal blood pressure of a healthy human adult?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 100/70 mmHg</li>
+            <li onclick="check(this, 'B')">B. 120/80 mmHg</li>
+            <li onclick="check(this, 'C')">C. 140/90 mmHg</li>
+            <li onclick="check(this, 'D')">D. 90/60 mmHg</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>21. 'Amnesia' is related to the loss of:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Sight</li>
+            <li onclick="check(this, 'B')">B. Hearing</li>
+            <li onclick="check(this, 'C')">C. Speech</li>
+            <li onclick="check(this, 'D')">D. Memory</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>22. Which gas is taken in by plants during 'Respiration' (not photosynthesis)?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Oxygen</li>
+            <li onclick="check(this, 'B')">B. Carbon Dioxide</li>
+            <li onclick="check(this, 'C')">C. Nitrogen</li>
+            <li onclick="check(this, 'D')">D. Hydrogen</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>23. The 'Universal Donor' blood group (Negative Rh factor) is:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. AB-</li>
+            <li onclick="check(this, 'B')">B. A-</li>
+            <li onclick="check(this, 'C')">C. O-</li>
+            <li onclick="check(this, 'D')">D. B-</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>24. 'Pencillin' was discovered by:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Louis Pasteur</li>
+            <li onclick="check(this, 'B')">B. Alexander Fleming</li>
+            <li onclick="check(this, 'C')">C. Ronald Ross</li>
+            <li onclick="check(this, 'D')">D. Edward Jenner</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>25. Which of the following is a 'Water-soluble' Vitamin?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Vitamin A</li>
+            <li onclick="check(this, 'B')">B. Vitamin D</li>
+            <li onclick="check(this, 'C')">C. Vitamin E</li>
+            <li onclick="check(this, 'D')">D. Vitamin C</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>26. 'Fungi' are plants that lack:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Chlorophyll</li>
+            <li onclick="check(this, 'B')">B. Oxygen</li>
+            <li onclick="check(this, 'C')">C. Carbon Dioxide</li>
+            <li onclick="check(this, 'D')">D. Sunlight</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>27. The number of chambers in a human heart is:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 2</li>
+            <li onclick="check(this, 'B')">B. 3</li>
+            <li onclick="check(this, 'C')">C. 4</li>
+            <li onclick="check(this, 'D')">D. 5</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>28. 'Dialysis' is used for patients having problems with which organ?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Heart</li>
+            <li onclick="check(this, 'B')">B. Kidney</li>
+            <li onclick="check(this, 'C')">C. Liver</li>
+            <li onclick="check(this, 'D')">D. Lungs</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>29. Which of the following is the 'Master Gland' of the body?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Thyroid</li>
+            <li onclick="check(this, 'B')">B. Adrenal</li>
+            <li onclick="check(this, 'C')">C. Pancreas</li>
+            <li onclick="check(this, 'D')">D. Pituitary</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>30. 'Goitre' is caused by the deficiency of:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Iodine</li>
+            <li onclick="check(this, 'B')">B. Iron</li>
+            <li onclick="check(this, 'C')">C. Calcium</li>
+            <li onclick="check(this, 'D')">D. Vitamin D</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>31. Which organism is known as the 'Farmer's Friend'?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Honeybee</li>
+            <li onclick="check(this, 'B')">B. Cow</li>
+            <li onclick="check(this, 'C')">C. Earthworm</li>
+            <li onclick="check(this, 'D')">D. Ant</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>32. The scientific name of the 'Human' is:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Homo Habilis</li>
+            <li onclick="check(this, 'B')">B. Homo Sapiens</li>
+            <li onclick="check(this, 'C')">C. Homo Erectus</li>
+            <li onclick="check(this, 'D')">D. Homo Neanderthalensis</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>33. Which of the following is responsible for 'Curdling' of milk?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Bacteria</li>
+            <li onclick="check(this, 'B')">B. Virus</li>
+            <li onclick="check(this, 'C')">C. Fungi</li>
+            <li onclick="check(this, 'D')">D. Protozoa</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>34. 'Scurvy' is caused by the deficiency of:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Vitamin A</li>
+            <li onclick="check(this, 'B')">B. Vitamin B12</li>
+            <li onclick="check(this, 'C')">C. Vitamin D</li>
+            <li onclick="check(this, 'D')">D. Vitamin C</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>35. In human body, 'Ligaments' connect:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Muscle to Muscle</li>
+            <li onclick="check(this, 'B')">B. Muscle to Bone</li>
+            <li onclick="check(this, 'C')">C. Bone to Bone</li>
+            <li onclick="check(this, 'D')">D. Nerve to Muscle</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>36. 'Hemoglobin' is a protein containing which metal?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Copper</li>
+            <li onclick="check(this, 'B')">B. Iron</li>
+            <li onclick="check(this, 'C')">C. Magnesium</li>
+            <li onclick="check(this, 'D')">D. Zinc</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>37. The 'Stapes' bone is located in which part of the body?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Ear</li>
+            <li onclick="check(this, 'B')">B. Nose</li>
+            <li onclick="check(this, 'C')">C. Fingers</li>
+            <li onclick="check(this, 'D')">D. Knee</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>38. Which Vitamin is produced in our body by exposure to 'Sunlight'?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Vitamin A</li>
+            <li onclick="check(this, 'B')">B. Vitamin C</li>
+            <li onclick="check(this, 'C')">C. Vitamin D</li>
+            <li onclick="check(this, 'D')">D. Vitamin K</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>39. 'Rickets' is a disease of the:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Blood</li>
+            <li onclick="check(this, 'B')">B. Eyes</li>
+            <li onclick="check(this, 'C')">C. Skin</li>
+            <li onclick="check(this, 'D')">D. Bones</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>40. Which gas is released by plants during 'Photosynthesis'?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Carbon Dioxide</li>
+            <li onclick="check(this, 'B')">B. Oxygen</li>
+            <li onclick="check(this, 'C')">C. Nitrogen</li>
+            <li onclick="check(this, 'D')">D. Hydrogen</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>41. 'Beriberi' is caused by the deficiency of:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Vitamin B1</li>
+            <li onclick="check(this, 'B')">B. Vitamin B2</li>
+            <li onclick="check(this, 'C')">C. Vitamin B12</li>
+            <li onclick="check(this, 'D')">D. Vitamin C</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>42. The part of the eye which is 'Transplanted' is:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Retina</li>
+            <li onclick="check(this, 'B')">B. Lens</li>
+            <li onclick="check(this, 'C')">C. Cornea</li>
+            <li onclick="check(this, 'D')">D. Whole Eye</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>43. Which of the following is a 'Primary Consumer' in an ecosystem?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Lion</li>
+            <li onclick="check(this, 'B')">B. Snake</li>
+            <li onclick="check(this, 'C')">C. Eagle</li>
+            <li onclick="check(this, 'D')">D. Deer</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>44. 'Pollen grains' are produced in:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Ovary</li>
+            <li onclick="check(this, 'B')">B. Anther</li>
+            <li onclick="check(this, 'C')">C. Style</li>
+            <li onclick="check(this, 'D')">D. Stigma</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>45. 'Acupuncture' is a medical system of treatment that originated in:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. China</li>
+            <li onclick="check(this, 'B')">B. India</li>
+            <li onclick="check(this, 'C')">C. Japan</li>
+            <li onclick="check(this, 'D')">D. USA</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>46. Which part of the brain controls 'Involuntary' actions like breathing and heartbeat?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Cerebrum</li>
+            <li onclick="check(this, 'B')">B. Cerebellum</li>
+            <li onclick="check(this, 'C')">C. Medulla Oblongata</li>
+            <li onclick="check(this, 'D')">D. Spinal Cord</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>47. 'Insects' breathe through:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Lungs</li>
+            <li onclick="check(this, 'B')">B. Spiracles/Trachea</li>
+            <li onclick="check(this, 'C')">C. Skin</li>
+            <li onclick="check(this, 'D')">D. Gills</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>48. The hardest part of the human body is:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Skull</li>
+            <li onclick="check(this, 'B')">B. Femur</li>
+            <li onclick="check(this, 'C')">C. Jaw bone</li>
+            <li onclick="check(this, 'D')">D. Tooth Enamel</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>49. 'Myopia' is a defect related to:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Eyes</li>
+            <li onclick="check(this, 'B')">B. Ears</li>
+            <li onclick="check(this, 'C')">C. Lungs</li>
+            <li onclick="check(this, 'D')">D. Heart</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>50. Which animal has the longest 'Gestation' period?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Blue Whale</li>
+            <li onclick="check(this, 'B')">B. Human</li>
+            <li onclick="check(this, 'C')">C. Elephant</li>
+            <li onclick="check(this, 'D')">D. Rhinoceros</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>51. 'Typhoid' is a disease of which organ?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Liver</li>
+            <li onclick="check(this, 'B')">B. Intestine</li>
+            <li onclick="check(this, 'C')">C. Lungs</li>
+            <li onclick="check(this, 'D')">D. Heart</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>52. 'Dengue' is caused by:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Virus</li>
+            <li onclick="check(this, 'B')">B. Bacteria</li>
+            <li onclick="check(this, 'C')">C. Fungi</li>
+            <li onclick="check(this, 'D')">D. Protozoa</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>53. Which mosquito is the carrier of 'Malaria'?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Aedes Aegypti</li>
+            <li onclick="check(this, 'B')">B. Culex</li>
+            <li onclick="check(this, 'C')">C. Female Anopheles</li>
+            <li onclick="check(this, 'D')">D. Male Anopheles</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>54. 'Widal Test' is done for the diagnosis of:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. AIDS</li>
+            <li onclick="check(this, 'B')">B. Cancer</li>
+            <li onclick="check(this, 'C')">C. Malaria</li>
+            <li onclick="check(this, 'D')">D. Typhoid</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>55. Which of the following is responsible for 'Nitrogen Fixation' in soil?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Virus</li>
+            <li onclick="check(this, 'B')">B. Rhizobium Bacteria</li>
+            <li onclick="check(this, 'C')">C. Earthworm</li>
+            <li onclick="check(this, 'D')">D. Fungi</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>56. 'BCG' vaccine is used for the prevention of:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Tuberculosis (TB)</li>
+            <li onclick="check(this, 'B')">B. Polio</li>
+            <li onclick="check(this, 'C')">C. Typhoid</li>
+            <li onclick="check(this, 'D')">D. Measles</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>57. 'Hydrophobia' (fear of water) is a symptom of:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Tetanus</li>
+            <li onclick="check(this, 'B')">B. Typhoid</li>
+            <li onclick="check(this, 'C')">C. Rabies</li>
+            <li onclick="check(this, 'D')">D. Malaria</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>58. The blood clotting protein is:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Hemoglobin</li>
+            <li onclick="check(this, 'B')">B. Albumin</li>
+            <li onclick="check(this, 'C')">C. Globulin</li>
+            <li onclick="check(this, 'D')">D. Fibrinogen</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>59. Which instrument is used to measure 'Blood Pressure'?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Barometer</li>
+            <li onclick="check(this, 'B')">B. Sphygmomanometer</li>
+            <li onclick="check(this, 'C')">C. Thermometer</li>
+            <li onclick="check(this, 'D')">D. Stethoscope</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>60. 'Smallpox' vaccine was discovered by:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Edward Jenner</li>
+            <li onclick="check(this, 'B')">B. Louis Pasteur</li>
+            <li onclick="check(this, 'C')">C. Alexander Fleming</li>
+            <li onclick="check(this, 'D')">D. Jonas Salk</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>61. Which of the following is a 'Non-communicable' disease?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Cholera</li>
+            <li onclick="check(this, 'B')">B. TB</li>
+            <li onclick="check(this, 'C')">C. Diabetes</li>
+            <li onclick="check(this, 'D')">D. Malaria</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>62. The theory of 'Natural Selection' was proposed by:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Lamarck</li>
+            <li onclick="check(this, 'B')">B. Charles Darwin</li>
+            <li onclick="check(this, 'C')">C. Mendel</li>
+            <li onclick="check(this, 'D')">D. De Vries</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>63. Which part of the plant is 'Saffron' obtained from?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Root</li>
+            <li onclick="check(this, 'B')">B. Leaf</li>
+            <li onclick="check(this, 'C')">C. Stem</li>
+            <li onclick="check(this, 'D')">D. Stigma</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>64. 'Minamata' disease was caused by pollution of water by:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Mercury</li>
+            <li onclick="check(this, 'B')">B. Lead</li>
+            <li onclick="check(this, 'C')">C. Cadmium</li>
+            <li onclick="check(this, 'D')">D. Arsenic</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>65. Which Vitamin helps in the 'Clotting' of blood?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Vitamin A</li>
+            <li onclick="check(this, 'B')">B. Vitamin C</li>
+            <li onclick="check(this, 'C')">C. Vitamin K</li>
+            <li onclick="check(this, 'D')">D. Vitamin D</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>66. The process of development of a 'Seed' into a seedling is:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Photosynthesis</li>
+            <li onclick="check(this, 'B')">B. Germination</li>
+            <li onclick="check(this, 'C')">C. Respiration</li>
+            <li onclick="check(this, 'D')">D. Transpiration</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>67. 'AIDS' is caused by:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Bacteria</li>
+            <li onclick="check(this, 'B')">B. Fungi</li>
+            <li onclick="check(this, 'C')">C. Protozoa</li>
+            <li onclick="check(this, 'D')">D. Virus (HIV)</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>68. Which organ in the human body is affected by 'Pneumonia'?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Lungs</li>
+            <li onclick="check(this, 'B')">B. Liver</li>
+            <li onclick="check(this, 'C')">C. Intestine</li>
+            <li onclick="check(this, 'D')">D. Kidneys</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>69. 'Penicillin' is obtained from:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Bacteria</li>
+            <li onclick="check(this, 'B')">B. Algae</li>
+            <li onclick="check(this, 'C')">C. Fungi</li>
+            <li onclick="check(this, 'D')">D. Lichen</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>70. The percentage of 'Plasma' in human blood is approximately:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 45%</li>
+            <li onclick="check(this, 'B')">B. 55%</li>
+            <li onclick="check(this, 'C')">C. 70%</li>
+            <li onclick="check(this, 'D')">D. 90%</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>71. 'Xerophthalmia' is a deficiency disease of:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Vitamin C</li>
+            <li onclick="check(this, 'B')">B. Vitamin D</li>
+            <li onclick="check(this, 'C')">C. Vitamin K</li>
+            <li onclick="check(this, 'D')">D. Vitamin A</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>72. Which is the 'Smallest' bone in the human body?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Stapes</li>
+            <li onclick="check(this, 'B')">B. Phalanges</li>
+            <li onclick="check(this, 'C')">C. Carpals</li>
+            <li onclick="check(this, 'D')">D. Patella</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>73. 'Dicot' plants have seeds with how many cotyledons?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 1</li>
+            <li onclick="check(this, 'B')">B. 3</li>
+            <li onclick="check(this, 'C')">C. 2</li>
+            <li onclick="check(this, 'D')">D. 4</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>74. The 'pH' of human blood is approximately:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 6.4</li>
+            <li onclick="check(this, 'B')">B. 7.4</li>
+            <li onclick="check(this, 'C')">C. 8.4</li>
+            <li onclick="check(this, 'D')">D. 5.4</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>75. Which gland is known as the 'Third Eye'?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Pituitary</li>
+            <li onclick="check(this, 'B')">B. Thyroid</li>
+            <li onclick="check(this, 'C')">C. Adrenal</li>
+            <li onclick="check(this, 'D')">D. Pineal</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>76. The 'Powerhouse' of the cell is:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Mitochondria</li>
+            <li onclick="check(this, 'B')">B. Golgi bodies</li>
+            <li onclick="check(this, 'C')">C. Nucleus</li>
+            <li onclick="check(this, 'D')">D. Lysosomes</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>77. Which element is present in 'Insulin'?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Iron</li>
+            <li onclick="check(this, 'B')">B. Magnesium</li>
+            <li onclick="check(this, 'C')">C. Zinc</li>
+            <li onclick="check(this, 'D')">D. Copper</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>78. 'Lamarckism' is the theory of:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Natural selection</li>
+            <li onclick="check(this, 'B')">B. Inheritance of acquired characters</li>
+            <li onclick="check(this, 'C')">C. Survival of the fittest</li>
+            <li onclick="check(this, 'D')">D. Mutation</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>79. How many 'Chromosomes' are there in a normal human cell?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 23</li>
+            <li onclick="check(this, 'B')">B. 44</li>
+            <li onclick="check(this, 'C')">C. 48</li>
+            <li onclick="check(this, 'D')">D. 46</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>80. Which part of the brain is responsible for 'Memory' and intelligence?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Cerebrum</li>
+            <li onclick="check(this, 'B')">B. Cerebellum</li>
+            <li onclick="check(this, 'C')">C. Thalamus</li>
+            <li onclick="check(this, 'D')">D. Medulla</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>81. 'Sweat' primarily helps in:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Removal of excess water</li>
+            <li onclick="check(this, 'B')">B. Removal of excess salts</li>
+            <li onclick="check(this, 'C')">C. Regulation of body temperature</li>
+            <li onclick="check(this, 'D')">D. Keeping skin moist</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>82. Which Vitamin is called 'Calciferol'?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Vitamin A</li>
+            <li onclick="check(this, 'B')">B. Vitamin D</li>
+            <li onclick="check(this, 'C')">C. Vitamin E</li>
+            <li onclick="check(this, 'D')">D. Vitamin K</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>83. 'Hibernation' is also known as:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Summer sleep</li>
+            <li onclick="check(this, 'B')">B. Bird migration</li>
+            <li onclick="check(this, 'C')">C. Estivation</li>
+            <li onclick="check(this, 'D')">D. Winter sleep</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>84. Which of the following is a 'Vestigial' organ in humans?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Appendix</li>
+            <li onclick="check(this, 'B')">B. Heart</li>
+            <li onclick="check(this, 'C')">C. Liver</li>
+            <li onclick="check(this, 'D')">D. Lungs</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>85. 'Gout' is a disease caused by the accumulation of _____ in joints.</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Lactic acid</li>
+            <li onclick="check(this, 'B')">B. Oxalic acid</li>
+            <li onclick="check(this, 'C')">C. Uric acid</li>
+            <li onclick="check(this, 'D')">D. Citric acid</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>86. Which part of the human eye contains 'Rod cells' and 'Cone cells'?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Cornea</li>
+            <li onclick="check(this, 'B')">B. Retina</li>
+            <li onclick="check(this, 'C')">C. Iris</li>
+            <li onclick="check(this, 'D')">D. Sclera</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>87. 'Entamoeba histolytica' causes:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Amoebic Dysentery</li>
+            <li onclick="check(this, 'B')">B. Malaria</li>
+            <li onclick="check(this, 'C')">C. Typhoid</li>
+            <li onclick="check(this, 'D')">D. Jaundice</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>88. Which is the largest 'Internal' organ of the human body?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Heart</li>
+            <li onclick="check(this, 'B')">B. Brain</li>
+            <li onclick="check(this, 'C')">C. Kidney</li>
+            <li onclick="check(this, 'D')">D. Liver</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>89. The 'Cell Wall' of plants is primarily composed of:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Protein</li>
+            <li onclick="check(this, 'B')">B. Cellulose</li>
+            <li onclick="check(this, 'C')">C. Starch</li>
+            <li onclick="check(this, 'D')">D. Chitin</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>90. 'Scurvy' affects which part of the body?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Eyes</li>
+            <li onclick="check(this, 'B')">B. Hair</li>
+            <li onclick="check(this, 'C')">C. Gums and Skin</li>
+            <li onclick="check(this, 'D')">D. Liver</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>91. Which Vitamin is also known as 'Tocopherol'?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Vitamin E</li>
+            <li onclick="check(this, 'B')">B. Vitamin K</li>
+            <li onclick="check(this, 'C')">C. Vitamin A</li>
+            <li onclick="check(this, 'D')">D. Vitamin D</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>92. In which part of the human body is 'Urea' formed?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Kidneys</li>
+            <li onclick="check(this, 'B')">B. Liver</li>
+            <li onclick="check(this, 'C')">C. Pancreas</li>
+            <li onclick="check(this, 'D')">D. Spleen</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>93. 'Tuberculosis' (TB) is caused by:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Virus</li>
+            <li onclick="check(this, 'B')">B. Protozoa</li>
+            <li onclick="check(this, 'C')">C. Fungi</li>
+            <li onclick="check(this, 'D')">D. Bacteria</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>94. The 'Genetic' material in a cell is:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. RNA</li>
+            <li onclick="check(this, 'B')">B. Protein</li>
+            <li onclick="check(this, 'C')">C. DNA</li>
+            <li onclick="check(this, 'D')">D. ATP</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>95. 'Carrots' are a rich source of:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Vitamin A</li>
+            <li onclick="check(this, 'B')">B. Vitamin C</li>
+            <li onclick="check(this, 'C')">C. Vitamin D</li>
+            <li onclick="check(this, 'D')">D. Vitamin E</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>96. The study of 'Fruits' is called:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Horticulture</li>
+            <li onclick="check(this, 'B')">B. Pomology</li>
+            <li onclick="check(this, 'C')">C. Entomology</li>
+            <li onclick="check(this, 'D')">D. Ornithology</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>97. 'Pollen' grains in water-pollinated plants are:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Heavy</li>
+            <li onclick="check(this, 'B')">B. Sticky</li>
+            <li onclick="check(this, 'C')">C. Sharp</li>
+            <li onclick="check(this, 'D')">D. Light and Unwettable</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>98. The 'Pulmonary Vein' carries:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Oxygenated blood</li>
+            <li onclick="check(this, 'B')">B. Deoxygenated blood</li>
+            <li onclick="check(this, 'C')">C. Impure blood</li>
+            <li onclick="check(this, 'D')">D. Mixed blood</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>99. 'Phloem' is a tissue in plants used for transporting:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Water</li>
+            <li onclick="check(this, 'B')">B. Food (Sugar)</li>
+            <li onclick="check(this, 'C')">C. Minerals</li>
+            <li onclick="check(this, 'D')">D. Hormones only</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>100. Who is considered the 'Father of Biology'?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Theophrastus</li>
+            <li onclick="check(this, 'B')">B. Hippocrates</li>
+            <li onclick="check(this, 'C')">C. Aristotle</li>
+            <li onclick="check(this, 'D')">D. Linnaeus</li>
+        </ul>
+    </div>
+
+    </div>
+
+    <div class="controls">
+        Score: <span id="current-score">0</span> | Questions Attempted: <span id="attempted">0</span> / 100
+    </div>
+</div>
+
+<script>
+    let score = 0;
+    let attempted = 0;
+
+    function check(element, choice) {
+        const parent = element.closest('.question');
+        const correct = parent.getAttribute('data-answer');
+        const options = parent.querySelectorAll('li');
+
+        // Prevent clicking again
+        if (parent.classList.contains('done')) return;
+        parent.classList.add('done');
+
+        attempted++;
+        document.getElementById('attempted').innerText = attempted;
+
+        if (choice === correct) {
+            element.classList.add('correct');
+            score++;
+            document.getElementById('current-score').innerText = score;
+        } else {
+            element.classList.add('incorrect');
+            // Show correct answer
+            options.forEach(opt => {
+                if (opt.innerText.startsWith(correct)) opt.classList.add('correct');
+            });
+        }
+    }
+</script>
+
+</body>
+</html>

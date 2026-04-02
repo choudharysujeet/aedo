@@ -1,0 +1,1074 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Physics 100 MCQ - BPSC AEDO</title>
+    <style>
+        :root {
+            --primary: #2c3e50;
+            --accent: #2980b9;
+            --success: #27ae60;
+            --danger: #e74c3c;
+            --bg: #f4f7f6;
+        }
+        body { font-family: 'Segoe UI', sans-serif; background: var(--bg); padding: 20px; }
+        .container { max-width: 900px; margin: 0 auto; background: white; padding: 40px; border-radius: 15px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); }
+        h1 { text-align: center; color: var(--primary); margin-bottom: 30px; border-bottom: 3px solid var(--accent); display: inline-block; width: 100%; padding-bottom: 10px;}
+        
+        .question { margin-bottom: 30px; padding: 20px; border: 1px solid #eee; border-radius: 10px; transition: 0.3s; }
+        .question p { font-weight: 600; font-size: 1.1rem; margin-bottom: 15px; }
+        
+        .options { list-style: none; padding: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+        @media (max-width: 600px) { .options { grid-template-columns: 1fr; } }
+        
+        .options li { background: #fff; border: 2px solid #ddd; padding: 12px; border-radius: 8px; cursor: pointer; transition: 0.2s; }
+        .options li:hover { border-color: var(--accent); background: #f0f7ff; }
+        
+        .correct { background: var(--success) !important; color: white; border-color: var(--success) !important; }
+        .incorrect { background: var(--danger) !important; color: white; border-color: var(--danger) !important; }
+        
+        .controls { position: sticky; bottom: 20px; background: var(--primary); color: white; padding: 15px; border-radius: 50px; text-align: center; box-shadow: 0 5px 15px rgba(0,0,0,0.3); }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Physics Fundamentals: 100 MCQ Series</h1>
+
+    <div id="quiz-wrapper">
+        <div class="question" data-answer="B">
+            <p>1. Which law of thermodynamics states that energy cannot be created or destroyed?</p>
+            <ul class="options">
+                <li onclick="check(this, 'A')">A. Zeroth Law</li>
+                <li onclick="check(this, 'B')">B. First Law</li>
+                <li onclick="check(this, 'C')">C. Second Law</li>
+                <li onclick="check(this, 'D')">D. Third Law</li>
+            </ul>
+        </div>
+
+        <div class="question" data-answer="C">
+            <p>2. Entropy is a measure of which of the following?</p>
+            <ul class="options">
+                <li onclick="check(this, 'A')">A. Internal Energy</li>
+                <li onclick="check(this, 'B')">B. Heat Flow</li>
+                <li onclick="check(this, 'C')">C. Randomness/Disorder</li>
+                <li onclick="check(this, 'D')">D. Specific Heat</li>
+            </ul>
+        </div>
+
+        <div class="question" data-answer="C">
+            <p>3. Which surface has the highest Albedo effect?</p>
+            <ul class="options">
+                <li onclick="check(this, 'A')">A. Black Soil</li>
+                <li onclick="check(this, 'B')">B. Green Forest</li>
+                <li onclick="check(this, 'C')">C. Fresh Snow</li>
+                <li onclick="check(this, 'D')">D. Ocean Water</li>
+            </ul>
+        </div>
+
+        <div class="question" data-answer="B">
+            <p>4. In which atmospheric layer is the 'Good Ozone' located?</p>
+            <ul class="options">
+                <li onclick="check(this, 'A')">A. Troposphere</li>
+                <li onclick="check(this, 'B')">B. Stratosphere</li>
+                <li onclick="check(this, 'C')">C. Mesosphere</li>
+                <li onclick="check(this, 'D')">D. Ionosphere</li>
+            </ul>
+        </div>
+
+        <div class="question" data-answer="C">
+            <p>5. Earth re-emits solar energy back into space as:</p>
+            <ul class="options">
+                <li onclick="check(this, 'A')">A. UV Radiation</li>
+                <li onclick="check(this, 'B')">B. Visible Light</li>
+                <li onclick="check(this, 'C')">C. Long-wave Infrared</li>
+                <li onclick="check(this, 'D')">D. X-Rays</li>
+            </ul>
+        </div>
+
+        <div class="question" data-answer="B">
+            <p>6. Rayleigh Scattering, which explains why the sky appears blue, is inversely proportional to which power of wavelength (λ)?</p>
+            <ul class="options">
+                <li onclick="check(this, 'A')">A. λ²</li>
+                <li onclick="check(this, 'B')">B. λ⁴</li>
+                <li onclick="check(this, 'C')">C. λ</li>
+                <li onclick="check(this, 'D')">D. λ³</li>
+            </ul>
+        </div>
+
+        <div class="question" data-answer="A">
+            <p>7. Which phenomenon is responsible for the 'Mirage' seen in deserts or over hot coal roads?</p>
+            <ul class="options">
+                <li onclick="check(this, 'A')">A. Total Internal Reflection</li>
+                <li onclick="check(this, 'B')">B. Diffraction</li>
+                <li onclick="check(this, 'C')">C. Polarization</li>
+                <li onclick="check(this, 'D')">D. Scattering</li>
+            </ul>
+        </div>
+
+        <div class="question" data-answer="C">
+            <p>8. A 'Pyranometer' is a physical instrument used primarily to measure:</p>
+            <ul class="options">
+                <li onclick="check(this, 'A')">A. Humidity levels</li>
+                <li onclick="check(this, 'B')">B. Wind velocity</li>
+                <li onclick="check(this, 'C')">C. Total Global Solar Radiation</li>
+                <li onclick="check(this, 'D')">D. Atmospheric Pressure</li>
+            </ul>
+        </div>
+
+        <div class="question" data-answer="C">
+            <p>9. Which type of mirror is used as a 'Solar Concentrator' in large-scale solar power plants?</p>
+            <ul class="options">
+                <li onclick="check(this, 'A')">A. Convex Mirror</li>
+                <li onclick="check(this, 'B')">B. Plane Mirror</li>
+                <li onclick="check(this, 'C')">C. Concave Mirror</li>
+                <li onclick="check(this, 'D')">D. Parabolic Lens</li>
+            </ul>
+        </div>
+
+        <div class="question" data-answer="B">
+            <p>10. The speed of light in a vacuum is approximately 3 × 10⁸ m/s. What happens to its speed when it enters a denser medium like water?</p>
+            <ul class="options">
+                <li onclick="check(this, 'A')">A. It increases</li>
+                <li onclick="check(this, 'B')">B. It decreases</li>
+                <li onclick="check(this, 'C')">C. It remains constant</li>
+                <li onclick="check(this, 'D')">D. It becomes zero</li>
+            </ul>
+        </div>
+
+        <div class="question" data-answer="A">
+            <p>11. Which color of the visible spectrum has the shortest wavelength and the highest energy?</p>
+            <ul class="options">
+                <li onclick="check(this, 'A')">A. Violet</li>
+                <li onclick="check(this, 'B')">B. Red</li>
+                <li onclick="check(this, 'C')">C. Green</li>
+                <li onclick="check(this, 'D')">D. Yellow</li>
+            </ul>
+        </div>
+
+        <div class="question" data-answer="B">
+            <p>12. The working principle of an Optical Fiber, used in modern communication and sensors, is:</p>
+            <ul class="options">
+                <li onclick="check(this, 'A')">A. Refraction</li>
+                <li onclick="check(this, 'B')">B. Total Internal Reflection</li>
+                <li onclick="check(this, 'C')">C. Dispersion</li>
+                <li onclick="check(this, 'D')">D. Interference</li>
+            </ul>
+        </div>
+
+        <div class="question" data-answer="D">
+            <p>13. Light-year is a physical unit used to measure:</p>
+            <ul class="options">
+                <li onclick="check(this, 'A')">A. Time</li>
+                <li onclick="check(this, 'B')">B. Speed of light</li>
+                <li onclick="check(this, 'C')">C. Intensity of light</li>
+                <li onclick="check(this, 'D')">D. Astronomical Distance</li>
+            </ul>
+        </div>
+
+        <div class="question" data-answer="A">
+            <p>14. The 'Tyndall Effect' is related to which property of light?</p>
+            <ul class="options">
+                <li onclick="check(this, 'A')">A. Scattering by colloidal particles</li>
+                <li onclick="check(this, 'B')">B. Refraction by lenses</li>
+                <li onclick="check(this, 'C')">C. Reflection by mirrors</li>
+                <li onclick="check(this, 'D')">D. Bending around corners</li>
+            </ul>
+        </div>
+
+        <div class="question" data-answer="B">
+            <p>15. Which lens is used to correct 'Myopia' (Short-sightedness)?</p>
+            <ul class="options">
+                <li onclick="check(this, 'A')">A. Convex Lens</li>
+                <li onclick="check(this, 'B')">B. Concave Lens</li>
+                <li onclick="check(this, 'C')">C. Cylindrical Lens</li>
+                <li onclick="check(this, 'D')">D. Bifocal Lens</li>
+            </ul>
+        </div>
+
+        <div class="question" data-answer="B">
+            <p>16. According to Stefan-Boltzmann Law, the total energy radiated per unit area is proportional to which power of absolute temperature (T)?</p>
+            <ul class="options">
+                <li onclick="check(this, 'A')">A. T²</li>
+                <li onclick="check(this, 'B')">B. T⁴</li>
+                <li onclick="check(this, 'C')">C. T</li>
+                <li onclick="check(this, 'D')">D. T³</li>
+            </ul>
+        </div>
+
+        <div class="question" data-answer="C">
+            <p>17. The primary reason why the 'Greenhouse Effect' occurs is that the atmosphere is:</p>
+            <ul class="options">
+                <li onclick="check(this, 'A')">A. Transparent to both UV and IR</li>
+                <li onclick="check(this, 'B')">B. Opaque to visible light</li>
+                <li onclick="check(this, 'C')">C. Transparent to visible light but opaque to Infrared</li>
+                <li onclick="check(this, 'D')">D. Opaque to all radiation</li>
+            </ul>
+        </div>
+
+        <div class="question" data-answer="A">
+            <p>18. A rainbow is formed due to a combination of which phenomena?</p>
+            <ul class="options">
+                <li onclick="check(this, 'A')">A. Dispersion, Refraction, and Total Internal Reflection</li>
+                <li onclick="check(this, 'B')">B. Only Reflection</li>
+                <li onclick="check(this, 'C')">C. Only Diffraction</li>
+                <li onclick="check(this, 'D')">D. Scattering and Interference</li>
+            </ul>
+        </div>
+
+        <div class="question" data-answer="C">
+            <p>19. The unit used to measure the 'Luminous Intensity' of light is:</p>
+            <ul class="options">
+                <li onclick="check(this, 'A')">A. Lux</li>
+                <li onclick="check(this, 'B')">B. Lumen</li>
+                <li onclick="check(this, 'C')">C. Candela</li>
+                <li onclick="check(this, 'D')">D. Watt</li>
+            </ul>
+        </div>
+
+        <div class="question" data-answer="B">
+            <p>20. Which radiation has the highest penetrating power and is used in industrial radiography?</p>
+            <ul class="options">
+                <li onclick="check(this, 'A')">A. Alpha particles</li>
+                <li onclick="check(this, 'B')">B. Gamma rays</li>
+                <li onclick="check(this, 'C')">C. Beta particles</li>
+                <li onclick="check(this, 'D')">D. Ultrasound</li>
+            </ul>
+        </div>
+        <div class="question" data-answer="A">
+            <p>21. Which isotope is commonly used in Carbon Dating to determine the age of organic materials?</p>
+            <ul class="options">
+                <li onclick="check(this, 'A')">A. Carbon-14</li>
+                <li onclick="check(this, 'B')">B. Carbon-12</li>
+                <li onclick="check(this, 'C')">C. Uranium-235</li>
+                <li onclick="check(this, 'D')">D. Plutonium-239</li>
+            </ul>
+        </div>
+
+        <div class="question" data-answer="B">
+            <p>22. The time required for half of the radioactive atoms in a sample to decay is known as:</p>
+            <ul class="options">
+                <li onclick="check(this, 'A')">A. Mean life</li>
+                <li onclick="check(this, 'B')">B. Half-life</li>
+                <li onclick="check(this, 'C')">C. Decay constant</li>
+                <li onclick="check(this, 'D')">D. Quarter-life</li>
+            </ul>
+        </div>
+
+        <div class="question" data-answer="C">
+            <p>23. Which particle is essentially a Helium nucleus consisting of two protons and two neutrons?</p>
+            <ul class="options">
+                <li onclick="check(this, 'A')">A. Beta particle</li>
+                <li onclick="check(this, 'B')">B. Gamma ray</li>
+                <li onclick="check(this, 'C')">C. Alpha particle</li>
+                <li onclick="check(this, 'D')">D. Positron</li>
+            </ul>
+        </div>
+
+        <div class="question" data-answer="B">
+            <p>24. In a nuclear power plant, what is the role of a 'Moderator' like Graphite or Heavy Water?</p>
+            <ul class="options">
+                <li onclick="check(this, 'A')">A. To stop the reaction</li>
+                <li onclick="check(this, 'B')">B. To slow down fast-moving neutrons</li>
+                <li onclick="check(this, 'C')">C. To accelerate protons</li>
+                <li onclick="check(this, 'D')">D. To absorb gamma radiation</li>
+            </ul>
+        </div>
+
+        <div class="question" data-answer="B">
+            <p>25. Nuclear Fusion, the process that powers the Sun, involves:</p>
+            <ul class="options">
+                <li onclick="check(this, 'A')">A. Splitting of heavy nuclei</li>
+                <li onclick="check(this, 'B')">B. Combining light nuclei like Hydrogen into Helium</li>
+                <li onclick="check(this, 'C')">C. Burning of coal and oxygen</li>
+                <li onclick="check(this, 'D')">D. Radioactive decay of lead</li>
+            </ul>
+        </div>
+
+        <div class="question" data-answer="B">
+            <p>26. What is the SI unit of Radioactivity?</p>
+            <ul class="options">
+                <li onclick="check(this, 'A')">A. Curie</li>
+                <li onclick="check(this, 'B')">B. Becquerel</li>
+                <li onclick="check(this, 'C')">C. Roentgen</li>
+                <li onclick="check(this, 'D')">D. Sievert</li>
+            </ul>
+        </div>
+
+        <div class="question" data-answer="B">
+            <p>27. The 'Photoelectric Effect', for which Einstein won the Nobel Prize, is the basis for:</p>
+            <ul class="options">
+                <li onclick="check(this, 'A')">A. Wind Turbines</li>
+                <li onclick="check(this, 'B')">B. Solar Photovoltaic Cells</li>
+                <li onclick="check(this, 'C')">C. Hydroelectric Dams</li>
+                <li onclick="check(this, 'D')">D. Internal Combustion Engines</li>
+            </ul>
+        </div>
+
+        <div class="question" data-answer="C">
+            <p>28. Surface Tension in liquids is primarily due to:</p>
+            <ul class="options">
+                <li onclick="check(this, 'A')">A. Adhesive forces</li>
+                <li onclick="check(this, 'B')">B. Gravitational forces</li>
+                <li onclick="check(this, 'C')">C. Cohesive forces between molecules</li>
+                <li onclick="check(this, 'D')">D. Magnetic forces</li>
+            </ul>
+        </div>
+
+        <div class="question" data-answer="A">
+            <p>29. Viscosity is the property of a fluid that represents its resistance to:</p>
+            <ul class="options">
+                <li onclick="check(this, 'A')">A. Flow or internal friction</li>
+                <li onclick="check(this, 'B')">B. Compression</li>
+                <li onclick="check(this, 'C')">C. Expansion</li>
+                <li onclick="check(this, 'D')">D. Evaporation</li>
+            </ul>
+        </div>
+
+        <div class="question" data-answer="B">
+            <p>30. The rise of water in a narrow tube (Capillary Action) is caused by:</p>
+            <ul class="options">
+                <li onclick="check(this, 'A')">A. Only Gravity</li>
+                <li onclick="check(this, 'B')">B. Surface Tension and Adhesion</li>
+                <li onclick="check(this, 'C')">C. Atmospheric Pressure</li>
+                <li onclick="check(this, 'D')">D. Viscous Drag</li>
+            </ul>
+        </div>
+
+        <div class="question" data-answer="C">
+            <p>31. Pascal's Law is the fundamental principle behind the operation of:</p>
+            <ul class="options">
+                <li onclick="check(this, 'A')">A. Aeroplanes</li>
+                <li onclick="check(this, 'B')">B. Ships</li>
+                <li onclick="check(this, 'C')">C. Hydraulic Brakes and Lifts</li>
+                <li onclick="check(this, 'D')">D. Thermometers</li>
+            </ul>
+        </div>
+
+        <div class="question" data-answer="B">
+            <p>32. Archimedes' Principle states that a body immersed in a fluid experiences an upward buoyant force equal to:</p>
+            <ul class="options">
+                <li onclick="check(this, 'A')">A. The mass of the body</li>
+                <li onclick="check(this, 'B')">B. The weight of the fluid displaced</li>
+                <li onclick="check(this, 'C')">C. The volume of the body</li>
+                <li onclick="check(this, 'D')">D. The pressure at the bottom</li>
+            </ul>
+        </div>
+
+        <div class="question" data-answer="A">
+            <p>33. The 'Young's Modulus' is a property of solids that measures:</p>
+            <ul class="options">
+                <li onclick="check(this, 'A')">A. Elasticity/Stiffness</li>
+                <li onclick="check(this, 'B')">B. Thermal Conductivity</li>
+                <li onclick="check(this, 'C')">C. Magnetic Susceptibility</li>
+                <li onclick="check(this, 'D')">D. Optical Density</li>
+            </ul>
+        </div>
+
+        <div class="question" data-answer="B">
+            <p>34. Which instrument is used to measure the 'Relative Humidity' of the atmosphere?</p>
+            <ul class="options">
+                <li onclick="check(this, 'A')">A. Barometer</li>
+                <li onclick="check(this, 'B')">B. Hygrometer</li>
+                <li onclick="check(this, 'C')">C. Anemometer</li>
+                <li onclick="check(this, 'D')">D. Altimeter</li>
+            </ul>
+        </div>
+
+        <div class="question" data-answer="C">
+            <p>35. 'Brownian Motion' provides evidence for:</p>
+            <ul class="options">
+                <li onclick="check(this, 'A')">A. Wave nature of light</li>
+                <li onclick="check(this, 'B')">B. Gravitational attraction</li>
+                <li onclick="check(this, 'C')">C. The kinetic molecular theory of matter</li>
+                <li onclick="check(this, 'D')">D. Nuclear fission</li>
+            </ul>
+        </div>
+
+        <div class="question" data-answer="D">
+            <p>36. According to Boyle's Law, for a fixed mass of gas at constant temperature, pressure is:</p>
+            <ul class="options">
+                <li onclick="check(this, 'A')">A. Directly proportional to volume</li>
+                <li onclick="check(this, 'B')">B. Equal to volume</li>
+                <li onclick="check(this, 'C')">C. Independent of volume</li>
+                <li onclick="check(this, 'D')">D. Inversely proportional to volume</li>
+            </ul>
+        </div>
+
+        <div class="question" data-answer="B">
+            <p>37. What happens to the boiling point of water as we go higher into the mountains?</p>
+            <ul class="options">
+                <li onclick="check(this, 'A')">A. It increases</li>
+                <li onclick="check(this, 'B')">B. It decreases</li>
+                <li onclick="check(this, 'C')">C. It remains constant at 100°C</li>
+                <li onclick="check(this, 'D')">D. It becomes zero</li>
+            </ul>
+        </div>
+
+        <div class="question" data-answer="C">
+            <p>38. The unit 'Decibel' (dB) is used to measure the intensity of:</p>
+            <ul class="options">
+                <li onclick="check(this, 'A')">A. Light</li>
+                <li onclick="check(this, 'B')">B. Heat</li>
+                <li onclick="check(this, 'C')">C. Sound</li>
+                <li onclick="check(this, 'D')">D. Electricity</li>
+            </ul>
+        </div>
+
+        <div class="question" data-answer="B">
+            <p>39. An 'Anemometer' is used in environmental monitoring to measure:</p>
+            <ul class="options">
+                <li onclick="check(this, 'A')">A. Rainfall</li>
+                <li onclick="check(this, 'B')">B. Wind speed</li>
+                <li onclick="check(this, 'C')">C. Solar Intensity</li>
+                <li onclick="check(this, 'D')">D. Water turbidity</li>
+            </ul>
+        </div>
+
+        <div class="question" data-answer="A">
+            <p>40. X-rays are electromagnetic waves that have a wavelength:</p>
+            <ul class="options">
+                <li onclick="check(this, 'A')">A. Shorter than visible light</li>
+                <li onclick="check(this, 'B')">B. Longer than radio waves</li>
+                <li onclick="check(this, 'C')">C. Equal to sound waves</li>
+                <li onclick="check(this, 'D')">D. Longer than Infrared</li>
+            </ul>
+        </div>
+        <div class="question" data-answer="B">
+            <p>41. Which of the following materials is a 'Superconductor' at very low temperatures?</p>
+            <ul class="options">
+                <li onclick="check(this, 'A')">A. Copper</li>
+                <li onclick="check(this, 'B')">B. Mercury</li>
+                <li onclick="check(this, 'C')">C. Plastic</li>
+                <li onclick="check(this, 'D')">D. Germanium</li>
+            </ul>
+        </div>
+
+        <div class="question" data-answer="A">
+            <p>42. Ohm's Law states that the current (I) flowing through a conductor is directly proportional to:</p>
+            <ul class="options">
+                <li onclick="check(this, 'A')">A. Potential Difference (V)</li>
+                <li onclick="check(this, 'B')">B. Resistance (R)</li>
+                <li onclick="check(this, 'C')">C. Temperature</li>
+                <li onclick="check(this, 'D')">D. Density</li>
+            </ul>
+        </div>
+
+        <div class="question" data-answer="C">
+            <p>43. In a domestic electric circuit, the 'Earth Wire' is primarily used for:</p>
+            <ul class="options">
+                <li onclick="check(this, 'A')">A. Saving electricity</li>
+                <li onclick="check(this, 'B')">B. Increasing voltage</li>
+                <li onclick="check(this, 'C')">C. Safety against electric shocks</li>
+                <li onclick="check(this, 'D')">D. Lighting the bulb</li>
+            </ul>
+        </div>
+
+        <div class="question" data-answer="B">
+            <p>44. A device that converts Mechanical Energy into Electrical Energy is called a:</p>
+            <ul class="options">
+                <li onclick="check(this, 'A')">A. Motor</li>
+                <li onclick="check(this, 'B')">B. Generator (Dynamo)</li>
+                <li onclick="check(this, 'C')">C. Transformer</li>
+                <li onclick="check(this, 'D')">D. Rectifier</li>
+            </ul>
+        </div>
+
+        <div class="question" data-answer="A">
+            <p>45. Which instrument is used to measure extremely small electric currents?</p>
+            <ul class="options">
+                <li onclick="check(this, 'A')">A. Galvanometer</li>
+                <li onclick="check(this, 'B')">B. Ammeter</li>
+                <li onclick="check(this, 'C')">C. Voltmeter</li>
+                <li onclick="check(this, 'D')">D. Wattmeter</li>
+            </ul>
+        </div>
+
+        <div class="question" data-answer="B">
+            <p>46. 'Faraday's Laws' are the fundamental principle behind the operation of:</p>
+            <ul class="options">
+                <li onclick="check(this, 'A')">A. Electric Heaters</li>
+                <li onclick="check(this, 'B')">B. Transformers and Generators</li>
+                <li onclick="check(this, 'C')">C. LED bulbs</li>
+                <li onclick="check(this, 'D')">D. Solar Panels</li>
+            </ul>
+        </div>
+
+        <div class="question" data-answer="C">
+            <p>47. Which type of current is typically produced by a chemical battery?</p>
+            <ul class="options">
+                <li onclick="check(this, 'A')">A. Alternating Current (AC)</li>
+                <li onclick="check(this, 'B')">B. Pulsating Current</li>
+                <li onclick="check(this, 'C')">C. Direct Current (DC)</li>
+                <li onclick="check(this, 'D')">D. High Frequency Current</li>
+            </ul>
+        </div>
+
+        <div class="question" data-answer="D">
+            <p>48. The heating effect of electric current (Joule Heating) is used in which appliance?</p>
+            <ul class="options">
+                <li onclick="check(this, 'A')">A. Electric Fan</li>
+                <li onclick="check(this, 'B')">B. Refrigerator</li>
+                <li onclick="check(this, 'C')">C. Loudspeaker</li>
+                <li onclick="check(this, 'D')">D. Electric Geyser</li>
+            </ul>
+        </div>
+
+        <div class="question" data-answer="A">
+            <p>49. A Transformer is used to change the levels of:</p>
+            <ul class="options">
+                <li onclick="check(this, 'A')">A. AC Voltage</li>
+                <li onclick="check(this, 'B')">B. DC Voltage</li>
+                <li onclick="check(this, 'C')">C. Power</li>
+                <li onclick="check(this, 'D')">D. Resistance</li>
+            </ul>
+        </div>
+
+        <div class="question" data-answer="C">
+            <p>50. Magnetic Field Strength is measured in which SI unit?</p>
+            <ul class="options">
+                <li onclick="check(this, 'A')">A. Weber</li>
+                <li onclick="check(this, 'B')">B. Henry</li>
+                <li onclick="check(this, 'C')">C. Tesla</li>
+                <li onclick="check(this, 'D')">D. Ampere</li>
+            </ul>
+        </div>
+
+        <div class="question" data-answer="B">
+            <p>51. Which material is most commonly used as a 'Semiconductor' in computer chips?</p>
+            <ul class="options">
+                <li onclick="check(this, 'A')">A. Iron</li>
+                <li onclick="check(this, 'B')">B. Silicon</li>
+                <li onclick="check(this, 'C')">C. Silver</li>
+                <li onclick="check(this, 'D')">D. Lead</li>
+            </ul>
+        </div>
+
+        <div class="question" data-answer="A">
+            <p>52. In a 'P-type' semiconductor, the majority charge carriers are:</p>
+            <ul class="options">
+                <li onclick="check(this, 'A')">A. Holes</li>
+                <li onclick="check(this, 'B')">B. Electrons</li>
+                <li onclick="check(this, 'C')">C. Neutrons</li>
+                <li onclick="check(this, 'D')">D. Protons</li>
+            </ul>
+        </div>
+
+        <div class="question" data-answer="C">
+            <p>53. The process of adding impurities to a pure semiconductor to increase its conductivity is called:</p>
+            <ul class="options">
+                <li onclick="check(this, 'A')">A. Mixing</li>
+                <li onclick="check(this, 'B')">B. Ionization</li>
+                <li onclick="check(this, 'C')">C. Doping</li>
+                <li onclick="check(this, 'D')">D. Polarization</li>
+            </ul>
+        </div>
+
+        <div class="question" data-answer="B">
+            <p>54. Which device acts as a 'One-way Valve' for electric current, allowing it to flow in only one direction?</p>
+            <ul class="options">
+                <li onclick="check(this, 'A')">A. Resistor</li>
+                <li onclick="check(this, 'B')">B. Diode</li>
+                <li onclick="check(this, 'C')">C. Capacitor</li>
+                <li onclick="check(this, 'D')">D. Inductor</li>
+            </ul>
+        </div>
+
+        <div class="question" data-answer="B">
+            <p>55. A 'Step-up Transformer' increases the:</p>
+            <ul class="options">
+                <li onclick="check(this, 'A')">A. Current</li>
+                <li onclick="check(this, 'B')">B. Voltage</li>
+                <li onclick="check(this, 'C')">C. Power</li>
+                <li onclick="check(this, 'D')">D. Frequency</li>
+            </ul>
+        </div>
+
+        <div class="question" data-answer="C">
+            <p>56. What is the standard frequency of Alternating Current (AC) supplied to households in India?</p>
+            <ul class="options">
+                <li onclick="check(this, 'A')">A. 60 Hz</li>
+                <li onclick="check(this, 'B')">B. 110 Hz</li>
+                <li onclick="check(this, 'C')">C. 50 Hz</li>
+                <li onclick="check(this, 'D')">D. 220 Hz</li>
+            </ul>
+        </div>
+
+        <div class="question" data-answer="A">
+            <p>57. The 'Fuse' in an electrical circuit is made of a material with a:</p>
+            <ul class="options">
+                <li onclick="check(this, 'A')">A. Low melting point</li>
+                <li onclick="check(this, 'B')">B. High melting point</li>
+                <li onclick="check(this, 'C')">C. High resistance</li>
+                <li onclick="check(this, 'D')">D. High boiling point</li>
+            </ul>
+        </div>
+
+        <div class="question" data-answer="B">
+            <p>58. Which law is used to find the direction of the magnetic field around a straight current-carrying conductor?</p>
+            <ul class="options">
+                <li onclick="check(this, 'A')">A. Fleming's Left Hand Rule</li>
+                <li onclick="check(this, 'B')">B. Right Hand Thumb Rule</li>
+                <li onclick="check(this, 'C')">C. Faraday's Law</li>
+                <li onclick="check(this, 'D')">D. Lenz's Law</li>
+            </ul>
+        </div>
+
+        <div class="question" data-answer="D">
+            <p>59. Resistance of a wire is inversely proportional to its:</p>
+            <ul class="options">
+                <li onclick="check(this, 'A')">A. Length</li>
+                <li onclick="check(this, 'B')">B. Temperature</li>
+                <li onclick="check(this, 'C')">C. Resistivity</li>
+                <li onclick="check(this, 'D')">D. Area of Cross-section</li>
+            </ul>
+        </div>
+
+        <div class="question" data-answer="B">
+            <p>60. The process by which an emf is induced in a circuit due to a change in magnetic flux is:</p>
+            <ul class="options">
+                <li onclick="check(this, 'A')">A. Electrolysis</li>
+                <li onclick="check(this, 'B')">B. Electromagnetic Induction</li>
+                <li onclick="check(this, 'C')">C. Thermionic Emission</li>
+                <li onclick="check(this, 'D')">D. Ionization</li>
+            </ul>
+        </div>
+        <div class="question" data-answer="B">
+            <p>61. Which of Newton's Laws of Motion defines the concept of 'Inertia'?</p>
+            <ul class="options">
+                <li onclick="check(this, 'A')">A. Second Law</li>
+                <li onclick="check(this, 'B')">B. First Law</li>
+                <li onclick="check(this, 'C')">C. Third Law</li>
+                <li onclick="check(this, 'D')">D. Law of Gravitation</li>
+            </ul>
+        </div>
+
+        <div class="question" data-answer="C">
+            <p>62. A body is in 'Free Fall' when the only force acting upon it is:</p>
+            <ul class="options">
+                <li onclick="check(this, 'A')">A. Air Resistance</li>
+                <li onclick="check(this, 'B')">B. Friction</li>
+                <li onclick="check(this, 'C')">C. Gravity</li>
+                <li onclick="check(this, 'D')">D. Buoyancy</li>
+            </ul>
+        </div>
+
+        <div class="question" data-answer="B">
+            <p>63. The value of 'g' (acceleration due to gravity) is maximum at:</p>
+            <ul class="options">
+                <li onclick="check(this, 'A')">A. The Equator</li>
+                <li onclick="check(this, 'B')">B. The Poles</li>
+                <li onclick="check(this, 'C')">C. The Center of the Earth</li>
+                <li onclick="check(this, 'D')">D. Mount Everest</li>
+            </ul>
+        </div>
+
+        <div class="question" data-answer="A">
+            <p>64. 'Escape Velocity' is the minimum speed needed for an object to:</p>
+            <ul class="options">
+                <li onclick="check(this, 'A')">A. Break free from a planet's gravitational pull</li>
+                <li onclick="check(this, 'B')">B. Enter an orbit</li>
+                <li onclick="check(this, 'C')">C. Reach the speed of light</li>
+                <li onclick="check(this, 'D')">D. Break the sound barrier</li>
+            </ul>
+        </div>
+
+        <div class="question" data-answer="C">
+            <p>65. For every action, there is an equal and opposite reaction. This is:</p>
+            <ul class="options">
+                <li onclick="check(this, 'A')">A. Newton's First Law</li>
+                <li onclick="check(this, 'B')">B. Newton's Second Law</li>
+                <li onclick="check(this, 'C')">C. Newton's Third Law</li>
+                <li onclick="check(this, 'D')">D. Law of Conservation of Mass</li>
+            </ul>
+        </div>
+
+        <div class="question" data-answer="B">
+            <p>66. The 'Centripetal Force' required to keep a satellite in orbit is provided by:</p>
+            <ul class="options">
+                <li onclick="check(this, 'A')">A. Rocket Engines</li>
+                <li onclick="check(this, 'B')">B. Gravitational Attraction</li>
+                <li onclick="check(this, 'C')">C. Solar Wind</li>
+                <li onclick="check(this, 'D')">D. Magnetic Field</li>
+            </ul>
+        </div>
+
+        <div class="question" data-answer="A">
+            <p>67. Which of the following is a 'Vector' quantity?</p>
+            <ul class="options">
+                <li onclick="check(this, 'A')">A. Velocity</li>
+                <li onclick="check(this, 'B')">B. Speed</li>
+                <li onclick="check(this, 'C')">C. Distance</li>
+                <li onclick="check(this, 'D')">D. Mass</li>
+            </ul>
+        </div>
+
+        <div class="question" data-answer="B">
+            <p>68. What happens to the weight of an object if it is taken from the Earth to the Moon?</p>
+            <ul class="options">
+                <li onclick="check(this, 'A')">A. It increases</li>
+                <li onclick="check(this, 'B')">B. It decreases</li>
+                <li onclick="check(this, 'C')">C. It remains the same</li>
+                <li onclick="check(this, 'D')">D. It becomes zero</li>
+            </ul>
+        </div>
+
+        <div class="question" data-answer="C">
+            <p>69. The 'Universal Law of Gravitation' was formulated by:</p>
+            <ul class="options">
+                <li onclick="check(this, 'A')">A. Galileo Galilei</li>
+                <li onclick="check(this, 'B')">B. Albert Einstein</li>
+                <li onclick="check(this, 'C')">C. Isaac Newton</li>
+                <li onclick="check(this, 'D')">D. Johannes Kepler</li>
+            </ul>
+        </div>
+
+        <div class="question" data-answer="A">
+            <p>70. Which physical quantity remains constant for a body in 'Uniform Circular Motion'?</p>
+            <ul class="options">
+                <li onclick="check(this, 'A')">A. Speed</li>
+                <li onclick="check(this, 'B')">B. Velocity</li>
+                <li onclick="check(this, 'C')">C. Acceleration</li>
+                <li onclick="check(this, 'D')">D. Displacement</li>
+            </ul>
+        </div>
+
+        <div class="question" data-answer="B">
+            <p>71. The slope of a 'Velocity-Time' graph represents:</p>
+            <ul class="options">
+                <li onclick="check(this, 'A')">A. Distance</li>
+                <li onclick="check(this, 'B')">B. Acceleration</li>
+                <li onclick="check(this, 'C')">C. Force</li>
+                <li onclick="check(this, 'D')">D. Speed</li>
+            </ul>
+        </div>
+
+        <div class="question" data-answer="D">
+            <p>72. Which of the following depends on 'Atmospheric Pressure' to function?</p>
+            <ul class="options">
+                <li onclick="check(this, 'A')">A. Electric Fan</li>
+                <li onclick="check(this, 'B')">B. Solar Panel</li>
+                <li onclick="check(this, 'C')">C. LED Bulb</li>
+                <li onclick="check(this, 'D')">D. Siphon or Drinking Straw</li>
+            </ul>
+        </div>
+
+        <div class="question" data-answer="B">
+            <p>73. The SI unit of 'Power' is:</p>
+            <ul class="options">
+                <li onclick="check(this, 'A')">A. Joule</li>
+                <li onclick="check(this, 'B')">B. Watt</li>
+                <li onclick="check(this, 'C')">C. Newton</li>
+                <li onclick="check(this, 'D')">D. Ampere</li>
+            </ul>
+        </div>
+
+        <div class="question" data-answer="A">
+            <p>74. Kinetic Energy of an object is directly proportional to the square of its:</p>
+            <ul class="options">
+                <li onclick="check(this, 'A')">A. Velocity</li>
+                <li onclick="check(this, 'B')">B. Mass</li>
+                <li onclick="check(this, 'C')">C. Acceleration</li>
+                <li onclick="check(this, 'D')">D. Height</li>
+            </ul>
+        </div>
+
+        <div class="question" data-answer="C">
+            <p>75. What is the standard unit of 'Work'?</p>
+            <ul class="options">
+                <li onclick="check(this, 'A')">A. Watt</li>
+                <li onclick="check(this, 'B')">B. Pascal</li>
+                <li onclick="check(this, 'C')">C. Joule</li>
+                <li onclick="check(this, 'D')">D. Hertz</li>
+            </ul>
+        </div>
+
+        <div class="question" data-answer="B">
+            <p>76. Which law states that an object at rest stays at rest unless acted upon by an unbalanced force?</p>
+            <ul class="options">
+                <li onclick="check(this, 'A')">A. Law of Conservation</li>
+                <li onclick="check(this, 'B')">B. Law of Inertia</li>
+                <li onclick="check(this, 'C')">C. Law of Momentum</li>
+                <li onclick="check(this, 'D')">D. Law of Friction</li>
+            </ul>
+        </div>
+
+        <div class="question" data-answer="A">
+            <p>77. Friction is a force that always _____ the motion of an object.</p>
+            <ul class="options">
+                <li onclick="check(this, 'A')">A. Opposes</li>
+                <li onclick="check(this, 'B')">B. Supports</li>
+                <li onclick="check(this, 'C')">C. Increases</li>
+                <li onclick="check(this, 'D')">D. Does not affect</li>
+            </ul>
+        </div>
+
+        <div class="question" data-answer="B">
+            <p>78. The 'Weight' of an object is actually a:</p>
+            <ul class="options">
+                <li onclick="check(this, 'A')">A. Mass</li>
+                <li onclick="check(this, 'B')">B. Force</li>
+                <li onclick="check(this, 'C')">C. Pressure</li>
+                <li onclick="check(this, 'D')">D. Volume</li>
+            </ul>
+        </div>
+
+        <div class="question" data-answer="C">
+            <p>79. 'Pressure' is defined as:</p>
+            <ul class="options">
+                <li onclick="check(this, 'A')">A. Force × Area</li>
+                <li onclick="check(this, 'B')">B. Mass / Volume</li>
+                <li onclick="check(this, 'C')">C. Force / Area</li>
+                <li onclick="check(this, 'D')">D. Area / Force</li>
+            </ul>
+        </div>
+
+        <div class="question" data-answer="B">
+            <p>80. Which of these is used to measure 'Atmospheric Pressure'?</p>
+            <ul class="options">
+                <li onclick="check(this, 'A')">A. Thermometer</li>
+                <li onclick="check(this, 'B')">B. Barometer</li>
+                <li onclick="check(this, 'C')">C. Hygrometer</li>
+                <li onclick="check(this, 'D')">D. Speedometer</li>
+            </ul>
+        </div>
+        <div class="question" data-answer="B">
+            <p>81. Sound waves in air are a classic example of which type of wave?</p>
+            <ul class="options">
+                <li onclick="check(this, 'A')">A. Transverse waves</li>
+                <li onclick="check(this, 'B')">B. Longitudinal waves</li>
+                <li onclick="check(this, 'C')">C. Electromagnetic waves</li>
+                <li onclick="check(this, 'D')">D. Matter waves</li>
+            </ul>
+        </div>
+
+        <div class="question" data-answer="B">
+            <p>82. The 'Pitch' of a sound is primarily determined by its:</p>
+            <ul class="options">
+                <li onclick="check(this, 'A')">A. Amplitude</li>
+                <li onclick="check(this, 'B')">B. Frequency</li>
+                <li onclick="check(this, 'C')">C. Velocity</li>
+                <li onclick="check(this, 'D')">D. Phase</li>
+            </ul>
+        </div>
+
+        <div class="question" data-answer="C">
+            <p>83. Sound cannot travel through which of the following?</p>
+            <ul class="options">
+                <li onclick="check(this, 'A')">A. Steel</li>
+                <li onclick="check(this, 'B')">B. Water</li>
+                <li onclick="check(this, 'C')">C. Vacuum</li>
+                <li onclick="check(this, 'D')">D. Air</li>
+            </ul>
+        </div>
+
+        <div class="question" data-answer="B">
+            <p>84. What is the speed of sound in dry air at 0°C approximately?</p>
+            <ul class="options">
+                <li onclick="check(this, 'A')">A. 1500 m/s</li>
+                <li onclick="check(this, 'B')">B. 332 m/s</li>
+                <li onclick="check(this, 'C')">C. 3 × 10⁸ m/s</li>
+                <li onclick="check(this, 'D')">D. 100 m/s</li>
+            </ul>
+        </div>
+
+        <div class="question" data-answer="B">
+            <p>85. 'SONAR' (Sound Navigation and Ranging) uses which type of waves to detect underwater objects?</p>
+            <ul class="options">
+                <li onclick="check(this, 'A')">A. Infrasonic waves</li>
+                <li onclick="check(this, 'B')">B. Ultrasonic waves</li>
+                <li onclick="check(this, 'C')">C. Radio waves</li>
+                <li onclick="check(this, 'D')">D. Light waves</li>
+            </ul>
+        </div>
+
+        <div class="question" data-answer="C">
+            <p>86. An 'Echo' is produced due to which property of sound?</p>
+            <ul class="options">
+                <li onclick="check(this, 'A')">A. Refraction</li>
+                <li onclick="check(this, 'B')">B. Absorption</li>
+                <li onclick="check(this, 'C')">C. Reflection</li>
+                <li onclick="check(this, 'D')">D. Diffraction</li>
+            </ul>
+        </div>
+
+        <div class="question" data-answer="A">
+            <p>87. The human ear is sensitive to sounds in the frequency range of:</p>
+            <ul class="options">
+                <li onclick="check(this, 'A')">A. 20 Hz to 20,000 Hz</li>
+                <li onclick="check(this, 'B')">B. 0 Hz to 20 Hz</li>
+                <li onclick="check(this, 'C')">C. Above 50,000 Hz</li>
+                <li onclick="check(this, 'D')">D. 100 Hz to 100,000 Hz</li>
+            </ul>
+        </div>
+
+        <div class="question" data-answer="B">
+            <p>88. The 'Doppler Effect' relates to the change in frequency of a wave due to:</p>
+            <ul class="options">
+                <li onclick="check(this, 'A')">A. Change in temperature</li>
+                <li onclick="check(this, 'B')">B. Relative motion between source and observer</li>
+                <li onclick="check(this, 'C')">C. Reflection from a wall</li>
+                <li onclick="check(this, 'D')">D. Interference of two waves</li>
+            </ul>
+        </div>
+
+        <div class="question" data-answer="D">
+            <p>89. Which of the following is NOT an electromagnetic wave?</p>
+            <ul class="options">
+                <li onclick="check(this, 'A')">A. X-rays</li>
+                <li onclick="check(this, 'B')">B. Microwaves</li>
+                <li onclick="check(this, 'C')">C. Gamma rays</li>
+                <li onclick="check(this, 'D')">D. Sound waves</li>
+            </ul>
+        </div>
+
+        <div class="question" data-answer="C">
+            <p>90. The distance between two consecutive crests or troughs in a wave is called:</p>
+            <ul class="options">
+                <li onclick="check(this, 'A')">A. Amplitude</li>
+                <li onclick="check(this, 'B')">B. Frequency</li>
+                <li onclick="check(this, 'C')">C. Wavelength</li>
+                <li onclick="check(this, 'D')">D. Time Period</li>
+            </ul>
+        </div>
+
+        <div class="question" data-answer="B">
+            <p>91. A 'Lux Meter' is used to measure which of the following?</p>
+            <ul class="options">
+                <li onclick="check(this, 'A')">A. Sound intensity</li>
+                <li onclick="check(this, 'B')">B. Intensity of light/illumination</li>
+                <li onclick="check(this, 'C')">C. Atmospheric pressure</li>
+                <li onclick="check(this, 'D')">D. Radiation levels</li>
+            </ul>
+        </div>
+
+        <div class="question" data-answer="C">
+            <p>92. Which instrument is used to determine the purity of milk based on its density?</p>
+            <ul class="options">
+                <li onclick="check(this, 'A')">A. Hydrometer</li>
+                <li onclick="check(this, 'B')">B. Barometer</li>
+                <li onclick="check(this, 'C')">C. Lactometer</li>
+                <li onclick="check(this, 'D')">D. Galvanometer</li>
+            </ul>
+        </div>
+
+        <div class="question" data-answer="B">
+            <p>93. A 'Seismograph' is used to record and measure:</p>
+            <ul class="options">
+                <li onclick="check(this, 'A')">A. Wind speed</li>
+                <li onclick="check(this, 'B')">B. Earthquake vibrations</li>
+                <li onclick="check(this, 'C')">C. Ocean currents</li>
+                <li onclick="check(this, 'D')">D. Rainfall</li>
+            </ul>
+        </div>
+
+        <div class="question" data-answer="A">
+            <p>94. The conversion of AC to DC is performed by a:</p>
+            <ul class="options">
+                <li onclick="check(this, 'A')">A. Rectifier</li>
+                <li onclick="check(this, 'B')">B. Inverter</li>
+                <li onclick="check(this, 'C')">C. Transformer</li>
+                <li onclick="check(this, 'D')">D. Generator</li>
+            </ul>
+        </div>
+
+        <div class="question" data-answer="B">
+            <p>95. 'Geothermal Energy' is energy derived from:</p>
+            <ul class="options">
+                <li onclick="check(this, 'A')">A. Sunlight</li>
+                <li onclick="check(this, 'B')">B. The internal heat of the Earth</li>
+                <li onclick="check(this, 'C')">C. Wind power</li>
+                <li onclick="check(this, 'D')">D. Nuclear fission</li>
+            </ul>
+        </div>
+
+        <div class="question" data-answer="C">
+            <p>96. Which law of physics explains the lifting force on an airplane wing?</p>
+            <ul class="options">
+                <li onclick="check(this, 'A')">A. Archimedes' Principle</li>
+                <li onclick="check(this, 'B')">B. Pascal's Law</li>
+                <li onclick="check(this, 'C')">C. Bernoulli's Principle</li>
+                <li onclick="check(this, 'D')">D. Newton's Third Law</li>
+            </ul>
+        </div>
+
+        <div class="question" data-answer="B">
+            <p>97. The 'S.I.' unit of 'Luminous Flux' is:</p>
+            <ul class="options">
+                <li onclick="check(this, 'A')">A. Candela</li>
+                <li onclick="check(this, 'B')">B. Lumen</li>
+                <li onclick="check(this, 'C')">C. Lux</li>
+                <li onclick="check(this, 'D')">D. Watt</li>
+            </ul>
+        </div>
+
+        <div class="question" data-answer="A">
+            <p>98. Which radioactive gas is naturally emitted from the ground and can accumulate in buildings, posing a health risk?</p>
+            <ul class="options">
+                <li onclick="check(this, 'A')">A. Radon</li>
+                <li onclick="check(this, 'B')">B. Helium</li>
+                <li onclick="check(this, 'C')">C. Argon</li>
+                <li onclick="check(this, 'D')">D. Neon</li>
+            </ul>
+        </div>
+
+        <div class="question" data-answer="B">
+            <p>99. What happens to the resistance of a 'Thermistor' as the temperature increases?</p>
+            <ul class="options">
+                <li onclick="check(this, 'A')">A. It increases</li>
+                <li onclick="check(this, 'B')">B. It decreases</li>
+                <li onclick="check(this, 'C')">C. It remains constant</li>
+                <li onclick="check(this, 'D')">D. It becomes infinite</li>
+            </ul>
+        </div>
+
+        <div class="question" data-answer="C">
+            <p>100. In an ecosystem, which process involves the physics of heat loss at every energy transfer?</p>
+            <ul class="options">
+                <li onclick="check(this, 'A')">A. Photosynthesis</li>
+                <li onclick="check(this, 'B')">B. Nitrogen Fixation</li>
+                <li onclick="check(this, 'C')">C. Trophic Energy Transfer</li>
+                <li onclick="check(this, 'D')">D. Mineralization</li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="controls">
+        Score: <span id="current-score">0</span> | Questions Attempted: <span id="attempted">0</span> / 100
+    </div>
+</div>
+
+<script>
+    let score = 0;
+    let attempted = 0;
+
+    function check(element, choice) {
+        const parent = element.closest('.question');
+        const correct = parent.getAttribute('data-answer');
+        const options = parent.querySelectorAll('li');
+
+        // Prevent clicking again
+        if (parent.classList.contains('done')) return;
+        parent.classList.add('done');
+
+        attempted++;
+        document.getElementById('attempted').innerText = attempted;
+
+        if (choice === correct) {
+            element.classList.add('correct');
+            score++;
+            document.getElementById('current-score').innerText = score;
+        } else {
+            element.classList.add('incorrect');
+            // Show correct answer
+            options.forEach(opt => {
+                if (opt.innerText.startsWith(correct)) opt.classList.add('correct');
+            });
+        }
+    }
+</script>
+
+</body>
+</html>

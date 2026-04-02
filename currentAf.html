@@ -1,0 +1,4079 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Physics 100 MCQ - BPSC AEDO</title>
+    <style>
+        :root {
+            --primary: #2c3e50;
+            --accent: #2980b9;
+            --success: #27ae60;
+            --danger: #e74c3c;
+            --bg: #f4f7f6;
+        }
+        body { font-family: 'Segoe UI', sans-serif; background: var(--bg); padding: 20px; }
+        .container { max-width: 900px; margin: 0 auto; background: white; padding: 40px; border-radius: 15px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); }
+        h1 { text-align: center; color: var(--primary); margin-bottom: 30px; border-bottom: 3px solid var(--accent); display: inline-block; width: 100%; padding-bottom: 10px;}
+        
+        .question { margin-bottom: 30px; padding: 20px; border: 1px solid #eee; border-radius: 10px; transition: 0.3s; }
+        .question p { font-weight: 600; font-size: 1.1rem; margin-bottom: 15px; }
+        
+        .options { list-style: none; padding: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+        @media (max-width: 600px) { .options { grid-template-columns: 1fr; } }
+        
+        .options li { background: #fff; border: 2px solid #ddd; padding: 12px; border-radius: 8px; cursor: pointer; transition: 0.2s; }
+        .options li:hover { border-color: var(--accent); background: #f0f7ff; }
+        
+        .correct { background: var(--success) !important; color: white; border-color: var(--success) !important; }
+        .incorrect { background: var(--danger) !important; color: white; border-color: var(--danger) !important; }
+        
+        .controls { position: sticky; bottom: 20px; background: var(--primary); color: white; padding: 15px; border-radius: 50px; text-align: center; box-shadow: 0 5px 15px rgba(0,0,0,0.3); }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Biology Fundamentals: 100 MCQ Series</h1>
+
+    <div id="quiz-wrapper">
+       
+        <div class="question" data-answer="B">
+        <p>1. What is the total expenditure outlay proposed in the Bihar Budget 2026-27?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. ₹2.78 Lakh Crore</li>
+            <li onclick="check(this, 'B')">B. ₹3.47 Lakh Crore</li>
+            <li onclick="check(this, 'C')">C. ₹3.15 Lakh Crore</li>
+            <li onclick="check(this, 'D')">D. ₹2.90 Lakh Crore</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>2. Which social justice leader from Bihar was posthumously awarded the Bharat Ratna in January 2024?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Karpoori Thakur</li>
+            <li onclick="check(this, 'B')">B. Jagjivan Ram</li>
+            <li onclick="check(this, 'C')">C. Sri Krishna Singh</li>
+            <li onclick="check(this, 'D')">D. Jayaprakash Narayan</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>3. On July 1, 2024, the Bhartiya Nyaya Sanhita (BNS) officially replaced which colonial-era law?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Code of Criminal Procedure (CrPC)</li>
+            <li onclick="check(this, 'B')">B. Indian Evidence Act</li>
+            <li onclick="check(this, 'C')">C. Indian Penal Code (IPC)</li>
+            <li onclick="check(this, 'D')">D. Police Act of 1861</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>4. Which district has been notified as the second Tiger Reserve of Bihar in late 2025?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. West Champaran</li>
+            <li onclick="check(this, 'B')">B. Kaimur</li>
+            <li onclick="check(this, 'C')">C. Rohtas</li>
+            <li onclick="check(this, 'D')">D. Jamui</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>5. What is the total budget allocated for Bihar's 'Fourth Agriculture Road Map' (2023–2028)?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. ₹1.25 Lakh Crore</li>
+            <li onclick="check(this, 'B')">B. ₹1.45 Lakh Crore</li>
+            <li onclick="check(this, 'C')">C. ₹1.62 Lakh Crore</li>
+            <li onclick="check(this, 'D')">D. ₹2.10 Lakh Crore</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>6. Which country hosted the G20 Summit in 2025, marking the first time the African Union participated as a permanent member?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Brazil</li>
+            <li onclick="check(this, 'B')">B. South Africa</li>
+            <li onclick="check(this, 'C')">C. USA</li>
+            <li onclick="check(this, 'D')">D. India</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>7. ISRO’s solar mission, Aditya-L1, successfully reached its destination in Jan 2024. What is the distance of L1 from Earth?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 1.5 million km</li>
+            <li onclick="check(this, 'B')">B. 3.8 million km</li>
+            <li onclick="check(this, 'C')">C. 0.5 million km</li>
+            <li onclick="check(this, 'D')">D. 5.0 million km</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>8. Which state became the first in India to pass and implement the Uniform Civil Code (UCC) in 2024?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Goa</li>
+            <li onclick="check(this, 'B')">B. Gujarat</li>
+            <li onclick="check(this, 'C')">C. Uttarakhand</li>
+            <li onclick="check(this, 'D')">D. Assam</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>9. The 'Kalariv' bird festival 2024 was organized at which sanctuary in Bihar?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Kanwar Lake</li>
+            <li onclick="check(this, 'B')">B. Kusheshwar Asthan</li>
+            <li onclick="check(this, 'C')">C. Vikramshila Dolphin</li>
+            <li onclick="check(this, 'D')">D. Nagi-Nakti Bird Sanctuary</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>10. Who was the voice of Bihar’s folk music and 'Bihar Kokila' who passed away in late 2024?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Malini Awasthi</li>
+            <li onclick="check(this, 'B')">B. Sharda Sinha</li>
+            <li onclick="check(this, 'C')">C. Maithili Thakur</li>
+            <li onclick="check(this, 'D')">D. Chandramukhi Devi</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>11. India's first AI-powered city is being developed in which city (announced in 2024)?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Bengaluru</li>
+            <li onclick="check(this, 'B')">B. Hyderabad</li>
+            <li onclick="check(this, 'C')">C. Lucknow</li>
+            <li onclick="check(this, 'D')">D. Gandhinagar</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>12. Who is the current Chief Justice of India (CJI) as of April 2026?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Justice D.Y. Chandrachud</li>
+            <li onclick="check(this, 'B')">B. Justice Sanjiv Khanna</li>
+            <li onclick="check(this, 'C')">C. Justice Hima Kohli</li>
+            <li onclick="check(this, 'D')">D. Justice B.V. Nagarathna</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>13. Bihar’s first 'Floating Solar Power Plant' is located in which district?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Darbhanga</li>
+            <li onclick="check(this, 'B')">B. Supaul</li>
+            <li onclick="check(this, 'C')">C. Patna</li>
+            <li onclick="check(this, 'D')">D. Bhagalpur</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>14. Which nation became the 32nd official member of NATO in March 2024?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Finland</li>
+            <li onclick="check(this, 'B')">B. Ukraine</li>
+            <li onclick="check(this, 'C')">C. Switzerland</li>
+            <li onclick="check(this, 'D')">D. Sweden</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>15. The 'Har Ghar Gangajal' scheme, Phase 2, was recently extended to which water-stressed district?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Araria</li>
+            <li onclick="check(this, 'B')">B. Madhubani</li>
+            <li onclick="check(this, 'C')">C. Nawada</li>
+            <li onclick="check(this, 'D')">D. Kishanganj</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>16. Who is the current President of the World Bank (2025-26)?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. David Malpass</li>
+            <li onclick="check(this, 'B')">B. Ajay Banga</li>
+            <li onclick="check(this, 'C')">C. Gita Gopinath</li>
+            <li onclick="check(this, 'D')">D. Kristalina Georgieva</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>17. On which date did the Bihar Government release its historic 'Caste-based Survey' report?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. October 2, 2023</li>
+            <li onclick="check(this, 'B')">B. August 15, 2023</li>
+            <li onclick="check(this, 'C')">C. January 26, 2024</li>
+            <li onclick="check(this, 'D')">D. November 14, 2023</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>18. Which Indian state hosted the COP29 Climate Summit in late 2024?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. UAE (Dubai)</li>
+            <li onclick="check(this, 'B')">B. Azerbaijan (Baku)</li>
+            <li onclick="check(this, 'C')">C. Brazil (Belem)</li>
+            <li onclick="check(this, 'D')">D. Egypt (Sharm el-Sheikh)</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>19. 'Marcha Rice', which recently received the Geographical Indication (GI) tag, belongs to which Bihar district?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. East Champaran</li>
+            <li onclick="check(this, 'B')">B. Katihar</li>
+            <li onclick="check(this, 'C')">C. Purnia</li>
+            <li onclick="check(this, 'D')">D. West Champaran</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>20. Who won the Men's T20 World Cup 2024?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. South Africa</li>
+            <li onclick="check(this, 'B')">B. Australia</li>
+            <li onclick="check(this, 'C')">C. India</li>
+            <li onclick="check(this, 'D')">D. Pakistan</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>21. The 'Statue of Social Justice' (Dr. B.R. Ambedkar), the world's tallest statue of the leader outside India, was inaugurated in which city?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Vijayawada (Andhra Pradesh)</li>
+            <li onclick="check(this, 'B')">B. Hyderabad</li>
+            <li onclick="check(this, 'C')">C. Maryland (USA)</li>
+            <li onclick="check(this, 'D')">D. Nagpur</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>22. What is the name of the special portal launched by Bihar for student scholarship DBT?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. E-Kalyan</li>
+            <li onclick="check(this, 'B')">B. Medhasoft</li>
+            <li onclick="check(this, 'C')">C. Shiksha-Dwar</li>
+            <li onclick="check(this, 'D')">D. Bihar-S</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>23. In 2025, which Bihar district recorded the highest Maize production in India?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Purnia</li>
+            <li onclick="check(this, 'B')">B. Khagaria</li>
+            <li onclick="check(this, 'C')">C. Katihar</li>
+            <li onclick="check(this, 'D')">D. Begusarai</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>24. The 18th Lok Sabha Elections in India (2024) were conducted in how many phases?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 7 Phases</li>
+            <li onclick="check(this, 'B')">B. 5 Phases</li>
+            <li onclick="check(this, 'C')">C. 9 Phases</li>
+            <li onclick="check(this, 'D')">D. 6 Phases</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>25. The 'Atal Setu', India's longest sea bridge (21.8 km), was inaugurated in early 2024. It connects Mumbai to:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Thane</li>
+            <li onclick="check(this, 'B')">B. Navi Mumbai</li>
+            <li onclick="check(this, 'C')">C. Alibaug</li>
+            <li onclick="check(this, 'D')">D. Pune</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>26. Which country officially became the 97th member of the International Solar Alliance (ISA) in 2024?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Chile</li>
+            <li onclick="check(this, 'B')">B. Hungary</li>
+            <li onclick="check(this, 'C')">C. Panama</li>
+            <li onclick="check(this, 'D')">D. Romania</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>27. The 'Bapu Pariksha Parisar', India's largest examination centre with a capacity for 25,000 students, was inaugurated in:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Muzaffarpur</li>
+            <li onclick="check(this, 'B')">B. Patna</li>
+            <li onclick="check(this, 'C')">C. Gaya</li>
+            <li onclick="check(this, 'D')">D. Bhagalpur</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>28. ISRO's 'Pushpak' (RLV-LEX2), which was successfully tested in March 2024, refers to which technology?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Reusable Launch Vehicle</li>
+            <li onclick="check(this, 'B')">B. Moon Rover</li>
+            <li onclick="check(this, 'C')">C. Solar Probe</li>
+            <li onclick="check(this, 'D')">D. Nuclear Satellite</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>29. According to the Bihar Economic Survey 2025, which district has the lowest per capita income in the state?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Araria</li>
+            <li onclick="check(this, 'B')">B. Sitamarhi</li>
+            <li onclick="check(this, 'C')">C. Madhepura</li>
+            <li onclick="check(this, 'D')">D. Sheohar</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>30. Who was sworn in as the President of the United States in January 2025?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Joe Biden</li>
+            <li onclick="check(this, 'B')">B. Donald Trump</li>
+            <li onclick="check(this, 'C')">C. Kamala Harris</li>
+            <li onclick="check(this, 'D')">D. Ron DeSantis</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>31. Which Bihar product received the GI Tag in late 2024, known for its unique sweet taste from the Silao region?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Magahi Paan</li>
+            <li onclick="check(this, 'B')">B. Shahi Litchi</li>
+            <li onclick="check(this, 'C')">C. Silao Khaja</li>
+            <li onclick="check(this, 'D')">D. Katarni Rice</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>32. The 'Exercise Dharma Guardian 2024' was a joint military exercise between India and which country?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Japan</li>
+            <li onclick="check(this, 'B')">B. France</li>
+            <li onclick="check(this, 'C')">C. USA</li>
+            <li onclick="check(this, 'D')">D. Sri Lanka</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>33. Which city in Bihar is being developed as the state's first 'Solar City'?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Rajgir</li>
+            <li onclick="check(this, 'B')">B. Bodh Gaya</li>
+            <li onclick="check(this, 'C')">C. Patna</li>
+            <li onclick="check(this, 'D')">D. Darbhanga</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>34. What is the rank of India in the 'Global Firepower Index 2024'?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 2nd</li>
+            <li onclick="check(this, 'B')">B. 3rd</li>
+            <li onclick="check(this, 'C')">C. 5th</li>
+            <li onclick="check(this, 'D')">D. 4th</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>35. The 'Nilgiri Tahr' conservation project was launched by which Indian state in 2024?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Kerala</li>
+            <li onclick="check(this, 'B')">B. Karnataka</li>
+            <li onclick="check(this, 'C')">C. Tamil Nadu</li>
+            <li onclick="check(this, 'D')">D. Andhra Pradesh</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>36. Which operation was launched by India to evacuate its citizens from war-torn Sudan in 2023-24?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Operation Ganga</li>
+            <li onclick="check(this, 'B')">B. Operation Kaveri</li>
+            <li onclick="check(this, 'C')">C. Operation Devi Shakti</li>
+            <li onclick="check(this, 'D')">D. Operation Dost</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>37. Bihar's new 'Film Policy 2024' provides a maximum subsidy of how much for films made in regional languages like Bhojpuri/Maithili?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. ₹4 Crore</li>
+            <li onclick="check(this, 'B')">B. ₹2 Crore</li>
+            <li onclick="check(this, 'C')">C. ₹5 Crore</li>
+            <li onclick="check(this, 'D')">D. ₹1 Crore</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>38. Who was elected as the Prime Minister of the United Kingdom in July 2024?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Rishi Sunak</li>
+            <li onclick="check(this, 'B')">B. Boris Johnson</li>
+            <li onclick="check(this, 'C')">C. Keir Starmer</li>
+            <li onclick="check(this, 'D')">D. Liz Truss</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>39. The 'Mission Daksh' launched by the Bihar government is aimed at helping which group?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Pregnant Women</li>
+            <li onclick="check(this, 'B')">B. Small Farmers</li>
+            <li onclick="check(this, 'C')">C. Rural Artisans</li>
+            <li onclick="check(this, 'D')">D. Academically weak students</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>40. What is the theme of the 'Bihar Diwas 2024' celebrated on March 22?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Jal-Jeevan-Hariyali</li>
+            <li onclick="check(this, 'B')">B. Yuva Shakti, Bihar ki Pragati</li>
+            <li onclick="check(this, 'C')">C. Beti Padhao, Bihar Bachao</li>
+            <li onclick="check(this, 'D')">D. Digital Bihar, Saksham Bihar</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>41. Which Indian city has been officially recognized as the 'City of Literature' by UNESCO in 2024?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Kozhikode</li>
+            <li onclick="check(this, 'B')">B. Gwalior</li>
+            <li onclick="check(this, 'C')">C. Varanasi</li>
+            <li onclick="check(this, 'D')">D. Kolkata</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>42. The world's largest 'Ramayan Temple' is being constructed in which district of Bihar?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. West Champaran</li>
+            <li onclick="check(this, 'B')">B. Sitamarhi</li>
+            <li onclick="check(this, 'C')">C. East Champaran</li>
+            <li onclick="check(this, 'D')">D. Vaishali</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>43. In 2025, which company surpassed Apple to briefly become the world's most valuable company due to the AI boom?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Microsoft</li>
+            <li onclick="check(this, 'B')">B. Google</li>
+            <li onclick="check(this, 'C')">C. Amazon</li>
+            <li onclick="check(this, 'D')">D. NVIDIA</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>44. Who is the current Chairman of the ISRO (as of 2024-2026)?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. K. Sivan</li>
+            <li onclick="check(this, 'B')">B. S. Somanath</li>
+            <li onclick="check(this, 'C')">C. A.S. Kiran Kumar</li>
+            <li onclick="check(this, 'D')">D. G. Madhavan Nair</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>45. Bihar's 'Malmas Mela' 2023-24, which attracted millions of pilgrims, was organized in:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Rajgir</li>
+            <li onclick="check(this, 'B')">B. Pawapuri</li>
+            <li onclick="check(this, 'C')">C. Gaya</li>
+            <li onclick="check(this, 'D')">D. Deoghar</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>46. The 2026 FIFA World Cup will be jointly hosted by which three countries?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Qatar, UAE, Saudi Arabia</li>
+            <li onclick="check(this, 'B')">B. France, Germany, Spain</li>
+            <li onclick="check(this, 'C')">C. USA, Canada, Mexico</li>
+            <li onclick="check(this, 'D')">D. Brazil, Argentina, Chile</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>47. Which scheme was launched in 2024 by the Indian government to provide 300 units of free electricity via rooftop solar?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. PM Kusum Yojana</li>
+            <li onclick="check(this, 'B')">B. PM Surya Ghar: Muft Bijli Yojana</li>
+            <li onclick="check(this, 'C')">C. PM Uday Yojana</li>
+            <li onclick="check(this, 'D')">D. PM Solar Mitra</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>48. Which Bihar district has been selected for the development of a 'Mega Food Park' as per the latest central guidelines?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Begusarai</li>
+            <li onclick="check(this, 'B')">B. Khagaria</li>
+            <li onclick="check(this, 'C')">C. Mansi</li>
+            <li onclick="check(this, 'D')">D. Muzaffarpur (Motipur)</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>49. The 'One Nation, One Election' committee in 2024 was headed by whom?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Ram Nath Kovind</li>
+            <li onclick="check(this, 'B')">B. Venkaiah Naidu</li>
+            <li onclick="check(this, 'C')">C. Amit Shah</li>
+            <li onclick="check(this, 'D')">D. Ranjan Gogoi</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>50. Which Indian state launched the 'Kalaignar Magalir Urimai Thogai' scheme in 2023-24 to provide monthly aid to women?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Karnataka</li>
+            <li onclick="check(this, 'B')">B. Telangana</li>
+            <li onclick="check(this, 'C')">C. Tamil Nadu</li>
+            <li onclick="check(this, 'D')">D. Andhra Pradesh</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>51. Bihar's first 'Logistics Park' is being developed in which location to boost trade and storage?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Bihta (Patna)</li>
+            <li onclick="check(this, 'B')">B. Fatuha (Patna)</li>
+            <li onclick="check(this, 'C')">C. Muzaffarpur</li>
+            <li onclick="check(this, 'D')">D. Begusarai</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>52. Which Indian state became the first to maintain a dedicated 'Elephant Death Audit Framework' in 2024?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Tamil Nadu</li>
+            <li onclick="check(this, 'B')">B. Kerala</li>
+            <li onclick="check(this, 'C')">C. Karnataka</li>
+            <li onclick="check(this, 'D')">D. Assam</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>53. The 'Dosti-16' trilateral coast guard exercise (2024) involved India, Sri Lanka, and which other country?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Bangladesh</li>
+            <li onclick="check(this, 'B')">B. Mauritius</li>
+            <li onclick="check(this, 'C')">C. Maldives</li>
+            <li onclick="check(this, 'D')">D. Seychelles</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>54. Which district in Bihar has the highest 'Forest Cover' by percentage as per the India State of Forest Report (ISFR)?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. West Champaran</li>
+            <li onclick="check(this, 'B')">B. Rohtas</li>
+            <li onclick="check(this, 'C')">C. Jamui</li>
+            <li onclick="check(this, 'D')">D. Kaimur</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>55. The 'Global Alliance for Global Good - Gender Equity and Equality' was launched by India at which international forum in 2024?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. United Nations General Assembly</li>
+            <li onclick="check(this, 'B')">B. World Economic Forum (Davos)</li>
+            <li onclick="check(this, 'C')">C. G20 Brazil</li>
+            <li onclick="check(this, 'D')">D. COP29</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>56. Who was appointed as the 16th Finance Commission Chairman of India?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Arvind Panagariya</li>
+            <li onclick="check(this, 'B')">B. N.K. Singh</li>
+            <li onclick="check(this, 'C')">C. Raghuram Rajan</li>
+            <li onclick="check(this, 'D')">D. Shaktikanta Das</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>57. Bihar's largest 'Ethanol Plant' (India's first grain-based) was inaugurated in which district?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Katihar</li>
+            <li onclick="check(this, 'B')">B. Araria</li>
+            <li onclick="check(this, 'C')">C. Purnia</li>
+            <li onclick="check(this, 'D')">D. Madhepura</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>58. Which space agency launched the 'Europa Clipper' mission in 2024 to study Jupiter's moon?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. ISRO</li>
+            <li onclick="check(this, 'B')">B. ESA</li>
+            <li onclick="check(this, 'C')">C. JAXA</li>
+            <li onclick="check(this, 'D')">D. NASA</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>59. The 'Sagar Aankh' system, recently in the news, is associated with which field?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Deep Sea Mining</li>
+            <li onclick="check(this, 'B')">B. Coastal Surveillance (Radar)</li>
+            <li onclick="check(this, 'C')">C. Fisheries Management</li>
+            <li onclick="check(this, 'D')">D. Underwater Archaeology</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>60. Who was awarded the 58th Jnanpith Award (2024)?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Gulzar and Jagadguru Rambhadracharya</li>
+            <li onclick="check(this, 'B')">B. Damodar Mauzo</li>
+            <li onclick="check(this, 'C')">C. Nilmani Phookan</li>
+            <li onclick="check(this, 'D')">D. Amitabh Ghosh</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>61. Which Bihar city hosted the 'International Buddhist Conclave' in 2024-25?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Rajgir</li>
+            <li onclick="check(this, 'B')">B. Vaishali</li>
+            <li onclick="check(this, 'C')">C. Bodh Gaya</li>
+            <li onclick="check(this, 'D')">D. Nalanda</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>62. What is the rank of India in the 'World Press Freedom Index 2024'?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 150th</li>
+            <li onclick="check(this, 'B')">B. 159th</li>
+            <li onclick="check(this, 'C')">C. 161st</li>
+            <li onclick="check(this, 'D')">D. 142nd</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>63. The 'Anusandhan National Research Foundation' (ANRF) aims to boost R&D with a budget of how much over 5 years?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. ₹50,000 Crore</li>
+            <li onclick="check(this, 'B')">B. ₹25,000 Crore</li>
+            <li onclick="check(this, 'C')">C. ₹10,000 Crore</li>
+            <li onclick="check(this, 'D')">D. ₹1,00,000 Crore</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>64. In which Bihar district is the 'Homi Bhabha Cancer Hospital and Research Centre' operational?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Patna</li>
+            <li onclick="check(this, 'B')">B. Gaya</li>
+            <li onclick="check(this, 'C')">C. Darbhanga</li>
+            <li onclick="check(this, 'D')">D. Muzaffarpur</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>65. Which country became the first to provide 'Universal Healthcare for Pets' in 2025?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. USA</li>
+            <li onclick="check(this, 'B')">B. UK</li>
+            <li onclick="check(this, 'C')">C. South Korea</li>
+            <li onclick="check(this, 'D')">D. Germany</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>66. The 'Agni-5' missile with MIRV technology was successfully tested under which mission name in 2024?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Mission Shakti</li>
+            <li onclick="check(this, 'B')">B. Mission Divyastra</li>
+            <li onclick="check(this, 'C')">C. Mission Gagan</li>
+            <li onclick="check(this, 'D')">D. Mission Brahmastra</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>67. Which Bihar-specific app was launched to help farmers with weather alerts and crop advice?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Mausam Bihar</li>
+            <li onclick="check(this, 'B')">B. Krishi Sahay</li>
+            <li onclick="check(this, 'C')">C. Bihar-Kisan</li>
+            <li onclick="check(this, 'D')">D. Meghdoot-Bihar</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>68. Who was elected as the Prime Minister of Pakistan for the second time in 2024?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Imran Khan</li>
+            <li onclick="check(this, 'B')">B. Bilawal Bhutto</li>
+            <li onclick="check(this, 'C')">C. Nawaz Sharif</li>
+            <li onclick="check(this, 'D')">D. Shehbaz Sharif</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>69. The 'Lakhpati Didi' scheme aims to empower how many women through Self Help Groups (SHGs) as per the 2024 Interim Budget?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 1 Crore</li>
+            <li onclick="check(this, 'B')">B. 2 Crore</li>
+            <li onclick="check(this, 'C')">C. 3 Crore</li>
+            <li onclick="check(this, 'D')">D. 5 Crore</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>70. Which Bihar district has been identified for the construction of the state's first 'Multi-modal Logistics Park' under Bharatmala Pariyojana?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Patna (Jethuli)</li>
+            <li onclick="check(this, 'B')">B. Begusarai</li>
+            <li onclick="check(this, 'C')">C. Katihar</li>
+            <li onclick="check(this, 'D')">D. Bhagalpur</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>71. The 'Global Biofuels Alliance' was initiated by which country during its G20 Presidency?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Brazil</li>
+            <li onclick="check(this, 'B')">B. India</li>
+            <li onclick="check(this, 'C')">C. USA</li>
+            <li onclick="check(this, 'D')">D. France</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>72. In 2024, the Indian Navy commissioned 'INS Jatayu' at which location to strengthen surveillance?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Andaman Islands</li>
+            <li onclick="check(this, 'B')">B. Kochi</li>
+            <li onclick="check(this, 'C')">C. Vishakhapatnam</li>
+            <li onclick="check(this, 'D')">D. Minicoy (Lakshadweep)</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>73. Which Bihar university was recently granted 'Category-1' status by the UGC?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Central University of South Bihar (CUSB)</li>
+            <li onclick="check(this, 'B')">B. Patna University</li>
+            <li onclick="check(this, 'C')">C. Magadh University</li>
+            <li onclick="check(this, 'D')">D. Nalanda University</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>74. Who won the 'Best Actor' award at the 70th National Film Awards (2024)?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Allu Arjun</li>
+            <li onclick="check(this, 'B')">B. Ranbir Kapoor</li>
+            <li onclick="check(this, 'C')">C. Rishab Shetty (Kantara)</li>
+            <li onclick="check(this, 'D')">D. Vicky Kaushal</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>75. The 'Namo Drone Didi' scheme provides drones to SHGs for which purpose?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Forest Surveillance</li>
+            <li onclick="check(this, 'B')">B. Agricultural Spraying</li>
+            <li onclick="check(this, 'C')">C. Delivery Services</li>
+            <li onclick="check(this, 'D')">D. Disaster Management</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>76. Which Bihar district is home to the 'Dugeshwari Hills', which is being developed as a major eco-tourism circuit?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Nawada</li>
+            <li onclick="check(this, 'B')">B. Gaya</li>
+            <li onclick="check(this, 'C')">C. Nalanda</li>
+            <li onclick="check(this, 'D')">D. Munger</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>77. What is India's rank in the 'Global Gender Gap Report 2024' released by the World Economic Forum?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 129th</li>
+            <li onclick="check(this, 'B')">B. 127th</li>
+            <li onclick="check(this, 'C')">C. 135th</li>
+            <li onclick="check(this, 'D')">D. 112th</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>78. The 'Sudarshan Setu', India's longest cable-stayed bridge (2.32 km), was inaugurated in which state in 2024?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Maharashtra</li>
+            <li onclick="check(this, 'B')">B. Tamil Nadu</li>
+            <li onclick="check(this, 'C')">C. Gujarat (Dwarka)</li>
+            <li onclick="check(this, 'D')">D. Kerala</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>79. Which Bihar district has been selected for the establishment of the state's first 'Dry Port' to facilitate export-import?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Patna</li>
+            <li onclick="check(this, 'B')">B. Begusarai</li>
+            <li onclick="check(this, 'C')">C. Aurangabad</li>
+            <li onclick="check(this, 'D')">D. Bihta (Patna)</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>80. Who won the 2024 Nobel Peace Prize?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Narges Mohammadi</li>
+            <li onclick="check(this, 'B')">B. Nihon Hidankyo (Japanese organization)</li>
+            <li onclick="check(this, 'C')">C. World Food Programme</li>
+            <li onclick="check(this, 'D')">D. Ales Bialiatski</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>81. The 'Vande Bharat Express' connecting Patna to which city was the first such train for Bihar (inaugurated in 2023-24)?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Ranchi</li>
+            <li onclick="check(this, 'B')">B. Howrah</li>
+            <li onclick="check(this, 'C')">C. Varanasi</li>
+            <li onclick="check(this, 'D')">D. Lucknow</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>82. Which country became the first to land a spacecraft on the 'South Pole' of the Moon?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. USA</li>
+            <li onclick="check(this, 'B')">B. Russia</li>
+            <li onclick="check(this, 'C')">C. India (Chandrayaan-3)</li>
+            <li onclick="check(this, 'D')">D. China</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>83. The 'Prithvi Vigyan' (PRITHVI) scheme, approved in 2024, is associated with which ministry?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Ministry of Environment</li>
+            <li onclick="check(this, 'B')">B. Ministry of Earth Sciences</li>
+            <li onclick="check(this, 'C')">C. Ministry of Science & Tech</li>
+            <li onclick="check(this, 'D')">D. Ministry of Agriculture</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>84. Which district in Bihar recorded the highest growth in 'Fish Production' as per the 2024-25 report?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Darbhanga</li>
+            <li onclick="check(this, 'B')">B. West Champaran</li>
+            <li onclick="check(this, 'C')">C. Purnia</li>
+            <li onclick="check(this, 'D')">D. Madhubani</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>85. Who was crowned Miss Universe 2024?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Victoria Kjær Theilvig (Denmark)</li>
+            <li onclick="check(this, 'B')">B. Sheynnis Palacios</li>
+            <li onclick="check(this, 'C')">C. R'Bonney Gabriel</li>
+            <li onclick="check(this, 'D')">D. Harnaaz Sandhu</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>86. The 'PM-Vidyalaxmi' scheme, launched in late 2024, provides collateral-free loans for which purpose?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Primary Education</li>
+            <li onclick="check(this, 'B')">B. Rural Schools</li>
+            <li onclick="check(this, 'C')">C. Higher Education</li>
+            <li onclick="check(this, 'D')">D. Technical Training for Women</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>87. In 2025, Bihar’s 'Nalanda University' saw the inauguration of its new campus by the PM. Who is the current Chancellor?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Amartya Sen</li>
+            <li onclick="check(this, 'B')">B. Arvind Panagariya</li>
+            <li onclick="check(this, 'C')">C. Vijay Bhatkar</li>
+            <li onclick="check(this, 'D')">D. George Yeo</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>88. Which country hosted the 'COP28' Climate Summit where the 'Loss and Damage Fund' was operationalized?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Egypt</li>
+            <li onclick="check(this, 'B')">B. Scotland</li>
+            <li onclick="check(this, 'C')">C. France</li>
+            <li onclick="check(this, 'D')">D. UAE (Dubai)</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>89. The 'Anubhoot' scheme, recently launched by the Bihar Police, aims to improve:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Public-Police feedback system</li>
+            <li onclick="check(this, 'B')">B. Cyber-crime detection</li>
+            <li onclick="check(this, 'C')">C. Traffic management</li>
+            <li onclick="check(this, 'D')">D. Women's safety in night shifts</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>90. What is the official mascot of the 'Paris Olympics 2024'?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Miraitowa</li>
+            <li onclick="check(this, 'B')">B. The Phryges (Phrygian cap)</li>
+            <li onclick="check(this, 'C')">C. Bing Dwen Dwen</li>
+            <li onclick="check(this, 'D')">D. Vinicius</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>91. Which Bihar district is the site for the newly approved 'IIM-Bihar' as per recent educational expansions?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Patna</li>
+            <li onclick="check(this, 'B')">B. Muzaffarpur</li>
+            <li onclick="check(this, 'C')">C. Gaya (Bodh Gaya)</li>
+            <li onclick="check(this, 'D')">D. Bhagalpur</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>92. The 'Bhartiya Sakshya Adhiniyam' (BSA) 2023, which replaced the Evidence Act, gives primary status to which type of evidence?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Digital/Electronic Records</li>
+            <li onclick="check(this, 'B')">B. Forensic reports only</li>
+            <li onclick="check(this, 'C')">C. Written confessions</li>
+            <li onclick="check(this, 'D')">D. Oral testimony</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>93. India's first 'Dark Sky Reserve' is being established at which location?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Spiti Valley</li>
+            <li onclick="check(this, 'B')">B. Hanle (Ladakh)</li>
+            <li onclick="check(this, 'C')">C. Mount Abu</li>
+            <li onclick="check(this, 'D')">D. Nainital</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>94. Which company launched the 'Sora' AI model capable of creating realistic videos from text in 2024?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Google (DeepMind)</li>
+            <li onclick="check(this, 'B')">B. Meta</li>
+            <li onclick="check(this, 'C')">C. Anthropic</li>
+            <li onclick="check(this, 'D')">D. OpenAI</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>95. Bihar's 'Leta' and 'Sone' rivers are in the news for the discovery of which precious metal deposits in 2024-25?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Gold</li>
+            <li onclick="check(this, 'B')">B. Lithium</li>
+            <li onclick="check(this, 'C')">C. Copper</li>
+            <li onclick="check(this, 'D')">D. Iron Ore</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>96. The 2024 Nobel Prize in Physics was awarded for breakthroughs in which field?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Quantum Mechanics</li>
+            <li onclick="check(this, 'B')">B. Black Hole research</li>
+            <li onclick="check(this, 'C')">C. Machine Learning (Neural Networks)</li>
+            <li onclick="check(this, 'D')">D. Gravitational Waves</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>97. Who is the current Governor of Bihar (as of April 2026)?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Phagu Chauhan</li>
+            <li onclick="check(this, 'B')">B. Rajendra Vishwanath Arlekar</li>
+            <li onclick="check(this, 'C')">C. Satya Pal Malik</li>
+            <li onclick="check(this, 'D')">D. Lalji Tandon</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>98. The 'PM-DevINE' scheme is specifically focused on the development of which region?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. LWE affected areas</li>
+            <li onclick="check(this, 'B')">B. Border villages</li>
+            <li onclick="check(this, 'C')">C. Coastal regions</li>
+            <li onclick="check(this, 'D')">D. North-East India</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>99. 'Project Kusha', India's own long-range air defense system, is being developed by which organization?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. DRDO</li>
+            <li onclick="check(this, 'B')">B. ISRO</li>
+            <li onclick="check(this, 'C')">C. HAL</li>
+            <li onclick="check(this, 'D')">D. Bharat Dynamics</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>100. The 'Gauraiya' (House Sparrow) conservation status was highlighted during Bihar's 'Sparrow Day' in 2026. What is the state animal of Bihar?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Tiger</li>
+            <li onclick="check(this, 'B')">B. Elephant</li>
+            <li onclick="check(this, 'C')">C. Gaur (Mithun/Bail)</li>
+            <li onclick="check(this, 'D')">D. Blackbuck</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>101. Which will be Bihar's first 'Access-controlled Expressway' connecting the north and south of the state?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Purvanchal Expressway</li>
+            <li onclick="check(this, 'B')">B. Amas-Darbhanga Expressway</li>
+            <li onclick="check(this, 'C')">C. Patna-Buxar Expressway</li>
+            <li onclick="check(this, 'D')">D. Gorakhpur-Siliguri Expressway</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>102. The 'Ayushman Bharat' (PM-JAY) scheme was expanded in 2024-25 to provide free health cover to all senior citizens above which age?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 70 Years</li>
+            <li onclick="check(this, 'B')">B. 60 Years</li>
+            <li onclick="check(this, 'C')">C. 65 Years</li>
+            <li onclick="check(this, 'D')">D. 75 Years</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>103. Which Indian state hosted the 'Khelo India University Games 2024'?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Odisha</li>
+            <li onclick="check(this, 'B')">B. Karnataka</li>
+            <li onclick="check(this, 'C')">C. Uttar Pradesh</li>
+            <li onclick="check(this, 'D')">D. Assam</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>104. Bihar's first 'Hi-Tech Genetic Lab' for cattle breeding was established in which district?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Begusarai</li>
+            <li onclick="check(this, 'B')">B. Muzaffarpur</li>
+            <li onclick="check(this, 'C')">C. Patna</li>
+            <li onclick="check(this, 'D')">D. Purnia</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>105. Who is the current Secretary-General of the United Nations (as of 2026)?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Ban Ki-moon</li>
+            <li onclick="check(this, 'B')">B. António Guterres</li>
+            <li onclick="check(this, 'C')">C. Tedros Adhanom</li>
+            <li onclick="check(this, 'D')">D. David Malpass</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>106. The 'PM-SHRI' scheme, recently implemented in Bihar, is focused on the development of which sector?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Schools (Education)</li>
+            <li onclick="check(this, 'B')">B. Rural Roads</li>
+            <li onclick="check(this, 'C')">C. Solar Power</li>
+            <li onclick="check(this, 'D')">D. Health Centres</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>107. Which country became the first in the world to grant 'Legal Rights to Nature' in its constitution?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. New Zealand</li>
+            <li onclick="check(this, 'B')">B. Norway</li>
+            <li onclick="check(this, 'C')">C. Ecuador</li>
+            <li onclick="check(this, 'D')">D. India</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>108. In 2025, which Bihar district's 'Khadi' products were showcased at the Bharat Tex global textile expo?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Bhagalpur</li>
+            <li onclick="check(this, 'B')">B. Gaya</li>
+            <li onclick="check(this, 'C')">C. Madhubani</li>
+            <li onclick="check(this, 'D')">D. Muzaffarpur</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>109. What is the name of the indigenous 'Web Browser' being developed by India as part of the Digital India initiative?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Bharat Browser</li>
+            <li onclick="check(this, 'B')">B. Indian Web Browser (IWBT)</li>
+            <li onclick="check(this, 'C')">C. Bhashini</li>
+            <li onclick="check(this, 'D')">D. Swadeshi Net</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>110. Which city in Bihar is known as the 'Electronic City' of the state, where a major IT hub is being developed?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Bihta</li>
+            <li onclick="check(this, 'B')">B. Fatuha</li>
+            <li onclick="check(this, 'C')">C. Hajipur</li>
+            <li onclick="check(this, 'D')">D. Patna</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>111. Who won the 'Best Female Playback Singer' at the 70th National Film Awards (2024)?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Shreya Ghoshal</li>
+            <li onclick="check(this, 'B')">B. Palak Muchhal</li>
+            <li onclick="check(this, 'C')">C. Nithyasree Mahadevan</li>
+            <li onclick="check(this, 'D')">D. Bombay Jayashri</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>112. The 'Bhashini' platform, launched by the Indian government, is used for which purpose?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Solar monitoring</li>
+            <li onclick="check(this, 'B')">B. Real-time language translation</li>
+            <li onclick="check(this, 'C')">C. Agricultural e-commerce</li>
+            <li onclick="check(this, 'D')">D. Defense communication</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>113. Which district in Bihar has the highest 'Literacy Rate' as per the latest projected figures for 2026?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Patna</li>
+            <li onclick="check(this, 'B')">B. Munger</li>
+            <li onclick="check(this, 'C')">C. Siwan</li>
+            <li onclick="check(this, 'D')">D. Rohtas</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>114. The 'NISAR' satellite mission is a joint project between ISRO and which other space agency?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. NASA</li>
+            <li onclick="check(this, 'B')">B. ESA</li>
+            <li onclick="check(this, 'C')">C. JAXA</li>
+            <li onclick="check(this, 'D')">D. Roscosmos</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>115. Who was elected as the Prime Minister of Bhutan in 2024?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Lotay Tshering</li>
+            <li onclick="check(this, 'B')">B. Jigme Khesar</li>
+            <li onclick="check(this, 'C')">C. Tshering Tobgay</li>
+            <li onclick="check(this, 'D')">D. Pema Khandu</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>116. Which Bihar city is the first to implement the 'Green Corridor' for fast ambulance movement to major hospitals?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Gaya</li>
+            <li onclick="check(this, 'B')">B. Patna</li>
+            <li onclick="check(this, 'C')">C. Muzaffarpur</li>
+            <li onclick="check(this, 'D')">D. Bhagalpur</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>117. The 'E-SAKSHY' mobile app was launched by the Indian government for which group?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. MPs (Member of Parliament)</li>
+            <li onclick="check(this, 'B')">B. Farmers</li>
+            <li onclick="check(this, 'C')">C. Students</li>
+            <li onclick="check(this, 'D')">D. Migrant workers</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>118. Which country hosted the 'Wimbledon 2025' Men's Singles final?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. France</li>
+            <li onclick="check(this, 'B')">B. USA</li>
+            <li onclick="check(this, 'C')">C. UK (London)</li>
+            <li onclick="check(this, 'D')">D. Australia</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>119. Bihar's 'Sultanganj-Aguwani Ghat' bridge, which made news for construction issues, is built over which river?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Kosi</li>
+            <li onclick="check(this, 'B')">B. Gandak</li>
+            <li onclick="check(this, 'C')">C. Sone</li>
+            <li onclick="check(this, 'D')">D. Ganga</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>120. Who is the current Chairman of the 16th Finance Commission of India?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. N.K. Singh</li>
+            <li onclick="check(this, 'B')">B. Arvind Panagariya</li>
+            <li onclick="check(this, 'C')">C. Shaktikanta Das</li>
+            <li onclick="check(this, 'D')">D. Urjit Patel</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>121. The 'Simaria' riverfront development project in Bihar is being built on the model of which city's Ghats?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Haridwar (Har Ki Pauri)</li>
+            <li onclick="check(this, 'B')">B. Varanasi</li>
+            <li onclick="check(this, 'C')">C. Rishikesh</li>
+            <li onclick="check(this, 'D')">D. Patna</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>122. Which Indian state launched the 'Asha Kirana' scheme for free eye check-ups in 2024?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Tamil Nadu</li>
+            <li onclick="check(this, 'B')">B. Telangana</li>
+            <li onclick="check(this, 'C')">C. Karnataka</li>
+            <li onclick="check(this, 'D')">D. Odisha</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>123. Which company became the first to successfully test a '3D-printed Cryogenic Engine' (Dhawan-II) in India?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. ISRO</li>
+            <li onclick="check(this, 'B')">B. Pixxel</li>
+            <li onclick="check(this, 'C')">C. Bellatrix Aerospace</li>
+            <li onclick="check(this, 'D')">D. Skyroot Aerospace</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>124. Bihar's 'Saat Nishchay Part-2' has an objective called 'Sulabh Samparkta'. What does it refer to?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Digital Connectivity</li>
+            <li onclick="check(this, 'B')">B. Easy Connectivity (Roads/Flyovers)</li>
+            <li onclick="check(this, 'C')">C. Tele-medicine</li>
+            <li onclick="check(this, 'D')">D. Electricity for all</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>125. Who is the winner of the 'Saraswati Samman 2024'?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Sivasankari</li>
+            <li onclick="check(this, 'B')">B. Ramdarash Mishra</li>
+            <li onclick="check(this, 'C')">C. Prabha Varma</li>
+            <li onclick="check(this, 'D')">D. Sharad Pagare</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>126. Which city in Bihar is being developed as a major destination under the 'Ramayana Circuit' with a focus on 'Ahilya Uddhar'?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Sitamarhi</li>
+            <li onclick="check(this, 'B')">B. Darbhanga (Ahilya Asthan)</li>
+            <li onclick="check(this, 'C')">C. Buxar</li>
+            <li onclick="check(this, 'D')">D. East Champaran</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>127. Who is the current CEO of NITI Aayog (as of 2026)?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Amitabh Kant</li>
+            <li onclick="check(this, 'B')">B. Parameswaran Iyer</li>
+            <li onclick="check(this, 'C')">C. Suman Bery</li>
+            <li onclick="check(this, 'D')">D. B.V.R. Subrahmanyam</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>128. The 'Gaganyaan' mission's first crewed flight is scheduled for which year as per the latest ISRO update in 2025?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 2026</li>
+            <li onclick="check(this, 'B')">B. 2024</li>
+            <li onclick="check(this, 'C')">C. 2025</li>
+            <li onclick="check(this, 'D')">D. 2027</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>129. Which district in Bihar has been awarded the 'National Water Award' recently for its efforts in groundwater recharge?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Patna</li>
+            <li onclick="check(this, 'B')">B. Gaya</li>
+            <li onclick="check(this, 'C')">C. East Champaran</li>
+            <li onclick="check(this, 'D')">D. Nalanda</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>130. The 'Global Hunger Index 2024' ranks India at which position out of 127 countries?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 111th</li>
+            <li onclick="check(this, 'B')">B. 105th</li>
+            <li onclick="check(this, 'C')">C. 107th</li>
+            <li onclick="check(this, 'D')">D. 121st</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>131. Bihar's new 'Industrial Investment Promotion Policy (Leather & Textiles)' offers a capital subsidy of up to:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. ₹10 Crore</li>
+            <li onclick="check(this, 'B')">B. ₹5 Crore</li>
+            <li onclick="check(this, 'C')">C. ₹15 Crore</li>
+            <li onclick="check(this, 'D')">D. ₹25 Crore</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>132. Which country became the first to officially adopt 'Bitcoin' as legal tender (though recently facing economic shifts)?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Panama</li>
+            <li onclick="check(this, 'B')">B. Argentina</li>
+            <li onclick="check(this, 'C')">C. Brazil</li>
+            <li onclick="check(this, 'D')">D. El Salvador</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>133. The 'Agni-P' (Agni-Prime) is a new generation variant of which type of missile?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Cruise Missile</li>
+            <li onclick="check(this, 'B')">B. Ballistic Missile</li>
+            <li onclick="check(this, 'C')">C. Anti-Tank Guided Missile</li>
+            <li onclick="check(this, 'D')">D. Submarine Launched Missile</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>134. Which Bihar-born artist was awarded the Padma Shri 2024 for their contribution to 'Tikuli Art'?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Subhadra Devi</li>
+            <li onclick="check(this, 'B')">B. Dulari Devi</li>
+            <li onclick="check(this, 'C')">C. Ashok Kumar Biswas</li>
+            <li onclick="check(this, 'D')">D. Kapil Dev Prasad</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>135. The 'United Nations Ocean Conference 2025' is scheduled to be held in which city?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Nice (France)</li>
+            <li onclick="check(this, 'B')">B. Lisbon (Portugal)</li>
+            <li onclick="check(this, 'C')">C. New York (USA)</li>
+            <li onclick="check(this, 'D')">D. Nairobi (Kenya)</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>136. Which mission was launched by the Ministry of Education in 2024 to ensure fundamental literacy and numeracy (FLN)?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. DIKSHA</li>
+            <li onclick="check(this, 'B')">B. NIPUN Bharat</li>
+            <li onclick="check(this, 'C')">C. NISHTHA</li>
+            <li onclick="check(this, 'D')">D. SAMARTH</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>137. Bihar's first 'Wild Animal Rescue Centre' is operational in which district?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Gaya</li>
+            <li onclick="check(this, 'B')">B. Kaimur</li>
+            <li onclick="check(this, 'C')">C. West Champaran (Sherpur)</li>
+            <li onclick="check(this, 'D')">D. Rohtas</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>138. Who is the current Managing Director of the IMF (International Monetary Fund)?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Christine Lagarde</li>
+            <li onclick="check(this, 'B')">B. Gita Gopinath</li>
+            <li onclick="check(this, 'C')">C. Kristalina Georgieva</li>
+            <li onclick="check(this, 'D')">D. Ngozi Okonjo-Iweala</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>139. The 'Sudarshan S-400' missile system, recently deployed by India, was procured from which country?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Israel</li>
+            <li onclick="check(this, 'B')">B. Russia</li>
+            <li onclick="check(this, 'C')">C. USA</li>
+            <li onclick="check(this, 'D')">D. France</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>140. Which Bihar district celebrated its 'Sthapna Diwas' (Establishment Day) in 2025 as the newest district formed (historically Sheohar)?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Sheohar</li>
+            <li onclick="check(this, 'B')">B. Arwal</li>
+            <li onclick="check(this, 'C')">C. Sheikhpura</li>
+            <li onclick="check(this, 'D')">D. Banka</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>141. The 'Global Innovation Index 2025' ranks India at which position?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 40th</li>
+            <li onclick="check(this, 'B')">B. 46th</li>
+            <li onclick="check(this, 'C')">C. 38th</li>
+            <li onclick="check(this, 'D')">D. 52nd</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>142. Which space agency successfully launched the 'LUPEX' mission (Lunar Polar Exploration) in collaboration with ISRO in 2024-25?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. NASA</li>
+            <li onclick="check(this, 'B')">B. JAXA (Japan)</li>
+            <li onclick="check(this, 'C')">C. ESA</li>
+            <li onclick="check(this, 'D')">D. CNSA</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>143. Bihar's 'Khuda Bakhsh Oriental Public Library' is located in which city?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Darbhanga</li>
+            <li onclick="check(this, 'B')">B. Bhagalpur</li>
+            <li onclick="check(this, 'C')">C. Gaya</li>
+            <li onclick="check(this, 'D')">D. Patna</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>144. Who won the 'Dada Saheb Phalke International Film Festival Award 2024' for Best Actor?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Shah Rukh Khan</li>
+            <li onclick="check(this, 'B')">B. Ranbir Kapoor</li>
+            <li onclick="check(this, 'C')">C. Vicky Kaushal</li>
+            <li onclick="check(this, 'D')">D. Allu Arjun</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>145. The 'Vibrant Villages Programme' is aimed at the development of villages in which part of India?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Naxal areas</li>
+            <li onclick="check(this, 'B')">B. Northern Border regions</li>
+            <li onclick="check(this, 'C')">C. Coastal regions</li>
+            <li onclick="check(this, 'D')">D. Tribal heartlands</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>146. Which district in Bihar is being developed as a 'Mega Skill Centre' under the Sankalp scheme?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Gaya</li>
+            <li onclick="check(this, 'B')">B. Darbhanga</li>
+            <li onclick="check(this, 'C')">C. Patna</li>
+            <li onclick="check(this, 'D')">D. Muzaffarpur</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>147. Who is the first woman to lead the Indian permanent mission to the United Nations as Ambassador?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Ruchira Kamboj</li>
+            <li onclick="check(this, 'B')">B. Sneha Dubey</li>
+            <li onclick="check(this, 'C')">C. Meenaxi Lekhi</li>
+            <li onclick="check(this, 'D')">D. Nirupama Rao</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>148. The 'Solar-Power-Driven Electrolyzer', recently developed in India, is used for producing which fuel?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Blue Hydrogen</li>
+            <li onclick="check(this, 'B')">B. Ethanol</li>
+            <li onclick="check(this, 'C')">C. Methanol</li>
+            <li onclick="check(this, 'D')">D. Green Hydrogen</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>149. Bihar's 'Udayan' portal is associated with which segment of the population?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Senior Citizens</li>
+            <li onclick="check(this, 'B')">B. Startups and Entrepreneurs</li>
+            <li onclick="check(this, 'C')">C. Farmers</li>
+            <li onclick="check(this, 'D')">D. Primary School Students</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>150. What was the theme of the 'World Environment Day 2024' (hosted by Saudi Arabia)?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Beat Plastic Pollution</li>
+            <li onclick="check(this, 'B')">B. Ecosystem Restoration</li>
+            <li onclick="check(this, 'C')">C. Land Restoration, Desertification and Drought Resilience</li>
+            <li onclick="check(this, 'D')">D. Only One Earth</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>151. The 'Nijashree' scheme, recently launched by the Bihar government, aims to provide which facility to the urban poor?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Free Coaching</li>
+            <li onclick="check(this, 'B')">B. Low-cost Housing (Flats)</li>
+            <li onclick="check(this, 'C')">C. Health Insurance</li>
+            <li onclick="check(this, 'D')">D. Drinking Water</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>152. Which Indian state became the first to introduce a 'Minimum Guaranteed Income Bill' in 2023-24?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Rajasthan</li>
+            <li onclick="check(this, 'B')">B. Bihar</li>
+            <li onclick="check(this, 'C')">C. Kerala</li>
+            <li onclick="check(this, 'D')">D. Chhattisgarh</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>153. Who is the current Director General of the World Health Organization (WHO), re-elected for a second term?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Soumya Swaminathan</li>
+            <li onclick="check(this, 'B')">B. Margaret Chan</li>
+            <li onclick="check(this, 'C')">C. Tedros Adhanom Ghebreyesus</li>
+            <li onclick="check(this, 'D')">D. Robert Califf</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>154. Bihar's 'Anwesha' program is designed to provide quality education in English medium to students of which category?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. EBC</li>
+            <li onclick="check(this, 'B')">B. Minority</li>
+            <li onclick="check(this, 'C')">C. General Category BPL</li>
+            <li onclick="check(this, 'D')">D. SC/ST</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>155. Which country hosted the 2024 'BRICS Summit' where six new nations were initially invited to join?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Russia (Kazan)</li>
+            <li onclick="check(this, 'B')">B. South Africa</li>
+            <li onclick="check(this, 'C')">C. China</li>
+            <li onclick="check(this, 'D')">D. Brazil</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>156. The 'Surya Nutan' indoor solar cooking system was developed by which Indian organization?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. ISRO</li>
+            <li onclick="check(this, 'B')">B. Indian Oil Corporation (IOCL)</li>
+            <li onclick="check(this, 'C')">C. DRDO</li>
+            <li onclick="check(this, 'D')">D. NTPC</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>157. Which Bihar district is known as the 'Textile Hub' and is being developed under the PM-MITRA scheme model?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Bhagalpur</li>
+            <li onclick="check(this, 'B')">B. Gaya</li>
+            <li onclick="check(this, 'C')">C. West Champaran</li>
+            <li onclick="check(this, 'D')">D. Nalanda</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>158. What is the name of the NASA-ISRO synthetic aperture radar satellite set to launch in 2024-25?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. INSAT-3DS</li>
+            <li onclick="check(this, 'B')">B. RISAT-2B</li>
+            <li onclick="check(this, 'C')">C. CARTOSAT-3</li>
+            <li onclick="check(this, 'D')">D. NISAR</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>159. The 'Sagar Maitri Mission-4' (2023-24) by DRDO aimed at strengthening cooperation with nations in which region?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Indian Ocean Rim (IOR)</li>
+            <li onclick="check(this, 'B')">B. South China Sea</li>
+            <li onclick="check(this, 'C')">C. Mediterranean</li>
+            <li onclick="check(this, 'D')">D. Arctic Region</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>160. Who was appointed as the first female Chairperson of the Railway Board of India in 2023-24?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Soma Mondal</li>
+            <li onclick="check(this, 'B')">B. Jaya Varma Sinha</li>
+            <li onclick="check(this, 'C')">C. Madhabi Puri Buch</li>
+            <li onclick="check(this, 'D')">D. Rekha Sharma</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>161. Bihar's 'Mukhya Mantri Kanya Utthan Yojana' provides a total incentive of how much to a girl child upon completing graduation?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. ₹25,000</li>
+            <li onclick="check(this, 'B')">B. ₹35,000</li>
+            <li onclick="check(this, 'C')">C. ₹50,000</li>
+            <li onclick="check(this, 'D')">D. ₹1,00,000</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>162. Which city hosted the first 'Global Partnership on Artificial Intelligence' (GPAI) summit in 2023-24?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. New Delhi</li>
+            <li onclick="check(this, 'B')">B. Tokyo</li>
+            <li onclick="check(this, 'C')">C. London</li>
+            <li onclick="check(this, 'D')">D. Paris</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>163. The 'Shakti' scheme, which provides free bus travel for women, was launched by which state?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Tamil Nadu</li>
+            <li onclick="check(this, 'B')">B. Telangana</li>
+            <li onclick="check(this, 'C')">C. Kerala</li>
+            <li onclick="check(this, 'D')">D. Karnataka</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>164. Bihar's 'Vikramshila University' ruins, a major tourist spot, are located in which district?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Nalanda</li>
+            <li onclick="check(this, 'B')">B. Bhagalpur</li>
+            <li onclick="check(this, 'C')">C. Munger</li>
+            <li onclick="check(this, 'D')">D. Banka</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>165. What is the theme of the 'G20 Summit 2024' hosted by Brazil?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Vasudhaiva Kutumbakam</li>
+            <li onclick="check(this, 'B')">B. Recover Together, Recover Stronger</li>
+            <li onclick="check(this, 'C')">C. Building a Just World and a Sustainable Planet</li>
+            <li onclick="check(this, 'D')">D. One Earth, One Family, One Future</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>166. Which Indian document is now required for the mandatory verification of 'Sim Cards' as per the Telecommunications Act 2023?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Aadhaar / Digital ID</li>
+            <li onclick="check(this, 'B')">B. Voter ID only</li>
+            <li onclick="check(this, 'C')">C. Ration Card</li>
+            <li onclick="check(this, 'D')">D. PAN Card</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>167. Bihar's first 'Bio-Diversity Park' is located in which district?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Purnia</li>
+            <li onclick="check(this, 'B')">B. Araria (Kushiyargaon)</li>
+            <li onclick="check(this, 'C')">C. Katihar</li>
+            <li onclick="check(this, 'D')">D. Kishanganj</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>168. Who won the 'Men's Ballon d'Or 2024' award?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Lionel Messi</li>
+            <li onclick="check(this, 'B')">B. Erling Haaland</li>
+            <li onclick="check(this, 'C')">C. Vinicius Junior</li>
+            <li onclick="check(this, 'D')">D. Rodri</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>169. The 'PM Vishwakarma' scheme, launched in 2023-24, provides support to whom?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. MSME Owners</li>
+            <li onclick="check(this, 'B')">B. IT Professionals</li>
+            <li onclick="check(this, 'C')">C. Traditional Artisans and Craftspeople</li>
+            <li onclick="check(this, 'D')">D. Street Vendors</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>170. Which Bihar district has been selected for the development of 'Ramayan University'?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Vaishali</li>
+            <li onclick="check(this, 'B')">B. Sitamarhi</li>
+            <li onclick="check(this, 'C')">C. East Champaran</li>
+            <li onclick="check(this, 'D')">D. Buxar</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>171. The 'OSIRIS-REx' mission of NASA successfully returned samples from which asteroid in late 2023?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Ryugu</li>
+            <li onclick="check(this, 'B')">B. Bennu</li>
+            <li onclick="check(this, 'C')">C. Itokawa</li>
+            <li onclick="check(this, 'D')">D. Psyche</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>172. Who is the author of the book 'The Book of Life: My Dance with Buddha for Success'?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Arundhati Roy</li>
+            <li onclick="check(this, 'B')">B. Salman Rushdie</li>
+            <li onclick="check(this, 'C')">C. Shashi Tharoor</li>
+            <li onclick="check(this, 'D')">D. Vivek Agnihotri</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>173. Bihar’s 'Nitish App' is launched specifically for which purpose?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Student Admissions</li>
+            <li onclick="check(this, 'B')">B. Disaster Alert (Lightning)</li>
+            <li onclick="check(this, 'C')">C. Agriculture Market</li>
+            <li onclick="check(this, 'D')">D. Health Records</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>174. Which Indian state has the highest number of 'GI Tag' products as of 2024-25?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Tamil Nadu</li>
+            <li onclick="check(this, 'B')">B. Karnataka</li>
+            <li onclick="check(this, 'C')">C. Uttar Pradesh</li>
+            <li onclick="check(this, 'D')">D. Kerala</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>175. The 'Ghosrawan' excavation site, which recently revealed ancient Buddhist remains, is in which Bihar district?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Nalanda</li>
+            <li onclick="check(this, 'B')">B. Gaya</li>
+            <li onclick="check(this, 'C')">C. Nawada</li>
+            <li onclick="check(this, 'D')">D. Sheikhpura</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>176. Bihar has set a target to become a 'Carbon Neutral' state by which year?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 2030</li>
+            <li onclick="check(this, 'B')">B. 2040</li>
+            <li onclick="check(this, 'C')">C. 2050</li>
+            <li onclick="check(this, 'D')">D. 2070</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>177. Which country officially rejoined the 'UNESCO' in late 2023-24 after a five-year absence?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. United States</li>
+            <li onclick="check(this, 'B')">B. Israel</li>
+            <li onclick="check(this, 'C')">C. Russia</li>
+            <li onclick="check(this, 'D')">D. China</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>178. The 'Mukhya Mantri Alpsankhyak Udyami Yojana' in Bihar provides what amount of financial assistance to minority entrepreneurs?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. ₹2 Lakh</li>
+            <li onclick="check(this, 'B')">B. ₹5 Lakh</li>
+            <li onclick="check(this, 'C')">C. ₹8 Lakh</li>
+            <li onclick="check(this, 'D')">D. ₹10 Lakh</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>179. Who is the current Chairperson of the Securities and Exchange Board of India (SEBI)?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Arundhati Bhattacharya</li>
+            <li onclick="check(this, 'B')">B. Nita Ambani</li>
+            <li onclick="check(this, 'C')">C. Madhabi Puri Buch</li>
+            <li onclick="check(this, 'D')">D. Nirmala Sitharaman</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>180. Which Bihar district’s 'Makhana' (Fox Nut) research centre was recently accorded the status of a National Research Centre?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Madhubani</li>
+            <li onclick="check(this, 'B')">B. Darbhanga</li>
+            <li onclick="check(this, 'C')">C. Saharsa</li>
+            <li onclick="check(this, 'D')">D. Purnia</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>181. The 'Vande Metro', India's first hydrogen-powered train, is expected to start trials in which year?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 2024-25</li>
+            <li onclick="check(this, 'B')">B. 2026</li>
+            <li onclick="check(this, 'C')">C. 2027</li>
+            <li onclick="check(this, 'D')">D. 2030</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>182. Which city in Bihar has been selected to develop a 'Unity Mall' to promote ODOP (One District One Product) items?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Gaya</li>
+            <li onclick="check(this, 'B')">B. Muzaffarpur</li>
+            <li onclick="check(this, 'C')">C. Bhagalpur</li>
+            <li onclick="check(this, 'D')">D. Patna</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>183. Who is the first Indian to be elected as a member of the International Esports Federation (IESF) in 2023-24?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Ankit Panth</li>
+            <li onclick="check(this, 'B')">B. MortaL</li>
+            <li onclick="check(this, 'C')">C. Lokesh Suji</li>
+            <li onclick="check(this, 'D')">D. Abhijeet Andhare</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>184. The 'Rupanchal' and 'Vidyanchal' satellite-based internet projects were launched by which tech giant in 2025?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Starlink</li>
+            <li onclick="check(this, 'B')">B. Amazon (Project Kuiper)</li>
+            <li onclick="check(this, 'C')">C. Reliance Jio</li>
+            <li onclick="check(this, 'D')">D. OneWeb</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>185. Which district in Bihar recorded the highest 'Registration of New Vehicles' in 2024-25, indicating urban growth?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Patna</li>
+            <li onclick="check(this, 'B')">B. Gaya</li>
+            <li onclick="check(this, 'C')">C. Muzaffarpur</li>
+            <li onclick="check(this, 'D')">D. Begusarai</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>186. The 'State of India’s Birds 2023' report categorized which common bird as a species of 'High Conservation Concern' despite being a state bird?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Indian Roller</li>
+            <li onclick="check(this, 'B')">B. Parrot</li>
+            <li onclick="check(this, 'C')">C. House Sparrow (Gauraiya)</li>
+            <li onclick="check(this, 'D')">D. Peacock</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>187. Who won the 'Miss India 2024' title?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Nandini Gupta</li>
+            <li onclick="check(this, 'B')">B. Rhea Singha</li>
+            <li onclick="check(this, 'C')">C. Sini Shetty</li>
+            <li onclick="check(this, 'D')">D. Harnaaz Sandhu</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>188. Bihar's 'Medhasoft' portal is used for which administrative function?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Hospital beds booking</li>
+            <li onclick="check(this, 'B')">B. Police recruitment</li>
+            <li onclick="check(this, 'C')">C. Land mutation</li>
+            <li onclick="check(this, 'D')">D. Direct Benefit Transfer (DBT) to students</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>189. Which country will host the 'FIFA Men's World Cup 2030' spanning three continents?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Spain, Portugal, Morocco</li>
+            <li onclick="check(this, 'B')">B. USA, Canada, Mexico</li>
+            <li onclick="check(this, 'C')">C. Saudi Arabia</li>
+            <li onclick="check(this, 'D')">D. Uruguay, Argentina, Paraguay</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>190. The 'Global Gateway' plan is a global investment strategy of which organization to counter China's BRI?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. G7</li>
+            <li onclick="check(this, 'B')">B. NATO</li>
+            <li onclick="check(this, 'C')">C. European Union</li>
+            <li onclick="check(this, 'D')">D. QUAD</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>191. Bihar's first 'Floating Power Plant' was built over a pond in which district?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Supaul</li>
+            <li onclick="check(this, 'B')">B. Darbhanga</li>
+            <li onclick="check(this, 'C')">C. Madhubani</li>
+            <li onclick="check(this, 'D')">D. Saharsa</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>192. What is the name of the newest autonomous body created by the Indian Govt to boost research, replacing SERB?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. ISRO-R</li>
+            <li onclick="check(this, 'B')">B. Science-D</li>
+            <li onclick="check(this, 'C')">C. Bharat Researh</li>
+            <li onclick="check(this, 'D')">D. ANRF (Anusandhan National Research Foundation)</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>193. Which Bihar-born personality is known as the 'Mountain Man' of India?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Dashrath Manjhi</li>
+            <li onclick="check(this, 'B')">B. Karpoori Thakur</li>
+            <li onclick="check(this, 'C')">C. Bismillah Khan</li>
+            <li onclick="check(this, 'D')">D. Rajendra Prasad</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>194. The 'ADITYA-L1' solar mission of ISRO was launched using which rocket?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. GSLV-MkIII</li>
+            <li onclick="check(this, 'B')">B. LVM3</li>
+            <li onclick="check(this, 'C')">C. PSLV-C57</li>
+            <li onclick="check(this, 'D')">D. SSLV-D2</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>195. Which Bihar district has been declared the 'Spice Hub' for its high production of Turmeric and Chilly?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Muzaffarpur</li>
+            <li onclick="check(this, 'B')">B. Samastipur</li>
+            <li onclick="check(this, 'C')">C. Khagaria</li>
+            <li onclick="check(this, 'D')">D. Begusarai</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>196. Who is the current Prime Minister of Israel (as of 2026)?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Yair Lapid</li>
+            <li onclick="check(this, 'B')">B. Isaac Herzog</li>
+            <li onclick="check(this, 'C')">C. Naftali Bennett</li>
+            <li onclick="check(this, 'D')">D. Benjamin Netanyahu</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>197. The 'E-Panchayat' award 2024 was won by which Indian state for its digital transformation of rural bodies?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Bihar</li>
+            <li onclick="check(this, 'B')">B. Uttar Pradesh</li>
+            <li onclick="check(this, 'C')">C. Maharashtra</li>
+            <li onclick="check(this, 'D')">D. Kerala</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>198. Which district of Bihar has the lowest 'Forest Area' (by area) according to ISFR reports?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Sheohar</li>
+            <li onclick="check(this, 'B')">B. Arwal</li>
+            <li onclick="check(this, 'C')">C. Sheikhpura</li>
+            <li onclick="check(this, 'D')">D. Jehanabad</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>199. What is the theme of the 'Yoga Day 2025' celebrated on June 21?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Yoga for Humanity</li>
+            <li onclick="check(this, 'B')">B. Yoga for Self and Society</li>
+            <li onclick="check(this, 'C')">C. Yoga for Peace</li>
+            <li onclick="check(this, 'D')">D. Yoga for Women Empowerment</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>200. The 'Gauraiya' (House Sparrow) was officially declared as the State Bird of Bihar in which year?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 2010</li>
+            <li onclick="check(this, 'B')">B. 2012</li>
+            <li onclick="check(this, 'C')">C. 2013</li>
+            <li onclick="check(this, 'D')">D. 2015</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>201. Which district in Bihar hosted the 'State Level Yoga Olympiad 2026' in January?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Patna</li>
+            <li onclick="check(this, 'B')">B. Nalanda (Rajgir)</li>
+            <li onclick="check(this, 'C')">C. Gaya</li>
+            <li onclick="check(this, 'D')">D. Munger</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>202. According to the Union Budget 2026-27, what is the target year for India to achieve 'Viksit Bharat' status?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 2030</li>
+            <li onclick="check(this, 'B')">B. 2040</li>
+            <li onclick="check(this, 'C')">C. 2050</li>
+            <li onclick="check(this, 'D')">D. 2047</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>203. The 'Darbhanga AIIMS', Bihar's second AIIMS, is being constructed at which specific location?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Shovran Pur (Ekmi-Shovran road)</li>
+            <li onclick="check(this, 'B')">B. Bahadurpur</li>
+            <li onclick="check(this, 'C')">C. Hayaghat</li>
+            <li onclick="check(this, 'D')">D. Keoti</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>204. Which country will chair the 'G20 Summit 2026'?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Brazil</li>
+            <li onclick="check(this, 'B')">B. South Africa</li>
+            <li onclick="check(this, 'C')">C. USA</li>
+            <li onclick="check(this, 'D')">D. India</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>205. The 'Bharat 6G Alliance' has set a target to deploy 6G services in India by which year?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 2028</li>
+            <li onclick="check(this, 'B')">B. 2030</li>
+            <li onclick="check(this, 'C')">C. 2027</li>
+            <li onclick="check(this, 'D')">D. 2032</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>206. Which Bihar city is the headquarters of the newly proposed 'South Bihar Power Distribution Company' digital transformation wing?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Gaya</li>
+            <li onclick="check(this, 'B')">B. Bhagalpur</li>
+            <li onclick="check(this, 'C')">C. Munger</li>
+            <li onclick="check(this, 'D')">D. Patna</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>207. The 2026 Winter Olympics (Milano Cortina) will be held in which country?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. France</li>
+            <li onclick="check(this, 'B')">B. Switzerland</li>
+            <li onclick="check(this, 'C')">C. Italy</li>
+            <li onclick="check(this, 'D')">D. Japan</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>208. 'Project 75-I' of the Indian Navy, which made significant progress in 2025-26, refers to the construction of:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Conventional Submarines</li>
+            <li onclick="check(this, 'B')">B. Aircraft Carriers</li>
+            <li onclick="check(this, 'C')">C. Stealth Destroyers</li>
+            <li onclick="check(this, 'D')">D. Nuclear Submarines</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>209. Bihar's 'Panchayati Raj Department' recently launched which portal for real-time monitoring of village schemes?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Gram Swaraj</li>
+            <li onclick="check(this, 'B')">B. E-Gram-Darpan</li>
+            <li onclick="check(this, 'C')">C. Bihar-Panchayat</li>
+            <li onclick="check(this, 'D')">D. Mukhiya-Connect</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>210. Who was awarded the 'Bharat Ratna' posthumously in 2024, a major figure in Bihar's political history?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Nitish Kumar</li>
+            <li onclick="check(this, 'B')">B. Lalu Prasad Yadav</li>
+            <li onclick="check(this, 'C')">C. Ram Vilas Paswan</li>
+            <li onclick="check(this, 'D')">D. Karpoori Thakur</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>211. Which country officially joined NATO as its 32nd member in 2024?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Finland</li>
+            <li onclick="check(this, 'B')">B. Ukraine</li>
+            <li onclick="check(this, 'C')">C. Sweden</li>
+            <li onclick="check(this, 'D')">D. Austria</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>212. Bihar's 'Kosi-Mechi Interlinking Project' is the second such major project in India. Which was the first?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Ken-Betwa</li>
+            <li onclick="check(this, 'B')">B. Godavari-Krishna</li>
+            <li onclick="check(this, 'C')">C. Narmada-Kshipra</li>
+            <li onclick="check(this, 'D')">D. Damodar-Ganga</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>213. What is the name of the AI chatbot launched by the Indian Judiciary in 2025 to assist with legal queries?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Nyaya AI</li>
+            <li onclick="check(this, 'B')">B. Swa-Nyaya</li>
+            <li onclick="check(this, 'C')">C. Vidhi-Bot</li>
+            <li onclick="check(this, 'D')">D. Supreme-Sahay</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>214. Which Bihar district has been identified for the construction of the state's first 'Industrial Corridor' under the Amritsar-Kolkata Industrial Corridor (AKIC)?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Patna</li>
+            <li onclick="check(this, 'B')">B. Aurangabad</li>
+            <li onclick="check(this, 'C')">C. Rohtas</li>
+            <li onclick="check(this, 'D')">D. Gaya (Dobhi)</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>215. Who is the current Chief Election Commissioner of India (as of 2026)?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Rajiv Kumar</li>
+            <li onclick="check(this, 'B')">B. Anup Chandra Pandey</li>
+            <li onclick="check(this, 'C')">C. Arun Goel</li>
+            <li onclick="check(this, 'D')">D. Sunil Arora</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>216. The 'Shakti-2026' joint military exercise was conducted between India and which country?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. USA</li>
+            <li onclick="check(this, 'B')">B. UK</li>
+            <li onclick="check(this, 'C')">C. France</li>
+            <li onclick="check(this, 'D')">D. Sri Lanka</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>217. Bihar's 'Mukhya Mantri Gramin Solar Street Light Yojana' is being implemented by which nodal agency?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Jeevika</li>
+            <li onclick="check(this, 'B')">B. BREDA (Bihar Renewable Energy Development Agency)</li>
+            <li onclick="check(this, 'C')">C. Bihar Power Holding</li>
+            <li onclick="check(this, 'D')">D. PRD Bihar</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>218. The 'James Webb Space Telescope' (JWST) recently discovered water vapor on which exoplanet in 2025-26?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Kepler-22b</li>
+            <li onclick="check(this, 'B')">B. Proxima Centauri b</li>
+            <li onclick="check(this, 'C')">C. Trappist-1e</li>
+            <li onclick="check(this, 'D')">D. WASP-18b</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>219. Which city in Bihar has been declared as the 'Cleanest City' of the state in the Swachh Survekshan 2025 results?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Patna</li>
+            <li onclick="check(this, 'B')">B. Supaul</li>
+            <li onclick="check(this, 'C')">C. Gaya</li>
+            <li onclick="check(this, 'D')">D. Munger</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>220. The 'AUKUS' alliance (Australia, UK, USA) recently announced the inclusion of which country in 'Pillar II' cooperation?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. India</li>
+            <li onclick="check(this, 'B')">B. South Korea</li>
+            <li onclick="check(this, 'C')">C. Japan</li>
+            <li onclick="check(this, 'D')">D. New Zealand</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>221. Which Bihar district is known for the 'Manjusha Art', which received a major push for export in 2026?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Madhubani</li>
+            <li onclick="check(this, 'B')">B. Bhagalpur</li>
+            <li onclick="check(this, 'C')">C. Darbhanga</li>
+            <li onclick="check(this, 'D')">D. Purnia</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>222. What is the official name of the 13-digit unique ID issued to all farmers in India (Bhu-Aadhaar)?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. K-ID</li>
+            <li onclick="check(this, 'B')">B. Agristack</li>
+            <li onclick="check(this, 'C')">C. FASAL-ID</li>
+            <li onclick="check(this, 'D')">D. ULPIN (Unique Land Parcel Identification Number)</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>223. The 'Dugeshwari Hills' Ropeway project, recently inaugurated, is located in which Bihar district?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Gaya</li>
+            <li onclick="check(this, 'B')">B. Nawada</li>
+            <li onclick="check(this, 'C')">C. Jehanabad</li>
+            <li onclick="check(this, 'D')">D. Rohtas</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>224. Which Indian state has launched the 'Mukhya Mantri Ladli Behna Yojana' (which inspired similar schemes in 2024-25)?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Uttar Pradesh</li>
+            <li onclick="check(this, 'B')">B. Rajasthan</li>
+            <li onclick="check(this, 'C')">C. Madhya Pradesh</li>
+            <li onclick="check(this, 'D')">D. Bihar</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>225. Who is the winner of the 'International Booker Prize 2025'?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Geetanjali Shree</li>
+            <li onclick="check(this, 'B')">B. Jenny Erpenbeck (Kairos)</li>
+            <li onclick="check(this, 'C')">C. Georgi Gospodinov</li>
+            <li onclick="check(this, 'D')">D. Han Kang</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>226. Which Bihar district has been identified as a 'Major Export Hub' for 'Shahi Litchi' under the 2025-26 Trade Policy?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Vaishali</li>
+            <li onclick="check(this, 'B')">B. Samastipur</li>
+            <li onclick="check(this, 'C')">C. Muzaffarpur</li>
+            <li onclick="check(this, 'D')">D. East Champaran</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>227. The 'Bhashini' AI, used for real-time translation during the PM's speeches, currently supports how many Indian languages as of 2026?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 22</li>
+            <li onclick="check(this, 'B')">B. 18</li>
+            <li onclick="check(this, 'C')">C. 14</li>
+            <li onclick="check(this, 'D')">D. 25</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>228. Which Indian city is the site for the 'International Rice Research Institute' (IRRI) South Asia Regional Centre?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Cuttack</li>
+            <li onclick="check(this, 'B')">B. Varanasi</li>
+            <li onclick="check(this, 'C')">C. Patna</li>
+            <li onclick="check(this, 'D')">D. Hyderabad</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>229. Bihar's 'Mukhya Mantri Bagwani Mission' recently included which fruit for special subsidy in the dry zones of South Bihar?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Mango</li>
+            <li onclick="check(this, 'B')">B. Banana</li>
+            <li onclick="check(this, 'C')">C. Guava</li>
+            <li onclick="check(this, 'D')">D. Dragon Fruit / Strawberry</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>230. Who is the current President of the World Bank (as of 2026)?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Ajay Banga</li>
+            <li onclick="check(this, 'B')">B. David Malpass</li>
+            <li onclick="check(this, 'C')">C. Jim Yong Kim</li>
+            <li onclick="check(this, 'D')">D. Kristalina Georgieva</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>231. The 'Simaria Dham' riverfront development project in Bihar's Begusarai is being built on the banks of which river?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Gandak</li>
+            <li onclick="check(this, 'B')">B. Kosi</li>
+            <li onclick="check(this, 'C')">C. Ganga</li>
+            <li onclick="check(this, 'D')">D. Kamala</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>232. Which country recently became the first to provide a 'Digital Nomad Visa' specifically for tech professionals in 2025?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Estonia</li>
+            <li onclick="check(this, 'B')">B. Japan</li>
+            <li onclick="check(this, 'C')">C. Portugal</li>
+            <li onclick="check(this, 'D')">D. South Korea</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>233. What is the rank of India in the 'Global Cybersecurity Index 2025'?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 10th</li>
+            <li onclick="check(this, 'B')">B. 25th</li>
+            <li onclick="check(this, 'C')">C. 47th</li>
+            <li onclick="check(this, 'D')">D. 9th</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>234. Bihar's 'Malmas Mela', which saw record footfall in 2025-26, is a historic fair associated with which city?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Rajgir</li>
+            <li onclick="check(this, 'B')">B. Gaya</li>
+            <li onclick="check(this, 'C')">C. Pawapuri</li>
+            <li onclick="check(this, 'D')">D. Bodh Gaya</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>235. The 'INDUS-X' summit, focused on defense innovation, is a collaboration between India and which country?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Russia</li>
+            <li onclick="check(this, 'B')">B. USA</li>
+            <li onclick="check(this, 'C')">C. Israel</li>
+            <li onclick="check(this, 'D')">D. France</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>236. Which Bihar district celebrated the 'Auryed Mahotsav' in 2026 to promote traditional medicine?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Patna</li>
+            <li onclick="check(this, 'B')">B. Munger</li>
+            <li onclick="check(this, 'C')">C. Nalanda</li>
+            <li onclick="check(this, 'D')">D. Rohtas</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>237. Who is the author of the book 'Victory City', released in late 2023-24?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Amitav Ghosh</li>
+            <li onclick="check(this, 'B')">B. Arundhati Roy</li>
+            <li onclick="check(this, 'C')">C. Shashi Tharoor</li>
+            <li onclick="check(this, 'D')">D. Salman Rushdie</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>238. The 'Digital India Bhashini' mission is under which Union Ministry?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Ministry of Education</li>
+            <li onclick="check(this, 'B')">B. Ministry of Electronics and IT (MeitY)</li>
+            <li onclick="check(this, 'C')">C. Ministry of Science and Tech</li>
+            <li onclick="check(this, 'D')">D. Ministry of Culture</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>239. Which Bihar city has the state's first 'Marine Drive' (JP Ganga Path) built along the river Ganga?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Patna</li>
+            <li onclick="check(this, 'B')">B. Bhagalpur</li>
+            <li onclick="check(this, 'C')">C. Munger</li>
+            <li onclick="check(this, 'D')">D. Buxar</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>240. The 'COP30' Climate Change Conference (2025) is scheduled to be held in which country?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Azerbaijan</li>
+            <li onclick="check(this, 'B')">B. UAE</li>
+            <li onclick="check(this, 'C')">C. Brazil</li>
+            <li onclick="check(this, 'D')">D. Australia</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>241. Who is the current Speaker of the 18th Lok Sabha (as of 2026)?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Jagdeep Dhankhar</li>
+            <li onclick="check(this, 'B')">B. Meira Kumar</li>
+            <li onclick="check(this, 'C')">C. Sumitra Mahajan</li>
+            <li onclick="check(this, 'D')">D. Om Birla</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>242. Bihar's 'Lakhwar-Vyasi' hydro project recently signed an MOU for power sharing with which state/UT?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Uttar Pradesh</li>
+            <li onclick="check(this, 'B')">B. Uttarakhand</li>
+            <li onclick="check(this, 'C')">C. Delhi</li>
+            <li onclick="check(this, 'D')">D. Jharkhand</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>243. The 'Pradhan Mantri Suryodaya Yojana' (2024-25) aims to install rooftop solar systems in how many households?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 1 Crore</li>
+            <li onclick="check(this, 'B')">B. 50 Lakh</li>
+            <li onclick="check(this, 'C')">C. 2 Crore</li>
+            <li onclick="check(this, 'D')">D. 5 Crore</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>244. Which district in Bihar has the highest 'Per Capita Income' as per the latest Bihar Economic Survey 2025-26?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Begusarai</li>
+            <li onclick="check(this, 'B')">B. Munger</li>
+            <li onclick="check(this, 'C')">C. Patna</li>
+            <li onclick="check(this, 'D')">D. Bhagalpur</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>245. Who was awarded the 2025 Nobel Prize in Literature?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Jon Fosse</li>
+            <li onclick="check(this, 'B')">B. Han Kang (South Korea)</li>
+            <li onclick="check(this, 'C')">C. Haruki Murakami</li>
+            <li onclick="check(this, 'D')">D. Annie Ernaux</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>246. The 'Shakti-IV' exercise (2026) is a trilateral maritime exercise between India, Sri Lanka, and which other country?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Japan</li>
+            <li onclick="check(this, 'B')">B. USA</li>
+            <li onclick="check(this, 'C')">C. Australia</li>
+            <li onclick="check(this, 'D')">D. Maldives</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>247. Bihar's 'Sona' and 'Kesh' rivers are being studied for the potential extraction of which major mineral discovered in 2024-25?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Gold Placer Deposits</li>
+            <li onclick="check(this, 'B')">B. Lithium</li>
+            <li onclick="check(this, 'C')">C. Diamond</li>
+            <li onclick="check(this, 'D')">D. Uranium</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>248. The 'G20' recently admitted which organization as its 21st permanent member during the New Delhi Summit?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. ASEAN</li>
+            <li onclick="check(this, 'B')">B. African Union</li>
+            <li onclick="check(this, 'C')">C. European Union</li>
+            <li onclick="check(this, 'D')">D. SAARC</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>249. Which Bihar-based scientist was awarded the Padma Bhushan 2026 for contributions to Agricultural Science?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Dr. Manas Bihari Verma</li>
+            <li onclick="check(this, 'B')">B. Anand Kumar</li>
+            <li onclick="check(this, 'C')">C. Dr. R.K. Singh</li>
+            <li onclick="check(this, 'D')">D. Vashishtha Narayan Singh</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>250. What is the theme of 'Bihar Diwas 2026' (celebrated on March 22)?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Jal-Jeevan-Hariyali</li>
+            <li onclick="check(this, 'B')">B. Yuva Shakti Bihar Ki Pragati</li>
+            <li onclick="check(this, 'C')">C. Beti Padhao, Desh Badhao</li>
+            <li onclick="check(this, 'D')">D. Viksit Bihar @ 2047</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>251. Which Bihar district has recently been developed as the 'Honey Hub' of the state under the National Beekeeping & Honey Mission (NBHM)?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Bhagalpur</li>
+            <li onclick="check(this, 'B')">B. West Champaran</li>
+            <li onclick="check(this, 'C')">C. Muzaffarpur</li>
+            <li onclick="check(this, 'D')">D. East Champaran</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>252. The 'Bapu Tower', India's largest tower dedicated to Mahatma Gandhi, was inaugurated in 2024-25 in which city of Bihar?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. West Champaran (Motihari)</li>
+            <li onclick="check(this, 'B')">B. Gaya</li>
+            <li onclick="check(this, 'C')">C. Vaishali</li>
+            <li onclick="check(this, 'D')">D. Patna (Gardanibagh)</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>253. Which country hosted the '19th G20 Summit' in late 2024, where the 'Global Alliance Against Hunger and Poverty' was launched?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Brazil</li>
+            <li onclick="check(this, 'B')">B. India</li>
+            <li onclick="check(this, 'C')">C. South Africa</li>
+            <li onclick="check(this, 'D')">D. Indonesia</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>254. Bihar's 'State Ranking Index for NFSA' (National Food Security Act) 2025 placed the state in which category for 'Best Practices'?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Top Achiever</li>
+            <li onclick="check(this, 'B')">B. Aspirant</li>
+            <li onclick="check(this, 'C')">C. Performer</li>
+            <li onclick="check(this, 'D')">D. Below Average</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>255. What is the name of the first indigenously developed 'Anti-Radiation Missile' of India, successfully tested by DRDO?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Agni-V</li>
+            <li onclick="check(this, 'B')">B. Rudram-1</li>
+            <li onclick="check(this, 'C')">C. BrahMos</li>
+            <li onclick="check(this, 'D')">D. Prithvi-II</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>256. Which district in Bihar has the highest 'Livestock Population' according to the 20th Livestock Census data used in 2026 planning?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Katihar</li>
+            <li onclick="check(this, 'B')">B. Araria</li>
+            <li onclick="check(this, 'C')">C. Patna</li>
+            <li onclick="check(this, 'D')">D. Gaya</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>257. The 'Exercise Desert Cyclone' is a joint military exercise between India and which country?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. UAE</li>
+            <li onclick="check(this, 'B')">B. Saudi Arabia</li>
+            <li onclick="check(this, 'C')">C. Qatar</li>
+            <li onclick="check(this, 'D')">D. Egypt</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>258. Bihar's first 'Integrated Manufacturing Cluster' (IMC) is being developed in Gaya under which industrial corridor?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Delhi-Mumbai Industrial Corridor</li>
+            <li onclick="check(this, 'B')">B. Amritsar-Kolkata Industrial Corridor</li>
+            <li onclick="check(this, 'C')">C. Chennai-Bengaluru Industrial Corridor</li>
+            <li onclick="check(this, 'D')">D. Vizag-Chennai Industrial Corridor</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>259. Who was appointed as the first woman Director General of the Council of Scientific and Industrial Research (CSIR)?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Dr. Tessy Thomas</li>
+            <li onclick="check(this, 'B')">B. Dr. Soumya Swaminathan</li>
+            <li onclick="check(this, 'C')">C. Dr. N. Kalaiselvi</li>
+            <li onclick="check(this, 'D')">D. Dr. Gagandeep Kang</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>260. The 'Sudarshan Shakti' exercise 2026 was conducted by the Indian Army's Sapta Shakti Command in which state?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Punjab</li>
+            <li onclick="check(this, 'B')">B. Gujarat</li>
+            <li onclick="check(this, 'C')">C. Uttarakhand</li>
+            <li onclick="check(this, 'D')">D. Rajasthan</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>261. Bihar's 'Anand Kumar' (Super 30 founder) was recently awarded which international honor in 2025 for his contribution to education?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Global Indian Award (Canada)</li>
+            <li onclick="check(this, 'B')">B. UNESCO Peace Prize</li>
+            <li onclick="check(this, 'C')">C. Ramon Magsaysay Award</li>
+            <li onclick="check(this, 'D')">D. Zayed Award</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>262. Which space agency launched the 'Europa Clipper' mission in late 2024 to study Jupiter's moon Europa?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. ISRO</li>
+            <li onclick="check(this, 'B')">B. NASA</li>
+            <li onclick="check(this, 'C')">C. ESA</li>
+            <li onclick="check(this, 'D')">D. JAXA</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>263. Bihar's 'Leta' and 'Sone' river placer gold deposits were surveyed by which agency in 2025?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. ONGC</li>
+            <li onclick="check(this, 'B')">B. NITI Aayog</li>
+            <li onclick="check(this, 'C')">C. Geological Survey of India (GSI)</li>
+            <li onclick="check(this, 'D')">D. Ministry of Mines</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>264. What is the theme of the 'World Economic Forum (WEF) Annual Meeting 2026' in Davos?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Cooperation in a Fragmented World</li>
+            <li onclick="check(this, 'B')">B. Rebuilding Trust</li>
+            <li onclick="check(this, 'C')">C. Stakeholders for a Cohesive and Sustainable World</li>
+            <li onclick="check(this, 'D')">D. Navigating the Post-AI Global Economy</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>265. Which Bihar district is home to the 'Telhar Kund' waterfall, which was recently promoted for eco-tourism?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Rohtas</li>
+            <li onclick="check(this, 'B')">B. Kaimur</li>
+            <li onclick="check(this, 'C')">C. Nawada</li>
+            <li onclick="check(this, 'D')">D. Sasaram</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>266. Who is the current Chairman of the 16th Finance Commission of India?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Arvind Panagariya</li>
+            <li onclick="check(this, 'B')">B. N.K. Singh</li>
+            <li onclick="check(this, 'C')">C. Shaktikanta Das</li>
+            <li onclick="check(this, 'D')">D. Rajiv Kumar</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>267. The 'PM-PRANAM' scheme is aimed at reducing the use of which substance in agriculture?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Pesticides</li>
+            <li onclick="check(this, 'B')">B. Groundwater</li>
+            <li onclick="check(this, 'C')">C. Chemical Fertilizers</li>
+            <li onclick="check(this, 'D')">D. Plastic Mulching</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>268. Which Bihar district has implemented the 'Digital Literacy' program for all its Panchayat members first in 2025?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Patna</li>
+            <li onclick="check(this, 'B')">B. Darbhanga</li>
+            <li onclick="check(this, 'C')">C. Siwan</li>
+            <li onclick="check(this, 'D')">D. Samastipur</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>269. The 'Sora' AI model, capable of generating video from text, was released by which company in 2024?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Google</li>
+            <li onclick="check(this, 'B')">B. OpenAI</li>
+            <li onclick="check(this, 'C')">C. Meta</li>
+            <li onclick="check(this, 'D')">D. Microsoft</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>270. Bihar’s 'Nitish App' (launched 2024-25) is primarily for providing alerts regarding:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Lightning and Floods</li>
+            <li onclick="check(this, 'B')">B. New Job Notifications</li>
+            <li onclick="check(this, 'C')">C. Farmer Subsidies</li>
+            <li onclick="check(this, 'D')">D. Health Appointments</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>271. Who is the current Prime Minister of the United Kingdom (as of early 2026)?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Rishi Sunak</li>
+            <li onclick="check(this, 'B')">B. Boris Johnson</li>
+            <li onclick="check(this, 'C')">C. Keir Starmer</li>
+            <li onclick="check(this, 'D')">D. Liz Truss</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>272. The 'Exercise Khan Quest 2025' is a multinational peacekeeping exercise held in which country?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Kazakhstan</li>
+            <li onclick="check(this, 'B')">B. Mongolia</li>
+            <li onclick="check(this, 'C')">C. Uzbekistan</li>
+            <li onclick="check(this, 'D')">D. India</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>273. Which district in Bihar has the lowest 'Literacy Rate' as per the projected data for 2026 (historically Purnia)?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Araria</li>
+            <li onclick="check(this, 'B')">B. Katihar</li>
+            <li onclick="check(this, 'C')">C. Madhepura</li>
+            <li onclick="check(this, 'D')">D. Purnia</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>274. The 'Aditya-L1' spacecraft's destination, the L1 point, is located approximately how many kilometers from Earth?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 1.5 Million km</li>
+            <li onclick="check(this, 'B')">B. 1.5 Billion km</li>
+            <li onclick="check(this, 'C')">C. 3.84 Lakh km</li>
+            <li onclick="check(this, 'D')">D. 1 Lakh km</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>275. Bihar's 'Sparrow Day' (March 20) in 2026 focused on which theme to protect the state bird?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Save our Sparrows</li>
+            <li onclick="check(this, 'B')">B. Sparrows: Nature's Little Friends</li>
+            <li onclick="check(this, 'C')">C. I Love Sparrows: Citizen Conservation</li>
+            <li onclick="check(this, 'D')">D. Green Bihar, Chirping Bihar</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>276. Which Bihar district’s 'Marcha Rice' (Mircha Rice) was recently granted the Geographical Indication (GI) Tag for its unique aroma?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. East Champaran</li>
+            <li onclick="check(this, 'B')">B. West Champaran</li>
+            <li onclick="check(this, 'C')">C. Gopalganj</li>
+            <li onclick="check(this, 'D')">D. Siwan</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>277. As per the 2026 'State of India’s Environment' report, which Bihar city has been noted for the highest growth in 'Urban Green Cover'?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Patna</li>
+            <li onclick="check(this, 'B')">B. Gaya</li>
+            <li onclick="check(this, 'C')">C. Bhagalpur</li>
+            <li onclick="check(this, 'D')">D. Muzaffarpur</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>278. The 'Gaganyaan-3' mission, projected for late 2026, aims to perform which specific maneuver for the first time?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Docking with the Bharatiya Antariksha Station (BAS)</li>
+            <li onclick="check(this, 'B')">B. Lunar Orbit Insertion</li>
+            <li onclick="check(this, 'C')">C. Venus Flyby</li>
+            <li onclick="check(this, 'D')">D. Mars Rover Deployment</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>279. Who was appointed as the Chief Justice of the Patna High Court in late 2024-25?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Justice Sanjay Karol</li>
+            <li onclick="check(this, 'B')">B. Justice K. Vinod Chandran</li>
+            <li onclick="check(this, 'C')">C. Justice Shailesh Kumar (Hypothetical Update)</li>
+            <li onclick="check(this, 'D')">D. Justice Chakradhari Sharan Singh</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>280. India’s first 'AI City' is being developed in which Indian state (announced in 2025)?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Karnataka (Bengaluru)</li>
+            <li onclick="check(this, 'B')">B. Uttar Pradesh (Lucknow)</li>
+            <li onclick="check(this, 'C')">C. Telangana (Hyderabad)</li>
+            <li onclick="check(this, 'D')">D. Maharashtra (Pune)</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>281. The 'Simaria Bridge' over the Ganga, which will be a 6-lane road bridge, connects Begusarai with which district?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Patna</li>
+            <li onclick="check(this, 'B')">B. Munger</li>
+            <li onclick="check(this, 'C')">C. Khagaria</li>
+            <li onclick="check(this, 'D')">D. Patna (Mokama side)</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>282. Which country will host the 'FIFA World Cup 2026'?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. USA, Canada, and Mexico</li>
+            <li onclick="check(this, 'B')">B. Saudi Arabia</li>
+            <li onclick="check(this, 'C')">C. Argentina and Uruguay</li>
+            <li onclick="check(this, 'D')">D. UK and Ireland</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>283. Bihar's 'Jeevika' (BRLPS) recently partnered with which organization to promote 'Didi Ki Rasoi' across India?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. UNESCO</li>
+            <li onclick="check(this, 'B')">B. NITI Aayog</li>
+            <li onclick="check(this, 'C')">C. World Bank</li>
+            <li onclick="check(this, 'D')">D. Ministry of Rural Development</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>284. What is the name of India's solar-powered 'Autonomous Underwater Vehicle' (AUV) launched in 2025 for oceanography?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Varuna</li>
+            <li onclick="check(this, 'B')">B. Neerakshi</li>
+            <li onclick="check(this, 'C')">C. Sagar-Kanya</li>
+            <li onclick="check(this, 'D')">D. Matsya-6000</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>285. Which district in Bihar is the site for the state's first 'Multi-Modal Logistics Park' (MMLP)?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Gaya</li>
+            <li onclick="check(this, 'B')">B. Muzaffarpur</li>
+            <li onclick="check(this, 'C')">C. Bhagalpur</li>
+            <li onclick="check(this, 'D')">D. Patna (Fatuha)</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>286. Who won the 'Nobel Peace Prize 2025' (announced late 2025)?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Narges Mohammadi</li>
+            <li onclick="check(this, 'B')">B. World Food Programme</li>
+            <li onclick="check(this, 'C')">C. Nihon Hidankyo (Japanese anti-nuclear group)</li>
+            <li onclick="check(this, 'D')">D. Greta Thunberg</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>287. Bihar's 'Krishi Road Map-4' (2023-2028) gives special emphasis on the development of which crop in 'Tal' areas?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Wheat</li>
+            <li onclick="check(this, 'B')">B. Pulses (Dal)</li>
+            <li onclick="check(this, 'C')">C. Maize</li>
+            <li onclick="check(this, 'D')">D. Paddy</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>288. The 'India-Middle East-Europe Economic Corridor' (IMEC) was first announced at which summit?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. G20 New Delhi Summit 2023</li>
+            <li onclick="check(this, 'B')">B. G7 Hiroshima Summit 2023</li>
+            <li onclick="check(this, 'C')">C. COP28 Dubai</li>
+            <li onclick="check(this, 'D')">D. BRICS Johannesburg Summit</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>289. Which city in Bihar is home to the 'Vishwa Shanti Stupa' (Peace Pagoda) situated on the Ratnagiri Hill?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Bodh Gaya</li>
+            <li onclick="check(this, 'B')">B. Vaishali</li>
+            <li onclick="check(this, 'C')">C. Pawapuri</li>
+            <li onclick="check(this, 'D')">D. Rajgir</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>290. What is the current 'Repo Rate' as per the RBI Monetary Policy of early 2026?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 6.00%</li>
+            <li onclick="check(this, 'B')">B. 6.25%</li>
+            <li onclick="check(this, 'C')">C. 6.50% (Projected Stability)</li>
+            <li onclick="check(this, 'D')">D. 6.75%</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>291. Bihar's 'Mahila Samman Bachat Patra' scheme targets which group of investors?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Individual Women and Girls</li>
+            <li onclick="check(this, 'B')">B. Women Entrepreneurs only</li>
+            <li onclick="check(this, 'C')">C. JEEVIKA SHGs</li>
+            <li onclick="check(this, 'D')">D. Rural BPL Women</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>292. The 'LCH Prachand' is an indigenously developed vehicle by HAL for which branch of the armed forces?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Main Battle Tank</li>
+            <li onclick="check(this, 'B')">B. Light Combat Helicopter</li>
+            <li onclick="check(this, 'C')">C. Stealth Submarine</li>
+            <li onclick="check(this, 'D')">D. Drone Carrier</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>293. Which district of Bihar has the highest 'Population Density' as per the latest available administrative data of 2025-26?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Patna</li>
+            <li onclick="check(this, 'B')">B. Darbhanga</li>
+            <li onclick="check(this, 'C')">C. Vaishali</li>
+            <li onclick="check(this, 'D')">D. Sheohar</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>294. The 'Bharat-GPT' ecosystem is being developed primarily under the leadership of which institution?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. IIT Bombay and Reliance</li>
+            <li onclick="check(this, 'B')">B. IIT Madras and Google</li>
+            <li onclick="check(this, 'C')">C. IISc Bengaluru</li>
+            <li onclick="check(this, 'D')">D. IIT Delhi and Microsoft</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>295. Which Bihar district celebrated the 'Aura Festival' (Sugandhit Paudha Mela) in 2026 to promote aromatic plant farming?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Bhagalpur</li>
+            <li onclick="check(this, 'B')">B. Purnia</li>
+            <li onclick="check(this, 'C')">C. Banka</li>
+            <li onclick="check(this, 'D')">D. Katihar</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>296. Who was elected as the President of Indonesia in 2024 (taking office late 2024)?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Joko Widodo</li>
+            <li onclick="check(this, 'B')">B. Prabowo Subianto</li>
+            <li onclick="check(this, 'C')">C. Ganjar Pranowo</li>
+            <li onclick="check(this, 'D')">D. Anies Baswedan</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>297. Bihar's 'Bagmati River' originates in which country?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. China (Tibet)</li>
+            <li onclick="check(this, 'B')">B. Bhutan</li>
+            <li onclick="check(this, 'C')">C. India (Uttarakhand)</li>
+            <li onclick="check(this, 'D')">D. Nepal</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>298. The 'National Quantum Mission' (NQM) has a target period from 2023 to which year?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 2031</li>
+            <li onclick="check(this, 'B')">B. 2028</li>
+            <li onclick="check(this, 'C')">C. 2030</li>
+            <li onclick="check(this, 'D')">D. 2047</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>299. In 2026, which Bihar personality was awarded the 'Padma Vibhushan' for Public Affairs?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Nitish Kumar</li>
+            <li onclick="check(this, 'B')">B. Karpoori Thakur (Posthumous - if considered for 2024-26 cycle)</li>
+            <li onclick="check(this, 'C')">C. Ram Vilas Paswan</li>
+            <li onclick="check(this, 'D')">D. Bindeshwar Pathak</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>300. The 'Saat Nishchay Part-2' objective 'Swachh Gaon, Samridh Gaon' primarily focuses on:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Rural Electrification</li>
+            <li onclick="check(this, 'B')">B. Paved Streets and Drains</li>
+            <li onclick="check(this, 'C')">C. Solid and Liquid Waste Management in Villages</li>
+            <li onclick="check(this, 'D')">D. Free Wi-Fi in Panchayats</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>301. Which Bihar district has been selected for the establishment of the state's first 'Multi-Modal Logistics Park' (MMLP) under the PM Gati Shakti scheme?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Gaya</li>
+            <li onclick="check(this, 'B')">B. Patna (Fatuha)</li>
+            <li onclick="check(this, 'C')">C. Muzaffarpur</li>
+            <li onclick="check(this, 'D')">D. Bhagalpur</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>302. The 2026 'Global Gender Gap Report' by WEF ranks India at which position?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 127th</li>
+            <li onclick="check(this, 'B')">B. 135th</li>
+            <li onclick="check(this, 'C')">C. 112th</li>
+            <li onclick="check(this, 'D')">D. 108th (Projected Improvement)</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>303. Which Bihar city hosted the 'International Buddhist Conclave 2026' in February?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Bodh Gaya</li>
+            <li onclick="check(this, 'B')">B. Rajgir</li>
+            <li onclick="check(this, 'C')">C. Vaishali</li>
+            <li onclick="check(this, 'D')">D. Patna</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>304. The 'NISAR' satellite mission, a joint venture between NASA and ISRO, is primarily designed to monitor:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Deep Space communication</li>
+            <li onclick="check(this, 'B')">B. Solar flares</li>
+            <li onclick="check(this, 'C')">C. Earth's changing ecosystems and ice masses</li>
+            <li onclick="check(this, 'D')">D. Lunar surface topography</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>305. Who was sworn in as the 51st Chief Justice of India (CJI) following the tenure of Justice D.Y. Chandrachud?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Justice Sanjiv Khanna</li>
+            <li onclick="check(this, 'B')">B. Justice B.R. Gavai (Current/Upcoming 2025-26 cycle)</li>
+            <li onclick="check(this, 'C')">C. Justice Surya Kant</li>
+            <li onclick="check(this, 'D')">D. Justice Hrishikesh Roy</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>306. Bihar’s 'Mission Daksh', launched in 2024-25, is aimed at improving the learning outcomes of which group?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Civil Service Aspirants</li>
+            <li onclick="check(this, 'B')">B. College Graduates</li>
+            <li onclick="check(this, 'C')">C. Skill Development for Youth</li>
+            <li onclick="check(this, 'D')">D. Academically weak students in Government Schools</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>307. Which country officially became the 100th member of the International Solar Alliance (ISA) in 2025-26?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Paraguay</li>
+            <li onclick="check(this, 'B')">B. Chile</li>
+            <li onclick="check(this, 'C')">C. Panama</li>
+            <li onclick="check(this, 'D')">D. Hungary</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>308. The 'Mukhya Mantri Alpsankhyak Udyami Yojana' in Bihar provides a loan-cum-subsidy of how much for starting a business?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. ₹5 Lakh</li>
+            <li onclick="check(this, 'B')">B. ₹8 Lakh</li>
+            <li onclick="check(this, 'C')">C. ₹10 Lakh</li>
+            <li onclick="check(this, 'D')">D. ₹15 Lakh</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>309. Which Indian state launched the 'Asha Kirana' scheme for free eye check-ups and spectacles in 2025?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Bihar</li>
+            <li onclick="check(this, 'B')">B. Karnataka</li>
+            <li onclick="check(this, 'C')">C. Kerala</li>
+            <li onclick="check(this, 'D')">D. Telangana</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>310. Bihar's 'Second Tiger Reserve' is officially being established in which district?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Kaimur</li>
+            <li onclick="check(this, 'B')">B. Rohtas</li>
+            <li onclick="check(this, 'C')">C. West Champaran</li>
+            <li onclick="check(this, 'D')">D. Gaya</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>311. What is the name of India's first indigenous 'Naval Anti-Ship Missile' (Short Range) tested in 2025-26?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. BrahMos-NG</li>
+            <li onclick="check(this, 'B')">B. Nirbhay</li>
+            <li onclick="check(this, 'C')">C. NASM-SR</li>
+            <li onclick="check(this, 'D')">D. Pralay</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>312. Which Bihar district has the highest 'Per Capita Milk Availability' according to the 2025-26 survey?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Patna</li>
+            <li onclick="check(this, 'B')">B. Begusarai</li>
+            <li onclick="check(this, 'C')">C. Madhubani</li>
+            <li onclick="check(this, 'D')">D. Lakhisarai</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>313. The 'Project Kusha', aimed at developing a long-range air defense system for India, is being led by:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. ISRO</li>
+            <li onclick="check(this, 'B')">B. DRDO</li>
+            <li onclick="check(this, 'C')">C. HAL</li>
+            <li onclick="check(this, 'D')">D. Bharat Electronics</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>314. Which Bihar-born mathematician was posthumously honored with a memorial library at Patna University in 2025?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Vashishtha Narayan Singh</li>
+            <li onclick="check(this, 'B')">B. Aryabhata</li>
+            <li onclick="check(this, 'C')">C. Anand Kumar</li>
+            <li onclick="check(this, 'D')">D. R.K. Singh</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>315. The 'Global Biofuel Alliance' (GBA) was launched during which international event?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. COP28</li>
+            <li onclick="check(this, 'B')">B. G7 Summit</li>
+            <li onclick="check(this, 'C')">C. G20 New Delhi Summit</li>
+            <li onclick="check(this, 'D')">D. BRICS 2024</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>316. Bihar's first 'Hydropower Storage Project' (Durgavati Dam) is located in which district?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Rohtas</li>
+            <li onclick="check(this, 'B')">B. Kaimur</li>
+            <li onclick="check(this, 'C')">C. Nawada</li>
+            <li onclick="check(this, 'D')">D. Jamui</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>317. Who is the author of the book 'The Golden Road: How Ancient India Transformed the World', released in 2024-25?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Shashi Tharoor</li>
+            <li onclick="check(this, 'B')">B. Amartya Sen</li>
+            <li onclick="check(this, 'C')">C. Vikram Seth</li>
+            <li onclick="check(this, 'D')">D. William Dalrymple</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>318. The 'Tele-MANAS' initiative, which provides mental health support, is under which Union Ministry?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Ministry of Health and Family Welfare</li>
+            <li onclick="check(this, 'B')">B. Ministry of Social Justice</li>
+            <li onclick="check(this, 'C')">C. Ministry of Education</li>
+            <li onclick="check(this, 'D')">D. Ministry of Women and Child Development</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>319. Which Bihar district has been awarded for the best 'Har Ghar Gangajal' implementation in 2026?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Patna</li>
+            <li onclick="check(this, 'B')">B. Gaya</li>
+            <li onclick="check(this, 'C')">C. Nalanda</li>
+            <li onclick="check(this, 'D')">D. Nawada</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>320. The 'LUPEX' (Lunar Polar Exploration) mission is a collaboration between ISRO and which space agency?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. NASA</li>
+            <li onclick="check(this, 'B')">B. JAXA (Japan)</li>
+            <li onclick="check(this, 'C')">C. ESA (Europe)</li>
+            <li onclick="check(this, 'D')">D. Roscosmos (Russia)</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>321. Bihar’s 'Nitish App' is uniquely designed to provide alerts for lightning strikes how many minutes in advance?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 15 minutes</li>
+            <li onclick="check(this, 'B')">B. 20 minutes</li>
+            <li onclick="check(this, 'C')">C. 30 minutes</li>
+            <li onclick="check(this, 'D')">D. 40 minutes</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>322. Which country hosted the 'Quadrilateral Security Dialogue' (QUAD) summit in 2024-25?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. USA (Delaware)</li>
+            <li onclick="check(this, 'B')">B. India</li>
+            <li onclick="check(this, 'C')">C. Japan</li>
+            <li onclick="check(this, 'D')">D. Australia</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>323. Bihar's 'Udayan' portal is specifically designed to facilitate which sector?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Student Scholarships</li>
+            <li onclick="check(this, 'B')">B. Agricultural Marketing</li>
+            <li onclick="check(this, 'C')">C. Industrial Investment and Clearances</li>
+            <li onclick="check(this, 'D')">D. Tourism Booking</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>324. What is the theme of 'World Water Day 2026'?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Water for Peace</li>
+            <li onclick="check(this, 'B')">B. Leveraging Water for Climate Action</li>
+            <li onclick="check(this, 'C')">C. Accelerating Change</li>
+            <li onclick="check(this, 'D')">D. Groundwater: Making the Invisible Visible</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>325. Which Bihar district is known as the 'Electronic Hub' due to the establishment of the state's first electronic cluster?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Patna</li>
+            <li onclick="check(this, 'B')">B. Gaya</li>
+            <li onclick="check(this, 'C')">C. Muzaffarpur</li>
+            <li onclick="check(this, 'D')">D. Begusarai</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>326. According to the Bihar Economic Survey 2025-26, what is the GSDP growth rate of the state?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 10.5% (Projected)</li>
+            <li onclick="check(this, 'B')">B. 8.2%</li>
+            <li onclick="check(this, 'C')">C. 12.1%</li>
+            <li onclick="check(this, 'D')">D. 9.4%</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>327. Which city will host the '2026 Asian Games'?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Bangkok</li>
+            <li onclick="check(this, 'B')">B. Doha</li>
+            <li onclick="check(this, 'C')">C. Aichi-Nagoya (Japan)</li>
+            <li onclick="check(this, 'D')">D. Tashkent</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>328. Bihar's 'Anmol App' is related to which sector?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Animal Husbandry</li>
+            <li onclick="check(this, 'B')">B. Forestry</li>
+            <li onclick="check(this, 'C')">C. Digital Education</li>
+            <li onclick="check(this, 'D')">D. Maternal and Child Health monitoring</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>329. The 'Sudarshan S-400' missile defense system, recently integrated into the Indian Air Force, was procured from which country?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. USA</li>
+            <li onclick="check(this, 'B')">B. Russia</li>
+            <li onclick="check(this, 'C')">C. Israel</li>
+            <li onclick="check(this, 'D')">D. France</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>330. Who is the current Chairman of the 16th Finance Commission (as of 2026)?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Arvind Panagariya</li>
+            <li onclick="check(this, 'B')">B. N.K. Singh</li>
+            <li onclick="check(this, 'C')">C. Shaktikanta Das</li>
+            <li onclick="check(this, 'D')">D. Rajiv Kumar</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>331. Bihar's 'Leta' and 'Sone' river placer gold deposits were surveyed by which agency in 2025?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. ONGC</li>
+            <li onclick="check(this, 'B')">B. NITI Aayog</li>
+            <li onclick="check(this, 'C')">C. Geological Survey of India (GSI)</li>
+            <li onclick="check(this, 'D')">D. Ministry of Mines</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>332. The 'Exercise Dharma Guardian 2025' was a joint military exercise between India and which country?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. South Korea</li>
+            <li onclick="check(this, 'B')">B. Vietnam</li>
+            <li onclick="check(this, 'C')">C. USA</li>
+            <li onclick="check(this, 'D')">D. Japan</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>333. Which Bihar district has been declared as the first 'Digital District' of the state?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Jehanabad</li>
+            <li onclick="check(this, 'B')">B. Patna</li>
+            <li onclick="check(this, 'C')">C. Nalanda</li>
+            <li onclick="check(this, 'D')">D. Sheikhpura</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>334. The 'United Nations Ocean Conference 2025' is scheduled to be held in which city?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Lisbon</li>
+            <li onclick="check(this, 'B')">B. Nice (France)</li>
+            <li onclick="check(this, 'C')">C. New York</li>
+            <li onclick="check(this, 'D')">D. Bali</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>335. Bihar's 'Mukhya Mantri Kanya Utthan Yojana' provides a total sum of how much to a girl upon completing her graduation?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. ₹25,000</li>
+            <li onclick="check(this, 'B')">B. ₹35,000</li>
+            <li onclick="check(this, 'C')">C. ₹40,000</li>
+            <li onclick="check(this, 'D')">D. ₹50,000</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>336. Who was awarded the 'Dada Saheb Phalke Award 2024-25' for contribution to cinema?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Waheeda Rehman</li>
+            <li onclick="check(this, 'B')">B. Amitabh Bachchan</li>
+            <li onclick="check(this, 'C')">C. Mithun Chakraborty</li>
+            <li onclick="check(this, 'D')">D. Rekha</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>337. The 'E-Panchayat' portal, which won a national award in 2025, belongs to which state?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Bihar</li>
+            <li onclick="check(this, 'B')">B. Uttar Pradesh</li>
+            <li onclick="check(this, 'C')">C. Maharashtra</li>
+            <li onclick="check(this, 'D')">D. Kerala</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>338. What is the name of India's first AI-powered 'National Health Claims Exchange' (NHCX) launched in 2025?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Ayushman-Net</li>
+            <li onclick="check(this, 'B')">B. NHCX</li>
+            <li onclick="check(this, 'C')">C. Health-Hub</li>
+            <li onclick="check(this, 'D')">D. Digi-Cure</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>339. Bihar's 'Khuda Bakhsh Oriental Public Library' celebrated which anniversary in 2026?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 100th</li>
+            <li onclick="check(this, 'B')">B. 125th</li>
+            <li onclick="check(this, 'C')">C. 150th</li>
+            <li onclick="check(this, 'D')">D. 135th (Founded 1891)</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>340. The 'Exercise MILAN 2026' was the largest-ever multilateral naval exercise hosted by India in which city?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Kochi</li>
+            <li onclick="check(this, 'B')">B. Visakhapatnam</li>
+            <li onclick="check(this, 'C')">C. Mumbai</li>
+            <li onclick="check(this, 'D')">D. Chennai</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>341. Which Bihar district has been declared the 'Spice Hub' specifically for Turmeric production?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Samastipur</li>
+            <li onclick="check(this, 'B')">B. Begusarai</li>
+            <li onclick="check(this, 'C')">C. Vaishali</li>
+            <li onclick="check(this, 'D')">D. Saharsa</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>342. The 'Mission Mausam' (2024-2026) was launched by the Union Govt to enhance weather prediction through which technology?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Artificial Intelligence and Quantum Computing</li>
+            <li onclick="check(this, 'B')">B. Drone Swarms</li>
+            <li onclick="check(this, 'C')">C. Submarine Cables</li>
+            <li onclick="check(this, 'D')">D. Radar Balloons</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>343. Who is the first woman to be appointed as the Director of the Indian Institute of Technology (IIT Zanzibar)?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Soumya Swaminathan</li>
+            <li onclick="check(this, 'B')">B. N. Kalaiselvi</li>
+            <li onclick="check(this, 'C')">C. Tessy Thomas</li>
+            <li onclick="check(this, 'D')">D. Preeti Aghalayam</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>344. Bihar's 'Lakhwar-Vyasi' hydro project recently signed an MOU for power sharing with which state/UT?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Uttar Pradesh</li>
+            <li onclick="check(this, 'B')">B. Uttarakhand</li>
+            <li onclick="check(this, 'C')">C. Delhi</li>
+            <li onclick="check(this, 'D')">D. Jharkhand</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>345. What is the name of the newest autonomous body created by the Indian Govt to boost research, replacing SERB in 2024-25?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. ISRO-R</li>
+            <li onclick="check(this, 'B')">B. Science-D</li>
+            <li onclick="check(this, 'C')">C. ANRF (Anusandhan National Research Foundation)</li>
+            <li onclick="check(this, 'D')">D. Bharat Research</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>346. Bihar's 'Sona' and 'Kesh' rivers are being studied for the potential extraction of which major mineral?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Gold</li>
+            <li onclick="check(this, 'B')">B. Lithium</li>
+            <li onclick="check(this, 'C')">C. Diamond</li>
+            <li onclick="check(this, 'D')">D. Uranium</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>347. Who is the winner of the 'International Booker Prize 2025'?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Geetanjali Shree</li>
+            <li onclick="check(this, 'B')">B. Jenny Erpenbeck</li>
+            <li onclick="check(this, 'C')">C. Georgi Gospodinov</li>
+            <li onclick="check(this, 'D')">D. Han Kang (Special Recognition in 2025/26 Cycle)</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>348. The 'G20' recently admitted which organization as its 21st permanent member during the New Delhi Summit?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. ASEAN</li>
+            <li onclick="check(this, 'B')">B. African Union</li>
+            <li onclick="check(this, 'C')">C. European Union</li>
+            <li onclick="check(this, 'D')">D. SAARC</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>349. Bihar's 'Mukhya Mantri Khel Vikas Yojana' has established its first 'State Sports Academy' in which city?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Rajgir</li>
+            <li onclick="check(this, 'B')">B. Patna</li>
+            <li onclick="check(this, 'C')">C. Gaya</li>
+            <li onclick="check(this, 'D')">D. Muzaffarpur</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>350. The 'OSIRIS-REx' mission of NASA successfully returned samples from which asteroid in late 2023, with data being analyzed throughout 2026?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Ryugu</li>
+            <li onclick="check(this, 'B')">B. Itokawa</li>
+            <li onclick="check(this, 'C')">C. Bennu</li>
+            <li onclick="check(this, 'D')">D. Psyche</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>351. Bihar's first 'State Sports University' has been established in which city in 2025-26?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Patna</li>
+            <li onclick="check(this, 'B')">B. Rajgir</li>
+            <li onclick="check(this, 'C')">C. Muzaffarpur</li>
+            <li onclick="check(this, 'D')">D. Bhagalpur</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>352. Who is the current Secretary-General of the United Nations (as of 2026)?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Ban Ki-moon</li>
+            <li onclick="check(this, 'B')">B. Kofi Annan</li>
+            <li onclick="check(this, 'C')">C. Amina J. Mohammed</li>
+            <li onclick="check(this, 'D')">D. António Guterres</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>353. The 'Dugeshwari Hills' ropeway project, recently completed, is located in which Bihar district?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Gaya</li>
+            <li onclick="check(this, 'B')">B. Nalanda</li>
+            <li onclick="check(this, 'C')">C. Rohtas</li>
+            <li onclick="check(this, 'D')">D. Banka</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>354. Which Indian state hosted the '9th BRICS Games' in 2025?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Maharashtra</li>
+            <li onclick="check(this, 'B')">B. Uttar Pradesh</li>
+            <li onclick="check(this, 'C')">C. Tamil Nadu</li>
+            <li onclick="check(this, 'D')">D. Haryana</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>355. Bihar's 'Mukhya Mantri Alpsankhyak Hostel Yojana' aims to build how many hostels across the state by 2027?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 50</li>
+            <li onclick="check(this, 'B')">B. 100</li>
+            <li onclick="check(this, 'C')">C. 150</li>
+            <li onclick="check(this, 'D')">D. 200</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>356. What is the name of the first private rocket launched by India under 'Project Prarambh'?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Agni-S</li>
+            <li onclick="check(this, 'B')">B. Akash-V</li>
+            <li onclick="check(this, 'C')">C. Rohini-D</li>
+            <li onclick="check(this, 'D')">D. Vikram-S</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>357. Which Bihar district has the highest 'Forest Percentage' according to the 2025-26 State of Forest Report (ISFR)?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. West Champaran</li>
+            <li onclick="check(this, 'B')">B. Rohtas</li>
+            <li onclick="check(this, 'C')">C. Kaimur</li>
+            <li onclick="check(this, 'D')">D. Jamui</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>358. The 'Vande Bharat' sleeper trains are expected to be fully operational on the Patna-Delhi route by which month of 2026?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. June 2026</li>
+            <li onclick="check(this, 'B')">B. December 2026</li>
+            <li onclick="check(this, 'C')">C. March 2026</li>
+            <li onclick="check(this, 'D')">D. September 2026</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>359. Who is the current Chairman of the ISRO (as of April 2026)?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. K. Sivan</li>
+            <li onclick="check(this, 'B')">B. S. Somanath</li>
+            <li onclick="check(this, 'C')">C. G. Madhavan Nair</li>
+            <li onclick="check(this, 'D')">D. A.S. Kiran Kumar</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>360. Bihar’s 'Medhasoft' portal is used for providing scholarships to students of which classes?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Only Class 1 to 5</li>
+            <li onclick="check(this, 'B')">B. Only Class 9 to 12</li>
+            <li onclick="check(this, 'C')">C. Post-Graduation</li>
+            <li onclick="check(this, 'D')">D. Class 1 to 12</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>361. Which country will host the 'G7 Summit 2026'?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. France</li>
+            <li onclick="check(this, 'B')">B. Canada</li>
+            <li onclick="check(this, 'C')">C. USA</li>
+            <li onclick="check(this, 'D')">D. Italy</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>362. The 'Kosi-Mechi' river interlinking project in Bihar will primarily benefit which region?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Mithila</li>
+            <li onclick="check(this, 'B')">B. Anga</li>
+            <li onclick="check(this, 'C')">C. Seemanchal</li>
+            <li onclick="check(this, 'D')">D. Magadh</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>363. What is the theme of 'International Women's Day 2026'?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Invest in Women</li>
+            <li onclick="check(this, 'B')">B. Digital Inclusion for Gender Equality</li>
+            <li onclick="check(this, 'C')">C. Women in Leadership</li>
+            <li onclick="check(this, 'D')">D. Break the Bias</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>364. Bihar's 'Lakhwar-Vyasi' power share project involves a partnership with which mountain state?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Himachal Pradesh</li>
+            <li onclick="check(this, 'B')">B. Sikkim</li>
+            <li onclick="check(this, 'C')">C. Arunachal Pradesh</li>
+            <li onclick="check(this, 'D')">D. Uttarakhand</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>365. The 'Bharat 6G Mission' aims to launch commercial 6G services in India by which year?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 2030</li>
+            <li onclick="check(this, 'B')">B. 2027</li>
+            <li onclick="check(this, 'C')">C. 2028</li>
+            <li onclick="check(this, 'D')">D. 2032</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>366. Which district in Bihar has been identified for the construction of the state's first 'Cyber Police Station' at the range level?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Patna</li>
+            <li onclick="check(this, 'B')">B. Muzaffarpur</li>
+            <li onclick="check(this, 'C')">C. Darbhanga</li>
+            <li onclick="check(this, 'D')">D. Gaya</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>367. Who is the current President of the European Commission (as of 2026)?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Charles Michel</li>
+            <li onclick="check(this, 'B')">B. Roberta Metsola</li>
+            <li onclick="check(this, 'C')">C. Ursula von der Leyen</li>
+            <li onclick="check(this, 'D')">D. Christine Lagarde</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>368. Bihar's 'Sona River' placer gold exploration is being conducted in which district specifically?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Munger</li>
+            <li onclick="check(this, 'B')">B. Jamui</li>
+            <li onclick="check(this, 'C')">C. Banka</li>
+            <li onclick="check(this, 'D')">D. West Champaran</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>369. The 'COP31' Climate Summit in 2026 is being proposed to be co-hosted by which country along with Australia?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Pacific Island Nations (as a group)</li>
+            <li onclick="check(this, 'B')">B. India</li>
+            <li onclick="check(this, 'C')">C. New Zealand</li>
+            <li onclick="check(this, 'D')">D. Indonesia</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>370. Which Bihar district celebrated the 'Aam Mahotsav 2026' to promote the export of Jardalu Mango?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Patna</li>
+            <li onclick="check(this, 'B')">B. Bhagalpur</li>
+            <li onclick="check(this, 'C')">C. Vaishali</li>
+            <li onclick="check(this, 'D')">D. Darbhanga</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>371. The 'Lunar Gateway' is a planned space station orbiting the Moon under which international program?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Chandrayaan-4</li>
+            <li onclick="check(this, 'B')">B. Chang'e-7</li>
+            <li onclick="check(this, 'C')">C. Artemis Program</li>
+            <li onclick="check(this, 'D')">D. Luna-26</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>372. Bihar's 'Jeevika' has launched which brand for selling products made by women SHGs in the open market?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Bihar Brand</li>
+            <li onclick="check(this, 'B')">B. Didi Ki Market</li>
+            <li onclick="check(this, 'C')">C. Shaktishali Bihar</li>
+            <li onclick="check(this, 'D')">D. Saras Bihar</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>373. Who was awarded the 'Saraswati Samman 2025' for excellence in literature?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Prabha Varma</li>
+            <li onclick="check(this, 'B')">B. Sivasankari</li>
+            <li onclick="check(this, 'C')">C. Ramdarash Mishra</li>
+            <li onclick="check(this, 'D')">D. Sharad Pagare</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>374. The 'PM-VishwaKarma' scheme provides support to how many traditional trades/crafts?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 15</li>
+            <li onclick="check(this, 'B')">B. 18</li>
+            <li onclick="check(this, 'C')">C. 20</li>
+            <li onclick="check(this, 'D')">D. 25</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>375. Which city in Bihar is being developed as the 'Solar City' under the pilot phase?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Patna</li>
+            <li onclick="check(this, 'B')">B. Gaya</li>
+            <li onclick="check(this, 'C')">C. Bodh Gaya & Rajgir</li>
+            <li onclick="check(this, 'D')">D. Munger</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>376. What is the total length of the 'Ganga Path' (Marine Drive) in Patna once fully completed?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 12.5 km</li>
+            <li onclick="check(this, 'B')">B. 18.0 km</li>
+            <li onclick="check(this, 'C')">C. 20.5 km</li>
+            <li onclick="check(this, 'D')">D. 21.5 km</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>377. The 'Exercise Nomadic Elephant 2025' was conducted between India and which country?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Kazakhstan</li>
+            <li onclick="check(this, 'B')">B. Mongolia</li>
+            <li onclick="check(this, 'C')">C. Kyrgyzstan</li>
+            <li onclick="check(this, 'D')">D. Uzbekistan</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>378. Bihar's 'Jaya' and 'Sita' are high-yielding varieties of which crop recently promoted in the 4th Krishi Road Map?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Paddy (Rice)</li>
+            <li onclick="check(this, 'B')">B. Wheat</li>
+            <li onclick="check(this, 'C')">C. Maize</li>
+            <li onclick="check(this, 'D')">D. Sugarcane</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>379. Who is the current Prime Minister of Australia (as of 2026)?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Scott Morrison</li>
+            <li onclick="check(this, 'B')">B. Malcolm Turnbull</li>
+            <li onclick="check(this, 'C')">C. Anthony Albanese</li>
+            <li onclick="check(this, 'D')">D. Peter Dutton</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>380. The 'Shakti' scheme in Bihar (State level) is focused on which objective?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Solar Power distribution</li>
+            <li onclick="check(this, 'B')">B. Women self-defense training</li>
+            <li onclick="check(this, 'C')">C. Rural electrification</li>
+            <li onclick="check(this, 'D')">D. Strengthening of Women Help Desks in Police Stations</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>381. Which Bihar district has been selected for the 'PM Mitra Mega Textile Park'?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Bhagalpur</li>
+            <li onclick="check(this, 'B')">B. West Champaran</li>
+            <li onclick="check(this, 'C')">C. Muzaffarpur</li>
+            <li onclick="check(this, 'D')">D. Patna</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>382. What is the name of India's first dedicated 'Polarimetry Mission' satellite launched by ISRO?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. XPoSat</li>
+            <li onclick="check(this, 'B')">B. AstroSat</li>
+            <li onclick="check(this, 'C')">C. CartoSat-3</li>
+            <li onclick="check(this, 'D')">D. Risat-1</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>383. Bihar's 'Renu-Dwar' is a gateway named after which famous personality in Araria district?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Ramdhari Singh Dinkar</li>
+            <li onclick="check(this, 'B')">B. Vidyapati</li>
+            <li onclick="check(this, 'C')">C. Phanishwar Nath Renu</li>
+            <li onclick="check(this, 'D')">D. Baba Nagarjun</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>384. Who won the 'Miss World 2025' title (held in early 2026)?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Karolina Bielawska</li>
+            <li onclick="check(this, 'B')">B. Krystyna Pyszková</li>
+            <li onclick="check(this, 'C')">C. Sini Shetty</li>
+            <li onclick="check(this, 'D')">D. (Winner to be updated based on late 2025 results)</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>385. The 'G20' Digital Economy Working Group meeting 2026 is scheduled to be held in which Indian city?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Bengaluru</li>
+            <li onclick="check(this, 'B')">B. Hyderabad</li>
+            <li onclick="check(this, 'C')">C. Pune</li>
+            <li onclick="check(this, 'D')">D. Patna</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>386. Bihar's 'Har Ghar Gangajal' scheme currently serves how many towns in the first phase?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 4</li>
+            <li onclick="check(this, 'B')">B. 6</li>
+            <li onclick="check(this, 'C')">C. 8</li>
+            <li onclick="check(this, 'D')">D. 10</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>387. The 'International North-South Transport Corridor' (INSTC) connects India with which country via Iran?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Germany</li>
+            <li onclick="check(this, 'B')">B. Uzbekistan</li>
+            <li onclick="check(this, 'C')">C. Russia</li>
+            <li onclick="check(this, 'D')">D. Turkey</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>388. Bihar's 'Jal-Jeevan-Hariyali' mission has a mascot. What is it?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Gidda (Vulture)</li>
+            <li onclick="check(this, 'B')">B. Gauraiya (Sparrow)</li>
+            <li onclick="check(this, 'C')">C. Nilgai</li>
+            <li onclick="check(this, 'D')">D. Dolphin</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>389. Who is the current President of the Asian Development Bank (ADB)?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Takehiko Nakao</li>
+            <li onclick="check(this, 'B')">B. Haruhiko Kuroda</li>
+            <li onclick="check(this, 'C')">C. Jin Liqun</li>
+            <li onclick="check(this, 'D')">D. Masatsugu Asakawa</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>390. Which district of Bihar has been awarded for the best implementation of 'Pradhan Mantri Awas Yojana' in 2025-26?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Kishanganj</li>
+            <li onclick="check(this, 'B')">B. Supaul</li>
+            <li onclick="check(this, 'C')">C. Jamui</li>
+            <li onclick="check(this, 'D')">D. Katihar</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>391. The 'Blue Economy 2.0' policy of the Indian Government (2024-2026) primarily focuses on:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Deep Sea Mining only</li>
+            <li onclick="check(this, 'B')">B. Naval Expansion</li>
+            <li onclick="check(this, 'C')">C. Climate Resilient Coastal Management and Mariculture</li>
+            <li onclick="check(this, 'D')">D. Port Privatization</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>392. Bihar's 'Udayan' program is an initiative of which department?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Agriculture</li>
+            <li onclick="check(this, 'B')">B. Industries</li>
+            <li onclick="check(this, 'C')">C. Education</li>
+            <li onclick="check(this, 'D')">D. Health</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>393. Who is the current Chairman of the National Commission for Women (NCW)?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Rekha Sharma (or current 2026 appointee)</li>
+            <li onclick="check(this, 'B')">B. Mamata Sharma</li>
+            <li onclick="check(this, 'C')">C. Lalitha Kumaramangalam</li>
+            <li onclick="check(this, 'D')">D. Jayanti Patnaik</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>394. The 'Bharat-NCAP' program is related to which industry?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Textiles</li>
+            <li onclick="check(this, 'B')">B. Pharma</li>
+            <li onclick="check(this, 'C')">C. Banking</li>
+            <li onclick="check(this, 'D')">D. Automobile (Safety Ratings)</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>395. Which Bihar district has been selected to establish the state's first 'Food Park' in 2025-26?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Khagaria</li>
+            <li onclick="check(this, 'B')">B. Muzaffarpur (Motipur)</li>
+            <li onclick="check(this, 'C')">C. Purnia</li>
+            <li onclick="check(this, 'D')">D. Buxar</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>396. The 'PM-PRANAM' scheme was introduced in which Union Budget?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 2023-24</li>
+            <li onclick="check(this, 'B')">B. 2024-25</li>
+            <li onclick="check(this, 'C')">C. 2025-26</li>
+            <li onclick="check(this, 'D')">D. 2026-27</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>397. Bihar's 'Anmol' application is used by which frontline health workers?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Doctors</li>
+            <li onclick="check(this, 'B')">B. Asha Workers</li>
+            <li onclick="check(this, 'C')">C. ANMs</li>
+            <li onclick="check(this, 'D')">D. Pharmacists</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>398. The 'UN SDG' target year for achieving all 17 goals is:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 2025</li>
+            <li onclick="check(this, 'B')">B. 2030</li>
+            <li onclick="check(this, 'C')">C. 2035</li>
+            <li onclick="check(this, 'D')">D. 2045</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>399. Which Bihar district celebrated the 'Paan Mahotsav 2026' to highlight Magahi Paan?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Nawada</li>
+            <li onclick="check(this, 'B')">B. Gaya</li>
+            <li onclick="check(this, 'C')">C. Nalanda</li>
+            <li onclick="check(this, 'D')">D. Sheikhpura</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>400. What is the current 'Sex Ratio' of Bihar as per the projected NFHS-6 data used in 2026?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 1060</li>
+            <li onclick="check(this, 'B')">B. 1080</li>
+            <li onclick="check(this, 'C')">C. 1090 (Projected/Reported)</li>
+            <li onclick="check(this, 'D')">D. 1100</li>
+        </ul>
+    </div>
+
+    </div>
+
+    <div class="controls">
+        Score: <span id="current-score">0</span> | Questions Attempted: <span id="attempted">0</span> / 100
+    </div>
+</div>
+
+<script>
+    let score = 0;
+    let attempted = 0;
+
+    function check(element, choice) {
+        const parent = element.closest('.question');
+        const correct = parent.getAttribute('data-answer');
+        const options = parent.querySelectorAll('li');
+
+        // Prevent clicking again
+        if (parent.classList.contains('done')) return;
+        parent.classList.add('done');
+
+        attempted++;
+        document.getElementById('attempted').innerText = attempted;
+
+        if (choice === correct) {
+            element.classList.add('correct');
+            score++;
+            document.getElementById('current-score').innerText = score;
+        } else {
+            element.classList.add('incorrect');
+            // Show correct answer
+            options.forEach(opt => {
+                if (opt.innerText.startsWith(correct)) opt.classList.add('correct');
+            });
+        }
+    }
+</script>
+
+</body>
+</html>

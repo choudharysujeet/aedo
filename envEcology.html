@@ -1,0 +1,1078 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Physics 100 MCQ - BPSC AEDO</title>
+    <style>
+        :root {
+            --primary: #2c3e50;
+            --accent: #2980b9;
+            --success: #27ae60;
+            --danger: #e74c3c;
+            --bg: #f4f7f6;
+        }
+        body { font-family: 'Segoe UI', sans-serif; background: var(--bg); padding: 20px; }
+        .container { max-width: 900px; margin: 0 auto; background: white; padding: 40px; border-radius: 15px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); }
+        h1 { text-align: center; color: var(--primary); margin-bottom: 30px; border-bottom: 3px solid var(--accent); display: inline-block; width: 100%; padding-bottom: 10px;}
+        
+        .question { margin-bottom: 30px; padding: 20px; border: 1px solid #eee; border-radius: 10px; transition: 0.3s; }
+        .question p { font-weight: 600; font-size: 1.1rem; margin-bottom: 15px; }
+        
+        .options { list-style: none; padding: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+        @media (max-width: 600px) { .options { grid-template-columns: 1fr; } }
+        
+        .options li { background: #fff; border: 2px solid #ddd; padding: 12px; border-radius: 8px; cursor: pointer; transition: 0.2s; }
+        .options li:hover { border-color: var(--accent); background: #f0f7ff; }
+        
+        .correct { background: var(--success) !important; color: white; border-color: var(--success) !important; }
+        .incorrect { background: var(--danger) !important; color: white; border-color: var(--danger) !important; }
+        
+        .controls { position: sticky; bottom: 20px; background: var(--primary); color: white; padding: 15px; border-radius: 50px; text-align: center; box-shadow: 0 5px 15px rgba(0,0,0,0.3); }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Environment & Ecology: 100 MCQ Series</h1>
+
+    <div id="quiz-wrapper">
+            <div class="question" data-answer="B">
+        <p>1. Who coined the term 'Ecosystem' in 1935?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Ernst Haeckel</li>
+            <li onclick="check(this, 'B')">B. A.G. Tansley</li>
+            <li onclick="check(this, 'C')">C. Eugene Odum</li>
+            <li onclick="check(this, 'D')">D. Charles Darwin</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>2. The '10 Percent Law' related to energy transfer in food chains was given by:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Raymond Lindeman</li>
+            <li onclick="check(this, 'B')">B. Arthur Tansley</li>
+            <li onclick="check(this, 'C')">C. Charles Elton</li>
+            <li onclick="check(this, 'D')">D. Gregor Mendel</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>3. A transition zone between two distinct biological communities is known as:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Ecozone</li>
+            <li onclick="check(this, 'B')">B. Biotope</li>
+            <li onclick="check(this, 'C')">C. Ecotone</li>
+            <li onclick="check(this, 'D')">D. Abyssal zone</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>4. Which of the following is an example of an 'Abiotic' component of an ecosystem?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Bacteria</li>
+            <li onclick="check(this, 'B')">B. Green Plants</li>
+            <li onclick="check(this, 'C')">C. Fungi</li>
+            <li onclick="check(this, 'D')">D. Soil Humus</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>5. In an ecological pyramid, the 'Pyramid of Energy' is always:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Inverted</li>
+            <li onclick="check(this, 'B')">B. Upright</li>
+            <li onclick="check(this, 'C')">C. Spindle-shaped</li>
+            <li onclick="check(this, 'D')">D. Horizontal</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>6. Which organelle is responsible for fixing atmospheric carbon during photosynthesis?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Chloroplast</li>
+            <li onclick="check(this, 'B')">B. Mitochondria</li>
+            <li onclick="check(this, 'C')">C. Ribosome</li>
+            <li onclick="check(this, 'D')">D. Golgi Body</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>7. The 'Deep Ecology' concept was first introduced by:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. M.S. Swaminathan</li>
+            <li onclick="check(this, 'B')">B. Gaylord Nelson</li>
+            <li onclick="check(this, 'C')">C. Arne Naess</li>
+            <li onclick="check(this, 'D')">D. Rachel Carson</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>8. Which of the following is a 'Primary Consumer' in a terrestrial ecosystem?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Snake</li>
+            <li onclick="check(this, 'B')">B. Grasshopper</li>
+            <li onclick="check(this, 'C')">C. Lion</li>
+            <li onclick="check(this, 'D')">D. Hawk</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>9. 'Lotic' ecosystem refers to:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Static water ecosystem (Lakes)</li>
+            <li onclick="check(this, 'B')">B. Deep sea ecosystem</li>
+            <li onclick="check(this, 'C')">C. Desert ecosystem</li>
+            <li onclick="check(this, 'D')">D. Running water ecosystem (Rivers)</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>10. The concept of 'Ecological Niche' was first used by:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Charles Darwin</li>
+            <li onclick="check(this, 'B')">B. Joseph Grinnell</li>
+            <li onclick="check(this, 'C')">C. Ernst Haeckel</li>
+            <li onclick="check(this, 'D')">D. E.P. Odum</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>11. Which Indian state has the highest percentage of forest cover relative to its area?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Mizoram</li>
+            <li onclick="check(this, 'B')">B. Madhya Pradesh</li>
+            <li onclick="check(this, 'C')">C. Arunachal Pradesh</li>
+            <li onclick="check(this, 'D')">D. Bihar</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>12. 'Project Tiger' was launched in India in which year?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 1970</li>
+            <li onclick="check(this, 'B')">B. 1972</li>
+            <li onclick="check(this, 'C')">C. 1973</li>
+            <li onclick="check(this, 'D')">D. 1980</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>13. Which of the following is considered a 'Hotspot' of biodiversity in India?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Aravali Hills</li>
+            <li onclick="check(this, 'B')">B. Gangetic Plains</li>
+            <li onclick="check(this, 'C')">C. Eastern Ghats</li>
+            <li onclick="check(this, 'D')">D. Western Ghats</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>14. 'In-situ' conservation includes which of the following?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Botanical Garden</li>
+            <li onclick="check(this, 'B')">B. National Park</li>
+            <li onclick="check(this, 'C')">C. Zoo</li>
+            <li onclick="check(this, 'D')">D. Seed Bank</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>15. The 'Red Data Book' contains information about:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Endangered species of plants and animals</li>
+            <li onclick="check(this, 'B')">B. Extinct species only</li>
+            <li onclick="check(this, 'C')">C. Exotic species</li>
+            <li onclick="check(this, 'D')">D. Red-colored flowers</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>16. Which organization publishes the 'Red List'?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. WWF</li>
+            <li onclick="check(this, 'B')">B. UNESCO</li>
+            <li onclick="check(this, 'C')">C. IUCN</li>
+            <li onclick="check(this, 'D')">D. CITES</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>17. 'Endemic species' are those which are:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Critically endangered</li>
+            <li onclick="check(this, 'B')">B. Extinct in the wild</li>
+            <li onclick="check(this, 'C')">C. Found everywhere</li>
+            <li onclick="check(this, 'D')">D. Confined to a specific geographical area</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>18. Which country hosted the first 'Earth Summit' in 1992?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. USA</li>
+            <li onclick="check(this, 'B')">B. Brazil</li>
+            <li onclick="check(this, 'C')">C. Sweden</li>
+            <li onclick="check(this, 'D')">D. South Africa</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>19. The 'Biological Diversity Act' of India was passed in:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 2002</li>
+            <li onclick="check(this, 'B')">B. 2000</li>
+            <li onclick="check(this, 'C')">C. 1992</li>
+            <li onclick="check(this, 'D')">D. 1986</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>20. 'Symbiosis' is a relationship where:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. One organism is harmed</li>
+            <li onclick="check(this, 'B')">B. Both organisms are harmed</li>
+            <li onclick="check(this, 'C')">C. Both organisms benefit</li>
+            <li onclick="check(this, 'D')">D. One benefits and the other is unaffected</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>21. Which is the largest 'Biosphere Reserve' in India?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Sundarbans</li>
+            <li onclick="check(this, 'B')">B. Gulf of Kachchh</li>
+            <li onclick="check(this, 'C')">C. Nilgiri</li>
+            <li onclick="check(this, 'D')">D. Nanda Devi</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>22. 'Ex-situ' conservation method includes:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Sacred Groves</li>
+            <li onclick="check(this, 'B')">B. Wildlife Sanctuaries</li>
+            <li onclick="check(this, 'C')">C. Biosphere Reserves</li>
+            <li onclick="check(this, 'D')">D. Cryopreservation</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>23. The 'Keystone species' is a species which:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Has a disproportionately large effect on its environment</li>
+            <li onclick="check(this, 'B')">B. Is the most abundant in the community</li>
+            <li onclick="check(this, 'C')">C. Is the smallest in the community</li>
+            <li onclick="check(this, 'D')">D. Is near extinction</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>24. The 'Montreal Protocol' (1987) is related to:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Global Warming</li>
+            <li onclick="check(this, 'B')">B. Biodiversity conservation</li>
+            <li onclick="check(this, 'C')">C. Protection of the Ozone layer</li>
+            <li onclick="check(this, 'D')">D. Sustainable development</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>25. Who is the author of the famous book 'Silent Spring'?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. E.O. Wilson</li>
+            <li onclick="check(this, 'B')">B. Rachel Carson</li>
+            <li onclick="check(this, 'C')">C. Wangari Maathai</li>
+            <li onclick="check(this, 'D')">D. Jane Goodall</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>26. Which of the following is the only National Park located in Bihar?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Kanha National Park</li>
+            <li onclick="check(this, 'B')">B. Dudhwa National Park</li>
+            <li onclick="check(this, 'C')">C. Jim Corbett National Park</li>
+            <li onclick="check(this, 'D')">D. Valmiki National Park</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>27. 'Kabar Tal' (Kanwar Lake), Bihar's first Ramsar site, is located in which district?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Bhagalpur</li>
+            <li onclick="check(this, 'B')">B. Begusarai</li>
+            <li onclick="check(this, 'C')">C. Patna</li>
+            <li onclick="check(this, 'D')">D. Gaya</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>28. The 'Vikramshila Gangetic Dolphin Sanctuary' is situated in:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Bhagalpur</li>
+            <li onclick="check(this, 'B')">B. Munger</li>
+            <li onclick="check(this, 'C')">C. Katihar</li>
+            <li onclick="check(this, 'D')">D. Saran</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>29. Which of the following is considered the 'Cradle of Diversity' in India?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Western Ghats</li>
+            <li onclick="check(this, 'B')">B. Eastern Ghats</li>
+            <li onclick="check(this, 'C')">C. North-East Himalayas</li>
+            <li onclick="check(this, 'D')">D. Sundarbans</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>30. The 'Ramsar Convention' (1971) is an international treaty for the conservation of:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Tigers</li>
+            <li onclick="check(this, 'B')">B. Wetlands</li>
+            <li onclick="check(this, 'C')">C. Coral Reefs</li>
+            <li onclick="check(this, 'D')">D. Migratory Birds</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>31. Which of the following was the first 'Biosphere Reserve' in India?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Nilgiri Biosphere Reserve</li>
+            <li onclick="check(this, 'B')">B. Nanda Devi</li>
+            <li onclick="check(this, 'C')">C. Gulf of Mannar</li>
+            <li onclick="check(this, 'D')">D. Sundarbans</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>32. The 'Kaimur Wildlife Sanctuary' is the largest sanctuary in which state?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Uttar Pradesh</li>
+            <li onclick="check(this, 'B')">B. Madhya Pradesh</li>
+            <li onclick="check(this, 'C')">C. Jharkhand</li>
+            <li onclick="check(this, 'D')">D. Bihar</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>33. 'Project Elephant' was launched by the Government of India in:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 1973</li>
+            <li onclick="check(this, 'B')">B. 1985</li>
+            <li onclick="check(this, 'C')">C. 1992</li>
+            <li onclick="check(this, 'D')">D. 2000</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>34. Which state is home to the 'Nagi-Nakti Bird Sanctuary'?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. West Bengal</li>
+            <li onclick="check(this, 'B')">B. Bihar</li>
+            <li onclick="check(this, 'C')">C. Odisha</li>
+            <li onclick="check(this, 'D')">D. Assam</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>35. The 'Nagoya Protocol' is related to:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Access and Benefit Sharing (ABS) of Genetic Resources</li>
+            <li onclick="check(this, 'B')">B. Biosafety of Living Modified Organisms</li>
+            <li onclick="check(this, 'C')">C. Hazardous chemicals management</li>
+            <li onclick="check(this, 'D')">D. Ozone layer protection</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>36. 'Olive Ridley' turtles are famous for nesting in large numbers at:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Marina Beach, Chennai</li>
+            <li onclick="check(this, 'B')">B. Kovalam Beach, Kerala</li>
+            <li onclick="check(this, 'C')">C. Digha Beach, West Bengal</li>
+            <li onclick="check(this, 'D')">D. Gahirmatha Beach, Odisha</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>37. The 'Bhimbandh Wildlife Sanctuary' is located in which district of Bihar?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Jamui</li>
+            <li onclick="check(this, 'B')">B. Munger</li>
+            <li onclick="check(this, 'C')">C. Rohtas</li>
+            <li onclick="check(this, 'D')">D. Nawada</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>38. 'CITES' (the Convention on International Trade in Endangered Species) is also known as:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Paris Convention</li>
+            <li onclick="check(this, 'B')">B. Rio Convention</li>
+            <li onclick="check(this, 'C')">C. Washington Convention</li>
+            <li onclick="check(this, 'D')">D. Geneva Convention</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>39. Which animal is the state animal of Bihar?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Gaur (Mithun/Bison)</li>
+            <li onclick="check(this, 'B')">B. Tiger</li>
+            <li onclick="check(this, 'C')">C. Elephant</li>
+            <li onclick="check(this, 'D')">D. Blackbuck</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>40. The term 'Biological Hotspot' was given by:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. E.O. Wilson</li>
+            <li onclick="check(this, 'B')">B. Raymond Dasmann</li>
+            <li onclick="check(this, 'C')">C. Wangari Maathai</li>
+            <li onclick="check(this, 'D')">D. Norman Myers</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>41. 'Ex-situ' conservation of biodiversity includes which of the following?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Biosphere Reserve</li>
+            <li onclick="check(this, 'B')">B. Zoological Parks</li>
+            <li onclick="check(this, 'C')">C. Wildlife Sanctuaries</li>
+            <li onclick="check(this, 'D')">D. Sacred Groves</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>42. The 'Ganga Action Plan' was launched in which year to reduce pollution?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 1975</li>
+            <li onclick="check(this, 'B')">B. 1980</li>
+            <li onclick="check(this, 'C')">C. 1985</li>
+            <li onclick="check(this, 'D')">D. 1990</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>43. Which of the following is a 'Secondary Consumer' in an ecosystem?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Grass</li>
+            <li onclick="check(this, 'B')">B. Rabbit</li>
+            <li onclick="check(this, 'C')">C. Cow</li>
+            <li onclick="check(this, 'D')">D. Snake</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>44. The 'World Wildlife Fund' (WWF) has which animal as its official logo?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Giant Panda</li>
+            <li onclick="check(this, 'B')">B. Red Panda</li>
+            <li onclick="check(this, 'C')">C. Polar Bear</li>
+            <li onclick="check(this, 'D')">D. Tiger</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>45. 'Eutrophication' is often seen in:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Deserts</li>
+            <li onclick="check(this, 'B')">B. Fresh water bodies</li>
+            <li onclick="check(this, 'C')">C. Mountains</li>
+            <li onclick="check(this, 'D')">D. Oceans</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>46. The 'Environment Protection Act' of India was enacted in:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 1972</li>
+            <li onclick="check(this, 'B')">B. 1981</li>
+            <li onclick="check(this, 'C')">C. 1986</li>
+            <li onclick="check(this, 'D')">D. 2002</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>47. Which tree is known as the 'Terror of Bengal'?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Water Hyacinth (Eichhornia)</li>
+            <li onclick="check(this, 'B')">B. Eucalyptus</li>
+            <li onclick="check(this, 'C')">C. Parthenium</li>
+            <li onclick="check(this, 'D')">D. Lantana</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>48. The 'Gautam Buddha Wildlife Sanctuary' is shared by Bihar and which other state?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. West Bengal</li>
+            <li onclick="check(this, 'B')">B. Uttar Pradesh</li>
+            <li onclick="check(this, 'C')">C. Odisha</li>
+            <li onclick="check(this, 'D')">D. Jharkhand</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>49. 'Bio-remediation' refers to:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Use of chemicals to kill pests</li>
+            <li onclick="check(this, 'B')">B. Use of microorganisms to clean up pollutants</li>
+            <li onclick="check(this, 'C')">C. Breeding endangered species in zoos</li>
+            <li onclick="check(this, 'D')">D. Monitoring the health of humans</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>50. The concept of 'Sustainable Development' was popularized by which report?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Agenda 21</li>
+            <li onclick="check(this, 'B')">B. Millennium Development Goals</li>
+            <li onclick="check(this, 'C')">C. Our Common Future (Brundtland Report)</li>
+            <li onclick="check(this, 'D')">D. Kyoto Protocol</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>51. Which of the following is the most abundant Greenhouse Gas (GHG) in Earth's atmosphere?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Carbon Dioxide</li>
+            <li onclick="check(this, 'B')">B. Methane</li>
+            <li onclick="check(this, 'C')">C. Nitrous Oxide</li>
+            <li onclick="check(this, 'D')">D. Water Vapor</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>52. The 'Kyoto Protocol' is an international treaty aimed at reducing:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Ozone depletion</li>
+            <li onclick="check(this, 'B')">B. Greenhouse gas emissions</li>
+            <li onclick="check(this, 'C')">C. Hazardous waste trade</li>
+            <li onclick="check(this, 'D')">D. Species extinction</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>53. 'Acid Rain' is primarily caused by the atmospheric reaction of water with:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. CO and CO2</li>
+            <li onclick="check(this, 'B')">B. CH4 and Ozone</li>
+            <li onclick="check(this, 'C')">C. SO2 and NO2</li>
+            <li onclick="check(this, 'D')">D. CFCs and Dust</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>54. Which layer of the atmosphere contains the protective 'Ozone Layer'?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Stratosphere</li>
+            <li onclick="check(this, 'B')">B. Troposphere</li>
+            <li onclick="check(this, 'C')">C. Mesosphere</li>
+            <li onclick="check(this, 'D')">D. Ionosphere</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>55. 'Minamata Disease' was first detected in Japan due to poisoning by:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Lead</li>
+            <li onclick="check(this, 'B')">B. Mercury</li>
+            <li onclick="check(this, 'C')">C. Cadmium</li>
+            <li onclick="check(this, 'D')">D. Arsenic</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>56. Biological Oxygen Demand (BOD) is a standard criterion for measuring:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Air quality</li>
+            <li onclick="check(this, 'B')">B. Forest density</li>
+            <li onclick="check(this, 'C')">C. Soil fertility</li>
+            <li onclick="check(this, 'D')">D. Pollution in aquatic ecosystems</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>57. Which of the following is a 'Secondary Pollutant'?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Carbon Monoxide</li>
+            <li onclick="check(this, 'B')">B. Fly Ash</li>
+            <li onclick="check(this, 'C')">C. Ground-level Ozone</li>
+            <li onclick="check(this, 'D')">D. Sulfur Dioxide</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>58. 'Itai-Itai' disease is caused by chronic poisoning of:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Mercury</li>
+            <li onclick="check(this, 'B')">B. Cadmium</li>
+            <li onclick="check(this, 'C')">C. Arsenic</li>
+            <li onclick="check(this, 'D')">D. Nitrate</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>59. The 'Global Warming Potential' (GWP) is calculated relative to which gas?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Carbon Dioxide</li>
+            <li onclick="check(this, 'B')">B. Methane</li>
+            <li onclick="check(this, 'C')">C. Nitrous Oxide</li>
+            <li onclick="check(this, 'D')">D. SF6</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>60. 'PM 2.5' refers to particulate matter with a diameter less than:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 2.5 millimeters</li>
+            <li onclick="check(this, 'B')">B. 2.5 centimeters</li>
+            <li onclick="check(this, 'C')">C. 2.5 micrometers</li>
+            <li onclick="check(this, 'D')">D. 2.5 nanometers</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>61. Which gas was leaked during the 'Bhopal Gas Tragedy' in 1984?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Potassium Cyanide</li>
+            <li onclick="check(this, 'B')">B. Methyl Isocyanate</li>
+            <li onclick="check(this, 'C')">C. Ethyl Isocyanate</li>
+            <li onclick="check(this, 'D')">D. Sodium Isothiocyanate</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>62. 'Eutrophication' leads to the depletion of which of the following in water?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Nitrates</li>
+            <li onclick="check(this, 'B')">B. Phosphates</li>
+            <li onclick="check(this, 'C')">C. Organic matter</li>
+            <li onclick="check(this, 'D')">D. Dissolved Oxygen</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>63. The 'Montreal Protocol' (1987) deals with:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Substances that deplete the Ozone Layer</li>
+            <li onclick="check(this, 'B')">B. Global climate change</li>
+            <li onclick="check(this, 'C')">C. Wetland conservation</li>
+            <li onclick="check(this, 'D')">D. Biodiversity loss</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>64. 'Blue Baby Syndrome' is caused by excess _____ in drinking water.</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Fluoride</li>
+            <li onclick="check(this, 'B')">B. Nitrate</li>
+            <li onclick="check(this, 'C')">C. Arsenic</li>
+            <li onclick="check(this, 'D')">D. Lead</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>65. Which of the following is used as a 'Bio-indicator' of Air Pollution?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Ferns</li>
+            <li onclick="check(this, 'B')">B. Money Plant</li>
+            <li onclick="check(this, 'C')">C. Lichens</li>
+            <li onclick="check(this, 'D')">D. Neem Tree</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>66. The 'Greenhouse Effect' was first discovered by:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Joseph Fourier</li>
+            <li onclick="check(this, 'B')">B. John Tyndall</li>
+            <li onclick="check(this, 'C')">C. Svante Arrhenius</li>
+            <li onclick="check(this, 'D')">D. James Hansen</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>67. 'Fly Ash' is a byproduct of which industry?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Steel Industry</li>
+            <li onclick="check(this, 'B')">B. Cement Industry</li>
+            <li onclick="check(this, 'C')">C. Textile Industry</li>
+            <li onclick="check(this, 'D')">D. Thermal Power Plants</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>68. Which UV radiation is the most dangerous and absorbed by the Ozone layer?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. UV-A</li>
+            <li onclick="check(this, 'B')">B. UV-C</li>
+            <li onclick="check(this, 'C')">C. UV-B</li>
+            <li onclick="check(this, 'D')">D. Infrared</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>69. 'Arsenic' contamination is a severe groundwater issue in which river basin?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Indus</li>
+            <li onclick="check(this, 'B')">B. Narmada</li>
+            <li onclick="check(this, 'C')">C. Ganga-Brahmaputra</li>
+            <li onclick="check(this, 'D')">D. Godavari</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>70. The unit used to measure the thickness of the Ozone layer is:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Dobson Units (DU)</li>
+            <li onclick="check(this, 'B')">B. Decibels (dB)</li>
+            <li onclick="check(this, 'C')">C. Richter Scale</li>
+            <li onclick="check(this, 'D')">D. Pascal</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>71. 'Photochemical Smog' is primarily composed of:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Sulfur dioxide and soot</li>
+            <li onclick="check(this, 'B')">B. Ozone, Peroxyacetyl nitrate (PAN), and NOx</li>
+            <li onclick="check(this, 'C')">C. Carbon dioxide and water vapor</li>
+            <li onclick="check(this, 'D')">D. Methane and Fly ash</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>72. Which of the following gases has the highest 'Global Warming Potential'?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. CO2</li>
+            <li onclick="check(this, 'B')">B. Methane</li>
+            <li onclick="check(this, 'C')">C. Nitrous Oxide</li>
+            <li onclick="check(this, 'D')">D. Sulfur Hexafluoride (SF6)</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>73. 'Bio-magnification' refers to the accumulation of _____ in the food chain.</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Non-biodegradable pollutants (e.g., DDT)</li>
+            <li onclick="check(this, 'B')">B. Nutrients</li>
+            <li onclick="check(this, 'C')">C. Biomass</li>
+            <li onclick="check(this, 'D')">D. Energy</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>74. The 'Earth Day' is celebrated globally on:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. June 5</li>
+            <li onclick="check(this, 'B')">B. March 22</li>
+            <li onclick="check(this, 'C')">C. April 22</li>
+            <li onclick="check(this, 'D')">D. September 16</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>75. Which Indian city is known as the first 'Kerosene-free' city?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. New Delhi</li>
+            <li onclick="check(this, 'B')">B. Chandigarh</li>
+            <li onclick="check(this, 'C')">C. Mumbai</li>
+            <li onclick="check(this, 'D')">D. Patna</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>76. Which of the following is a 'Renewable' source of energy?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Natural Gas</li>
+            <li onclick="check(this, 'B')">B. Solar Power</li>
+            <li onclick="check(this, 'C')">C. Coal</li>
+            <li onclick="check(this, 'D')">D. Nuclear Power</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>77. 'Jal-Jeevan-Hariyali' mission is a flagship environmental scheme of which state?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Uttar Pradesh</li>
+            <li onclick="check(this, 'B')">B. Madhya Pradesh</li>
+            <li onclick="check(this, 'C')">C. Rajasthan</li>
+            <li onclick="check(this, 'D')">D. Bihar</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>78. The 'Lichens' are the best biological indicators of:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Air Pollution (SO2)</li>
+            <li onclick="check(this, 'B')">B. Water Pollution</li>
+            <li onclick="check(this, 'C')">C. Soil Pollution</li>
+            <li onclick="check(this, 'D')">D. Noise Pollution</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>79. 'Earth Overshoot Day' refers to the date when:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Global warming exceeds 2 degrees</li>
+            <li onclick="check(this, 'B')">B. The ozone hole is at its largest</li>
+            <li onclick="check(this, 'C')">C. Humanity's demand for resources exceeds Earth's capacity to regenerate them</li>
+            <li onclick="check(this, 'D')">D. All forests are cut down</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>80. Who was the leader of the 'Narmada Bachao Andolan'?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Sunderlal Bahuguna</li>
+            <li onclick="check(this, 'B')">B. Medha Patkar</li>
+            <li onclick="check(this, 'C')">C. Baba Amte</li>
+            <li onclick="check(this, 'D')">D. Vandana Shiva</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>81. 'Project Snow Leopard' was launched in India in:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 2009</li>
+            <li onclick="check(this, 'B')">B. 2000</li>
+            <li onclick="check(this, 'C')">C. 1992</li>
+            <li onclick="check(this, 'D')">D. 2015</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>82. Which of the following districts in Bihar is highly affected by 'Fluorosis' (excess fluoride in water)?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Kishanganj</li>
+            <li onclick="check(this, 'B')">B. Madhubani</li>
+            <li onclick="check(this, 'C')">C. Gaya</li>
+            <li onclick="check(this, 'D')">D. Purnia</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>83. The 'Intergovernmental Panel on Climate Change' (IPCC) was established by:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. UNESCO</li>
+            <li onclick="check(this, 'B')">B. WMO and UNEP</li>
+            <li onclick="check(this, 'C')">C. World Bank</li>
+            <li onclick="check(this, 'D')">D. IUCN</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>84. Which type of forest is most found in Bihar?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Evergreen Forest</li>
+            <li onclick="check(this, 'B')">B. Alpine Forest</li>
+            <li onclick="check(this, 'C')">C. Mangrove Forest</li>
+            <li onclick="check(this, 'D')">D. Tropical Deciduous Forest</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>85. 'International Solar Alliance' (ISA) has its headquarters in:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Gurugram, India</li>
+            <li onclick="check(this, 'B')">B. Paris, France</li>
+            <li onclick="check(this, 'C')">C. Geneva, Switzerland</li>
+            <li onclick="check(this, 'D')">D. Nairobi, Kenya</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>86. The 'National Ganga River Basin Authority' (NGRBA) is chaired by:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Minister of Environment</li>
+            <li onclick="check(this, 'B')">B. Minister of Jal Shakti</li>
+            <li onclick="check(this, 'C')">C. Prime Minister</li>
+            <li onclick="check(this, 'D')">D. President of India</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>87. 'Black Lung Disease' is common among workers of:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Textile Industry</li>
+            <li onclick="check(this, 'B')">B. Coal Mines</li>
+            <li onclick="check(this, 'C')">C. Cement Industry</li>
+            <li onclick="check(this, 'D')">D. Glass Industry</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>88. 'Kusheshwar Asthan Bird Sanctuary' is located in which district of Bihar?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Samastipur</li>
+            <li onclick="check(this, 'B')">B. Saharsa</li>
+            <li onclick="check(this, 'C')">C. Khagaria</li>
+            <li onclick="check(this, 'D')">D. Darbhanga</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>89. The 'Stockholm Conference' (1972) is officially known as:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. UN Conference on the Human Environment</li>
+            <li onclick="check(this, 'B')">B. Rio Earth Summit</li>
+            <li onclick="check(this, 'C')">C. Millennium Summit</li>
+            <li onclick="check(this, 'D')">D. Paris Climate Conference</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>90. Which of the following gases is used in Fire Extinguishers but also contributes to Ozone depletion?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Carbon Dioxide</li>
+            <li onclick="check(this, 'B')">B. Nitrogen</li>
+            <li onclick="check(this, 'C')">C. Halons</li>
+            <li onclick="check(this, 'D')">D. Argon</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>91. 'Project Crocodile' was launched in India in the year:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 1972</li>
+            <li onclick="check(this, 'B')">B. 1975</li>
+            <li onclick="check(this, 'C')">C. 1980</li>
+            <li onclick="check(this, 'D')">D. 1990</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>92. Which gas is responsible for the swelling of bread (and is a common byproduct of yeast fermentation)?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Oxygen</li>
+            <li onclick="check(this, 'B')">B. Methane</li>
+            <li onclick="check(this, 'C')">C. Ammonia</li>
+            <li onclick="check(this, 'D')">D. Carbon Dioxide</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>93. 'Green Peace' is an international environmental organization headquartered in:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Amsterdam, Netherlands</li>
+            <li onclick="check(this, 'B')">B. New York, USA</li>
+            <li onclick="check(this, 'C')">C. London, UK</li>
+            <li onclick="check(this, 'D')">D. Rome, Italy</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>94. Which city in Bihar is famous for the 'Udaipur Wildlife Sanctuary'?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. East Champaran</li>
+            <li onclick="check(this, 'B')">B. West Champaran</li>
+            <li onclick="check(this, 'C')">C. Muzaffarpur</li>
+            <li onclick="check(this, 'D')">D. Vaishali</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>95. 'Global 500' award is given for outstanding achievements in the field of:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Literature</li>
+            <li onclick="check(this, 'B')">B. Medicine</li>
+            <li onclick="check(this, 'C')">C. Environment Protection</li>
+            <li onclick="check(this, 'D')">D. Space Research</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>96. The 'Silent Valley' movement was launched to protect the forest in which state?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Kerala</li>
+            <li onclick="check(this, 'B')">B. Karnataka</li>
+            <li onclick="check(this, 'C')">C. Tamil Nadu</li>
+            <li onclick="check(this, 'D')">D. Uttarakhand</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>97. Which of the following is an example of a 'Lentic' (still water) ecosystem?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. River</li>
+            <li onclick="check(this, 'B')">B. Pond</li>
+            <li onclick="check(this, 'C')">C. Stream</li>
+            <li onclick="check(this, 'D')">D. Waterfall</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>98. 'Sushil Kumar Modi' (Bihar's former leader) chaired which high-level environmental committee related to Bihar's green cover?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Namami Gange Committee</li>
+            <li onclick="check(this, 'B')">B. Bryan Green Bihar Mission</li>
+            <li onclick="check(this, 'C')">C. Bihar Wildlife Board</li>
+            <li onclick="check(this, 'D')">D. Hariyali Mission (Jal-Jeevan-Hariyali)</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>99. 'Ozone Day' is observed on which date to commemorate the Montreal Protocol?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. September 16</li>
+            <li onclick="check(this, 'B')">B. October 24</li>
+            <li onclick="check(this, 'C')">C. December 5</li>
+            <li onclick="check(this, 'D')">D. January 30</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>100. Who is widely known as the 'Birdman of India'?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. M.S. Swaminathan</li>
+            <li onclick="check(this, 'B')">B. Salim Ali</li>
+            <li onclick="check(this, 'C')">C. Rajendra Singh</li>
+            <li onclick="check(this, 'D')">D. S.P. Godrej</li>
+        </ul>
+    </div>
+
+    </div>
+
+    <div class="controls">
+        Score: <span id="current-score">0</span> | Questions Attempted: <span id="attempted">0</span> / 100
+    </div>
+</div>
+
+<script>
+    let score = 0;
+    let attempted = 0;
+
+    function check(element, choice) {
+        const parent = element.closest('.question');
+        const correct = parent.getAttribute('data-answer');
+        const options = parent.querySelectorAll('li');
+
+        // Prevent clicking again
+        if (parent.classList.contains('done')) return;
+        parent.classList.add('done');
+
+        attempted++;
+        document.getElementById('attempted').innerText = attempted;
+
+        if (choice === correct) {
+            element.classList.add('correct');
+            score++;
+            document.getElementById('current-score').innerText = score;
+        } else {
+            element.classList.add('incorrect');
+            // Show correct answer
+            options.forEach(opt => {
+                if (opt.innerText.startsWith(correct)) opt.classList.add('correct');
+            });
+        }
+    }
+</script>
+
+</body>
+</html>

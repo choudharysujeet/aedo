@@ -1,0 +1,1077 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Physics 100 MCQ - BPSC AEDO</title>
+    <style>
+        :root {
+            --primary: #2c3e50;
+            --accent: #2980b9;
+            --success: #27ae60;
+            --danger: #e74c3c;
+            --bg: #f4f7f6;
+        }
+        body { font-family: 'Segoe UI', sans-serif; background: var(--bg); padding: 20px; }
+        .container { max-width: 900px; margin: 0 auto; background: white; padding: 40px; border-radius: 15px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); }
+        h1 { text-align: center; color: var(--primary); margin-bottom: 30px; border-bottom: 3px solid var(--accent); display: inline-block; width: 100%; padding-bottom: 10px;}
+        
+        .question { margin-bottom: 30px; padding: 20px; border: 1px solid #eee; border-radius: 10px; transition: 0.3s; }
+        .question p { font-weight: 600; font-size: 1.1rem; margin-bottom: 15px; }
+        
+        .options { list-style: none; padding: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+        @media (max-width: 600px) { .options { grid-template-columns: 1fr; } }
+        
+        .options li { background: #fff; border: 2px solid #ddd; padding: 12px; border-radius: 8px; cursor: pointer; transition: 0.2s; }
+        .options li:hover { border-color: var(--accent); background: #f0f7ff; }
+        
+        .correct { background: var(--success) !important; color: white; border-color: var(--success) !important; }
+        .incorrect { background: var(--danger) !important; color: white; border-color: var(--danger) !important; }
+        
+        .controls { position: sticky; bottom: 20px; background: var(--primary); color: white; padding: 15px; border-radius: 50px; text-align: center; box-shadow: 0 5px 15px rgba(0,0,0,0.3); }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Biology Fundamentals: 100 MCQ Series</h1>
+
+    <div id="quiz-wrapper">
+       <div class="question" data-answer="B">
+        <p>1. Who is known as the 'Father of Computers'?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Alan Turing</li>
+            <li onclick="check(this, 'B')">B. Charles Babbage</li>
+            <li onclick="check(this, 'C')">C. Simur Cray</li>
+            <li onclick="check(this, 'D')">D. Augusta Adaming</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>2. Which of the following is the smallest unit of data in a computer?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Bit</li>
+            <li onclick="check(this, 'B')">B. Byte</li>
+            <li onclick="check(this, 'C')">C. Nibble</li>
+            <li onclick="check(this, 'D')">D. KB</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>3. RAM stands for:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Read Access Memory</li>
+            <li onclick="check(this, 'B')">B. Ready Application Module</li>
+            <li onclick="check(this, 'C')">C. Random Access Memory</li>
+            <li onclick="check(this, 'D')">D. Remote Access Memory</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>4. Which of the following is NOT an operating system?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Windows</li>
+            <li onclick="check(this, 'B')">B. Oracle</li>
+            <li onclick="check(this, 'C')">C. Linux</li>
+            <li onclick="check(this, 'D')">D. macOS</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>5. Which device is used to enter images into a computer?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Mouse</li>
+            <li onclick="check(this, 'B')">B. Keyboard</li>
+            <li onclick="check(this, 'C')">C. Printer</li>
+            <li onclick="check(this, 'D')">D. Scanner</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>6. What is the full form of LAN?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Local Area Network</li>
+            <li onclick="check(this, 'B')">B. Large Area Network</li>
+            <li onclick="check(this, 'C')">C. Light Area Network</li>
+            <li onclick="check(this, 'D')">D. Logical Area Network</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>7. What does 'WWW' stand for?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. World Wide Wrestling</li>
+            <li onclick="check(this, 'B')">B. World Wide Web-link</li>
+            <li onclick="check(this, 'C')">C. World Wide Web</li>
+            <li onclick="check(this, 'D')">D. World Wide Women</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>8. Which part of the CPU performs logic operations like AND, OR, and NOT?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Control Unit</li>
+            <li onclick="check(this, 'B')">B. ALU</li>
+            <li onclick="check(this, 'C')">C. Registers</li>
+            <li onclick="check(this, 'D')">D. Cache</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>9. Integrated Circuits (ICs) were used in which generation of computers?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. First</li>
+            <li onclick="check(this, 'B')">B. Second</li>
+            <li onclick="check(this, 'C')">C. Third</li>
+            <li onclick="check(this, 'D')">D. Fourth</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>10. A computer works on which number system?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Binary</li>
+            <li onclick="check(this, 'B')">B. Octal</li>
+            <li onclick="check(this, 'C')">C. Decimal</li>
+            <li onclick="check(this, 'D')">D. Hexadecimal</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>11. 1 Gigabyte (GB) is equal to how many Megabytes (MB)?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 1000</li>
+            <li onclick="check(this, 'B')">B. 1024</li>
+            <li onclick="check(this, 'C')">C. 2048</li>
+            <li onclick="check(this, 'D')">D. 512</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>12. Which of the following is a web browser?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Yahoo</li>
+            <li onclick="check(this, 'B')">B. Bing</li>
+            <li onclick="check(this, 'C')">C. Google</li>
+            <li onclick="check(this, 'D')">D. Firefox</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>13. Which of the following is an example of hardware?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Monitor</li>
+            <li onclick="check(this, 'B')">B. MS-Word</li>
+            <li onclick="check(this, 'C')">C. Photoshop</li>
+            <li onclick="check(this, 'D')">D. Python</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>14. What is the full form of IP?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Internal Protocol</li>
+            <li onclick="check(this, 'B')">B. Internet Protocol</li>
+            <li onclick="check(this, 'C')">C. Intra Protocol</li>
+            <li onclick="check(this, 'D')">D. Information Protocol</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>15. Which language was primarily used for scientific calculations?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. COBOL</li>
+            <li onclick="check(this, 'B')">B. BASIC</li>
+            <li onclick="check(this, 'C')">C. FORTRAN</li>
+            <li onclick="check(this, 'D')">D. PASCAL</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>16. Which of the following is a hard-copy output device?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Monitor</li>
+            <li onclick="check(this, 'B')">B. Printer</li>
+            <li onclick="check(this, 'C')">C. Speaker</li>
+            <li onclick="check(this, 'D')">D. Projector</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>17. Which is the first program run by a computer when it boots up?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. BIOS</li>
+            <li onclick="check(this, 'B')">B. MS-Office</li>
+            <li onclick="check(this, 'C')">C. Web Browser</li>
+            <li onclick="check(this, 'D')">D. Calculator</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>18. What is the shortcut key to copy selected text?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Ctrl+X</li>
+            <li onclick="check(this, 'B')">B. Ctrl+V</li>
+            <li onclick="check(this, 'C')">C. Ctrl+C</li>
+            <li onclick="check(this, 'D')">D. Ctrl+A</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>19. Which of the following is malicious software?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Firewall</li>
+            <li onclick="check(this, 'B')">B. Antivirus</li>
+            <li onclick="check(this, 'C')">C. Browser</li>
+            <li onclick="check(this, 'D')">D. Virus</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>20. Which of the following is a database management software?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Excel</li>
+            <li onclick="check(this, 'B')">B. MySQL</li>
+            <li onclick="check(this, 'C')">C. PowerPoint</li>
+            <li onclick="check(this, 'D')">D. Word</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>21. Which was the first mechanical calculating device?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Abacus</li>
+            <li onclick="check(this, 'B')">B. Pascaline</li>
+            <li onclick="check(this, 'C')">C. Napier's Bones</li>
+            <li onclick="check(this, 'D')">D. Difference Engine</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>22. Who invented Email?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Mark Zuckerberg</li>
+            <li onclick="check(this, 'B')">B. Larry Page</li>
+            <li onclick="check(this, 'C')">C. Ray Tomlinson</li>
+            <li onclick="check(this, 'D')">D. Bill Gates</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>23. What is the full form of GUI?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. General User Interface</li>
+            <li onclick="check(this, 'B')">B. Graphical User Interface</li>
+            <li onclick="check(this, 'C')">C. Guided User Interface</li>
+            <li onclick="check(this, 'D')">D. Graphics Unit Interface</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>24. Which protocol is used to transfer files over the internet?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. FTP</li>
+            <li onclick="check(this, 'B')">B. SMTP</li>
+            <li onclick="check(this, 'C')">C. HTTP</li>
+            <li onclick="check(this, 'D')">D. TCP</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>25. Who was the first programmer in the world?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Charles Babbage</li>
+            <li onclick="check(this, 'B')">B. Ada Lovelace</li>
+            <li onclick="check(this, 'C')">C. Grace Hopper</li>
+            <li onclick="check(this, 'D')">D. Alan Turing</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>26. Vacuum tubes were used in which generation of computers?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. First Generation</li>
+            <li onclick="check(this, 'B')">B. Second Generation</li>
+            <li onclick="check(this, 'C')">C. Third Generation</li>
+            <li onclick="check(this, 'D')">D. Fourth Generation</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>27. Which of the following is an 'Output' device?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Scanner</li>
+            <li onclick="check(this, 'B')">B. Keyboard</li>
+            <li onclick="check(this, 'C')">C. Plotter</li>
+            <li onclick="check(this, 'D')">D. Mouse</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>28. SQL stands for:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Simple Query Language</li>
+            <li onclick="check(this, 'B')">B. Structured Query Language</li>
+            <li onclick="check(this, 'C')">C. Standard Quick List</li>
+            <li onclick="check(this, 'D')">D. Sequential Query Logic</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>29. What is the full form of URL?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Uniform Resource Locator</li>
+            <li onclick="check(this, 'B')">B. Universal Remote Link</li>
+            <li onclick="check(this, 'C')">C. Unified Resource Location</li>
+            <li onclick="check(this, 'D')">D. Uniform Radio Link</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>30. Which logic gate is often referred to as an 'Inverter'?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. AND Gate</li>
+            <li onclick="check(this, 'B')">B. OR Gate</li>
+            <li onclick="check(this, 'C')">C. XOR Gate</li>
+            <li onclick="check(this, 'D')">D. NOT Gate</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>31. What is the decimal value of the binary number 1010?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 8</li>
+            <li onclick="check(this, 'B')">B. 12</li>
+            <li onclick="check(this, 'C')">C. 10</li>
+            <li onclick="check(this, 'D')">D. 15</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>32. SaaS, PaaS, and IaaS are models associated with:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Cloud Computing</li>
+            <li onclick="check(this, 'B')">B. Hardware Manufacturing</li>
+            <li onclick="check(this, 'C')">C. Database Normalization</li>
+            <li onclick="check(this, 'D')">D. Internet Service Providers</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>33. A program that replicates itself and spreads to other computers is called a:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Trojan</li>
+            <li onclick="check(this, 'B')">B. Worm</li>
+            <li onclick="check(this, 'C')">C. Spyware</li>
+            <li onclick="check(this, 'D')">D. Adware</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>34. Which bus carries data between the CPU and memory?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Control Bus</li>
+            <li onclick="check(this, 'B')">B. Data Bus</li>
+            <li onclick="check(this, 'C')">C. Address Bus</li>
+            <li onclick="check(this, 'D')">D. Serial Bus</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>35. Which HTML tag is used to create a hyperlink?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. &lt;link&gt;</li>
+            <li onclick="check(this, 'B')">B. &lt;hlink&gt;</li>
+            <li onclick="check(this, 'C')">C. &lt;a&gt;</li>
+            <li onclick="check(this, 'D')">D. &lt;url&gt;</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>36. What is the shortcut key to 'Undo' the last action in Windows?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Ctrl + Z</li>
+            <li onclick="check(this, 'B')">B. Ctrl + Y</li>
+            <li onclick="check(this, 'C')">C. Ctrl + U</li>
+            <li onclick="check(this, 'D')">D. Ctrl + X</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>37. Which device connects multiple networks and directs traffic between them?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Hub</li>
+            <li onclick="check(this, 'B')">B. Switch</li>
+            <li onclick="check(this, 'C')">C. Router</li>
+            <li onclick="check(this, 'D')">D. Bridge</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>38. In an email address, what does 'BCC' stand for?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Black Carbon Copy</li>
+            <li onclick="check(this, 'B')">B. Basic Carbon Copy</li>
+            <li onclick="check(this, 'C')">C. Business Carbon Copy</li>
+            <li onclick="check(this, 'D')">D. Blind Carbon Copy</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>39. Which technology is used for decentralized, secure data recording (e.g., Bitcoin)?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Artificial Intelligence</li>
+            <li onclick="check(this, 'B')">B. Blockchain</li>
+            <li onclick="check(this, 'C')">C. Edge Computing</li>
+            <li onclick="check(this, 'D')">D. Virtual Reality</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>40. The process of starting or restarting a computer is known as:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Booting</li>
+            <li onclick="check(this, 'B')">B. Loading</li>
+            <li onclick="check(this, 'C')">C. Scanning</li>
+            <li onclick="check(this, 'D')">D. Formatting</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>41. Which programming language is most widely used for AI and Machine Learning?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. PHP</li>
+            <li onclick="check(this, 'B')">B. COBOL</li>
+            <li onclick="check(this, 'C')">C. Python</li>
+            <li onclick="check(this, 'D')">D. Pascal</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>42. What is the full form of ASCII?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. American Standard Code for Internet Interface</li>
+            <li onclick="check(this, 'B')">B. American Standard Code for Information Interchange</li>
+            <li onclick="check(this, 'C')">C. African Standard Code for Information Interchange</li>
+            <li onclick="check(this, 'D')">D. Advanced Standard Code for Information Interchange</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>43. Which of the following is a 'Raster' image format?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. SVG</li>
+            <li onclick="check(this, 'B')">B. EPS</li>
+            <li onclick="check(this, 'C')">C. AI</li>
+            <li onclick="check(this, 'D')">D. JPEG</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>44. Which algorithm does Google use to rank web pages in search results?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. PageRank</li>
+            <li onclick="check(this, 'B')">B. Binary Search</li>
+            <li onclick="check(this, 'C')">C. Dijkstra’s Algorithm</li>
+            <li onclick="check(this, 'D')">D. Bubble Sort</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>45. USB stands for:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. United Serial Bus</li>
+            <li onclick="check(this, 'B')">B. Universal System Bus</li>
+            <li onclick="check(this, 'C')">C. Universal Serial Bus</li>
+            <li onclick="check(this, 'D')">D. Universal Serial Board</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>46. A 'Compiler' is an example of:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Application Software</li>
+            <li onclick="check(this, 'B')">B. System Software</li>
+            <li onclick="check(this, 'C')">C. Firmware</li>
+            <li onclick="check(this, 'D')">D. Hardware</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>47. How many layers are in the OSI model?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 4</li>
+            <li onclick="check(this, 'B')">B. 5</li>
+            <li onclick="check(this, 'C')">C. 6</li>
+            <li onclick="check(this, 'D')">D. 7</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>48. How many bits are in an IPv4 address?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 16</li>
+            <li onclick="check(this, 'B')">B. 32</li>
+            <li onclick="check(this, 'C')">C. 64</li>
+            <li onclick="check(this, 'D')">D. 128</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>49. OCR stands for:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Optical Character Recognition</li>
+            <li onclick="check(this, 'B')">B. Online Character Retrieval</li>
+            <li onclick="check(this, 'C')">C. Optimal Code Reader</li>
+            <li onclick="check(this, 'D')">D. Optical Code Recognition</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>50. The first electronic general-purpose computer was:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. UNIVAC</li>
+            <li onclick="check(this, 'B')">B. EDSAC</li>
+            <li onclick="check(this, 'C')">C. ENIAC</li>
+            <li onclick="check(this, 'D')">D. MARK I</li>
+        </ul>
+    </div>
+    <div class="question" data-answer="B">
+        <p>51. Which of the following is the main core of an Operating System?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Shell</li>
+            <li onclick="check(this, 'B')">B. Kernel</li>
+            <li onclick="check(this, 'C')">C. Script</li>
+            <li onclick="check(this, 'D')">D. Command</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>52. Where is the 'Cache' memory usually located?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Hard Disk</li>
+            <li onclick="check(this, 'B')">B. Pen Drive</li>
+            <li onclick="check(this, 'C')">C. Inside the CPU</li>
+            <li onclick="check(this, 'D')">D. Monitor</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>53. CSS stands for:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Color Style Sheets</li>
+            <li onclick="check(this, 'B')">B. Cascading Style Sheets</li>
+            <li onclick="check(this, 'C')">C. Creative Style Sheets</li>
+            <li onclick="check(this, 'D')">D. Computer Style Sheets</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>54. Which gate is known as a Universal Gate?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. NAND</li>
+            <li onclick="check(this, 'B')">B. AND</li>
+            <li onclick="check(this, 'C')">C. OR</li>
+            <li onclick="check(this, 'D')">D. NOT</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>55. What is the standard port number for 'HTTP'?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 21</li>
+            <li onclick="check(this, 'B')">B. 25</li>
+            <li onclick="check(this, 'C')">C. 443</li>
+            <li onclick="check(this, 'D')">D. 80</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>56. Which storage device has no moving parts and is faster than a traditional Hard Disk?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. HDD</li>
+            <li onclick="check(this, 'B')">B. Floppy Disk</li>
+            <li onclick="check(this, 'C')">C. SSD</li>
+            <li onclick="check(this, 'D')">D. Magnetic Tape</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>57. What is an 'Algorithm'?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. A type of computer</li>
+            <li onclick="check(this, 'B')">B. A step-by-step procedure to solve a problem</li>
+            <li onclick="check(this, 'C')">C. A programming language</li>
+            <li onclick="check(this, 'D')">D. A hardware component</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>58. Which of the following is 'System Software'?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Device Drivers</li>
+            <li onclick="check(this, 'B')">B. MS Word</li>
+            <li onclick="check(this, 'C')">C. VLC Player</li>
+            <li onclick="check(this, 'D')">D. Chrome</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>59. HDMI stands for:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. High Definition Memory Interface</li>
+            <li onclick="check(this, 'B')">B. High Data Multi Interface</li>
+            <li onclick="check(this, 'C')">C. High-Definition Multimedia Interface</li>
+            <li onclick="check(this, 'D')">D. High Detail Media Input</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>60. Which protocol is used for sending emails (outgoing)?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. POP3</li>
+            <li onclick="check(this, 'B')">B. SMTP</li>
+            <li onclick="check(this, 'C')">C. IMAP</li>
+            <li onclick="check(this, 'D')">D. FTP</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>61. How many values can a single 'Nibble' represent?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 2</li>
+            <li onclick="check(this, 'B')">B. 4</li>
+            <li onclick="check(this, 'C')">C. 8</li>
+            <li onclick="check(this, 'D')">D. 16</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>62. What is 'Phishing'?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Fraudulent attempt to obtain sensitive info</li>
+            <li onclick="check(this, 'B')">B. A way to speed up the internet</li>
+            <li onclick="check(this, 'C')">C. A type of computer hardware</li>
+            <li onclick="check(this, 'D')">D. Data backup process</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>63. NTFS stands for:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. New Type File System</li>
+            <li onclick="check(this, 'B')">B. New Technology File System</li>
+            <li onclick="check(this, 'C')">C. Network Text File System</li>
+            <li onclick="check(this, 'D')">D. Non-Transfer File System</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>64. What is the function of the 'Control Unit' in the CPU?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. To perform calculations</li>
+            <li onclick="check(this, 'B')">B. To store permanent data</li>
+            <li onclick="check(this, 'C')">C. To direct the flow of data and instructions</li>
+            <li onclick="check(this, 'D')">D. To display images</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>65. Which of the following is NOT a top-level domain (TLD)?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. .com</li>
+            <li onclick="check(this, 'B')">B. .org</li>
+            <li onclick="check(this, 'C')">C. .gov</li>
+            <li onclick="check(this, 'D')">D. .html</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>66. A 'Bug' in computer terminology refers to:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. A virus</li>
+            <li onclick="check(this, 'B')">B. An error in a program</li>
+            <li onclick="check(this, 'C')">C. A hardware failure</li>
+            <li onclick="check(this, 'D')">D. Slow internet</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>67. Which device is used specifically for playing computer games?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Joystick</li>
+            <li onclick="check(this, 'B')">B. Light Pen</li>
+            <li onclick="check(this, 'C')">C. Scanner</li>
+            <li onclick="check(this, 'D')">D. Printer</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>68. Which of these is a 'Primary Key' attribute?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. It can be null</li>
+            <li onclick="check(this, 'B')">B. It can have duplicate values</li>
+            <li onclick="check(this, 'C')">C. It must be unique for every record</li>
+            <li onclick="check(this, 'D')">D. It is used for styling tables</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>69. What is the full form of WiFi?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Wireless Fiber</li>
+            <li onclick="check(this, 'B')">B. Wireless Fidelity</li>
+            <li onclick="check(this, 'C')">C. Wired Filter</li>
+            <li onclick="check(this, 'D')">D. Wireless Finish</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>70. PDF stands for:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Personal Document File</li>
+            <li onclick="check(this, 'B')">B. Printable Data Format</li>
+            <li onclick="check(this, 'C')">C. Program Data File</li>
+            <li onclick="check(this, 'D')">D. Portable Document Format</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>71. The speed of a processor is measured in:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Hertz (GHz)</li>
+            <li onclick="check(this, 'B')">B. Meters</li>
+            <li onclick="check(this, 'C')">C. Bytes</li>
+            <li onclick="check(this, 'D')">D. Amperes</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>72. In MS Excel, a formula always starts with which sign?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. +</li>
+            <li onclick="check(this, 'B')">B. =</li>
+            <li onclick="check(this, 'C')">C. #</li>
+            <li onclick="check(this, 'D')">D. @</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>73. JavaScript is primarily used for:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Database design</li>
+            <li onclick="check(this, 'B')">B. Operating System core</li>
+            <li onclick="check(this, 'C')">C. Making web pages interactive</li>
+            <li onclick="check(this, 'D')">D. Hardware maintenance</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>74. Which layer of the OSI model is responsible for routing?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Network Layer</li>
+            <li onclick="check(this, 'B')">B. Physical Layer</li>
+            <li onclick="check(this, 'C')">C. Session Layer</li>
+            <li onclick="check(this, 'D')">D. Data Link Layer</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>75. Transistors replaced vacuum tubes in which generation?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. First</li>
+            <li onclick="check(this, 'B')">B. Second</li>
+            <li onclick="check(this, 'C')">C. Third</li>
+            <li onclick="check(this, 'D')">D. Fourth</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>76. Which data structure works on the LIFO principle?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Queue</li>
+            <li onclick="check(this, 'B')">B. Array</li>
+            <li onclick="check(this, 'C')">C. Stack</li>
+            <li onclick="check(this, 'D')">D. Tree</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>77. Which of the following is a multi-user, multi-tasking OS?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. MS-DOS</li>
+            <li onclick="check(this, 'B')">B. Windows 95</li>
+            <li onclick="check(this, 'C')">C. Windows 3.1</li>
+            <li onclick="check(this, 'D')">D. Linux</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>78. What is a 'Hotspot'?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. A physical location offering internet access via WiFi</li>
+            <li onclick="check(this, 'B')">B. A heated part of the CPU</li>
+            <li onclick="check(this, 'C')">C. A type of malware</li>
+            <li onclick="check(this, 'D')">D. A high-speed cable</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>79. Shortcut key for 'Permanent Delete' of a file in Windows:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Delete</li>
+            <li onclick="check(this, 'B')">B. Ctrl + Delete</li>
+            <li onclick="check(this, 'C')">C. Shift + Delete</li>
+            <li onclick="check(this, 'D')">D. Alt + Delete</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>80. A 'Touchscreen' is which type of device?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Only Input</li>
+            <li onclick="check(this, 'B')">B. Both Input and Output</li>
+            <li onclick="check(this, 'C')">C. Only Output</li>
+            <li onclick="check(this, 'D')">D. Storage</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>81. Which is a 'Object Oriented' programming language?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. C</li>
+            <li onclick="check(this, 'B')">B. Pascal</li>
+            <li onclick="check(this, 'C')">C. Fortran</li>
+            <li onclick="check(this, 'D')">D. Java</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>82. Which of the following is a cloud storage service?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Google Drive</li>
+            <li onclick="check(this, 'B')">B. RAM</li>
+            <li onclick="check(this, 'C')">C. BIOS</li>
+            <li onclick="check(this, 'D')">D. Motherboard</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>83. VPN stands for:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Visual Private Network</li>
+            <li onclick="check(this, 'B')">B. Very Private Network</li>
+            <li onclick="check(this, 'C')">C. Virtual Private Network</li>
+            <li onclick="check(this, 'D')">D. Virtual Public Network</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>84. Who is the co-founder of Microsoft?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Steve Jobs</li>
+            <li onclick="check(this, 'B')">B. Bill Gates</li>
+            <li onclick="check(this, 'C')">C. Larry Page</li>
+            <li onclick="check(this, 'D')">D. Jeff Bezos</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>85. Binary logic was developed by:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. George Boole</li>
+            <li onclick="check(this, 'B')">B. Blaise Pascal</li>
+            <li onclick="check(this, 'C')">C. John von Neumann</li>
+            <li onclick="check(this, 'D')">D. Isaac Newton</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>86. 1 Terabyte (TB) is equal to:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 1024 bytes</li>
+            <li onclick="check(this, 'B')">B. 1024 MB</li>
+            <li onclick="check(this, 'C')">C. 1024 GB</li>
+            <li onclick="check(this, 'D')">D. 1024 KB</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>87. SMPS stands for:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Simple Mode Power Supply</li>
+            <li onclick="check(this, 'B')">B. Storage Mode Power System</li>
+            <li onclick="check(this, 'C')">C. Small Mode Power Supply</li>
+            <li onclick="check(this, 'D')">D. Switched Mode Power Supply</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>88. A single point on a computer screen is called a:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Dot</li>
+            <li onclick="check(this, 'B')">B. Pixel</li>
+            <li onclick="check(this, 'C')">C. Element</li>
+            <li onclick="check(this, 'D')">D. Bit</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>89. Which device is used to amplify or regenerate a signal?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Repeater</li>
+            <li onclick="check(this, 'B')">B. Hub</li>
+            <li onclick="check(this, 'C')">C. Mouse</li>
+            <li onclick="check(this, 'D')">D. Keyboard</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>90. What is 'GUI'?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. A type of hardware</li>
+            <li onclick="check(this, 'B')">B. A text-based interface</li>
+            <li onclick="check(this, 'C')">C. A Graphical User Interface</li>
+            <li onclick="check(this, 'D')">D. A programming error</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>91. The simultaneous transmission of data in both directions is called:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Simplex</li>
+            <li onclick="check(this, 'B')">B. Half Duplex</li>
+            <li onclick="check(this, 'C')">C. Sequential</li>
+            <li onclick="check(this, 'D')">D. Full Duplex</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>92. Which of the following is an example of 'Primary Memory'?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. RAM</li>
+            <li onclick="check(this, 'B')">B. Hard Disk</li>
+            <li onclick="check(this, 'C')">C. DVD</li>
+            <li onclick="check(this, 'D')">D. Magnetic Tape</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>93. XML stands for:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Extra Modern Language</li>
+            <li onclick="check(this, 'B')">B. Example Markup Language</li>
+            <li onclick="check(this, 'C')">C. Extensible Markup Language</li>
+            <li onclick="check(this, 'D')">D. X-Link Markup Language</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>94. Which component is known as the 'Backbone' of the computer?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. CPU</li>
+            <li onclick="check(this, 'B')">B. Motherboard</li>
+            <li onclick="check(this, 'C')">C. RAM</li>
+            <li onclick="check(this, 'D')">D. SMPS</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>95. MAC address is of how many bits?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 16 bits</li>
+            <li onclick="check(this, 'B')">B. 32 bits</li>
+            <li onclick="check(this, 'C')">C. 64 bits</li>
+            <li onclick="check(this, 'D')">D. 48 bits</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>96. Which operator is used for 'Modulo' division in most languages?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. %</li>
+            <li onclick="check(this, 'B')">B. /</li>
+            <li onclick="check(this, 'C')">C. #</li>
+            <li onclick="check(this, 'D')">D. &</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>97. A person who breaks into a system with malicious intent is a:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. White hat hacker</li>
+            <li onclick="check(this, 'B')">B. Analyst</li>
+            <li onclick="check(this, 'C')">C. Black hat hacker</li>
+            <li onclick="check(this, 'D')">D. Developer</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>98. Post stands for:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Power on System Test</li>
+            <li onclick="check(this, 'B')">B. Power On Self Test</li>
+            <li onclick="check(this, 'C')">C. Program On Self Test</li>
+            <li onclick="check(this, 'D')">D. Power Off Self Test</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>99. 'Cookies' in the context of the web are:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Computer viruses</li>
+            <li onclick="check(this, 'B')">B. Hardware parts</li>
+            <li onclick="check(this, 'C')">C. Graphic files</li>
+            <li onclick="check(this, 'D')">D. Small text files stored by the browser</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>100. Which of the following is NOT a programming language?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. BIOS</li>
+            <li onclick="check(this, 'B')">B. C++</li>
+            <li onclick="check(this, 'C')">C. Python</li>
+            <li onclick="check(this, 'D')">D. Java</li>
+        </ul>
+    </div>
+
+    </div>
+
+    <div class="controls">
+        Score: <span id="current-score">0</span> | Questions Attempted: <span id="attempted">0</span> / 100
+    </div>
+</div>
+
+<script>
+    let score = 0;
+    let attempted = 0;
+
+    function check(element, choice) {
+        const parent = element.closest('.question');
+        const correct = parent.getAttribute('data-answer');
+        const options = parent.querySelectorAll('li');
+
+        // Prevent clicking again
+        if (parent.classList.contains('done')) return;
+        parent.classList.add('done');
+
+        attempted++;
+        document.getElementById('attempted').innerText = attempted;
+
+        if (choice === correct) {
+            element.classList.add('correct');
+            score++;
+            document.getElementById('current-score').innerText = score;
+        } else {
+            element.classList.add('incorrect');
+            // Show correct answer
+            options.forEach(opt => {
+                if (opt.innerText.startsWith(correct)) opt.classList.add('correct');
+            });
+        }
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,2079 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Physics 100 MCQ - BPSC AEDO</title>
+    <style>
+        :root {
+            --primary: #2c3e50;
+            --accent: #2980b9;
+            --success: #27ae60;
+            --danger: #e74c3c;
+            --bg: #f4f7f6;
+        }
+        body { font-family: 'Segoe UI', sans-serif; background: var(--bg); padding: 20px; }
+        .container { max-width: 900px; margin: 0 auto; background: white; padding: 40px; border-radius: 15px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); }
+        h1 { text-align: center; color: var(--primary); margin-bottom: 30px; border-bottom: 3px solid var(--accent); display: inline-block; width: 100%; padding-bottom: 10px;}
+        
+        .question { margin-bottom: 30px; padding: 20px; border: 1px solid #eee; border-radius: 10px; transition: 0.3s; }
+        .question p { font-weight: 600; font-size: 1.1rem; margin-bottom: 15px; }
+        
+        .options { list-style: none; padding: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+        @media (max-width: 600px) { .options { grid-template-columns: 1fr; } }
+        
+        .options li { background: #fff; border: 2px solid #ddd; padding: 12px; border-radius: 8px; cursor: pointer; transition: 0.2s; }
+        .options li:hover { border-color: var(--accent); background: #f0f7ff; }
+        
+        .correct { background: var(--success) !important; color: white; border-color: var(--success) !important; }
+        .incorrect { background: var(--danger) !important; color: white; border-color: var(--danger) !important; }
+        
+        .controls { position: sticky; bottom: 20px; background: var(--primary); color: white; padding: 15px; border-radius: 50px; text-align: center; box-shadow: 0 5px 15px rgba(0,0,0,0.3); }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Biology Fundamentals: 100 MCQ Series</h1>
+
+    <div id="quiz-wrapper">
+       
+        <div class="question" data-answer="B">
+        <p>1. Which planet is known as the 'Twin of Earth'?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Mars</li>
+            <li onclick="check(this, 'B')">B. Venus</li>
+            <li onclick="check(this, 'C')">C. Neptune</li>
+            <li onclick="check(this, 'D')">D. Saturn</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>2. The 'Asteroid Belt' is found between the orbits of which two planets?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Mars and Jupiter</li>
+            <li onclick="check(this, 'B')">B. Earth and Mars</li>
+            <li onclick="check(this, 'C')">C. Jupiter and Saturn</li>
+            <li onclick="check(this, 'D')">D. Venus and Earth</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>3. What is the approximate circumference of the Earth at the Equator?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 13,000 km</li>
+            <li onclick="check(this, 'B')">B. 25,000 km</li>
+            <li onclick="check(this, 'C')">C. 40,000 km</li>
+            <li onclick="check(this, 'D')">D. 64,000 km</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>4. Which layer of the Earth's atmosphere contains the 'Ozone Layer'?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Troposphere</li>
+            <li onclick="check(this, 'B')">B. Mesosphere</li>
+            <li onclick="check(this, 'C')">C. Exosphere</li>
+            <li onclick="check(this, 'D')">D. Stratosphere</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>5. The 'Prime Meridian' passes through which place?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Paris</li>
+            <li onclick="check(this, 'B')">B. Greenwich</li>
+            <li onclick="check(this, 'C')">C. New York</li>
+            <li onclick="check(this, 'D')">D. Tokyo</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>6. On which date does the 'Summer Solstice' occur in the Northern Hemisphere?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. June 21</li>
+            <li onclick="check(this, 'B')">B. December 22</li>
+            <li onclick="check(this, 'C')">C. September 23</li>
+            <li onclick="check(this, 'D')">D. March 21</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>7. The 'Mohorovicic Discontinuity' separates which two layers?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Outer and Inner Core</li>
+            <li onclick="check(this, 'B')">B. Upper and Lower Mantle</li>
+            <li onclick="check(this, 'C')">C. Crust and Mantle</li>
+            <li onclick="check(this, 'D')">D. Mantle and Core</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>8. Which type of rocks are formed from the cooling and solidification of magma?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Sedimentary</li>
+            <li onclick="check(this, 'B')">B. Igneous</li>
+            <li onclick="check(this, 'C')">C. Metamorphic</li>
+            <li onclick="check(this, 'D')">D. Fossiliferous</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>9. 'Roaring Forties' are the steady _____ winds in the Southern Hemisphere.</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Trade</li>
+            <li onclick="check(this, 'B')">B. Polar</li>
+            <li onclick="check(this, 'C')">C. Monsoon</li>
+            <li onclick="check(this, 'D')">D. Westerly</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>10. The intensity of an earthquake is measured on the:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Richter Scale</li>
+            <li onclick="check(this, 'B')">A. Bryan Beaufort Scale</li>
+            <li onclick="check(this, 'C')">C. Mohs Scale</li>
+            <li onclick="check(this, 'D')">D. Celsius Scale</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>11. Which is the deepest point in the world's oceans?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Java Trench</li>
+            <li onclick="check(this, 'B')">B. Puerto Rico Trench</li>
+            <li onclick="check(this, 'C')">C. Mariana Trench</li>
+            <li onclick="check(this, 'D')">D. Bentley Subglacial Trench</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>12. 'Albedo' is defined as the:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Heat absorbed by the Earth</li>
+            <li onclick="check(this, 'B')">B. Solar radiation reflected back into space</li>
+            <li onclick="check(this, 'C')">C. Heat radiated by the Earth at night</li>
+            <li onclick="check(this, 'D')">D. Temperature difference between day and night</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>13. Which of the following is a 'Cold Ocean Current'?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Gulf Stream</li>
+            <li onclick="check(this, 'B')">B. Kuroshio Current</li>
+            <li onclick="check(this, 'C')">C. Brazil Current</li>
+            <li onclick="check(this, 'D')">D. Benguela Current</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>14. The 'Great Barrier Reef' is located along the coast of which country?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Australia</li>
+            <li onclick="check(this, 'B')">B. Brazil</li>
+            <li onclick="check(this, 'C')">C. India</li>
+            <li onclick="check(this, 'D')">D. Japan</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>15. Which atmospheric layer reflects radio waves back to Earth?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Stratosphere</li>
+            <li onclick="check(this, 'B')">B. Troposphere</li>
+            <li onclick="check(this, 'C')">C. Ionosphere</li>
+            <li onclick="check(this, 'D')">D. Exosphere</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>16. 'Granite' is an example of which type of rock?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Extrusive Igneous</li>
+            <li onclick="check(this, 'B')">B. Intrusive Igneous</li>
+            <li onclick="check(this, 'C')">C. Sedimentary</li>
+            <li onclick="check(this, 'D')">D. Metamorphic</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>17. The 'Grand Canyon' in the USA was formed by which river?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Colorado</li>
+            <li onclick="check(this, 'B')">B. Mississippi</li>
+            <li onclick="check(this, 'C')">C. Amazon</li>
+            <li onclick="check(this, 'D')">D. Hudson</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>18. Which gas is most abundant in the Earth's atmosphere?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Oxygen</li>
+            <li onclick="check(this, 'B')">B. Argon</li>
+            <li onclick="check(this, 'C')">C. Carbon Dioxide</li>
+            <li onclick="check(this, 'D')">D. Nitrogen</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>19. The 'Ring of Fire' is associated with which ocean?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Atlantic Ocean</li>
+            <li onclick="check(this, 'B')">B. Pacific Ocean</li>
+            <li onclick="check(this, 'C')">C. Indian Ocean</li>
+            <li onclick="check(this, 'D')">D. Arctic Ocean</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>20. 'Isohyets' are lines on a map connecting points having equal:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Pressure</li>
+            <li onclick="check(this, 'B')">B. Temperature</li>
+            <li onclick="check(this, 'C')">C. Rainfall</li>
+            <li onclick="check(this, 'D')">D. Humidity</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>21. The distance between two longitudes at the Equator is approximately:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 111 km</li>
+            <li onclick="check(this, 'B')">B. 69 km</li>
+            <li onclick="check(this, 'C')">C. 120 km</li>
+            <li onclick="check(this, 'D')">D. 90 km</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>22. Which planet has the shortest day (rotates fastest)?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Mercury</li>
+            <li onclick="check(this, 'B')">B. Jupiter</li>
+            <li onclick="check(this, 'C')">C. Earth</li>
+            <li onclick="check(this, 'D')">D. Mars</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>23. The 'Tropic of Capricorn' is located at:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 23.5° North Latitude</li>
+            <li onclick="check(this, 'B')">B. 66.5° South Latitude</li>
+            <li onclick="check(this, 'C')">C. 0° Latitude</li>
+            <li onclick="check(this, 'D')">D. 23.5° South Latitude</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>24. 'Coriolis Force' is maximum at the:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Poles</li>
+            <li onclick="check(this, 'B')">B. Equator</li>
+            <li onclick="check(this, 'C')">C. Tropics</li>
+            <li onclick="check(this, 'D')">D. Sub-tropics</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>25. Which instrument is used to measure humidity?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Barometer</li>
+            <li onclick="check(this, 'B')">B. Anemometer</li>
+            <li onclick="check(this, 'C')">C. Hygrometer</li>
+            <li onclick="check(this, 'D')">D. Pyrometer</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>26. Which is the oldest mountain range in India?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Aravalli Range</li>
+            <li onclick="check(this, 'B')">B. Himalayas</li>
+            <li onclick="check(this, 'C')">C. Satpura Range</li>
+            <li onclick="check(this, 'D')">D. Nilgiri Hills</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>27. The 'Kanchenjunga' peak is located in which Indian state?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Uttarakhand</li>
+            <li onclick="check(this, 'B')">B. Himachal Pradesh</li>
+            <li onclick="check(this, 'C')">C. Sikkim</li>
+            <li onclick="check(this, 'D')">D. Arunachal Pradesh</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>28. Through how many Indian states does the 'Tropic of Cancer' pass?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 7</li>
+            <li onclick="check(this, 'B')">B. 8</li>
+            <li onclick="check(this, 'C')">C. 9</li>
+            <li onclick="check(this, 'D')">D. 10</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>29. Which river is known as the 'Dakshina Ganga' (Ganges of the South)?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Krishna</li>
+            <li onclick="check(this, 'B')">B. Cauvery</li>
+            <li onclick="check(this, 'C')">C. Narmada</li>
+            <li onclick="check(this, 'D')">D. Godavari</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>30. The 'Palk Strait' separates India from which country?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Sri Lanka</li>
+            <li onclick="check(this, 'B')">B. Maldives</li>
+            <li onclick="check(this, 'C')">C. Pakistan</li>
+            <li onclick="check(this, 'D')">D. Indonesia</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>31. Which is the highest point of the Aravalli Range?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Dhupgarh</li>
+            <li onclick="check(this, 'B')">B. Pachmarhi</li>
+            <li onclick="check(this, 'C')">C. Guru Shikhar</li>
+            <li onclick="check(this, 'D')">D. Mahendragiri</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>32. The 'Loktak Lake', famous for floating islands (Phumdis), is in:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Mizoram</li>
+            <li onclick="check(this, 'B')">B. Manipur</li>
+            <li onclick="check(this, 'C')">C. Meghalaya</li>
+            <li onclick="check(this, 'D')">D. Tripura</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>33. Which of the following rivers flows through a 'Rift Valley'?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Mahanadi</li>
+            <li onclick="check(this, 'B')">B. Krishna</li>
+            <li onclick="check(this, 'C')">C. Cauvery</li>
+            <li onclick="check(this, 'D')">D. Narmada</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>34. 'Duncan Passage' is located between:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. South Andaman and Little Andaman</li>
+            <li onclick="check(this, 'B')">B. Little Andaman and Car Nicobar</li>
+            <li onclick="check(this, 'C')">C. North and Central Andaman</li>
+            <li onclick="check(this, 'D')">D. India and Sri Lanka</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>35. The 'Chota Nagpur Plateau' is famous for its reserve of:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Petroleum</li>
+            <li onclick="check(this, 'B')">B. Natural Gas</li>
+            <li onclick="check(this, 'C')">C. Minerals</li>
+            <li onclick="check(this, 'D')">D. Edible oils</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>36. Which state is the leading producer of 'Saffron' in India?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Himachal Pradesh</li>
+            <li onclick="check(this, 'B')">B. Jammu & Kashmir</li>
+            <li onclick="check(this, 'C')">C. Sikkim</li>
+            <li onclick="check(this, 'D')">D. Uttarakhand</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>37. The 'Indira Gandhi Canal' gets its water from which river?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Sutlej</li>
+            <li onclick="check(this, 'B')">B. Chenab</li>
+            <li onclick="check(this, 'C')">C. Jhelum</li>
+            <li onclick="check(this, 'D')">D. Indus</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>38. 'Western Disturbances', which cause winter rain in North India, originate in:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Arabian Sea</li>
+            <li onclick="check(this, 'B')">B. Bay of Bengal</li>
+            <li onclick="check(this, 'C')">C. Caspian Sea</li>
+            <li onclick="check(this, 'D')">D. Mediterranean Sea</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>39. Which is the largest 'Bauxite' producing state in India?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Jharkhand</li>
+            <li onclick="check(this, 'B')">B. Odisha</li>
+            <li onclick="check(this, 'C')">C. Gujarat</li>
+            <li onclick="check(this, 'D')">D. Chhattisgarh</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>40. The 'Yarlung Tsangpo' river is known in India as:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Ganga</li>
+            <li onclick="check(this, 'B')">B. Indus</li>
+            <li onclick="check(this, 'C')">C. Brahmaputra</li>
+            <li onclick="check(this, 'D')">D. Mahanadi</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>41. Which soil is also known as 'Regur Soil'?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Black Soil</li>
+            <li onclick="check(this, 'B')">B. Alluvial Soil</li>
+            <li onclick="check(this, 'C')">C. Red Soil</li>
+            <li onclick="check(this, 'D')">D. Laterite Soil</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>42. The 'Shipki La' pass is located in which state?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Arunachal Pradesh</li>
+            <li onclick="check(this, 'B')">B. Himachal Pradesh</li>
+            <li onclick="check(this, 'C')">C. Sikkim</li>
+            <li onclick="check(this, 'D')">D. Uttarakhand</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>43. Which city is known as the 'Manchester of South India'?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Chennai</li>
+            <li onclick="check(this, 'B')">B. Madurai</li>
+            <li onclick="check(this, 'C')">C. Bengaluru</li>
+            <li onclick="check(this, 'D')">D. Coimbatore</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>44. The 'Duar' formations are found in the:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. North-East Himalayas</li>
+            <li onclick="check(this, 'B')">B. Western Ghats</li>
+            <li onclick="check(this, 'C')">C. Punjab Plains</li>
+            <li onclick="check(this, 'D')">D. Deccan Plateau</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>45. Which of the following is a 'Kharif' crop?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Wheat</li>
+            <li onclick="check(this, 'B')">B. Mustard</li>
+            <li onclick="check(this, 'C')">C. Rice</li>
+            <li onclick="check(this, 'D')">D. Gram</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>46. The 'Narmada' and 'Tapti' rivers flow into the:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Bay of Bengal</li>
+            <li onclick="check(this, 'B')">B. Arabian Sea</li>
+            <li onclick="check(this, 'C')">C. Indian Ocean</li>
+            <li onclick="check(this, 'D')">D. Gulf of Kutch</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>47. Which is the largest 'Lagoon' in India?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Vembanad Lake</li>
+            <li onclick="check(this, 'B')">B. Pulicat Lake</li>
+            <li onclick="check(this, 'C')">C. Kolleru Lake</li>
+            <li onclick="check(this, 'D')">D. Chilika Lake</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>48. The 'Saddle Peak' is the highest peak of:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Andaman and Nicobar Islands</li>
+            <li onclick="check(this, 'B')">B. Lakshadweep</li>
+            <li onclick="check(this, 'C')">C. Western Ghats</li>
+            <li onclick="check(this, 'D')">D. Eastern Ghats</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>49. Which state has the largest area under forest cover in India?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Arunachal Pradesh</li>
+            <li onclick="check(this, 'B')">B. Mizoram</li>
+            <li onclick="check(this, 'C')">C. Madhya Pradesh</li>
+            <li onclick="check(this, 'D')">D. Chhattisgarh</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>50. The 'Tropic of Cancer' does NOT pass through which of these states?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Rajasthan</li>
+            <li onclick="check(this, 'B')">B. Odisha</li>
+            <li onclick="check(this, 'C')">C. Chhattisgarh</li>
+            <li onclick="check(this, 'D')">D. Tripura</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>51. What is the total geographical area of Bihar?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 90,163 sq km</li>
+            <li onclick="check(this, 'B')">B. 98,245 sq km</li>
+            <li onclick="check(this, 'C')">C. 92,263 sq km</li>
+            <li onclick="check(this, 'D')">D. 94,163 sq km</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>52. Bihar is located between which latitudes?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 20°N to 23°N</li>
+            <li onclick="check(this, 'B')">B. 24°N to 27°N</li>
+            <li onclick="check(this, 'C')">C. 28°N to 31°N</li>
+            <li onclick="check(this, 'D')">D. 19°N to 22°N</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>53. Which river enters Bihar at Chausa (Buxar district)?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Ganga</li>
+            <li onclick="check(this, 'B')">B. Sone</li>
+            <li onclick="check(this, 'C')">C. Gandak</li>
+            <li onclick="check(this, 'D')">D. Karmanasa</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>54. The 'Someshwar Hilly Range' is located in which district of Bihar?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. East Champaran</li>
+            <li onclick="check(this, 'B')">B. Rohtas</li>
+            <li onclick="check(this, 'C')">C. West Champaran</li>
+            <li onclick="check(this, 'D')">D. Kaimur</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>55. Which of the following rivers is known as the 'Sorrow of Bihar'?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Bagmati</li>
+            <li onclick="check(this, 'B')">B. Kosi</li>
+            <li onclick="check(this, 'C')">C. Kamala</li>
+            <li onclick="check(this, 'D')">D. Mahananda</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>56. Bihar shares its border with how many Indian states?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 2</li>
+            <li onclick="check(this, 'B')">B. 4</li>
+            <li onclick="check(this, 'C')">C. 5</li>
+            <li onclick="check(this, 'D')">D. 3</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>57. Which soil type covers the largest part of Bihar?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Alluvial Soil</li>
+            <li onclick="check(this, 'B')">B. Terai Soil</li>
+            <li onclick="check(this, 'C')">C. Red and Yellow Soil</li>
+            <li onclick="check(this, 'D')">D. Peaty Soil</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>58. The 'Barabar Caves' are located in which district?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Patna</li>
+            <li onclick="check(this, 'B')">B. Nalanda</li>
+            <li onclick="check(this, 'C')">C. Jehanabad</li>
+            <li onclick="check(this, 'D')">D. Gaya</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>59. Which river joins the Ganga from the South at Patna?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Gandak</li>
+            <li onclick="check(this, 'B')">B. Sone</li>
+            <li onclick="check(this, 'C')">C. Ghaghara</li>
+            <li onclick="check(this, 'D')">D. Kosi</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>60. Which district of Bihar has the highest female literacy rate (as per Census 2011)?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Munger</li>
+            <li onclick="check(this, 'B')">B. Patna</li>
+            <li onclick="check(this, 'C')">C. Siwan</li>
+            <li onclick="check(this, 'D')">D. Rohtas</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>61. The 'Kakolat Waterfall' is situated in which district?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Nawada</li>
+            <li onclick="check(this, 'B')">B. Jamui</li>
+            <li onclick="check(this, 'C')">C. Rohtas</li>
+            <li onclick="check(this, 'D')">D. Gaya</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>62. Which district of Bihar touches the border of Nepal and Uttar Pradesh?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Gopalganj</li>
+            <li onclick="check(this, 'B')">B. West Champaran</li>
+            <li onclick="check(this, 'C')">C. Siwan</li>
+            <li onclick="check(this, 'D')">D. Sitamarhi</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>63. In Bihar, 'Khadar' soil is found predominantly in which region?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Southern Bihar</li>
+            <li onclick="check(this, 'B')">B. Hilly areas</li>
+            <li onclick="check(this, 'C')">C. Flood plains of North Bihar</li>
+            <li onclick="check(this, 'D')">D. Plateau region</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>64. What is the rank of Bihar in India in terms of population density (Census 2011)?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 1st</li>
+            <li onclick="check(this, 'B')">B. 2nd</li>
+            <li onclick="check(this, 'C')">C. 3rd</li>
+            <li onclick="check(this, 'D')">D. 5th</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>65. Which district of Bihar is famous for 'Litchi' production?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Bhagalpur</li>
+            <li onclick="check(this, 'B')">B. Darbhanga</li>
+            <li onclick="check(this, 'C')">C. Vaishali</li>
+            <li onclick="check(this, 'D')">D. Muzaffarpur</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>66. The 'Triveni Canal' gets water from which river?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Sone</li>
+            <li onclick="check(this, 'B')">B. Gandak</li>
+            <li onclick="check(this, 'C')">C. Kosi</li>
+            <li onclick="check(this, 'D')">D. Ganga</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>67. Which district of Bihar has the lowest sex ratio?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Gopalganj</li>
+            <li onclick="check(this, 'B')">B. Bhagalpur</li>
+            <li onclick="check(this, 'C')">C. Munger</li>
+            <li onclick="check(this, 'D')">D. Patna</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>68. 'Bangar' soil in Bihar refers to:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Old Alluvial Soil</li>
+            <li onclick="check(this, 'B')">B. New Alluvial Soil</li>
+            <li onclick="check(this, 'C')">C. Terai Soil</li>
+            <li onclick="check(this, 'D')">D. Sandy Soil</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>69. Which is the longest river in Bihar?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Gandak</li>
+            <li onclick="check(this, 'B')">B. Kosi</li>
+            <li onclick="check(this, 'C')">C. Sone</li>
+            <li onclick="check(this, 'D')">D. Ganga</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>70. Bihar’s climate is categorized as:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Tropical Savanna</li>
+            <li onclick="check(this, 'B')">B. Humid Sub-tropical (Monsoonal)</li>
+            <li onclick="check(this, 'C')">C. Arid</li>
+            <li onclick="check(this, 'D')">D. Mediterranean</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>71. The 'Kaimur Plateau' is famous for which mineral?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Copper</li>
+            <li onclick="check(this, 'B')">B. Coal</li>
+            <li onclick="check(this, 'C')">C. Limestone</li>
+            <li onclick="check(this, 'D')">D. Gold</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>72. Which district of Bihar has the highest forest area?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Kaimur</li>
+            <li onclick="check(this, 'B')">B. West Champaran</li>
+            <li onclick="check(this, 'C')">C. Gaya</li>
+            <li onclick="check(this, 'D')">D. Rohtas</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>73. Which district of Bihar is known as the 'Silk City'?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Gaya</li>
+            <li onclick="check(this, 'B')">B. Katihar</li>
+            <li onclick="check(this, 'C')">C. Purnia</li>
+            <li onclick="check(this, 'D')">D. Bhagalpur</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>74. In which year was the state of Jharkhand carved out of Bihar?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 1999</li>
+            <li onclick="check(this, 'B')">B. 2000</li>
+            <li onclick="check(this, 'C')">C. 2001</li>
+            <li onclick="check(this, 'D')">D. 1998</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>75. Which river form the boundary between Bihar and Uttar Pradesh for some distance?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Sone</li>
+            <li onclick="check(this, 'B')">B. Kosi</li>
+            <li onclick="check(this, 'C')">C. Karmanasa</li>
+            <li onclick="check(this, 'D')">D. Bagmati</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>76. Which district of Bihar is the only producer of 'Pyrite' in India?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Gaya</li>
+            <li onclick="check(this, 'B')">B. Rohtas</li>
+            <li onclick="check(this, 'C')">C. Jamui</li>
+            <li onclick="check(this, 'D')">D. Munger</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>77. Which city in Bihar is situated on the confluence of the rivers Ganga and Gandak?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Bhagalpur</li>
+            <li onclick="check(this, 'B')">B. Munger</li>
+            <li onclick="check(this, 'C')">C. Patna</li>
+            <li onclick="check(this, 'D')">D. Sonpur</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>78. The 'Baruni Refinery' in Bihar was established with the technical collaboration of:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Soviet Union (USSR)</li>
+            <li onclick="check(this, 'B')">B. USA</li>
+            <li onclick="check(this, 'C')">C. Germany</li>
+            <li onclick="check(this, 'D')">D. UK</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>79. Which district of Bihar has the lowest literacy rate according to Census 2011?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Katihar</li>
+            <li onclick="check(this, 'B')">B. Araria</li>
+            <li onclick="check(this, 'C')">C. Purnia</li>
+            <li onclick="check(this, 'D')">D. Kishanganj</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>80. The 'Vikramshila Gangetic Dolphin Sanctuary' is located in which district?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Patna</li>
+            <li onclick="check(this, 'B')">B. Bhagalpur</li>
+            <li onclick="check(this, 'C')">C. Vaishali</li>
+            <li onclick="check(this, 'D')">D. Katihar</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>81. Which state is the largest producer of 'Rice' in India?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. West Bengal</li>
+            <li onclick="check(this, 'B')">B. Uttar Pradesh</li>
+            <li onclick="check(this, 'C')">C. Punjab</li>
+            <li onclick="check(this, 'D')">D. Bihar</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>82. The 'Equator' does NOT pass through which of the following continents?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Africa</li>
+            <li onclick="check(this, 'B')">B. South America</li>
+            <li onclick="check(this, 'C')">C. Asia</li>
+            <li onclick="check(this, 'D')">D. Europe</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>83. 'Death Valley' is located in which country?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Australia</li>
+            <li onclick="check(this, 'B')">B. Egypt</li>
+            <li onclick="check(this, 'C')">C. USA</li>
+            <li onclick="check(this, 'D')">D. Chile</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>84. Which river passes through the maximum number of countries?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Amazon</li>
+            <li onclick="check(this, 'B')">B. Danube</li>
+            <li onclick="check(this, 'C')">C. Nile</li>
+            <li onclick="check(this, 'D')">D. Volga</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>85. The 'Strait of Gibraltar' connects the Atlantic Ocean with the:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Mediterranean Sea</li>
+            <li onclick="check(this, 'B')">B. Red Sea</li>
+            <li onclick="check(this, 'C')">C. Black Sea</li>
+            <li onclick="check(this, 'D')">D. Baltic Sea</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>86. Which is the smallest continent by land area?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Antarctica</li>
+            <li onclick="check(this, 'B')">B. Europe</li>
+            <li onclick="check(this, 'C')">C. Australia</li>
+            <li onclick="check(this, 'D')">D. South America</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>87. 'Panama Canal' connects which two oceans?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Indian and Pacific</li>
+            <li onclick="check(this, 'B')">B. Atlantic and Pacific</li>
+            <li onclick="check(this, 'C')">C. Arctic and Atlantic</li>
+            <li onclick="check(this, 'D')">D. Indian and Atlantic</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>88. Which Indian state has the maximum number of neighbors (including international borders and states)?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Madhya Pradesh</li>
+            <li onclick="check(this, 'B')">B. Assam</li>
+            <li onclick="check(this, 'C')">C. Bihar</li>
+            <li onclick="check(this, 'D')">D. Uttar Pradesh</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>89. The 'Radcliffe Line' is the boundary between:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. India and Pakistan</li>
+            <li onclick="check(this, 'B')">B. India and China</li>
+            <li onclick="check(this, 'C')">C. India and Myanmar</li>
+            <li onclick="check(this, 'D')">D. India and Afghanistan</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>90. Which is the largest 'Desert' in the world (including Polar deserts)?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Sahara</li>
+            <li onclick="check(this, 'B')">B. Gobi</li>
+            <li onclick="check(this, 'C')">C. Antarctic Desert</li>
+            <li onclick="check(this, 'D')">D. Arabian Desert</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>91. Which district in Bihar is known for the production of 'Mica'?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Rohtas</li>
+            <li onclick="check(this, 'B')">B. Gaya and Nawada</li>
+            <li onclick="check(this, 'C')">C. Buxar</li>
+            <li onclick="check(this, 'D')">D. Darbhanga</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>92. Which of the following is the highest waterfall in India?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Jog Falls</li>
+            <li onclick="check(this, 'B')">B. Dudhsagar Falls</li>
+            <li onclick="check(this, 'C')">C. Athirappilly Falls</li>
+            <li onclick="check(this, 'D')">D. Kunchikal Falls</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>93. 'Yellow Revolution' in India is related to the production of:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Oilseeds</li>
+            <li onclick="check(this, 'B')">B. Pulses</li>
+            <li onclick="check(this, 'C')">C. Milk</li>
+            <li onclick="check(this, 'D')">D. Fish</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>94. The 'Dandakaranya' region is located in which part of India?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. North-West</li>
+            <li onclick="check(this, 'B')">B. South-West</li>
+            <li onclick="check(this, 'C')">C. Central-Eastern</li>
+            <li onclick="check(this, 'D')">D. Northern</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>95. 'Mount Vesuvius' is an active volcano located in:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Japan</li>
+            <li onclick="check(this, 'B')">B. Italy</li>
+            <li onclick="check(this, 'C')">C. Indonesia</li>
+            <li onclick="check(this, 'D')">D. Iceland</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>96. Which planet has the highest number of moons (as of recent discoveries)?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Jupiter</li>
+            <li onclick="check(this, 'B')">B. Mars</li>
+            <li onclick="check(this, 'C')">C. Uranus</li>
+            <li onclick="check(this, 'D')">D. Saturn</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>97. The 'National Highway 2' (Old numbering), which passes through Bihar, is popularly known as:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Grand Trunk Road</li>
+            <li onclick="check(this, 'B')">B. Mahatma Gandhi Path</li>
+            <li onclick="check(this, 'C')">C. Golden Quadrilateral</li>
+            <li onclick="check(this, 'D')">D. NH-31</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>98. 'Suez Canal' connects the Red Sea with the:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Arabian Sea</li>
+            <li onclick="check(this, 'B')">B. Black Sea</li>
+            <li onclick="check(this, 'C')">C. Mediterranean Sea</li>
+            <li onclick="check(this, 'D')">D. Persian Gulf</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>99. Which district of Bihar has the highest population growth rate (2001-2011)?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Patna</li>
+            <li onclick="check(this, 'B')">B. Madhepura</li>
+            <li onclick="check(this, 'C')">C. Araria</li>
+            <li onclick="check(this, 'D')">D. Kishanganj</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>100. The 'Time Zone' of India is based on the longitude of:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 82.5° E</li>
+            <li onclick="check(this, 'B')">B. 80.5° E</li>
+            <li onclick="check(this, 'C')">C. 88.5° E</li>
+            <li onclick="check(this, 'D')">D. 92.5° E</li>
+        </ul>
+    </div>
+    
+    <div class="question" data-answer="B">
+        <p>101. Which of the following is known as the 'Light House of the Mediterranean'?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Mount Etna</li>
+            <li onclick="check(this, 'B')">B. Stromboli Volcano</li>
+            <li onclick="check(this, 'C')">C. Mount Vesuvius</li>
+            <li onclick="check(this, 'D')">D. Krakatoa</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>102. The 'Great Salt Lake' is located in which country?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Bolivia</li>
+            <li onclick="check(this, 'B')">B. Canada</li>
+            <li onclick="check(this, 'C')">C. USA</li>
+            <li onclick="check(this, 'D')">D. Jordan</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>103. Which is the largest 'Island' in the world?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Greenland</li>
+            <li onclick="check(this, 'B')">B. New Guinea</li>
+            <li onclick="check(this, 'C')">C. Madagascar</li>
+            <li onclick="check(this, 'D')">D. Sumatra</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>104. The 'Selvas' forests are found in which river basin?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Congo</li>
+            <li onclick="check(this, 'B')">B. Ganga</li>
+            <li onclick="check(this, 'C')">C. Mississippi</li>
+            <li onclick="check(this, 'D')">D. Amazon</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>105. 'Dogger Bank', a famous fishing ground, is located in the:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Atlantic Ocean</li>
+            <li onclick="check(this, 'B')">B. North Sea</li>
+            <li onclick="check(this, 'C')">C. Black Sea</li>
+            <li onclick="check(this, 'D')">D. English Channel</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>106. Which country is known as the 'Land of Thousand Lakes'?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Finland</li>
+            <li onclick="check(this, 'B')">B. Norway</li>
+            <li onclick="check(this, 'C')">C. Switzerland</li>
+            <li onclick="check(this, 'D')">D. Canada</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>107. The 'Strait of Malacca' separates which two landmasses?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. India and Sri Lanka</li>
+            <li onclick="check(this, 'B')">B. Africa and Europe</li>
+            <li onclick="check(this, 'C')">C. Malay Peninsula and Sumatra</li>
+            <li onclick="check(this, 'D')">D. Java and Sumatra</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>108. Which is the highest 'Plateau' in the world?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Deccan Plateau</li>
+            <li onclick="check(this, 'B')">B. Colorado Plateau</li>
+            <li onclick="check(this, 'C')">C. Columbia Plateau</li>
+            <li onclick="check(this, 'D')">D. Tibetan Plateau (Pamir)</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>109. 'Mistral' is a cold local wind that blows in:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. USA</li>
+            <li onclick="check(this, 'B')">B. France</li>
+            <li onclick="check(this, 'C')">C. Egypt</li>
+            <li onclick="check(this, 'D')">D. Argentina</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>110. Which is the longest 'Mountain Range' in the world (above sea level)?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Andes</li>
+            <li onclick="check(this, 'B')">B. Rockies</li>
+            <li onclick="check(this, 'C')">C. Himalayas</li>
+            <li onclick="check(this, 'D')">D. Alps</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>111. The 'Great Dividing Range' is located in which continent?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Africa</li>
+            <li onclick="check(this, 'B')">B. North America</li>
+            <li onclick="check(this, 'C')">C. Australia</li>
+            <li onclick="check(this, 'D')">D. Asia</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>112. Which river is known as the 'Yellow River'?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Mekong</li>
+            <li onclick="check(this, 'B')">B. Huang He</li>
+            <li onclick="check(this, 'C')">C. Yangtze</li>
+            <li onclick="check(this, 'D')">D. Salween</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>113. 'Steppes' grassland is found in which region?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. South Africa</li>
+            <li onclick="check(this, 'B')">B. Australia</li>
+            <li onclick="check(this, 'C')">C. South America</li>
+            <li onclick="check(this, 'D')">D. Central Asia and Europe</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>114. Which is the largest 'Gulf' in the world?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Gulf of Mexico</li>
+            <li onclick="check(this, 'B')">B. Persian Gulf</li>
+            <li onclick="check(this, 'C')">C. Gulf of Khambhat</li>
+            <li onclick="check(this, 'D')">D. Gulf of Aden</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>115. The 'Gobi Desert' is shared by which two countries?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. India and Pakistan</li>
+            <li onclick="check(this, 'B')">B. Egypt and Sudan</li>
+            <li onclick="check(this, 'C')">C. China and Mongolia</li>
+            <li onclick="check(this, 'D')">D. Iran and Iraq</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>116. Which city is known as the 'Eternal City'?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Athens</li>
+            <li onclick="check(this, 'B')">B. Rome</li>
+            <li onclick="check(this, 'C')">C. Jerusalem</li>
+            <li onclick="check(this, 'D')">D. Cairo</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>117. The 'Lake Baikal', the world's deepest freshwater lake, is in:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Canada</li>
+            <li onclick="check(this, 'B')">B. USA</li>
+            <li onclick="check(this, 'C')">C. China</li>
+            <li onclick="check(this, 'D')">D. Russia</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>118. Which country is known as the 'Sugar Bowl of the World'?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Cuba</li>
+            <li onclick="check(this, 'B')">B. Brazil</li>
+            <li onclick="check(this, 'C')">C. India</li>
+            <li onclick="check(this, 'D')">D. Thailand</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>119. 'Victoria Falls' is located on which river?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Nile</li>
+            <li onclick="check(this, 'B')">B. Congo</li>
+            <li onclick="check(this, 'C')">C. Zambezi</li>
+            <li onclick="check(this, 'D')">D. Niger</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>120. Which is the smallest 'Ocean' in the world?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Indian Ocean</li>
+            <li onclick="check(this, 'B')">B. Arctic Ocean</li>
+            <li onclick="check(this, 'C')">C. Southern Ocean</li>
+            <li onclick="check(this, 'D')">D. Atlantic Ocean</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>121. The '49th Parallel' is the boundary line between:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. North and South Korea</li>
+            <li onclick="check(this, 'B')">B. Germany and France</li>
+            <li onclick="check(this, 'C')">C. India and China</li>
+            <li onclick="check(this, 'D')">D. USA and Canada</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>122. Which is the highest 'Volcano' in the world?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Ojos del Salado</li>
+            <li onclick="check(this, 'B')">B. Mount Kilimanjaro</li>
+            <li onclick="check(this, 'C')">C. Mount Fuji</li>
+            <li onclick="check(this, 'D')">D. Mount Cotopaxi</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>123. 'Pampas' grasslands are located in:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. South Africa</li>
+            <li onclick="check(this, 'B')">B. North America</li>
+            <li onclick="check(this, 'C')">C. Argentina</li>
+            <li onclick="check(this, 'D')">D. Australia</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>124. The 'Aswan Dam' is built across which river?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Amazon</li>
+            <li onclick="check(this, 'B')">B. Nile</li>
+            <li onclick="check(this, 'C')">C. Yangtze</li>
+            <li onclick="check(this, 'D')">D. Mekong</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>125. Which country is known as the 'Land of the Rising Sun'?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Japan</li>
+            <li onclick="check(this, 'B')">B. Norway</li>
+            <li onclick="check(this, 'C')">C. New Zealand</li>
+            <li onclick="check(this, 'D')">D. South Korea</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>126. Which district of Bihar has the lowest population density as per Census 2011?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Sheikhpura</li>
+            <li onclick="check(this, 'B')">B. Kaimur</li>
+            <li onclick="check(this, 'C')">C. Jamui</li>
+            <li onclick="check(this, 'D')">D. West Champaran</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>127. The 'Karmanasa' river, considered inauspicious in local tradition, joins the Ganga near:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Chausa</li>
+            <li onclick="check(this, 'B')">B. Maner</li>
+            <li onclick="check(this, 'C')">C. Hajipur</li>
+            <li onclick="check(this, 'D')">D. Munger</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>128. Which part of Bihar receives the maximum rainfall?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. South-Western part</li>
+            <li onclick="check(this, 'B')">B. Central plains</li>
+            <li onclick="check(this, 'C')">C. North-Eastern part (Kishanganj)</li>
+            <li onclick="check(this, 'D')">D. North-Western part</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>129. The 'Balathar' soil is found in which region of Bihar?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Ganga-Gandak Doab</li>
+            <li onclick="check(this, 'B')">B. Terai Region</li>
+            <li onclick="check(this, 'C')">C. Kosi Basin</li>
+            <li onclick="check(this, 'D')">D. Transition zone between Plateau and Plains</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>130. Which district of Bihar is the leading producer of 'Jute'?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Madhubani</li>
+            <li onclick="check(this, 'B')">B. Purnia</li>
+            <li onclick="check(this, 'C')">C. Saharsa</li>
+            <li onclick="check(this, 'D')">D. Araria</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>131. 'Udaipur Wildlife Sanctuary' is located in which district?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. West Champaran</li>
+            <li onclick="check(this, 'B')">B. East Champaran</li>
+            <li onclick="check(this, 'C')">C. Rohtas</li>
+            <li onclick="check(this, 'D')">D. Valmiki Nagar</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>132. The 'Sone' river originates from which plateau before entering Bihar?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Chota Nagpur Plateau</li>
+            <li onclick="check(this, 'B')">B. Rohtas Plateau</li>
+            <li onclick="check(this, 'C')">C. Amarkantak Plateau</li>
+            <li onclick="check(this, 'D')">D. Malwa Plateau</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>133. Which city in Bihar is known as the 'Gateway of Bihar'?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Patna</li>
+            <li onclick="check(this, 'B')">B. Buxar</li>
+            <li onclick="check(this, 'C')">C. Gaya</li>
+            <li onclick="check(this, 'D')">D. Katihar</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>134. 'Tal' or 'Taal' land in Bihar is primarily located along the south bank of which river?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Sone</li>
+            <li onclick="check(this, 'B')">B. Ganga</li>
+            <li onclick="check(this, 'C')">C. Punpun</li>
+            <li onclick="check(this, 'D')">D. Falgu</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>135. Which district of Bihar has the highest SC (Scheduled Caste) population percentage?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Gaya</li>
+            <li onclick="check(this, 'B')">B. Patna</li>
+            <li onclick="check(this, 'C')">C. Nawada</li>
+            <li onclick="check(this, 'D')">D. Jamui</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>136. The 'Bhimbandh Wildlife Sanctuary' is situated in which district?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Bhagalpur</li>
+            <li onclick="check(this, 'B')">B. Jamui</li>
+            <li onclick="check(this, 'C')">C. Munger</li>
+            <li onclick="check(this, 'D')">D. Lakhisarai</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>137. Which of the following is the oldest canal system in Bihar?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Triveni Canal</li>
+            <li onclick="check(this, 'B')">B. Sone Canal</li>
+            <li onclick="check(this, 'C')">C. Kosi Canal</li>
+            <li onclick="check(this, 'D')">D. Gandak Canal</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>138. Which river is famous for the 'Vishnupad Temple' on its banks in Gaya?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Sone</li>
+            <li onclick="check(this, 'B')">B. Punpun</li>
+            <li onclick="check(this, 'C')">C. Kiul</li>
+            <li onclick="check(this, 'D')">D. Falgu</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>139. In Bihar, 'Koilwar Bridge' (Abdul Bari Bridge) is built over which river?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Sone</li>
+            <li onclick="check(this, 'B')">B. Ganga</li>
+            <li onclick="check(this, 'C')">C. Gandak</li>
+            <li onclick="check(this, 'D')">D. Ghaghara</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>140. Which district of Bihar has the largest percentage of Scheduled Tribe (ST) population?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Katihar</li>
+            <li onclick="check(this, 'B')">B. West Champaran</li>
+            <li onclick="check(this, 'C')">C. Kishanganj</li>
+            <li onclick="check(this, 'D')">D. Jamui</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>141. The 'Valmiki National Park' is the only National Park in Bihar. It is located in:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. East Champaran</li>
+            <li onclick="check(this, 'B')">B. Bagaha</li>
+            <li onclick="check(this, 'C')">C. West Champaran</li>
+            <li onclick="check(this, 'D')">D. Sitamarhi</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>142. Which district of Bihar is known for the 'Savane' or 'Terai' soil along its northern border?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Kishanganj</li>
+            <li onclick="check(this, 'B')">B. Rohtas</li>
+            <li onclick="check(this, 'C')">C. Bhojpur</li>
+            <li onclick="check(this, 'D')">D. Aurangabad</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>143. Which of the following waterfalls is located on the 'Gane' river in Rohtas district?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Kakolat</li>
+            <li onclick="check(this, 'B')">B. Telhar Kund</li>
+            <li onclick="check(this, 'C')">C. Karkat</li>
+            <li onclick="check(this, 'D')">D. Dhua Kund</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>144. 'Gopalganj' district of Bihar has the highest _____ in the state.</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Literacy Rate</li>
+            <li onclick="check(this, 'B')">B. Sex Ratio</li>
+            <li onclick="check(this, 'C')">C. Population Density</li>
+            <li onclick="check(this, 'D')">D. Forest Cover</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>145. Which of the following industries is located in the 'Marhowra' region of Saran district?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Sugar Refinery</li>
+            <li onclick="check(this, 'B')">B. Cement Factory</li>
+            <li onclick="check(this, 'C')">C. Diesel Locomotive Works</li>
+            <li onclick="check(this, 'D')">D. Jute Mill</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>146. The 'Kanwar Lake' Bird Sanctuary is the first Ramsar site of Bihar. It is in:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Begusarai</li>
+            <li onclick="check(this, 'B')">B. Khagaria</li>
+            <li onclick="check(this, 'C')">C. Samastipur</li>
+            <li onclick="check(this, 'D')">D. Katihar</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>147. Which district is known for producing 'Katarni Rice', which has been granted a GI tag?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Nalanda</li>
+            <li onclick="check(this, 'B')">B. Muzaffarpur</li>
+            <li onclick="check(this, 'C')">C. Patna</li>
+            <li onclick="check(this, 'D')">D. Bhagalpur</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>148. The 'Gandak River' meets the Ganga at which of the following places?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Danapur</li>
+            <li onclick="check(this, 'B')">B. Hajipur (Sonpur)</li>
+            <li onclick="check(this, 'C')">C. Kurshila</li>
+            <li onclick="check(this, 'D')">D. Fatwah</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>149. Bihar has what percentage of the total area of India?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 5.2%</li>
+            <li onclick="check(this, 'B')">B. 3.4%</li>
+            <li onclick="check(this, 'C')">C. 2.86%</li>
+            <li onclick="check(this, 'D')">D. 1.5%</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>150. Which district of Bihar has the lowest female literacy rate?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Saharsa</li>
+            <li onclick="check(this, 'B')">B. Purnia</li>
+            <li onclick="check(this, 'C')">C. Madhepura</li>
+            <li onclick="check(this, 'D')">D. Sitamarhi</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>151. Which city in Bihar is known as the 'Electronic City' of the state?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Patna</li>
+            <li onclick="check(this, 'B')">B. Hajipur</li>
+            <li onclick="check(this, 'C')">C. Muzaffarpur</li>
+            <li onclick="check(this, 'D')">D. Bhagalpur</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>152. The 'Barauni Thermal Power Station' in Bihar receives its coal supply from:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Jharia Coalfields</li>
+            <li onclick="check(this, 'B')">B. Raniganj</li>
+            <li onclick="check(this, 'C')">C. Singrauli</li>
+            <li onclick="check(this, 'D')">D. Talcher</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>153. 'Pant Wildlife Sanctuary' is located in which district of Bihar?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Gaya</li>
+            <li onclick="check(this, 'B')">B. Rohtas</li>
+            <li onclick="check(this, 'C')">C. Nalanda (Rajgir)</li>
+            <li onclick="check(this, 'D')">D. Jamui</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>154. Which district of Bihar has the highest concentration of 'Tobacco' cultivation?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Saharsa</li>
+            <li onclick="check(this, 'B')">B. Katihar</li>
+            <li onclick="check(this, 'C')">C. Purnia</li>
+            <li onclick="check(this, 'D')">D. Vaishali and Samastipur</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>155. 'Saddle Peak', the highest peak of Andaman & Nicobar, is located in:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. North Andaman</li>
+            <li onclick="check(this, 'B')">B. Little Andaman</li>
+            <li onclick="check(this, 'C')">C. Middle Andaman</li>
+            <li onclick="check(this, 'D')">D. Great Nicobar</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>156. The 'Mahatma Gandhi Setu' connects Patna with which city?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Sonepur</li>
+            <li onclick="check(this, 'B')">B. Hajipur</li>
+            <li onclick="check(this, 'C')">C. Chhapra</li>
+            <li onclick="check(this, 'D')">D. Ara</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>157. Which is the most earthquake-prone zone in Bihar?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Zone III</li>
+            <li onclick="check(this, 'B')">B. Zone IV</li>
+            <li onclick="check(this, 'C')">C. Zone V</li>
+            <li onclick="check(this, 'D')">D. Zone II</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>158. 'Kaimur Wildlife Sanctuary' is the largest sanctuary in Bihar. It is primarily situated in:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Gaya</li>
+            <li onclick="check(this, 'B')">B. Aurangabad</li>
+            <li onclick="check(this, 'C')">C. Rohtas</li>
+            <li onclick="check(this, 'D')">D. Kaimur (Bhabua)</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>159. Which river is known as 'Narayani' in its upper reaches in Nepal before entering Bihar?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Kosi</li>
+            <li onclick="check(this, 'B')">B. Gandak</li>
+            <li onclick="check(this, 'C')">C. Bagmati</li>
+            <li onclick="check(this, 'D')">D. Kamla</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>160. 'Bata Shoe Company' has its major manufacturing unit in Bihar at:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Mokama</li>
+            <li onclick="check(this, 'B')">B. Danapur</li>
+            <li onclick="check(this, 'C')">C. Fatwah</li>
+            <li onclick="check(this, 'D')">D. Bihta</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>161. 'Rohtas' district is famous for the production of which construction material?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Steel</li>
+            <li onclick="check(this, 'B')">B. Glass</li>
+            <li onclick="check(this, 'C')">C. Cement</li>
+            <li onclick="check(this, 'D')">D. Bricks</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>162. Which district in Bihar has the highest irrigation through canals?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Aurangabad</li>
+            <li onclick="check(this, 'B')">B. Rohtas</li>
+            <li onclick="check(this, 'C')">C. Bhojpur</li>
+            <li onclick="check(this, 'D')">D. Purnia</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>163. The 'Agulhas Current' flows in which ocean?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Atlantic Ocean</li>
+            <li onclick="check(this, 'B')">B. Pacific Ocean</li>
+            <li onclick="check(this, 'C')">C. Arctic Ocean</li>
+            <li onclick="check(this, 'D')">D. Indian Ocean</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>164. In which year was the 'Bihar State Tourism Development Corporation' (BSTDC) established?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 1980</li>
+            <li onclick="check(this, 'B')">B. 1975</li>
+            <li onclick="check(this, 'C')">C. 1990</li>
+            <li onclick="check(this, 'D')">D. 2000</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>165. 'Nagda' is a famous industrial town in Bihar associated with:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Textiles</li>
+            <li onclick="check(this, 'B')">B. Paper</li>
+            <li onclick="check(this, 'C')">C. Fertilizers</li>
+            <li onclick="check(this, 'D')">D. Iron</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>166. Which district of Bihar touches the maximum number of districts (8)?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Gaya</li>
+            <li onclick="check(this, 'B')">B. Patna</li>
+            <li onclick="check(this, 'C')">C. Muzaffarpur</li>
+            <li onclick="check(this, 'D')">D. Samastipur</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>167. 'Jet Streams' are usually found in the:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Mesosphere</li>
+            <li onclick="check(this, 'B')">B. Exosphere</li>
+            <li onclick="check(this, 'C')">C. Ionosphere</li>
+            <li onclick="check(this, 'D')">D. Tropopause (Upper Troposphere)</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>168. Which forest type is also known as 'Monsoon Forest'?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Tropical Deciduous Forest</li>
+            <li onclick="check(this, 'B')">B. Tropical Rain Forest</li>
+            <li onclick="check(this, 'C')">C. Mangrove Forest</li>
+            <li onclick="check(this, 'D')">D. Coniferous Forest</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>169. 'Jairambati' and 'Kamarpukur' (associated with Ramakrishna Paramahansa) are in which state, though often studied in Bihar’s socio-cultural geography context?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Bihar</li>
+            <li onclick="check(this, 'B')">B. Jharkhand</li>
+            <li onclick="check(this, 'C')">C. West Bengal</li>
+            <li onclick="check(this, 'D')">D. Odisha</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>170. 'Gautam Buddha Wildlife Sanctuary' is shared by Bihar and which other state?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Uttar Pradesh</li>
+            <li onclick="check(this, 'B')">B. Jharkhand</li>
+            <li onclick="check(this, 'C')">C. West Bengal</li>
+            <li onclick="check(this, 'D')">D. Odisha</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>171. Which district of Bihar is the leading producer of 'Maize' (Corn)?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Khagaria</li>
+            <li onclick="check(this, 'B')">B. Patna</li>
+            <li onclick="check(this, 'C')">C. Bhojpur</li>
+            <li onclick="check(this, 'D')">D. Gaya</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>172. The 'Great Escarpment' of India is another name for the:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Himalayas</li>
+            <li onclick="check(this, 'B')">B. Vindhyas</li>
+            <li onclick="check(this, 'C')">C. Eastern Ghats</li>
+            <li onclick="check(this, 'D')">D. Western Ghats</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>173. 'Kosi Project', a joint venture between India and Nepal, was started in:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 1947</li>
+            <li onclick="check(this, 'B')">B. 1950</li>
+            <li onclick="check(this, 'C')">C. 1954</li>
+            <li onclick="check(this, 'D')">D. 1965</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>174. Which longitude is the 'International Date Line'?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 0°</li>
+            <li onclick="check(this, 'B')">B. 180°</li>
+            <li onclick="check(this, 'C')">C. 90° East</li>
+            <li onclick="check(this, 'D')">D. 82.5° East</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>175. The 'Silk Industry' in Bihar is concentrated primarily in:</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Bhagalpur</li>
+            <li onclick="check(this, 'B')">B. Katihar</li>
+            <li onclick="check(this, 'C')">C. Purnia</li>
+            <li onclick="check(this, 'D')">D. Saharsa</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>176. Which district of Bihar has the highest percentage of its geographical area under forest cover?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Kaimur</li>
+            <li onclick="check(this, 'B')">B. West Champaran</li>
+            <li onclick="check(this, 'C')">C. Jamui</li>
+            <li onclick="check(this, 'D')">D. Gaya</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>177. The 'Triveni Canal' in Bihar mainly serves which of the following districts?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. East Champaran</li>
+            <li onclick="check(this, 'B')">B. West Champaran</li>
+            <li onclick="check(this, 'C')">C. Saran</li>
+            <li onclick="check(this, 'D')">D. Gopalganj</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>178. Which river forms the boundary between Bihar and Uttar Pradesh near the Saran district?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Ghaghara</li>
+            <li onclick="check(this, 'B')">B. Kosi</li>
+            <li onclick="check(this, 'C')">C. Bagmati</li>
+            <li onclick="check(this, 'D')">D. Kamla</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>179. What is the average height of the Bihar plains from the Mean Sea Level (MSL)?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 53 meters</li>
+            <li onclick="check(this, 'B')">B. 150 meters</li>
+            <li onclick="check(this, 'C')">C. 25 meters</li>
+            <li onclick="check(this, 'D')">D. 100 meters</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>180. The 'Dhua Kund' and 'Sita Kund' waterfalls are located in which district?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Nawada</li>
+            <li onclick="check(this, 'B')">B. Rohtas</li>
+            <li onclick="check(this, 'C')">C. Kaimur</li>
+            <li onclick="check(this, 'D')">D. Bhojpur</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>181. Which of the following thermal power plants is located in the Aurangabad district of Bihar?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Barauni</li>
+            <li onclick="check(this, 'B')">B. Kanti</li>
+            <li onclick="check(this, 'C')">C. Nabinagar</li>
+            <li onclick="check(this, 'D')">D. Kahalgaon</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>182. Which soil in Bihar is characterized by high lime content and is found in Saharsa and Purnia?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Bangar Soil</li>
+            <li onclick="check(this, 'B')">B. Khadar Soil</li>
+            <li onclick="check(this, 'C')">C. Balathar Soil</li>
+            <li onclick="check(this, 'D')">D. Tal Soil</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>183. The 'Phalgu' river is formed by the confluence of which two streams?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Lilajan and Mohane</li>
+            <li onclick="check(this, 'B')">B. Lilajan and Punpun</li>
+            <li onclick="check(this, 'C')">C. Sone and North Koel</li>
+            <li onclick="check(this, 'D')">D. Mohane and Sakri</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>184. Which district of Bihar has the highest area under 'Wheat' cultivation?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Rohtas</li>
+            <li onclick="check(this, 'B')">B. Purnia</li>
+            <li onclick="check(this, 'C')">C. Kishanganj</li>
+            <li onclick="check(this, 'D')">D. Begusarai</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>185. The 'Barabar Hills' are primarily composed of which type of rock?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Sedimentary</li>
+            <li onclick="check(this, 'B')">B. Metamorphic (Dharwar)</li>
+            <li onclick="check(this, 'C')">C. Volcanic</li>
+            <li onclick="check(this, 'D')">D. Alluvial</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>186. Which of the following is the most significant 'Cash Crop' of North-Western Bihar?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Sugarcane</li>
+            <li onclick="check(this, 'B')">B. Cotton</li>
+            <li onclick="check(this, 'C')">C. Rubber</li>
+            <li onclick="check(this, 'D')">D. Jute</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>187. What is the approximate length of the Ganga river within the boundaries of Bihar?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 250 km</li>
+            <li onclick="check(this, 'B')">B. 445 km</li>
+            <li onclick="check(this, 'C')">C. 600 km</li>
+            <li onclick="check(this, 'D')">D. 1200 km</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>188. Which district is located at the confluence of the Ghaghara and Ganga rivers?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Patna</li>
+            <li onclick="check(this, 'B')">B. Saran (Chhapra)</li>
+            <li onclick="check(this, 'C')">C. Bhojpur</li>
+            <li onclick="check(this, 'D')">D. Buxar</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>189. The 'Kosi-Mechi Interlinking Project' is designed to benefit which region of Bihar?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Seemanchal (Eastern Bihar)</li>
+            <li onclick="check(this, 'B')">B. Mithila (Central North)</li>
+            <li onclick="check(this, 'C')">C. Magadh (South Bihar)</li>
+            <li onclick="check(this, 'D')">D. Anga (South East)</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>190. Which city in Bihar is famous for the manufacture of 'Rail Wheel' at its plant in Bela?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Chhapra</li>
+            <li onclick="check(this, 'B')">B. Madhepura</li>
+            <li onclick="check(this, 'C')">C. Harnaut</li>
+            <li onclick="check(this, 'D')">D. Jamalpur</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="C">
+        <p>191. Which of the following districts does NOT share a border with Nepal?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Madhubani</li>
+            <li onclick="check(this, 'B')">B. Supaul</li>
+            <li onclick="check(this, 'C')">C. Muzaffarpur</li>
+            <li onclick="check(this, 'D')">D. Araria</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>192. The 'Indrapuri Barrage' is constructed across which river in Bihar?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Sone</li>
+            <li onclick="check(this, 'B')">B. Gandak</li>
+            <li onclick="check(this, 'C')">C. Kosi</li>
+            <li onclick="check(this, 'D')">D. Ganga</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>193. Which of the following is a 'Zaid' crop commonly grown in the riverbeds of Bihar?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Wheat</li>
+            <li onclick="check(this, 'B')">B. Watermelon</li>
+            <li onclick="check(this, 'C')">C. Rice</li>
+            <li onclick="check(this, 'D')">D. Mustard</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>194. In which district of Bihar is the 'Gogabil Lake' Bird Sanctuary located?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Katihar</li>
+            <li onclick="check(this, 'B')">B. Begusarai</li>
+            <li onclick="check(this, 'C')">C. Khagaria</li>
+            <li onclick="check(this, 'D')">D. Bhagalpur</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>195. Which of the following soils is commonly known as 'Karela-Kewal' in South Bihar?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Old Alluvial Soil</li>
+            <li onclick="check(this, 'B')">B. Terai Soil</li>
+            <li onclick="check(this, 'C')">C. Sandy Soil</li>
+            <li onclick="check(this, 'D')">D. Red Soil</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="D">
+        <p>196. Which is the highest peak in the 'Rajgir Hills'?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Vipulachal</li>
+            <li onclick="check(this, 'B')">B. Ratnagiri</li>
+            <li onclick="check(this, 'C')">C. Sonagiri</li>
+            <li onclick="check(this, 'D')">D. Vaibhara Giri</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>197. Which district is known as the 'Litchi Bowl' of Bihar?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Muzaffarpur</li>
+            <li onclick="check(this, 'B')">B. Vaishali</li>
+            <li onclick="check(this, 'C')">C. East Champaran</li>
+            <li onclick="check(this, 'D')">D. Darbhanga</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>198. Which river is notorious for 'meandering' and changing its course frequently in Bihar?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Ganga</li>
+            <li onclick="check(this, 'B')">B. Kosi</li>
+            <li onclick="check(this, 'C')">C. Sone</li>
+            <li onclick="check(this, 'D')">D. Gandak</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="A">
+        <p>199. The 'Bihar Industrial Area Development Authority' (BIADA) has a major regional office in which city of the Kosi division?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. Saharsa</li>
+            <li onclick="check(this, 'B')">B. Purnia</li>
+            <li onclick="check(this, 'C')">C. Madhepura</li>
+            <li onclick="check(this, 'D')">D. Katihar</li>
+        </ul>
+    </div>
+
+    <div class="question" data-answer="B">
+        <p>200. What is the rank of Bihar in India in terms of total geographical area?</p>
+        <ul class="options">
+            <li onclick="check(this, 'A')">A. 10th</li>
+            <li onclick="check(this, 'B')">B. 12th</li>
+            <li onclick="check(this, 'C')">C. 15th</li>
+            <li onclick="check(this, 'D')">D. 9th</li>
+        </ul>
+    </div>
+
+    </div>
+
+    <div class="controls">
+        Score: <span id="current-score">0</span> | Questions Attempted: <span id="attempted">0</span> / 100
+    </div>
+</div>
+
+<script>
+    let score = 0;
+    let attempted = 0;
+
+    function check(element, choice) {
+        const parent = element.closest('.question');
+        const correct = parent.getAttribute('data-answer');
+        const options = parent.querySelectorAll('li');
+
+        // Prevent clicking again
+        if (parent.classList.contains('done')) return;
+        parent.classList.add('done');
+
+        attempted++;
+        document.getElementById('attempted').innerText = attempted;
+
+        if (choice === correct) {
+            element.classList.add('correct');
+            score++;
+            document.getElementById('current-score').innerText = score;
+        } else {
+            element.classList.add('incorrect');
+            // Show correct answer
+            options.forEach(opt => {
+                if (opt.innerText.startsWith(correct)) opt.classList.add('correct');
+            });
+        }
+    }
+</script>
+
+</body>
+</html>
